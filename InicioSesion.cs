@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace DulceTentacion
 {
-    public partial class Form1 : Form
+    public partial class InicioSesion : Form
     {
 
         public class Usuario
@@ -23,7 +23,7 @@ namespace DulceTentacion
         private int intentosFallidos = 0;
         private Timer timer;
 
-        public Form1()
+        public InicioSesion()
         {
             InitializeComponent();
 
@@ -60,7 +60,7 @@ namespace DulceTentacion
             if ((usuario.NombreUsuario == nombreusuario1 && usuario.Contraseña == contraseñausuario1) ||
                 (usuario.NombreUsuario == nombreusuario2 && usuario.Contraseña == contraseñausuario2))
             {
-                MessageBox.Show("Inicio de Sesión Exitoso! Bienvenido.");
+               // MessageBox.Show("Inicio de Sesión Exitoso! Bienvenido.");
 
                 //Al clickear btnIngresar abre la pestaña de Menu
                 using (PanelBienvenido bienvenido = new PanelBienvenido())
@@ -69,21 +69,21 @@ namespace DulceTentacion
             }
             else
             {
-                MessageBox.Show("Nombre de Usuario o Contraseña Incorrectos. Por Favor, Intentalo de Nuevo.");
+                //MessageBox.Show("Nombre de Usuario o Contraseña Incorrectos. Por Favor, Intentalo de Nuevo.");
                 intentosFallidos++;
 
 
                 if (intentosFallidos == 1)
                 {
-                    MessageBox.Show("Le Quedan 2 Intentos para ingresar correctamente sus datos");
+                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Le Quedan 2 intentos para ingresar sus datos correctamente.");
                 }
                 else if (intentosFallidos == 2)
                 {
-                    MessageBox.Show("Último Intento para ingresar correctamente sus datos");
+                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Último intento para ingresar sus datos correctamente.");
                 }
                 else if (intentosFallidos >= 3)
                 {
-                    MessageBox.Show("Espere 30 segundos para Intentarlo Nuevamente");
+                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Espere 30 segundos para intentarlo nuevamente.");
                     btnAcceder.Enabled = false;
 
                     timer.Start();
