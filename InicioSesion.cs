@@ -60,11 +60,18 @@ namespace DulceTentacion
             if ((usuario.NombreUsuario == nombreusuario1 && usuario.Contraseña == contraseñausuario1) ||
                 (usuario.NombreUsuario == nombreusuario2 && usuario.Contraseña == contraseñausuario2))
             {
-               // MessageBox.Show("Inicio de Sesión Exitoso! Bienvenido.");
-
+                // MessageBox.Show("Inicio de Sesión Exitoso! Bienvenido.");
+                this.Hide();
                 //Al clickear btnIngresar abre la pestaña de Menu
                 using (PanelBienvenido bienvenido = new PanelBienvenido())
                     bienvenido.ShowDialog(); //mantiene abierta la ventana menu
+
+                
+               // PanelBienvenido welcome = new PanelBienvenido
+
+                //Al clickear btnIngresar abre la pestaña de Menu
+                using (MenuPrincipal menuPrincipal = new MenuPrincipal())
+                    menuPrincipal.ShowDialog(); //mantiene abierta la ventana menu
 
             }
             else
