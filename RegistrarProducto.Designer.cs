@@ -39,15 +39,16 @@ namespace DulceTentacion
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -107,13 +108,14 @@ namespace DulceTentacion
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(33, 32);
+            this.groupBox1.Location = new System.Drawing.Point(30, 156);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(649, 220);
             this.groupBox1.TabIndex = 8;
@@ -122,8 +124,9 @@ namespace DulceTentacion
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Location = new System.Drawing.Point(33, 272);
+            this.groupBox2.Location = new System.Drawing.Point(30, 396);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(649, 261);
             this.groupBox2.TabIndex = 9;
@@ -141,6 +144,7 @@ namespace DulceTentacion
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
@@ -149,39 +153,12 @@ namespace DulceTentacion
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Location = new System.Drawing.Point(717, 41);
+            this.groupBox3.Location = new System.Drawing.Point(714, 165);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(255, 244);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acciones";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Cancelar";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 32);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Guardar";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 130);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Limpiar";
             // 
             // label7
             // 
@@ -192,15 +169,32 @@ namespace DulceTentacion
             this.label7.TabIndex = 14;
             this.label7.Text = "Atras";
             // 
-            // pictureBox1
+            // label6
             // 
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.repoost;
-            this.pictureBox1.Location = new System.Drawing.Point(699, 235);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 347);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(35, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Limpiar";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(148, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 17);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Guardar";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(35, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Cancelar";
             // 
             // button4
             // 
@@ -219,6 +213,7 @@ namespace DulceTentacion
             this.button3.Size = new System.Drawing.Size(79, 67);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -238,12 +233,33 @@ namespace DulceTentacion
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.repoost;
+            this.pictureBox1.Location = new System.Drawing.Point(696, 359);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 347);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(987, 45);
+            this.flowLayoutPanel1.TabIndex = 12;
+            // 
             // RegistrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(992, 571);
+            this.ClientSize = new System.Drawing.Size(987, 850);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
@@ -251,6 +267,7 @@ namespace DulceTentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrarProducto";
             this.Text = "RegistrarProducto";
+            this.Load += new System.EventHandler(this.RegistrarProducto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -283,5 +300,6 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

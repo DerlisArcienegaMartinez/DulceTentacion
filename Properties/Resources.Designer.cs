@@ -133,6 +133,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("back-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boda {
             get {
                 object obj = ResourceManager.GetObject("boda", resourceCulture);
@@ -516,6 +526,26 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap producto {
             get {
                 object obj = ResourceManager.GetObject("producto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regrrs_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("regrrs-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regrrs_removebg_preview__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("regrrs-removebg-preview (1) (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
