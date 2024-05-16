@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class Ventas : Form
+    public partial class RegistrarProducto : Form
     {
-        public Ventas()
+        public RegistrarProducto()
         {
             InitializeComponent();
         }

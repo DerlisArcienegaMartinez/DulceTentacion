@@ -13,9 +13,13 @@ namespace DulceTentacion
 {
     public partial class MenuPrincipal : Form
     {
+
+
         public MenuPrincipal()
         {
             InitializeComponent();
+
+            CustomizeDesign();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -67,12 +71,12 @@ namespace DulceTentacion
 
         private void btnMenuDesplegable_Click(object sender, EventArgs e)
         {
-            if (PanelMenus.Width == 245)
+            if (PanelMenus.Width == 235)
             {
-                PanelMenus.Width = 65;
+                PanelMenus.Width = 60;
             }
             else
-                PanelMenus.Width = 245;
+                PanelMenus.Width = 235;
 
         }
 
@@ -86,7 +90,7 @@ namespace DulceTentacion
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            showSubMenu(SubPanelVentas); 
+             
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -95,9 +99,9 @@ namespace DulceTentacion
         }
 
 
-        private void customizeDesing()
+        private void CustomizeDesign()
         {
-            SubPanelVentas.Visible = false;
+    
             SubPanelInventario.Visible = false;
             SubPanelRegistro.Visible = false;
             SubPanelPersonal.Visible = false;
@@ -105,13 +109,12 @@ namespace DulceTentacion
 
         private void hideSubMenu()
         {
-            if (SubPanelVentas.Visible == true)
-                SubPanelVentas.Visible = false;
-            if (SubPanelInventario.Visible == true)
+
+            if (SubPanelInventario.Visible)
                 SubPanelInventario.Visible = false;
-            if (SubPanelRegistro.Visible == true)
+            if (SubPanelRegistro.Visible)
                 SubPanelRegistro.Visible = false;
-            if (SubPanelPersonal.Visible == true)
+            if (SubPanelPersonal.Visible)
                 SubPanelPersonal.Visible = false;
         }
 
@@ -124,30 +127,27 @@ namespace DulceTentacion
             }
             else
                 subMenu.Visible = false;
+
+
         }
 
-        private void btnIngresarProducto_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-        }
-
-        private void btnVisualizarProducto_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-        }
+     
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
+            
             showSubMenu(SubPanelInventario);
         }
 
         private void btnRegistroVentas_Click(object sender, EventArgs e)
         {
+           
             showSubMenu(SubPanelRegistro);
         }
 
         private void btnPersonal_Click(object sender, EventArgs e)
         {
+           
             showSubMenu(SubPanelPersonal);
         }
 

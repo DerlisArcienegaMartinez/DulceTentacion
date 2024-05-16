@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class Ventas : Form
+    public partial class RegistrarPersonal : Form
     {
-        public Ventas()
+        public RegistrarPersonal()
         {
             InitializeComponent();
         }
-
-      
     }
 }

@@ -63,6 +63,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _61l_VMNCnUL {
+            get {
+                object obj = ResourceManager.GetObject("61l+VMNCnUL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ACEEERR {
             get {
                 object obj = ResourceManager.GetObject("ACEEERR", resourceCulture);
@@ -93,9 +103,79 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ACERcA1 {
+            get {
+                object obj = ResourceManager.GetObject("ACERcA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ajusye {
             get {
                 object obj = ResourceManager.GetObject("ajusye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("back-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boda {
+            get {
+                object obj = ResourceManager.GetObject("boda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancelar_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("cancelar-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_13_030447 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-13 030447", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_14_131746 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-14 131746", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_14_132026 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-14 132026", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +196,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_14_203614_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("Captura_de_pantalla_2024-05-14_203614-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_16_062508 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-16 062508", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +253,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clean_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("clean-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap compras {
             get {
                 object obj = ResourceManager.GetObject("compras", resourceCulture);
@@ -176,6 +276,26 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap configuracion {
             get {
                 object obj = ResourceManager.GetObject("configuracion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap confim {
+            get {
+                object obj = ResourceManager.GetObject("confim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cumpl {
+            get {
+                object obj = ResourceManager.GetObject("cumpl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +433,26 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mmmm {
+            get {
+                object obj = ResourceManager.GetObject("mmmm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ocasional {
+            get {
+                object obj = ResourceManager.GetObject("ocasional", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pagos {
             get {
                 object obj = ResourceManager.GetObject("pagos", resourceCulture);
@@ -326,6 +466,26 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap panadero {
             get {
                 object obj = ResourceManager.GetObject("panadero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pannacotta_postre_mas_rico_del_mundo_940x580 {
+            get {
+                object obj = ResourceManager.GetObject("pannacotta-postre-mas-rico-del-mundo-940x580", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pastmatri {
+            get {
+                object obj = ResourceManager.GetObject("pastmatri", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,6 +523,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap repoost {
+            get {
+                object obj = ResourceManager.GetObject("repoost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reportes {
             get {
                 object obj = ResourceManager.GetObject("reportes", resourceCulture);
@@ -393,6 +563,26 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap save_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("save-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_removebg_preview__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("save-removebg-preview (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tiktoklogo {
             get {
                 object obj = ResourceManager.GetObject("tiktoklogo", resourceCulture);
@@ -406,6 +596,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap venta {
             get {
                 object obj = ResourceManager.GetObject("venta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_06_at_21_42_16 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-06 at 21.42.16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -436,6 +636,116 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp_Image_2024-05-14_at_14.44.00-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_29_32 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.29.32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_29_32__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.29.32 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_33_37 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.33.37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_33_38 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.33.38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_33_38__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.33.38 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_44_25 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.44.25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_48_37 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.48.37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_15_at_23_56_19 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-15 at 23.56.19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_16_at_00_12_39 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-16 at 00.12.39", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_16_at_00_14_41 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-16 at 00.14.41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_16_at_00_141 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-16 at 00.141", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

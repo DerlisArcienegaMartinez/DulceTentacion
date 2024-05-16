@@ -32,19 +32,19 @@ namespace DulceTentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lnkContraseña = new System.Windows.Forms.LinkLabel();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,10 +67,21 @@ namespace DulceTentacion
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 226);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 80);
+            this.label2.Size = new System.Drawing.Size(229, 78);
             this.label2.TabIndex = 5;
             this.label2.Text = "    DULCE\r\nSENSACIÓN";
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(21, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(214, 195);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
             // 
             // label1
             // 
@@ -79,7 +90,7 @@ namespace DulceTentacion
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(265, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 53);
+            this.label1.Size = new System.Drawing.Size(155, 52);
             this.label1.TabIndex = 3;
             this.label1.Text = "INICIO";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
@@ -110,7 +121,7 @@ namespace DulceTentacion
             this.txtUsuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUsuario.Size = new System.Drawing.Size(252, 25);
             this.txtUsuario.TabIndex = 3;
-            this.txtUsuario.Text = "USUARIO";
+            this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
@@ -126,7 +137,7 @@ namespace DulceTentacion
             this.txtContraseña.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtContraseña.Size = new System.Drawing.Size(252, 25);
             this.txtContraseña.TabIndex = 5;
-            this.txtContraseña.Text = "CONTRASEÑA";
+            this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
@@ -141,7 +152,7 @@ namespace DulceTentacion
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(288, 40);
             this.btnAcceder.TabIndex = 3;
-            this.btnAcceder.Text = "ACCEDER";
+            this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
             this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
@@ -157,17 +168,6 @@ namespace DulceTentacion
             this.btnSalir.TabIndex = 2;
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(214, 195);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
             // 
             // pictureBox1
             // 
@@ -199,7 +199,7 @@ namespace DulceTentacion
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(469, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 53);
+            this.label4.Size = new System.Drawing.Size(168, 52);
             this.label4.TabIndex = 7;
             this.label4.Text = "SESIÓN";
             // 
@@ -226,8 +226,8 @@ namespace DulceTentacion
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

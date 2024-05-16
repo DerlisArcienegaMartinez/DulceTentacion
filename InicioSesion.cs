@@ -139,7 +139,7 @@ namespace DulceTentacion
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "USUARIO")
+            if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
                 txtUsuario.ForeColor = Color.Black;
@@ -150,14 +150,14 @@ namespace DulceTentacion
         {
             if (txtUsuario.Text == "")
             {
-                txtUsuario.Text = "USUARIO";
+                txtUsuario.Text = "Usuario";
                 txtUsuario.ForeColor = Color.LightGray;
             }
         }
 
         private void txtContraseña_Enter(object sender, EventArgs e)
         {
-            if (txtContraseña.Text == "CONTRASEÑA")
+            if (txtContraseña.Text == "Contraseña")
             {
                 txtContraseña.Text = "";
                 txtContraseña.ForeColor = Color.Black;
@@ -169,7 +169,7 @@ namespace DulceTentacion
         {
             if (txtContraseña.Text == "")
             {
-                txtContraseña.Text = "CONTRASEÑA";
+                txtContraseña.Text = "Contraseña";
                 txtContraseña.ForeColor = Color.LightGray;
                 txtContraseña.UseSystemPasswordChar = false;
             }
