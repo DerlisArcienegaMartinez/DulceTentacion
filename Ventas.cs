@@ -43,5 +43,10 @@ namespace DulceTentacion
         {
             abrirConPrincipal(new Pasteles());
         }
+
+        private void ContVentas_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

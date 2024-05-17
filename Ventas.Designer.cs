@@ -31,15 +31,15 @@ namespace DulceTentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventas));
             this.ContVentas = new System.Windows.Forms.Panel();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnExtras = new System.Windows.Forms.Button();
             this.btnPasteles = new System.Windows.Forms.Button();
             this.btnPorciones = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.ContVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -49,9 +49,9 @@ namespace DulceTentacion
             // ContVentas
             // 
             this.ContVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
+            this.ContVentas.Controls.Add(this.button2);
+            this.ContVentas.Controls.Add(this.button1);
             this.ContVentas.Controls.Add(this.btnRegresar);
-            this.ContVentas.Controls.Add(this.label1);
-            this.ContVentas.Controls.Add(this.button5);
             this.ContVentas.Controls.Add(this.btnExtras);
             this.ContVentas.Controls.Add(this.btnPasteles);
             this.ContVentas.Controls.Add(this.btnPorciones);
@@ -61,26 +61,9 @@ namespace DulceTentacion
             this.ContVentas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContVentas.Location = new System.Drawing.Point(0, 0);
             this.ContVentas.Name = "ContVentas";
-            this.ContVentas.Size = new System.Drawing.Size(1013, 714);
+            this.ContVentas.Size = new System.Drawing.Size(1013, 640);
             this.ContVentas.TabIndex = 19;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.regrrs_removebg_preview__1___1_;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(47, 77);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(189, 48);
-            this.btnRegresar.TabIndex = 28;
-            this.btnRegresar.Text = "         Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            this.ContVentas.Paint += new System.Windows.Forms.PaintEventHandler(this.ContVentas_Paint);
             // 
             // btnExtras
             // 
@@ -93,7 +76,7 @@ namespace DulceTentacion
             this.btnExtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExtras.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExtras.ForeColor = System.Drawing.Color.White;
-            this.btnExtras.Location = new System.Drawing.Point(708, 487);
+            this.btnExtras.Location = new System.Drawing.Point(710, 416);
             this.btnExtras.Name = "btnExtras";
             this.btnExtras.Size = new System.Drawing.Size(214, 53);
             this.btnExtras.TabIndex = 5;
@@ -111,7 +94,7 @@ namespace DulceTentacion
             this.btnPasteles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPasteles.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPasteles.ForeColor = System.Drawing.Color.White;
-            this.btnPasteles.Location = new System.Drawing.Point(392, 487);
+            this.btnPasteles.Location = new System.Drawing.Point(395, 416);
             this.btnPasteles.Name = "btnPasteles";
             this.btnPasteles.Size = new System.Drawing.Size(214, 53);
             this.btnPasteles.TabIndex = 4;
@@ -130,18 +113,36 @@ namespace DulceTentacion
             this.btnPorciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPorciones.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPorciones.ForeColor = System.Drawing.Color.White;
-            this.btnPorciones.Location = new System.Drawing.Point(84, 487);
+            this.btnPorciones.Location = new System.Drawing.Point(86, 416);
             this.btnPorciones.Name = "btnPorciones";
             this.btnPorciones.Size = new System.Drawing.Size(214, 53);
             this.btnPorciones.TabIndex = 3;
             this.btnPorciones.Text = "Porciones";
             this.btnPorciones.UseVisualStyleBackColor = false;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(41, 30);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(189, 48);
+            this.btnRegresar.TabIndex = 28;
+            this.btnRegresar.Text = "         Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.Captura_de_pantalla_2024_05_13_030447;
-            this.pictureBox3.Location = new System.Drawing.Point(373, 209);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(376, 138);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(255, 258);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,8 +152,8 @@ namespace DulceTentacion
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.pannacotta_postre_mas_rico_del_mundo_940x580;
-            this.pictureBox2.Location = new System.Drawing.Point(688, 209);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(690, 138);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(255, 258);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,55 +163,61 @@ namespace DulceTentacion
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources._61l_VMNCnUL;
-            this.pictureBox1.Location = new System.Drawing.Point(68, 209);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(70, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button5
+            // button1
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(1013, 44);
-            this.button5.TabIndex = 29;
-            this.button5.UseVisualStyleBackColor = false;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(636, 562);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(343, 53);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Ofertas y Descuentos";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 28);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Dulce Sensación";
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(34, 562);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(350, 53);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Construye tu propio pastel";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 714);
+            this.ClientSize = new System.Drawing.Size(1013, 640);
             this.Controls.Add(this.ContVentas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ventas";
             this.Text = "Ventas";
             this.ContVentas.ResumeLayout(false);
-            this.ContVentas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -227,7 +234,7 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnPasteles;
         private System.Windows.Forms.Button btnPorciones;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

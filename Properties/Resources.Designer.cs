@@ -313,6 +313,26 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dlce {
+            get {
+                object obj = ResourceManager.GetObject("dlce", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dlce_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("dlce-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap empleados {
             get {
                 object obj = ResourceManager.GetObject("empleados", resourceCulture);

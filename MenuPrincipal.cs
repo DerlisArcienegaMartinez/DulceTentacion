@@ -104,6 +104,7 @@ namespace DulceTentacion
 
         private void btnIngresarProd_Click(object sender, EventArgs e)
         {
+            abrirconprincipal(new RegistrarProducto());
             hideSubMenu();
         }
 
@@ -124,6 +125,7 @@ namespace DulceTentacion
 
         private void btnRegPersonal_Click(object sender, EventArgs e)
         {
+            abrirconprincipal(new RegistrarPersonal());
             hideSubMenu();
         }
 

@@ -145,6 +145,9 @@
   <data name="ocasional" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ocasional.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dlce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dlce.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clean-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clean-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +181,8 @@
   <data name="Youtube_logo-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Youtube_logo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2024-05-15 at 23.33.38 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2024-05-15 at 23.33.38 (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +193,8 @@
   <data name="pagos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pagos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ACEEERR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ACEEERR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maxi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,6 +204,9 @@
   </data>
   <data name="WhatsApp Image 2024-05-06 at 21.42.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2024-05-06 at 21.42.16.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regrrs-removebg-preview (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regrrs-removebg-preview (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,6 +219,9 @@
   </data>
   <data name="pastmatri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pastmatri.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2024-05-15 at 23.33.38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2024-05-15 at 23.33.38.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura_de_pantalla_2024-05-14_203614-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura_de_pantalla_2024-05-14_203614-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,12 +256,6 @@
   <data name="pannacotta-postre-mas-rico-del-mundo-940x580" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pannacotta-postre-mas-rico-del-mundo-940x580.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maxi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="acerca_de-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\acerca_de-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,8 +283,8 @@
   <data name="tiktoklogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tiktoklogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2024-05-15 at 23.33.38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2024-05-15 at 23.33.38.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ACEEERR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ACEEERR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save-removebg-preview (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save-removebg-preview (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,6 +319,9 @@
   <data name="WhatsApp Image 2024-05-15 at 23.56.19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2024-05-15 at 23.56.19.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2024-05-15 at 23.33.38 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2024-05-15 at 23.33.38 (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="res" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\res.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -334,7 +340,7 @@
   <data name="WhatsApp Image 2024-05-16 at 00.141" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2024-05-16 at 00.14.411.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="regrrs-removebg-preview (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\regrrs-removebg-preview (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dlce-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dlce-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
