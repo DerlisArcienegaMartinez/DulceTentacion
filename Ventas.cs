@@ -18,10 +18,7 @@ namespace DulceTentacion
             InitializeComponent();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         //Configurar la ventana en el panel contenedor
         private Form activeForm = null;
@@ -44,9 +41,16 @@ namespace DulceTentacion
             abrirConPrincipal(new Pasteles());
         }
 
-        private void ContVentas_Paint(object sender, PaintEventArgs e)
+        private void fndPasteles_Click(object sender, EventArgs e)
         {
-
+            abrirConPrincipal(new Pasteles());
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }

@@ -371,5 +371,50 @@
   <ItemGroup>
     <None Include="Resources\dlce-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceerraSesionEditable-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresar3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientehombre-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubicacion-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas-removebg-preview %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubicacion-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PortadaPorcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PortadaPai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ofertasdescuentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portadapastel-Photoroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreadorPaste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-cafe-menu-dish-english-restaurant-menu-microphone-english-text-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
