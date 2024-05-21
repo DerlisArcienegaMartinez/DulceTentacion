@@ -143,6 +143,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap basurero_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("basurero-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boda {
             get {
                 object obj = ResourceManager.GetObject("boda", resourceCulture);
@@ -306,6 +316,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap compras {
             get {
                 object obj = ResourceManager.GetObject("compras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap configu_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("configu-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +526,26 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap mmmm {
             get {
                 object obj = ResourceManager.GetObject("mmmm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modo_Oscuro_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("modo_Oscuro-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modoClaro_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("modoClaro-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -84,7 +84,7 @@ namespace DulceTentacion
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(2304, 2525);
+            this.button1.Location = new System.Drawing.Point(2758, 2819);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(343, 53);
             this.button1.TabIndex = 29;
@@ -102,7 +102,7 @@ namespace DulceTentacion
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(34, 2540);
+            this.button2.Location = new System.Drawing.Point(34, 2834);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(350, 53);
             this.button2.TabIndex = 30;
@@ -117,7 +117,7 @@ namespace DulceTentacion
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2488, -398);
+            this.label1.Location = new System.Drawing.Point(2942, -398);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 28);
             this.label1.TabIndex = 38;
@@ -131,7 +131,7 @@ namespace DulceTentacion
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1677, -342);
+            this.label2.Location = new System.Drawing.Point(2131, -342);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 35);
             this.label2.TabIndex = 45;
@@ -270,7 +270,7 @@ namespace DulceTentacion
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Location = new System.Drawing.Point(0, 958);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1921, 50);
+            this.panel2.Size = new System.Drawing.Size(2375, 50);
             this.panel2.TabIndex = 53;
             // 
             // pictureBox11
@@ -279,7 +279,7 @@ namespace DulceTentacion
             this.pictureBox11.Image = global::DulceTentacion.Properties.Resources.png_transparent_cafe_menu_dish_english_restaurant_menu_microphone_english_text_removebg_preview;
             this.pictureBox11.Location = new System.Drawing.Point(40, 56);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(182, 69);
+            this.pictureBox11.Size = new System.Drawing.Size(152, 87);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 52;
             this.pictureBox11.TabStop = false;
@@ -362,7 +362,7 @@ namespace DulceTentacion
             this.pictureBox10.Image = global::DulceTentacion.Properties.Resources.ventas_removebg_preview__1_;
             this.pictureBox10.Location = new System.Drawing.Point(246, 11);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(55, 39);
+            this.pictureBox10.Size = new System.Drawing.Size(70, 39);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 51;
             this.pictureBox10.TabStop = false;
@@ -420,7 +420,7 @@ namespace DulceTentacion
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.PortadaPai;
-            this.pictureBox3.Location = new System.Drawing.Point(1617, -286);
+            this.pictureBox3.Location = new System.Drawing.Point(1844, -286);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(590, 237);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -432,7 +432,7 @@ namespace DulceTentacion
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::DulceTentacion.Properties.Resources.ventas_removebg_preview__1___1_;
-            this.pictureBox5.Location = new System.Drawing.Point(2322, -411);
+            this.pictureBox5.Location = new System.Drawing.Point(2776, -411);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(54, 43);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -463,7 +463,7 @@ namespace DulceTentacion
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::DulceTentacion.Properties.Resources.clientehombre_removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(2427, -411);
+            this.pictureBox4.Location = new System.Drawing.Point(2881, -411);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(55, 47);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

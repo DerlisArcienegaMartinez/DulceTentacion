@@ -111,7 +111,7 @@ namespace DulceTentacion
             this.groupBox5.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(42, 2013);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1194, 391);
+            this.groupBox5.Size = new System.Drawing.Size(1173, 391);
             this.groupBox5.TabIndex = 26;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "* Pasteles ocasionales";
@@ -191,7 +191,7 @@ namespace DulceTentacion
             this.groupBox3.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(42, 1697);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1194, 301);
+            this.groupBox3.Size = new System.Drawing.Size(1173, 301);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "* Pasteles para diferentes acontecimientos";
@@ -289,7 +289,7 @@ namespace DulceTentacion
             this.groupBox4.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(42, 1282);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1194, 391);
+            this.groupBox4.Size = new System.Drawing.Size(1173, 391);
             this.groupBox4.TabIndex = 24;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "* Pasteles para cumpleaños";
@@ -367,7 +367,7 @@ namespace DulceTentacion
             this.groupBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(42, 858);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1194, 399);
+            this.groupBox2.Size = new System.Drawing.Size(1173, 399);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "* Pasteles para acontecimientos religiosos";
@@ -459,7 +459,7 @@ namespace DulceTentacion
             this.groupBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(42, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1194, 732);
+            this.groupBox1.Size = new System.Drawing.Size(1173, 732);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "* Pasteles para acontecimientos matrimoniales";
@@ -575,7 +575,7 @@ namespace DulceTentacion
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1086, 39);
+            this.button1.Location = new System.Drawing.Point(1065, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 44);
             this.button1.TabIndex = 27;

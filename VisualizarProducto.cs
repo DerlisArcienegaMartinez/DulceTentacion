@@ -10,25 +10,11 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class RegistrarProducto : Form
+    public partial class VisualizarProducto : Form
     {
-        public RegistrarProducto()
+        public VisualizarProducto()
         {
             InitializeComponent();
-        }
-
-      
-
-        private void RegistrarProducto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)

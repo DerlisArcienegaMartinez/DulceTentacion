@@ -14,16 +14,19 @@ namespace DulceTentacion
     public partial class MenuPrincipal : Form
     {
 
-        
+        private bool isDarkMode = false;
+        private Dictionary<Control, (Color BackColor, Color ForeColor)> originalColors;
+
 
         public MenuPrincipal()
         {
-            InitializeComponent();
-            
+            InitializeComponent();   
             CustomizeDesign();
+            originalColors = new Dictionary<Control, (Color, Color)>();
+
         }
 
-     
+
 
         //mover la ventana actual
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -110,6 +113,7 @@ namespace DulceTentacion
 
         private void btnVisualizarProd_Click(object sender, EventArgs e)
         {
+            abrirconprincipal(new VisualizarProducto());
             hideSubMenu();
         }
 
@@ -136,7 +140,7 @@ namespace DulceTentacion
 
         private void btnMenuVentas_Click(object sender, EventArgs e)
         {
-            abrirconprincipal(new Ventas());
+            abrirconprincipal(new Ventas(isDarkMode));
         }
 
 
@@ -154,19 +158,71 @@ namespace DulceTentacion
             ContPrincipal.Tag = childform;
             childform.BringToFront();
             childform.Show();
+            ApplyDarkMode(childform.Controls, isDarkMode);
+        }
+
+        // Método para aplicar el modo oscuro o claro a todos los controles
+        private void ApplyDarkMode(Control.ControlCollection controls, bool darkMode)
+        {
+            foreach (Control control in controls)
+            {
+                if (darkMode)
+                {
+                    if (!originalColors.ContainsKey(control))
+                    {
+                        originalColors[control] = (control.BackColor, control.ForeColor);
+                    }
+                    control.BackColor = Color.Black;
+                    control.ForeColor = Color.White;
+                }
+                else
+                {
+                    if (originalColors.ContainsKey(control))
+                    {
+                        control.BackColor = originalColors[control].BackColor;
+                        control.ForeColor = originalColors[control].ForeColor;
+                    }
+                    //control.BackColor = SystemColors.Control;
+                    //control.ForeColor = SystemColors.ControlText;
+                }
+
+                // Recursivamente aplicar a los controles hijos
+                if (control.HasChildren)
+                {
+                    ApplyDarkMode(control.Controls, darkMode);
+                }
+            }
+        }
+
+        // Método público para alternar el modo oscuro
+        public void SetDarkMode(bool darkMode)
+        {
+            isDarkMode = darkMode;
+            ApplyDarkMode(this.Controls, isDarkMode);
+
+            // Aplicar a todas las ventanas abiertas
+            foreach (Form form in Application.OpenForms)
+            {
+                ApplyDarkMode(form.Controls, isDarkMode);
+            }
         }
 
 
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            //abrirconprincipal(new Configuracion());
+            Configuracion configuracionForm = new Configuracion(this, isDarkMode);
+            abrirconprincipal(configuracionForm);
+        }
 
+        private void btnAtCliente_Click(object sender, EventArgs e)
+        {
+            abrirconprincipal(new AtencionCliente());
+        }
 
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
 
-
-
-
-
-
-
-
-
+        }
     }
 }

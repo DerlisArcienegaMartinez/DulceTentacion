@@ -42,6 +42,8 @@ namespace DulceTentacion
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnMtContra = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
@@ -116,10 +118,9 @@ namespace DulceTentacion
             this.txtUsuario.Font = new System.Drawing.Font("Rockwell", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
             this.txtUsuario.Location = new System.Drawing.Point(302, 119);
-            this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtUsuario.Size = new System.Drawing.Size(252, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(252, 24);
             this.txtUsuario.TabIndex = 3;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
@@ -131,11 +132,10 @@ namespace DulceTentacion
             this.txtContraseña.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtContraseña.Font = new System.Drawing.Font("Rockwell", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.txtContraseña.Location = new System.Drawing.Point(302, 170);
-            this.txtContraseña.Multiline = true;
+            this.txtContraseña.Location = new System.Drawing.Point(302, 164);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtContraseña.Size = new System.Drawing.Size(252, 25);
+            this.txtContraseña.Size = new System.Drawing.Size(252, 24);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
@@ -148,7 +148,7 @@ namespace DulceTentacion
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Rockwell", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.ForeColor = System.Drawing.Color.White;
-            this.btnAcceder.Location = new System.Drawing.Point(284, 216);
+            this.btnAcceder.Location = new System.Drawing.Point(285, 226);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(288, 40);
             this.btnAcceder.TabIndex = 3;
@@ -203,11 +203,38 @@ namespace DulceTentacion
             this.label4.TabIndex = 7;
             this.label4.Text = "SESIÓN";
             // 
+            // btnMtContra
+            // 
+            this.btnMtContra.AutoSize = true;
+            this.btnMtContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
+            this.btnMtContra.Location = new System.Drawing.Point(302, 194);
+            this.btnMtContra.Name = "btnMtContra";
+            this.btnMtContra.Size = new System.Drawing.Size(153, 21);
+            this.btnMtContra.TabIndex = 8;
+            this.btnMtContra.Text = "Mostrar contraseña";
+            this.btnMtContra.UseVisualStyleBackColor = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.HotPink;
+            this.linkLabel1.Location = new System.Drawing.Point(580, 304);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(182, 20);
+            this.linkLabel1.TabIndex = 9;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿Desea registrarse?";
+            // 
             // InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 333);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.btnMtContra);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -248,6 +275,8 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox btnMtContra;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

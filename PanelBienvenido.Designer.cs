@@ -32,12 +32,12 @@ namespace DulceTentacion
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.BarraProgreso = new System.Windows.Forms.ProgressBar();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -68,6 +68,16 @@ namespace DulceTentacion
             this.label1.TabIndex = 1;
             this.label1.Text = "DULCE SENSACIÓN";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(-12, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(153, 104);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -94,12 +104,12 @@ namespace DulceTentacion
             // 
             // timer1
             // 
-            this.timer1.Interval = 50;
+            this.timer1.Interval = 40;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
-            this.timer2.Interval = 50;
+            this.timer2.Interval = 40;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // BarraProgreso
@@ -110,16 +120,6 @@ namespace DulceTentacion
             this.BarraProgreso.Name = "BarraProgreso";
             this.BarraProgreso.Size = new System.Drawing.Size(442, 32);
             this.BarraProgreso.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(-12, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(153, 104);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 

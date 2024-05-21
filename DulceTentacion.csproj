@@ -57,6 +57,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtencionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtencionCliente.Designer.cs">
+      <DependentUpon>AtencionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,18 @@
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualizarProducto.Designer.cs">
+      <DependentUpon>VisualizarProducto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AtencionCliente.resx">
+      <DependentUpon>AtencionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizarProducto.resx">
+      <DependentUpon>VisualizarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -415,6 +442,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-cafe-menu-dish-english-restaurant-menu-microphone-english-text-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configu-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modo_Oscuro-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modoClaro-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basurero-removebg-preview %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

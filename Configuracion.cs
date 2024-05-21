@@ -8,41 +8,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace DulceTentacion
 {
-    public partial class Ventas : Form
+    public partial class Configuracion : Form
     {
 
-       
-        private bool isDarkMode;
+        private MenuPrincipal menuPrincipal;
+        protected bool isDarkMode;
         private Dictionary<Control, (Color BackColor, Color ForeColor)> originalColors;
 
 
-        public Ventas( bool darkMode)
+        public Configuracion(MenuPrincipal menuPrincipal, bool isDarkMode)
         {
             InitializeComponent();
-            isDarkMode = darkMode;
+
+            this.menuPrincipal = menuPrincipal;
+            this.isDarkMode = isDarkMode;
             originalColors = new Dictionary<Control, (Color, Color)>();
             ApplyDarkMode(this.Controls, isDarkMode);
+            UpdateAppearance(); // Agregamos la llamada a esta función para actualizar la apariencia inicial
+            UpdateButtonStates();
         }
 
-       
-
-        //Configurar la ventana en el panel contenedor
-        private Form activeForm = null;
-        private void abrirConPrincipal(Form childForm)
+        private void UpdateAppearance()
         {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            ContVentas.Controls.Add(childForm);
-            ContVentas.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+            ApplyDarkMode(this.Controls, isDarkMode); // Aplicamos el modo oscuro a los controles de esta ventana
+        }
+
+        private void UpdateButtonStates()
+        {
+            btnModOscuro.Enabled = !isDarkMode;
+            btnModClaro.Enabled = isDarkMode;
         }
 
         private void ApplyDarkMode(Control.ControlCollection controls, bool darkMode)
@@ -74,21 +70,29 @@ namespace DulceTentacion
             }
         }
 
-        private void btnPasteles_Click(object sender, EventArgs e)
+        private void btnModOscuro_Click(object sender, EventArgs e)
         {
-            abrirConPrincipal(new Pasteles());
+            isDarkMode = true;
+            menuPrincipal.SetDarkMode(isDarkMode);
+            ApplyDarkMode(this.Controls, isDarkMode);
+            UpdateAppearance(); // Actualizamos la apariencia después de cambiar a modo oscuro
+            UpdateButtonStates();
         }
 
-        private void fndPasteles_Click(object sender, EventArgs e)
+        private void btnModClaro_Click(object sender, EventArgs e)
         {
-            abrirConPrincipal(new Pasteles());
+            isDarkMode = false;
+            menuPrincipal.SetDarkMode(isDarkMode);
+            ApplyDarkMode(this.Controls, isDarkMode);
+            UpdateAppearance(); // Actualizamos la apariencia después de cambiar a modo claro
+            UpdateButtonStates();
+
+
         }
 
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        
     }
 }

@@ -10,23 +10,14 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class RegistrarProducto : Form
+    public partial class AtencionCliente : Form
     {
-        public RegistrarProducto()
+        public AtencionCliente()
         {
             InitializeComponent();
         }
 
-      
-
-        private void RegistrarProducto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void label8_Click(object sender, EventArgs e)
+        private void textBox9_TextChanged(object sender, EventArgs e)
         {
 
         }
