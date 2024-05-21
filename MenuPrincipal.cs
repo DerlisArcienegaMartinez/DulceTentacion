@@ -224,5 +224,10 @@ namespace DulceTentacion
         {
 
         }
+
+        private void btnImgUsuario_Click(object sender, EventArgs e)
+        {
+            abrirconprincipal(new CuentaUsuario());
+        }
     }
 }

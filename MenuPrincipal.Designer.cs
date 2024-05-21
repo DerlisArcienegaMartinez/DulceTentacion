@@ -349,6 +349,7 @@ namespace DulceTentacion
             this.btnImgUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnImgUsuario.TabIndex = 40;
             this.btnImgUsuario.TabStop = false;
+            this.btnImgUsuario.Click += new System.EventHandler(this.btnImgUsuario_Click);
             // 
             // pictureBox4
             // 

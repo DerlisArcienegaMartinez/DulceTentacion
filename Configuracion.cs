@@ -30,6 +30,22 @@ namespace DulceTentacion
             UpdateButtonStates();
         }
 
+        //Configurar la ventana en el panel contenedor
+        private Form activeForm = null;
+        private void abrirConPrincipal(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlConfig.Controls.Add(childForm);
+            pnlConfig.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void UpdateAppearance()
         {
             ApplyDarkMode(this.Controls, isDarkMode); // Aplicamos el modo oscuro a los controles de esta ventana
@@ -93,6 +109,13 @@ namespace DulceTentacion
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+       
+
+        private void lnkCuenta_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            abrirConPrincipal(new CuentaUsuario());
         }
     }
 }
