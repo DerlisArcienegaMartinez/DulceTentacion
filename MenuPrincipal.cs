@@ -8,24 +8,270 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
+
+
 
 namespace DulceTentacion
 {
     public partial class MenuPrincipal : Form
     {
 
-        private bool isDarkMode = false;
-        private Dictionary<Control, (Color BackColor, Color ForeColor)> originalColors;
+        private Config _config;//
+        //public static bool DarkModeActive { get; set; }
+        
+        public static event Action DarkModeChanged;
 
+        // Propiedad estática para verificar si el modo oscuro está activo
+        private static bool _darkModeActive;
+        public static bool DarkModeActive
+        {
+            get { return _darkModeActive; }
+            set
+            {
+                if (_darkModeActive != value)
+                {
+                    _darkModeActive = value;
+                    DarkModeChanged?.Invoke();
+                }
+            }
+        }
 
         public MenuPrincipal()
         {
-            InitializeComponent();   
+            InitializeComponent();
+            LoadConfig(); // Cargar la configuración al iniciar la aplicación
+          
+            ApplyColors();
+
             CustomizeDesign();
-            originalColors = new Dictionary<Control, (Color, Color)>();
 
         }
 
+        // Clase para manejar la configuración
+        public class Config
+        {
+            public Color ContPrincipalColor { get; set; }
+            public Color PanelMenusColor { get; set; }
+         
+            public Color BarraHorizontalColor { get; set; }
+            public Color BarraHColor { get; set; }
+            public Color ForeColorWhite { get; set; }
+            public Color ForeColorBlack { get; set; }
+            public bool IsDarkMode { get; set; } // Indica si el modo oscuro está activado
+        }
+
+        // Método para cargar la configuración
+        private void LoadConfig()
+        {
+            // Si el archivo de configuración existe, cargarlo; de lo contrario, usar valores predeterminados
+            if (File.Exists("config.txt"))
+            {
+                string[] lines = File.ReadAllLines("config.txt");
+                _config = new Config
+                {
+                    ContPrincipalColor = ParseColor(lines[0]),
+                    PanelMenusColor = ParseColor(lines[1]),
+                    BarraHorizontalColor = ParseColor(lines[2]),
+                    BarraHColor = ParseColor(lines[3]),
+                    ForeColorWhite = ParseColor(lines[4]),
+                    ForeColorBlack = ParseColor(lines[5]),
+                    IsDarkMode = Convert.ToBoolean(lines[6])
+                };
+            }
+            else
+            {
+                // Valores predeterminados si no hay archivo de configuración
+                _config = new Config
+                {
+                    ContPrincipalColor = Color.FromArgb(255, 222, 231),
+                    PanelMenusColor = Color.FromArgb(198, 0, 102),
+                    BarraHorizontalColor = Color.FromArgb(255, 192, 255),
+                    BarraHColor = Color.FromArgb(255,192,255),
+                    ForeColorWhite = Color.White,
+                    ForeColorBlack = Color.Black,
+                    IsDarkMode = false
+                };
+            }
+
+            // Actualizar la propiedad estática
+            DarkModeActive = _config.IsDarkMode;
+        }
+
+        // Método para guardar la configuración
+        private void SaveConfig()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"{_config.ContPrincipalColor.R},{_config.ContPrincipalColor.G},{_config.ContPrincipalColor.B}");
+            sb.AppendLine($"{_config.PanelMenusColor.R},{_config.PanelMenusColor.G},{_config.PanelMenusColor.B}");
+            sb.AppendLine($"{_config.BarraHorizontalColor.R},{_config.BarraHorizontalColor.G},{_config.BarraHorizontalColor.B}");
+            sb.AppendLine($"{_config.BarraHColor.R},{_config.BarraHColor.G},{_config.BarraHColor.B}");
+            sb.AppendLine($"{_config.ForeColorWhite.R},{_config.ForeColorWhite.G},{_config.ForeColorWhite.B}");
+            sb.AppendLine($"{_config.ForeColorBlack.R},{_config.ForeColorBlack.G},{_config.ForeColorBlack.B}");
+            sb.AppendLine(_config.IsDarkMode.ToString());
+            File.WriteAllText("config.txt", sb.ToString());
+        }
+
+        // Método para aplicar los colores
+        private void ApplyColors()
+        {
+            this.BackColor = _config.ContPrincipalColor;
+            PanelMenus.BackColor = _config.PanelMenusColor;
+            BarraHorizontal.BackColor = _config.BarraHorizontalColor;
+            BarraH.BackColor = _config.BarraHColor;
+            ApplyForeColorToControls(this.Controls);
+        }
+
+        // Método para aplicar el color de la fuente
+        private void ApplyForeColorToControls(Control.ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                if (control.Tag != null && control.Tag.ToString() == "WhiteText")
+                {
+                    control.ForeColor = _config.ForeColorWhite;
+                }
+                else
+                {
+                    control.ForeColor = _config.ForeColorBlack;
+                }
+
+                if (control.HasChildren)
+                {
+                    ApplyForeColorToControls(control.Controls);
+                }
+            }
+        }
+
+        // Método para parsear un color desde una cadena
+        private Color ParseColor(string colorString)
+        {
+            string[] rgb = colorString.Split(',');
+            int r = Convert.ToInt32(rgb[0]);
+            int g = Convert.ToInt32(rgb[1]);
+            int b = Convert.ToInt32(rgb[2]);
+
+            return Color.FromArgb(r, g, b );
+        }
+
+        // Método para aplicar el modo oscuro
+        private void ApplyDarkMode()
+        {
+            this.BackColor = Color.Black;
+            PanelMenus.BackColor = Color.DarkSlateGray;
+            BarraHorizontal.BackColor = Color.DimGray; 
+            BarraH.BackColor = Color.DimGray;
+            ApplyDarkForeColorToControls(this.Controls); // Aplicar color de fuente en modo oscuro
+            ApplyButtonColor(); // Aplicar color de botones en modo oscuro
+
+            // Aplicar modo oscuro a los submenús
+            ApplySubMenuDarkMode(SubPanelInv);
+            ApplySubMenuDarkMode(SubPanelEmp);
+            ApplySubMenuDarkMode(SubPanelReg);
+
+            DarkModeActive = true;
+            _config.IsDarkMode = true;
+            SaveConfig(); // Guardar la configuración actualizada
+        }
+
+        // Método para aplicar el color de la fuente en modo oscuro
+        private void ApplyDarkForeColorToControls(Control.ControlCollection controls)
+        {
+
+            foreach (Control control in controls)
+            {
+                control.ForeColor = Color.White; // Configurar la fuente en blanco
+
+                if (control.HasChildren)
+                {
+                    ApplyDarkForeColorToControls(control.Controls);
+                }
+
+            }
+            
+        }
+
+        // Método para aplicar el color de los botones en modo oscuro
+        private void ApplyButtonColor()
+        {
+            if (PanelMenus.BackColor == Color.DarkSlateGray)
+            {
+                foreach (Control control in PanelMenus.Controls)
+                {
+                    if (control is Button)
+                    {
+                        control.BackColor = Color.DarkSlateGray;
+                    }
+                }
+            }
+        }
+
+        // Método para revertir los colores de los botones al color predeterminado de PanelMenus
+        private void RevertButtonColor()
+        {
+            foreach (Control control in PanelMenus.Controls)
+            {
+                if (control is Button)
+                {
+                    control.BackColor = _config.PanelMenusColor;
+                }
+            }
+        }
+
+        // Método para aplicar el modo oscuro a los submenús
+        private void ApplySubMenuDarkMode(Panel subMenu)
+        {
+            subMenu.BackColor = Color.DarkSlateGray;
+            ApplySubMenuButtonColor(subMenu);
+        }
+
+        // Método para aplicar el color de los botones en los submenús
+        private void ApplySubMenuButtonColor(Panel subMenu)
+        {
+            foreach (Control control in subMenu.Controls)
+            {
+                if (control is Button)
+                {
+                    control.BackColor = Color.DarkSlateGray;
+                }
+            }
+        }
+
+        // Método para revertir el modo oscuro de los submenús
+        private void RevertSubMenuColors(Panel subMenu)
+        {
+            subMenu.BackColor = _config.PanelMenusColor;
+            RevertSubMenuButtonColor(subMenu);
+        }
+
+        // Método para revertir el color de los botones en los submenús
+        private void RevertSubMenuButtonColor(Panel subMenu)
+        {
+            foreach (Control control in subMenu.Controls)
+            {
+                if (control is Button)
+                {
+                    control.BackColor = _config.PanelMenusColor;
+                }
+            }
+        }
+
+        // Método para revertir al modo original
+        private void RevertColors()
+        {
+            LoadConfig(); // Recargar la configuración original
+            ApplyColors(); // Aplicar colores originales
+            RevertButtonColor(); // Revertir colores de los botones
+            DarkModeActive = false;
+            _config.IsDarkMode = false; // Desactivar el modo oscuro
+
+            // Revertir el modo oscuro de los submenús
+            RevertSubMenuColors(SubPanelInv);
+            RevertSubMenuColors(SubPanelEmp);
+            RevertSubMenuColors(SubPanelReg);
+
+            SaveConfig(); // Guardar la configuración actualizada
+        }
 
 
         //mover la ventana actual
@@ -140,7 +386,7 @@ namespace DulceTentacion
 
         private void btnMenuVentas_Click(object sender, EventArgs e)
         {
-            abrirconprincipal(new Ventas(isDarkMode));
+            abrirconprincipal(new Ventas());
         }
 
 
@@ -158,60 +404,16 @@ namespace DulceTentacion
             ContPrincipal.Tag = childform;
             childform.BringToFront();
             childform.Show();
-            ApplyDarkMode(childform.Controls, isDarkMode);
+           
         }
 
-        // Método para aplicar el modo oscuro o claro a todos los controles
-        private void ApplyDarkMode(Control.ControlCollection controls, bool darkMode)
-        {
-            foreach (Control control in controls)
-            {
-                if (darkMode)
-                {
-                    if (!originalColors.ContainsKey(control))
-                    {
-                        originalColors[control] = (control.BackColor, control.ForeColor);
-                    }
-                    control.BackColor = Color.Black;
-                    control.ForeColor = Color.White;
-                }
-                else
-                {
-                    if (originalColors.ContainsKey(control))
-                    {
-                        control.BackColor = originalColors[control].BackColor;
-                        control.ForeColor = originalColors[control].ForeColor;
-                    }
-                    //control.BackColor = SystemColors.Control;
-                    //control.ForeColor = SystemColors.ControlText;
-                }
-
-                // Recursivamente aplicar a los controles hijos
-                if (control.HasChildren)
-                {
-                    ApplyDarkMode(control.Controls, darkMode);
-                }
-            }
-        }
-
-        // Método público para alternar el modo oscuro
-        public void SetDarkMode(bool darkMode)
-        {
-            isDarkMode = darkMode;
-            ApplyDarkMode(this.Controls, isDarkMode);
-
-            // Aplicar a todas las ventanas abiertas
-            foreach (Form form in Application.OpenForms)
-            {
-                ApplyDarkMode(form.Controls, isDarkMode);
-            }
-        }
+      
 
 
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
             //abrirconprincipal(new Configuracion());
-            Configuracion configuracionForm = new Configuracion(this, isDarkMode);
+            Configuracion configuracionForm = new Configuracion();
             abrirconprincipal(configuracionForm);
         }
 
@@ -229,5 +431,22 @@ namespace DulceTentacion
         {
             abrirconprincipal(new CuentaUsuario());
         }
+
+        private void btnDarkMode_Click(object sender, EventArgs e)
+        {
+            // Cambiar entre modo oscuro y modo normal
+            _config.IsDarkMode = !_config.IsDarkMode;
+            if (_config.IsDarkMode)
+            {
+                ApplyDarkMode(); // Aplicar modo oscuro
+            }
+            else
+            {
+                RevertColors(); // Revertir al modo normal
+            }
+            SaveConfig(); // Guardar la configuración actualizada
+        }
+
+        
     }
 }

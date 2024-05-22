@@ -29,58 +29,46 @@ namespace DulceTentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BarraHorizontall = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DatoPersonal = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DatoLaboral = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.btnEditarInfo = new System.Windows.Forms.Button();
+            this.btnSaveInfo = new System.Windows.Forms.Button();
+            this.BarraHorizontall.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.DatoPersonal.SuspendLayout();
             this.DatoLaboral.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // BarraHorizontall
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.flowLayoutPanel1.Controls.Add(this.btnRegresar);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(969, 45);
-            this.flowLayoutPanel1.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.BarraHorizontall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BarraHorizontall.Controls.Add(this.btnRegresar);
+            this.BarraHorizontall.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraHorizontall.Location = new System.Drawing.Point(0, 0);
+            this.BarraHorizontall.Name = "BarraHorizontall";
+            this.BarraHorizontall.Size = new System.Drawing.Size(969, 45);
+            this.BarraHorizontall.TabIndex = 14;
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
@@ -96,6 +84,17 @@ namespace DulceTentacion
             this.btnRegresar.Text = "      Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Usuario;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 76);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // DatoPersonal
             // 
@@ -157,6 +156,16 @@ namespace DulceTentacion
             this.label5.TabIndex = 24;
             this.label5.Text = "Celular:";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(282, 230);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(115, 20);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Estado Civil:";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -214,6 +223,26 @@ namespace DulceTentacion
             this.DatoLaboral.TabStop = false;
             this.DatoLaboral.Text = "Datos Laborales";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(34, 197);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(182, 20);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Experiencia Laboral:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(34, 44);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(191, 20);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Código del Empleado:";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -254,59 +283,31 @@ namespace DulceTentacion
             this.label9.TabIndex = 13;
             this.label9.Text = "Puesto de Trabajo:";
             // 
-            // label8
+            // btnEditarInfo
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(282, 230);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 20);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Estado Civil:";
+            this.btnEditarInfo.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnEditarInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnEditarInfo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarInfo.Location = new System.Drawing.Point(741, 416);
+            this.btnEditarInfo.Name = "btnEditarInfo";
+            this.btnEditarInfo.Size = new System.Drawing.Size(203, 42);
+            this.btnEditarInfo.TabIndex = 20;
+            this.btnEditarInfo.Text = "Editar Informacion";
+            this.btnEditarInfo.UseVisualStyleBackColor = true;
+            this.btnEditarInfo.Click += new System.EventHandler(this.btnEditarInfo_Click);
             // 
-            // label14
+            // btnSaveInfo
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(34, 44);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(191, 20);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Código del Empleado:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(34, 197);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(182, 20);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Experiencia Laboral:";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button1.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(741, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 42);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Editar Informacion";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button2.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(741, 516);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 42);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Guardar Informacion";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSaveInfo.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnSaveInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnSaveInfo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveInfo.Location = new System.Drawing.Point(741, 516);
+            this.btnSaveInfo.Name = "btnSaveInfo";
+            this.btnSaveInfo.Size = new System.Drawing.Size(203, 42);
+            this.btnSaveInfo.TabIndex = 21;
+            this.btnSaveInfo.Text = "Guardar Informacion";
+            this.btnSaveInfo.UseVisualStyleBackColor = true;
+            this.btnSaveInfo.Click += new System.EventHandler(this.btnSaveInfo_Click);
             // 
             // CuentaUsuario
             // 
@@ -314,16 +315,16 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(969, 627);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSaveInfo);
+            this.Controls.Add(this.btnEditarInfo);
             this.Controls.Add(this.DatoLaboral);
             this.Controls.Add(this.DatoPersonal);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.BarraHorizontall);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CuentaUsuario";
             this.Text = "CuentaUsuario";
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.BarraHorizontall.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.DatoPersonal.ResumeLayout(false);
             this.DatoPersonal.PerformLayout();
@@ -335,7 +336,7 @@ namespace DulceTentacion
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel BarraHorizontall;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox DatoPersonal;
@@ -355,7 +356,7 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEditarInfo;
+        private System.Windows.Forms.Button btnSaveInfo;
     }
 }

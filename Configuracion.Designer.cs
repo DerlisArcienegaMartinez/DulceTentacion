@@ -139,6 +139,7 @@ namespace DulceTentacion
             this.btnRegresar.TabIndex = 52;
             this.btnRegresar.Text = "      Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label2
             // 
@@ -166,6 +167,7 @@ namespace DulceTentacion
             this.btnModClaro.Size = new System.Drawing.Size(50, 50);
             this.btnModClaro.TabIndex = 35;
             this.btnModClaro.UseVisualStyleBackColor = false;
+            this.btnModClaro.Click += new System.EventHandler(this.btnModClaro_Click);
             // 
             // btnModOscuro
             // 
@@ -180,6 +182,7 @@ namespace DulceTentacion
             this.btnModOscuro.Size = new System.Drawing.Size(50, 50);
             this.btnModOscuro.TabIndex = 34;
             this.btnModOscuro.UseVisualStyleBackColor = false;
+            this.btnModOscuro.Click += new System.EventHandler(this.btnModOscuro_Click);
             // 
             // label1
             // 

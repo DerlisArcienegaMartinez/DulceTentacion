@@ -543,6 +543,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modo_Oscuro_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("modo_Oscuro-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modoClaro_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("modoClaro-removebg-preview", resourceCulture);

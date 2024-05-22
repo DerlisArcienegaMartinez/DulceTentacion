@@ -244,7 +244,6 @@ namespace DulceTentacion
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(255, 64);
             this.textBox9.TabIndex = 20;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox8
             // 

@@ -15,16 +15,13 @@ namespace DulceTentacion
     {
 
        
-        private bool isDarkMode;
-        private Dictionary<Control, (Color BackColor, Color ForeColor)> originalColors;
+       
 
 
-        public Ventas( bool darkMode)
+        public Ventas()
         {
             InitializeComponent();
-            isDarkMode = darkMode;
-            originalColors = new Dictionary<Control, (Color, Color)>();
-            ApplyDarkMode(this.Controls, isDarkMode);
+          
         }
 
        
@@ -43,35 +40,6 @@ namespace DulceTentacion
             ContVentas.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
-
-        private void ApplyDarkMode(Control.ControlCollection controls, bool darkMode)
-        {
-            foreach (Control control in controls)
-            {
-                if (darkMode)
-                {
-                    if (!originalColors.ContainsKey(control))
-                    {
-                        originalColors[control] = (control.BackColor, control.ForeColor);
-                    }
-                    control.BackColor = Color.Black;
-                    control.ForeColor = Color.White;
-                }
-                else
-                {
-                    if (originalColors.ContainsKey(control))
-                    {
-                        control.BackColor = originalColors[control].BackColor;
-                        control.ForeColor = originalColors[control].ForeColor;
-                    }
-                }
-
-                if (control.HasChildren)
-                {
-                    ApplyDarkMode(control.Controls, darkMode);
-                }
-            }
         }
 
         private void btnPasteles_Click(object sender, EventArgs e)
