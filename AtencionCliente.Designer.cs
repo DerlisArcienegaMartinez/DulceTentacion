@@ -29,15 +29,17 @@ namespace DulceTentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.BarraHorizontall = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnAllProd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAtCliente = new System.Windows.Forms.Button();
+            this.btnAtReclamos = new System.Windows.Forms.Button();
+            this.btnEditMenu = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pnlAtender = new System.Windows.Forms.Panel();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,27 +63,24 @@ namespace DulceTentacion
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.btnGenFacturas = new System.Windows.Forms.Button();
+            this.btnRegVentas = new System.Windows.Forms.Button();
+            this.BarraHorizontall.SuspendLayout();
             this.pnlAtender.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // BarraHorizontall
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.flowLayoutPanel1.Controls.Add(this.btnRegresar);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(987, 45);
-            this.flowLayoutPanel1.TabIndex = 13;
+            this.BarraHorizontall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BarraHorizontall.Controls.Add(this.btnRegresar);
+            this.BarraHorizontall.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraHorizontall.Location = new System.Drawing.Point(0, 0);
+            this.BarraHorizontall.Name = "BarraHorizontall";
+            this.BarraHorizontall.Size = new System.Drawing.Size(987, 45);
+            this.BarraHorizontall.TabIndex = 13;
             // 
             // btnRegresar
             // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
@@ -108,40 +107,41 @@ namespace DulceTentacion
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(435, 553);
             this.pnlMenu.TabIndex = 14;
+            this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
-            // btnAllProd
+            // btnAtCliente
             // 
-            this.btnAllProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.btnAllProd.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllProd.Location = new System.Drawing.Point(46, 95);
-            this.btnAllProd.Name = "btnAllProd";
-            this.btnAllProd.Size = new System.Drawing.Size(176, 42);
-            this.btnAllProd.TabIndex = 16;
-            this.btnAllProd.Text = "Atender Cliente";
-            this.btnAllProd.UseVisualStyleBackColor = true;
+            this.btnAtCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnAtCliente.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtCliente.Location = new System.Drawing.Point(46, 95);
+            this.btnAtCliente.Name = "btnAtCliente";
+            this.btnAtCliente.Size = new System.Drawing.Size(176, 42);
+            this.btnAtCliente.TabIndex = 16;
+            this.btnAtCliente.Text = "Atender Cliente";
+            this.btnAtCliente.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAtReclamos
             // 
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button1.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(290, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 42);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Atender Reclamos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAtReclamos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnAtReclamos.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtReclamos.Location = new System.Drawing.Point(290, 95);
+            this.btnAtReclamos.Name = "btnAtReclamos";
+            this.btnAtReclamos.Size = new System.Drawing.Size(183, 42);
+            this.btnAtReclamos.TabIndex = 17;
+            this.btnAtReclamos.Text = "Atender Reclamos";
+            this.btnAtReclamos.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEditMenu
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button2.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(812, 51);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 42);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Editar Menú";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEditMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnEditMenu.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditMenu.Location = new System.Drawing.Point(812, 51);
+            this.btnEditMenu.Name = "btnEditMenu";
+            this.btnEditMenu.Size = new System.Drawing.Size(147, 42);
+            this.btnEditMenu.TabIndex = 18;
+            this.btnEditMenu.Text = "Editar Menú";
+            this.btnEditMenu.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -198,6 +198,23 @@ namespace DulceTentacion
             this.pnlAtender.Name = "pnlAtender";
             this.pnlAtender.Size = new System.Drawing.Size(468, 443);
             this.pnlAtender.TabIndex = 21;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(339, 180);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(47, 22);
+            this.textBox11.TabIndex = 26;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(234, 182);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 20);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "N° Cliente";
             // 
             // label13
             // 
@@ -405,46 +422,29 @@ namespace DulceTentacion
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombres:";
             // 
-            // button5
+            // btnGenFacturas
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button5.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(23, 620);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(183, 42);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "Generar Factura";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnGenFacturas.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnGenFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnGenFacturas.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenFacturas.Location = new System.Drawing.Point(23, 620);
+            this.btnGenFacturas.Name = "btnGenFacturas";
+            this.btnGenFacturas.Size = new System.Drawing.Size(183, 42);
+            this.btnGenFacturas.TabIndex = 22;
+            this.btnGenFacturas.Text = "Generar Factura";
+            this.btnGenFacturas.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnRegVentas
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button6.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(308, 620);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(183, 42);
-            this.button6.TabIndex = 23;
-            this.button6.Text = "Registrar Venta";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(339, 180);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(47, 22);
-            this.textBox11.TabIndex = 26;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(234, 182);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 20);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "N° Cliente";
+            this.btnRegVentas.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnRegVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.btnRegVentas.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegVentas.Location = new System.Drawing.Point(308, 620);
+            this.btnRegVentas.Name = "btnRegVentas";
+            this.btnRegVentas.Size = new System.Drawing.Size(183, 42);
+            this.btnRegVentas.TabIndex = 23;
+            this.btnRegVentas.Text = "Registrar Venta";
+            this.btnRegVentas.UseVisualStyleBackColor = true;
             // 
             // AtencionCliente
             // 
@@ -452,20 +452,20 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(987, 674);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnRegVentas);
+            this.Controls.Add(this.btnGenFacturas);
+            this.Controls.Add(this.btnEditMenu);
             this.Controls.Add(this.pnlAtender);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAllProd);
+            this.Controls.Add(this.btnAtReclamos);
+            this.Controls.Add(this.btnAtCliente);
             this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.BarraHorizontall);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AtencionCliente";
             this.Text = "AtencionCliente";
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.BarraHorizontall.ResumeLayout(false);
             this.pnlAtender.ResumeLayout(false);
             this.pnlAtender.PerformLayout();
             this.ResumeLayout(false);
@@ -474,12 +474,12 @@ namespace DulceTentacion
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel BarraHorizontall;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel pnlMenu;
-        private System.Windows.Forms.Button btnAllProd;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAtCliente;
+        private System.Windows.Forms.Button btnAtReclamos;
+        private System.Windows.Forms.Button btnEditMenu;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel pnlAtender;
@@ -506,8 +506,8 @@ namespace DulceTentacion
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnGenFacturas;
+        private System.Windows.Forms.Button btnRegVentas;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label14;
     }

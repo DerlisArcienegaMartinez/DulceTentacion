@@ -13,15 +13,15 @@ namespace DulceTentacion
 {
     public partial class Ventas : Form
     {
-
-       
-       
-
+        private Color originalBackColor;
+      
+        private Color originalContVentasColor;
 
         public Ventas()
         {
             InitializeComponent();
-          
+            ApplyColors(); // Aplicar los colores al abrir el formulario
+            MenuPrincipal.DarkModeChanged += ApplyColors;
         }
 
        
@@ -57,6 +57,62 @@ namespace DulceTentacion
             this.Close();
         }
 
-        
+        // Método para aplicar colores oscuros si el modo oscuro está activo
+        private void ApplyDarkModeIfNeeded()
+        {
+            if (MenuPrincipal.DarkModeActive)
+            {
+                this.BackColor = Color.Black;
+                BarraHorizontall.BackColor = Color.DimGray;
+                ContVentas.BackColor = Color.Black;
+                
+                
+
+               
+            }
+            else
+            {
+                // Aplicar colores originales
+                this.BackColor = Color.FromArgb(255, 222, 231);
+                BarraHorizontall.BackColor = Color.FromArgb(255, 192, 255);
+                ContVentas.BackColor = Color.FromArgb(255, 222, 231);
+
+               
+
+            }
+        }
+
+        // Método para aplicar los colores al abrir el formulario
+        private void ApplyColors()
+        {
+            // Llamar al método para aplicar el modo oscuro si es necesario
+            ApplyDarkModeIfNeeded();
+        }
+
+        // Método para actualizar el estado del modo oscuro desde MenuPrincipal
+        public void UpdateDarkModeState(bool isDarkMode)
+        {
+            MenuPrincipal.DarkModeActive = isDarkMode;
+            ApplyColors();
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            // Desuscribirse del evento cuando el formulario se cierre
+            MenuPrincipal.DarkModeChanged -= ApplyColors;
+            base.OnFormClosed(e);
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            // Guardar los colores originales cuando se carga el formulario
+            originalBackColor = this.BackColor;
+          
+
+
+           // originalContVentasColor = ContVentas.ForeColor; // Guardar el color original del texto de GroupBox
+
+        }
     }
 }

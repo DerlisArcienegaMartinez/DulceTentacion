@@ -284,12 +284,12 @@ namespace DulceTentacion
         //Configurar el boton Desplegable
         private void btnDesplegable_Click(object sender, EventArgs e)
         {
-            if (PanelMenus.Width == 235)
-            {
-                PanelMenus.Width = 62;
-            }
-            else
-                PanelMenus.Width = 235;
+        //    if (PanelMenus.Width == 235)
+        //    {
+        //        PanelMenus.Width = 62;
+        //    }
+        //    else
+        //        PanelMenus.Width = 235;
         }
 
 //configurar el movimiento de la ventana
