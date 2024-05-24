@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
@@ -113,6 +114,12 @@
     <Compile Include="RegistrarProducto.Designer.cs">
       <DependentUpon>RegistrarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrarse.Designer.cs">
+      <DependentUpon>Registrarse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProducto.resx">
       <DependentUpon>RegistrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrarse.resx">
+      <DependentUpon>Registrarse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
@@ -469,6 +479,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\modo_Oscuro-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

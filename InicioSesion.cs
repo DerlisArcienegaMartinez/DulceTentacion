@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
@@ -13,6 +14,8 @@ namespace DulceTentacion
 {
     public partial class InicioSesion : Form
     {
+
+        
 
         public class Usuario
         {
@@ -31,8 +34,11 @@ namespace DulceTentacion
             timer = new Timer();
             timer.Interval = 10000; //10 segundos
             timer.Tick += Timer_Tick;
+
+         
         }
 
+        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -43,62 +49,124 @@ namespace DulceTentacion
             Application.Exit();
         }
 
+    
+
+        private string ObtenerNombreCompletoUsuario()
+        {
+            string nombreCompleto = "";
+
+            // Aquí debes realizar la conexión a tu base de datos y ejecutar una consulta SQL
+            using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT Nombre, ApellidoPaterno, ApellidoMaterno FROM Usuarios WHERE NombreUsuario = @NombreUsuario";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@NombreUsuario", txtUsuario.Text); // Puedes utilizar el nombre de usuario ingresado en el campo de texto
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // Construir el nombre completo utilizando los datos obtenidos de la base de datos
+                        nombreCompleto = $"{reader["Nombre"]} {reader["ApellidoPaterno"]} {reader["ApellidoMaterno"]}";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario no encontrado en la base de datos.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al obtener el nombre completo del usuario: " + ex.Message);
+                }
+            }
+
+            return nombreCompleto;
+        }
+
         private void btnAcceder_Click(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
             usuario.NombreUsuario = txtUsuario.Text;
             usuario.Contraseña = txtContraseña.Text;
 
-            string nombreusuario1 = "usuario1";
-            string contraseñausuario1 = "1234";
-
-            string nombreusuario2 = "usuario2";
-            string contraseñausuario2 = "12356";
-
-
-
-            if ((usuario.NombreUsuario == nombreusuario1 && usuario.Contraseña == contraseñausuario1) ||
-                (usuario.NombreUsuario == nombreusuario2 && usuario.Contraseña == contraseñausuario2))
+            if (usuario.NombreUsuario == "administrador" && usuario.Contraseña == "1234")
             {
-                // MessageBox.Show("Inicio de Sesión Exitoso! Bienvenido.");
-                this.Hide();
-                //Al clickear btnIngresar abre la pestaña de Menu
-                using (PanelBienvenido bienvenido = new PanelBienvenido())
-                    bienvenido.ShowDialog(); //mantiene abierta la ventana menu
+                // Si las credenciales son del administrador, mostrar el PanelBienvenido con el nombre "Administrador"
+                using (PanelBienvenido Bienvenido = new PanelBienvenido("Administrador"))
+                {
+                    this.Hide();
+                    Bienvenido.ShowDialog();
 
-                
-               // PanelBienvenido welcome = new PanelBienvenido
-
-                //Al clickear btnIngresar abre la pestaña de Menu
-                using (MenuPrincipal menuPrincipal = new MenuPrincipal())
-                    menuPrincipal.ShowDialog(); //mantiene abierta la ventana menu
-
+                    // Puedes agregar aquí la lógica adicional para el menú principal si es necesario
+                    using (MenuPrincipal menuPrincipal = new MenuPrincipal())
+                        menuPrincipal.ShowDialog();
+                }
             }
             else
             {
-                //MessageBox.Show("Nombre de Usuario o Contraseña Incorrectos. Por Favor, Intentalo de Nuevo.");
-                intentosFallidos++;
 
-
-                if (intentosFallidos == 1)
+                using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
                 {
-                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Le Quedan 2 intentos para ingresar sus datos correctamente.");
-                }
-                else if (intentosFallidos == 2)
-                {
-                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Último intento para ingresar sus datos correctamente.");
-                }
-                else if (intentosFallidos >= 3)
-                {
-                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Espere 30 segundos para intentarlo nuevamente.");
-                    btnAcceder.Enabled = false;
+                    try
+                    {
+                        conn.Open();
+                        string query = "SELECT COUNT(*) FROM Usuarios WHERE NombreUsuario = @NombreUsuario AND Contraseña = @Contraseña";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@NombreUsuario", usuario.NombreUsuario);
+                        cmd.Parameters.AddWithValue("@Contraseña", usuario.Contraseña);
 
-                    timer.Start();
+                        int count = (int)cmd.ExecuteScalar();
 
+                        if (count > 0)
+                        {
+
+
+
+
+                            // Después de validar las credenciales del usuario y antes de mostrar el formulario PanelBienvenido
+                            string nombreCompletoUsuario = ObtenerNombreCompletoUsuario(); // Aquí debes obtener el nombre completo del usuario, por ejemplo, desde la base de datos
+
+
+                            using (PanelBienvenido Bienvenido = new PanelBienvenido(nombreCompletoUsuario))
+                            {
+                                this.Hide();
+                                Bienvenido.ShowDialog();
+
+                                using (MenuPrincipal menuPrincipal = new MenuPrincipal())
+                                    menuPrincipal.ShowDialog();
+                            }
+                        }
+                        else
+                        {
+                            intentosFallidos++;
+                            if (intentosFallidos == 1)
+                            {
+                                MessageBox.Show("Nombre de usuario o contraseña incorrectos. Le quedan 2 intentos.");
+                            }
+                            else if (intentosFallidos == 2)
+                            {
+                                MessageBox.Show("Nombre de usuario o contraseña incorrectos. Último intento.");
+                            }
+                            else if (intentosFallidos >= 3)
+                            {
+                                MessageBox.Show("Nombre de usuario o contraseña incorrectos. Espere 30 segundos.");
+                                btnAcceder.Enabled = false;
+                                timer.Start();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al intentar iniciar sesión: " + ex.Message);
+                    }
                 }
-
             }
         }
+
+
+
 
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -173,6 +241,12 @@ namespace DulceTentacion
                 txtContraseña.ForeColor = Color.LightGray;
                 txtContraseña.UseSystemPasswordChar = false;
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            using (Registro registro = new Registro())
+                registro.ShowDialog(); //mantiene abierta la ventana menu
         }
     }
 }

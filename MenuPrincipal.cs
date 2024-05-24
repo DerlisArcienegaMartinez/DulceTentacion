@@ -17,8 +17,8 @@ namespace DulceTentacion
     public partial class MenuPrincipal : Form
     {
 
-        private Config _config;//
-        //public static bool DarkModeActive { get; set; }
+        private Config _config;
+       
         
         public static event Action DarkModeChanged;
 
@@ -40,10 +40,9 @@ namespace DulceTentacion
         public MenuPrincipal()
         {
             InitializeComponent();
-            LoadConfig(); // Cargar la configuración al iniciar la aplicación
-          
-            ApplyColors();
 
+            LoadConfig(); // Cargar la configuración al iniciar la aplicación
+            ApplyColors();//Aplicar los colores
             CustomizeDesign();
 
         }
@@ -273,6 +272,23 @@ namespace DulceTentacion
             SaveConfig(); // Guardar la configuración actualizada
         }
 
+        private void btnDarkMode_Click(object sender, EventArgs e)
+        {
+            // Cambiar entre modo oscuro y modo normal
+            _config.IsDarkMode = !_config.IsDarkMode;
+            if (_config.IsDarkMode)
+            {
+                ApplyDarkMode(); // Aplicar modo oscuro
+            }
+            else
+            {
+                RevertColors(); // Revertir al modo normal
+            }
+            SaveConfig(); // Guardar la configuración actualizada
+        }
+
+
+
 
         //mover la ventana actual
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -284,12 +300,12 @@ namespace DulceTentacion
         //Configurar el boton Desplegable
         private void btnDesplegable_Click(object sender, EventArgs e)
         {
-        //    if (PanelMenus.Width == 235)
-        //    {
-        //        PanelMenus.Width = 62;
-        //    }
-        //    else
-        //        PanelMenus.Width = 235;
+            if (PanelMenus.Width == 235)
+            {
+                PanelMenus.Width = 62;
+            }
+            else
+                PanelMenus.Width = 235;
         }
 
 //configurar el movimiento de la ventana
@@ -299,12 +315,13 @@ namespace DulceTentacion
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void ContPrincipal_MouseDown(object sender, MouseEventArgs e)
+       
+
+        private void FondoImg_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
 
         private void CustomizeDesign()
         {
@@ -430,21 +447,6 @@ namespace DulceTentacion
         private void btnImgUsuario_Click(object sender, EventArgs e)
         {
             abrirconprincipal(new CuentaUsuario());
-        }
-
-        private void btnDarkMode_Click(object sender, EventArgs e)
-        {
-            // Cambiar entre modo oscuro y modo normal
-            _config.IsDarkMode = !_config.IsDarkMode;
-            if (_config.IsDarkMode)
-            {
-                ApplyDarkMode(); // Aplicar modo oscuro
-            }
-            else
-            {
-                RevertColors(); // Revertir al modo normal
-            }
-            SaveConfig(); // Guardar la configuración actualizada
         }
 
         

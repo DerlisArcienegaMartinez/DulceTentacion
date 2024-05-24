@@ -13,16 +13,17 @@ namespace DulceTentacion
 {
     public partial class PanelBienvenido : Form
     {
-        public PanelBienvenido()
+        public PanelBienvenido(string nombreCompletoUsuario)
         {
             InitializeComponent();
+            lblUsuario.Text = nombreCompletoUsuario;
         }
 
        
 
         private void PanelBienvenido_Load(object sender, EventArgs e)
         {
-            lblUsuario.Text = "usuario1";
+            
 
             this.Opacity = 0.0;
             timer1.Start();
@@ -49,5 +50,7 @@ namespace DulceTentacion
                 this.Close();
             }
         }
+
+
     }
 }
