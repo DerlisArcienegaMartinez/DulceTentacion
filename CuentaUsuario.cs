@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DulceTentacion
-{
+{ 
+
+   
+
     public partial class CuentaUsuario : Form
     {
+        
 
         private Color originalBackColor;
         private Color originalForeColor;
@@ -23,7 +27,7 @@ namespace DulceTentacion
             InitializeComponent();
             ApplyColors(); // Aplicar los colores al abrir el formulario
             MenuPrincipal.DarkModeChanged += ApplyColors;
-
+            
         }
 
 

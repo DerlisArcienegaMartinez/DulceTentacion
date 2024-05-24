@@ -120,6 +120,7 @@
     <Compile Include="Registrarse.Designer.cs">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Compile Include="Ventas.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -17,11 +17,11 @@ namespace DulceTentacion
 
         
 
-        public class Usuario
-        {
-            public string NombreUsuario { get; set; }
-            public string Contraseña { get; set; }
-        }
+        //public class Usuario
+        //{
+        //    public string NombreUsuario { get; set; }
+        //    public string Contraseña { get; set; }
+        //}
 
         private int intentosFallidos = 0;
         private Timer timer;
@@ -35,7 +35,8 @@ namespace DulceTentacion
             timer.Interval = 10000; //10 segundos
             timer.Tick += Timer_Tick;
 
-         
+            // Suscribir el evento CheckedChanged al checkbox
+            btnMtContra.CheckedChanged += btnMtContra_CheckedChanged;
         }
 
         
@@ -49,7 +50,7 @@ namespace DulceTentacion
             Application.Exit();
         }
 
-    
+       
 
         private string ObtenerNombreCompletoUsuario()
         {
@@ -122,11 +123,9 @@ namespace DulceTentacion
                         if (count > 0)
                         {
 
-
-
-
                             // Después de validar las credenciales del usuario y antes de mostrar el formulario PanelBienvenido
                             string nombreCompletoUsuario = ObtenerNombreCompletoUsuario(); // Aquí debes obtener el nombre completo del usuario, por ejemplo, desde la base de datos
+
 
 
                             using (PanelBienvenido Bienvenido = new PanelBienvenido(nombreCompletoUsuario))
@@ -138,6 +137,7 @@ namespace DulceTentacion
                                     menuPrincipal.ShowDialog();
                             }
                         }
+
                         else
                         {
                             intentosFallidos++;
@@ -247,6 +247,21 @@ namespace DulceTentacion
         {
             using (Registro registro = new Registro())
                 registro.ShowDialog(); //mantiene abierta la ventana menu
+        }
+
+        private void btnMtContra_CheckedChanged(object sender, EventArgs e)
+        {
+            // Verificar si el checkbox está marcado
+            if (btnMtContra.Checked)
+            {
+                // Si está marcado, mostrar la contraseña
+                txtContraseña.UseSystemPasswordChar = false; // Mostrar caracteres
+            }
+            else
+            {
+                // Si no está marcado, ocultar la contraseña
+                txtContraseña.UseSystemPasswordChar = true; // Ocultar caracteres
+            }
         }
     }
 }

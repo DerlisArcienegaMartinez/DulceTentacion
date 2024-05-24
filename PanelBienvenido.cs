@@ -51,6 +51,9 @@ namespace DulceTentacion
             }
         }
 
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -569,6 +569,7 @@ namespace DulceTentacion
             this.btnCerrarSesion.TabIndex = 28;
             this.btnCerrarSesion.Text = "            Cerrar Sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // BarraHorizontal
             // 

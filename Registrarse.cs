@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
+
     public partial class Registro : Form
     {
 
@@ -25,27 +26,7 @@ namespace DulceTentacion
 
         private void ObtenerYMostrarIdCliente()
         {
-            //using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
-            //{
-            //    try
-            //    {
-            //        conn.Open();
-
-            //        string obtenerIdQuery = "SELECT IDENT_CURRENT('Usuarios')";
-            //        SqlCommand obtenerIdCmd = new SqlCommand(obtenerIdQuery, conn);
-            //        object result = obtenerIdCmd.ExecuteScalar();
-            //        if (result != DBNull.Value && result != null)
-            //        {
-            //            int idCliente = Convert.ToInt32(result) + 1;
-            //            lblIdCliente.Text = $"C-{idCliente}";
-            //        }
-
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show("Error al obtener el ID del cliente: " + ex.Message);
-            //    }
-            //}
+           
 
             using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
             {
@@ -102,6 +83,8 @@ namespace DulceTentacion
             }
 
             string nombreCompleto = $"{nombre} {apellidoPaterno} {apellidoMaterno}";
+
+      
 
             using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
             {
@@ -160,6 +143,8 @@ namespace DulceTentacion
                         inicio.ShowDialog();
                     }
 
+                   
+
                 }
                 catch (Exception ex)
                 {
@@ -188,3 +173,31 @@ namespace DulceTentacion
     }
     
 }
+
+
+
+
+
+
+
+//using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
+//{
+//    try
+//    {
+//        conn.Open();
+
+//        string obtenerIdQuery = "SELECT IDENT_CURRENT('Usuarios')";
+//        SqlCommand obtenerIdCmd = new SqlCommand(obtenerIdQuery, conn);
+//        object result = obtenerIdCmd.ExecuteScalar();
+//        if (result != DBNull.Value && result != null)
+//        {
+//            int idCliente = Convert.ToInt32(result) + 1;
+//            lblIdCliente.Text = $"C-{idCliente}";
+//        }
+
+//    }
+//    catch (Exception ex)
+//    {
+//        MessageBox.Show("Error al obtener el ID del cliente: " + ex.Message);
+//    }
+//}

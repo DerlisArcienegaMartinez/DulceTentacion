@@ -424,7 +424,7 @@ namespace DulceTentacion
            
         }
 
-      
+       
 
 
         private void btnConfiguracion_Click(object sender, EventArgs e)
@@ -446,9 +446,26 @@ namespace DulceTentacion
 
         private void btnImgUsuario_Click(object sender, EventArgs e)
         {
+
             abrirconprincipal(new CuentaUsuario());
+          
         }
 
-        
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            // Mostrar un mensaje de confirmación al usuario
+            DialogResult result = MessageBox.Show("¿Está seguro de que desea cerrar sesión?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Verificar la respuesta del usuario
+            if (result == DialogResult.Yes)
+            {
+                // Cerrar el formulario actual (MenuPrincipal)
+                this.Close();
+
+                // Mostrar la ventana de inicio de sesión (InicioSesion)
+                InicioSesion inicioSesionForm = new InicioSesion();
+                inicioSesionForm.Show();
+            }
+        }
     }
 }

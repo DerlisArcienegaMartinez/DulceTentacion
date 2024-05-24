@@ -102,6 +102,7 @@ namespace DulceTentacion
             this.lblUsuario.Size = new System.Drawing.Size(145, 32);
             this.lblUsuario.TabIndex = 3;
             this.lblUsuario.Text = "Username";
+            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // timer1
             // 
