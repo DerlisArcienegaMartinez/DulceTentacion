@@ -276,7 +276,7 @@ namespace DulceTentacion
             this.btnTiktook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnTiktook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTiktook.Image = ((System.Drawing.Image)(resources.GetObject("btnTiktook.Image")));
-            this.btnTiktook.Location = new System.Drawing.Point(182, 622);
+            this.btnTiktook.Location = new System.Drawing.Point(254, 615);
             this.btnTiktook.Name = "btnTiktook";
             this.btnTiktook.Size = new System.Drawing.Size(55, 47);
             this.btnTiktook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,7 +306,7 @@ namespace DulceTentacion
             this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInstagram.Image = ((System.Drawing.Image)(resources.GetObject("btnInstagram.Image")));
-            this.btnInstagram.Location = new System.Drawing.Point(68, 622);
+            this.btnInstagram.Location = new System.Drawing.Point(140, 615);
             this.btnInstagram.Name = "btnInstagram";
             this.btnInstagram.Size = new System.Drawing.Size(54, 47);
             this.btnInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -318,7 +318,7 @@ namespace DulceTentacion
             this.btnWhatsap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnWhatsap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnWhatsap.Image = ((System.Drawing.Image)(resources.GetObject("btnWhatsap.Image")));
-            this.btnWhatsap.Location = new System.Drawing.Point(128, 622);
+            this.btnWhatsap.Location = new System.Drawing.Point(200, 615);
             this.btnWhatsap.Name = "btnWhatsap";
             this.btnWhatsap.Size = new System.Drawing.Size(48, 47);
             this.btnWhatsap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -377,7 +377,7 @@ namespace DulceTentacion
             this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFacebook.Image = ((System.Drawing.Image)(resources.GetObject("btnFacebook.Image")));
-            this.btnFacebook.Location = new System.Drawing.Point(11, 622);
+            this.btnFacebook.Location = new System.Drawing.Point(83, 615);
             this.btnFacebook.Name = "btnFacebook";
             this.btnFacebook.Size = new System.Drawing.Size(51, 47);
             this.btnFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -415,8 +415,8 @@ namespace DulceTentacion
             this.btnMenuVentas.Location = new System.Drawing.Point(0, 90);
             this.btnMenuVentas.Name = "btnMenuVentas";
             this.btnMenuVentas.Size = new System.Drawing.Size(313, 45);
-            this.btnMenuVentas.TabIndex = 36;
-            this.btnMenuVentas.Text = "   Menú Ventas";
+            this.btnMenuVentas.TabIndex = 35;
+            this.btnMenuVentas.Text = "      Menú Ventas";
             this.btnMenuVentas.UseVisualStyleBackColor = false;
             this.btnMenuVentas.Click += new System.EventHandler(this.btnMenuVentas_Click);
             // 
@@ -458,9 +458,6 @@ namespace DulceTentacion
             // 
             // ContPrincipal
             // 
-            this.ContPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.ContPrincipal.Controls.Add(this.btnDarkMode);
             this.ContPrincipal.Controls.Add(this.btnUbicacion);
             this.ContPrincipal.Controls.Add(this.btnImgUsuario);
@@ -471,6 +468,7 @@ namespace DulceTentacion
             this.ContPrincipal.Controls.Add(this.BarraHorizontal);
             this.ContPrincipal.Controls.Add(this.BarraH);
             this.ContPrincipal.Controls.Add(this.FondoImg);
+            this.ContPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContPrincipal.Location = new System.Drawing.Point(313, 0);
             this.ContPrincipal.Name = "ContPrincipal";
             this.ContPrincipal.Size = new System.Drawing.Size(1013, 674);
@@ -613,7 +611,7 @@ namespace DulceTentacion
             this.FondoImg.Image = global::DulceTentacion.Properties.Resources.dlce_removebg_preview;
             this.FondoImg.Location = new System.Drawing.Point(-18, 26);
             this.FondoImg.Name = "FondoImg";
-            this.FondoImg.Size = new System.Drawing.Size(1068, 636);
+            this.FondoImg.Size = new System.Drawing.Size(1054, 636);
             this.FondoImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.FondoImg.TabIndex = 39;
             this.FondoImg.TabStop = false;

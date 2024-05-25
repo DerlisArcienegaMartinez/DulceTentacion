@@ -143,7 +143,8 @@ namespace DulceTentacion
                         inicio.ShowDialog();
                     }
 
-                   
+                    // Limpiar los campos después de registrar el producto
+                    LimpiarCampos();
 
                 }
                 catch (Exception ex)
@@ -153,6 +154,26 @@ namespace DulceTentacion
             }
         }
 
+
+        private void LimpiarCampos()
+        {
+            // Limpiar todos los campos de entrada
+            txtNombre.Text = "";
+            txtApPaterno.Text = "";
+            txtApMaterno.Text = "";
+            txtCU.Text = "";
+            CBGenero.Text = "";
+            txtFecNacimiento.Text = "";
+            txtEdad.Text = "";
+            txtTelefono.Text = "";
+            txtCelular.Text = "";
+            txtCorreo.Text = "";
+            txtDomicilio.Text = "";
+            txtNomUsuario.Text = "";
+            txtContraseña.Text = "";
+            CBCorreos.Text = "";
+
+        }
         private void GBCuenta_Enter(object sender, EventArgs e)
         {
 
@@ -179,25 +200,3 @@ namespace DulceTentacion
 
 
 
-
-//using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString))
-//{
-//    try
-//    {
-//        conn.Open();
-
-//        string obtenerIdQuery = "SELECT IDENT_CURRENT('Usuarios')";
-//        SqlCommand obtenerIdCmd = new SqlCommand(obtenerIdQuery, conn);
-//        object result = obtenerIdCmd.ExecuteScalar();
-//        if (result != DBNull.Value && result != null)
-//        {
-//            int idCliente = Convert.ToInt32(result) + 1;
-//            lblIdCliente.Text = $"C-{idCliente}";
-//        }
-
-//    }
-//    catch (Exception ex)
-//    {
-//        MessageBox.Show("Error al obtener el ID del cliente: " + ex.Message);
-//    }
-//}

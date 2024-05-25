@@ -31,13 +31,14 @@ namespace DulceTentacion
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.pnlTablasProductos = new System.Windows.Forms.Panel();
             this.btnAllProd = new System.Windows.Forms.Button();
             this.btnProdAgo = new System.Windows.Forms.Button();
             this.btnEditProd = new System.Windows.Forms.Button();
             this.btnDelProd = new System.Windows.Forms.Button();
             this.btnAddProd = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -68,18 +69,6 @@ namespace DulceTentacion
             this.btnRegresar.Text = "      Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // pnlTablasProductos
-            // 
-            this.pnlTablasProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlTablasProductos.AutoScroll = true;
-            this.pnlTablasProductos.BackColor = System.Drawing.Color.Fuchsia;
-            this.pnlTablasProductos.Location = new System.Drawing.Point(19, 99);
-            this.pnlTablasProductos.Name = "pnlTablasProductos";
-            this.pnlTablasProductos.Size = new System.Drawing.Size(945, 551);
-            this.pnlTablasProductos.TabIndex = 14;
             // 
             // btnAllProd
             // 
@@ -136,23 +125,36 @@ namespace DulceTentacion
             this.btnAddProd.Text = "Añadir Producto";
             this.btnAddProd.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 106);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(963, 541);
+            this.dataGridView1.TabIndex = 20;
+            // 
             // VisualizarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(987, 674);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnAllProd);
             this.Controls.Add(this.btnAddProd);
             this.Controls.Add(this.btnDelProd);
             this.Controls.Add(this.btnEditProd);
             this.Controls.Add(this.btnProdAgo);
-            this.Controls.Add(this.btnAllProd);
-            this.Controls.Add(this.pnlTablasProductos);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VisualizarProducto";
             this.Text = "VisualizarProducto";
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,11 +163,11 @@ namespace DulceTentacion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Panel pnlTablasProductos;
         private System.Windows.Forms.Button btnAllProd;
         private System.Windows.Forms.Button btnProdAgo;
         private System.Windows.Forms.Button btnEditProd;
         private System.Windows.Forms.Button btnDelProd;
         private System.Windows.Forms.Button btnAddProd;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

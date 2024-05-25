@@ -32,6 +32,9 @@ namespace DulceTentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.btnSelectFoto = new System.Windows.Forms.Button();
             this.GBCuenta = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.CBGenero = new System.Windows.Forms.ComboBox();
             this.CBCorreos = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -70,9 +73,6 @@ namespace DulceTentacion
             this.btnGuardar = new System.Windows.Forms.Button();
             this.ImgPerfil = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.GBCuenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPerfil)).BeginInit();
             this.SuspendLayout();
@@ -135,6 +135,33 @@ namespace DulceTentacion
             this.GBCuenta.TabStop = false;
             this.GBCuenta.Text = "Crear Cuenta de Usuario";
             this.GBCuenta.Enter += new System.EventHandler(this.GBCuenta_Enter);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(484, 201);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(15, 18);
+            this.label23.TabIndex = 58;
+            this.label23.Text = "*";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(440, 201);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(38, 28);
+            this.txtEdad.TabIndex = 57;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(389, 206);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(45, 18);
+            this.label22.TabIndex = 56;
+            this.label22.Text = "Edad:";
             // 
             // CBGenero
             // 
@@ -414,9 +441,9 @@ namespace DulceTentacion
             this.label4.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(116, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 18);
+            this.label4.Size = new System.Drawing.Size(33, 18);
             this.label4.TabIndex = 16;
-            this.label4.Text = "CU:";
+            this.label4.Text = "C.I:";
             // 
             // label3
             // 
@@ -478,33 +505,6 @@ namespace DulceTentacion
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(440, 201);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(38, 28);
-            this.txtEdad.TabIndex = 57;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(389, 206);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(45, 18);
-            this.label22.TabIndex = 56;
-            this.label22.Text = "Edad:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(484, 201);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(15, 18);
-            this.label23.TabIndex = 58;
-            this.label23.Text = "*";
             // 
             // Registro
             // 

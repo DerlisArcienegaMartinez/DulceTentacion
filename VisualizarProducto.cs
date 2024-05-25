@@ -12,14 +12,20 @@ namespace DulceTentacion
 {
     public partial class VisualizarProducto : Form
     {
+
+    
+
         public VisualizarProducto()
         {
             InitializeComponent();
+            
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+      
     }
 }
