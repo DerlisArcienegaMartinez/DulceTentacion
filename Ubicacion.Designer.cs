@@ -32,13 +32,15 @@ namespace DulceTentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ubicacion));
             this.BarraHorizontal = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.MapUbi = new GMap.NET.WindowsForms.GMapControl();
-            this.btnPrincipal = new System.Windows.Forms.Button();
-            this.btnSucursal2 = new System.Windows.Forms.Button();
-            this.btnSucursal3 = new System.Windows.Forms.Button();
-            this.btnSucursal1 = new System.Windows.Forms.Button();
-            this.lblReserva = new System.Windows.Forms.LinkLabel();
+            this.ContUbicacion = new System.Windows.Forms.Panel();
+            this.CBModo = new System.Windows.Forms.ComboBox();
+            this.lblSucursal = new System.Windows.Forms.LinkLabel();
+            this.btnTiktook = new System.Windows.Forms.PictureBox();
+            this.btnInstagram = new System.Windows.Forms.PictureBox();
+            this.btnWhatsap = new System.Windows.Forms.PictureBox();
+            this.btnFacebook = new System.Windows.Forms.PictureBox();
             this.GBOpinionGeneral = new System.Windows.Forms.GroupBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.RBExcelente = new System.Windows.Forms.RadioButton();
             this.RBBuena = new System.Windows.Forms.RadioButton();
             this.RBRegular = new System.Windows.Forms.RadioButton();
@@ -47,26 +49,25 @@ namespace DulceTentacion
             this.txtOpinion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnTiktook = new System.Windows.Forms.PictureBox();
-            this.btnInstagram = new System.Windows.Forms.PictureBox();
-            this.btnWhatsap = new System.Windows.Forms.PictureBox();
-            this.btnFacebook = new System.Windows.Forms.PictureBox();
-            this.lblSucursal = new System.Windows.Forms.LinkLabel();
-            this.CBModo = new System.Windows.Forms.ComboBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.lblReserva = new System.Windows.Forms.LinkLabel();
+            this.btnSucursal1 = new System.Windows.Forms.Button();
+            this.btnSucursal3 = new System.Windows.Forms.Button();
+            this.btnSucursal2 = new System.Windows.Forms.Button();
+            this.btnPrincipal = new System.Windows.Forms.Button();
+            this.MapUbi = new GMap.NET.WindowsForms.GMapControl();
             this.BarraHorizontal.SuspendLayout();
-            this.GBOpinionGeneral.SuspendLayout();
+            this.ContUbicacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTiktook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnInstagram)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnWhatsap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).BeginInit();
+            this.GBOpinionGeneral.SuspendLayout();
             this.SuspendLayout();
             // 
             // BarraHorizontal
             // 
             this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
-            this.BarraHorizontal.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
             this.BarraHorizontal.Size = new System.Drawing.Size(1013, 45);
@@ -90,119 +91,98 @@ namespace DulceTentacion
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // MapUbi
+            // ContUbicacion
             // 
-            this.MapUbi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MapUbi.Bearing = 0F;
-            this.MapUbi.CanDragMap = true;
-            this.MapUbi.EmptyTileColor = System.Drawing.Color.Navy;
-            this.MapUbi.GrayScaleMode = false;
-            this.MapUbi.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.MapUbi.LevelsKeepInMemmory = 5;
-            this.MapUbi.Location = new System.Drawing.Point(28, 84);
-            this.MapUbi.MarkersEnabled = true;
-            this.MapUbi.MaxZoom = 2;
-            this.MapUbi.MinZoom = 2;
-            this.MapUbi.MouseWheelZoomEnabled = true;
-            this.MapUbi.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.MapUbi.Name = "MapUbi";
-            this.MapUbi.NegativeMode = false;
-            this.MapUbi.PolygonsEnabled = true;
-            this.MapUbi.RetryLoadTile = 0;
-            this.MapUbi.RoutesEnabled = true;
-            this.MapUbi.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.MapUbi.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.MapUbi.ShowTileGridLines = false;
-            this.MapUbi.Size = new System.Drawing.Size(424, 519);
-            this.MapUbi.TabIndex = 15;
-            this.MapUbi.Zoom = 0D;
+            this.ContUbicacion.Controls.Add(this.CBModo);
+            this.ContUbicacion.Controls.Add(this.lblSucursal);
+            this.ContUbicacion.Controls.Add(this.btnTiktook);
+            this.ContUbicacion.Controls.Add(this.btnInstagram);
+            this.ContUbicacion.Controls.Add(this.btnWhatsap);
+            this.ContUbicacion.Controls.Add(this.btnFacebook);
+            this.ContUbicacion.Controls.Add(this.GBOpinionGeneral);
+            this.ContUbicacion.Controls.Add(this.lblReserva);
+            this.ContUbicacion.Controls.Add(this.btnSucursal1);
+            this.ContUbicacion.Controls.Add(this.btnSucursal3);
+            this.ContUbicacion.Controls.Add(this.btnSucursal2);
+            this.ContUbicacion.Controls.Add(this.btnPrincipal);
+            this.ContUbicacion.Controls.Add(this.MapUbi);
+            this.ContUbicacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContUbicacion.Location = new System.Drawing.Point(0, 0);
+            this.ContUbicacion.Name = "ContUbicacion";
+            this.ContUbicacion.Size = new System.Drawing.Size(1013, 674);
+            this.ContUbicacion.TabIndex = 15;
             // 
-            // btnPrincipal
+            // CBModo
             // 
-            this.btnPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(83)))));
-            this.btnPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrincipal.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
-            this.btnPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(83)))));
-            this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal.Location = new System.Drawing.Point(497, 84);
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(227, 72);
-            this.btnPrincipal.TabIndex = 16;
-            this.btnPrincipal.Text = "Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = false;
-            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
+            this.CBModo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CBModo.FormattingEnabled = true;
+            this.CBModo.Items.AddRange(new object[] {
+            "Mapa Normal",
+            "Mapa Satélite"});
+            this.CBModo.Location = new System.Drawing.Point(32, 21);
+            this.CBModo.Name = "CBModo";
+            this.CBModo.Size = new System.Drawing.Size(221, 24);
+            this.CBModo.TabIndex = 48;
             // 
-            // btnSucursal2
+            // lblSucursal
             // 
-            this.btnSucursal2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSucursal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(219)))), ((int)(((byte)(118)))));
-            this.btnSucursal2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSucursal2.FlatAppearance.BorderSize = 0;
-            this.btnSucursal2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btnSucursal2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(219)))), ((int)(((byte)(118)))));
-            this.btnSucursal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSucursal2.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursal2.Location = new System.Drawing.Point(497, 162);
-            this.btnSucursal2.Name = "btnSucursal2";
-            this.btnSucursal2.Size = new System.Drawing.Size(227, 72);
-            this.btnSucursal2.TabIndex = 17;
-            this.btnSucursal2.Text = "Sucursal 2";
-            this.btnSucursal2.UseVisualStyleBackColor = false;
-            this.btnSucursal2.Click += new System.EventHandler(this.btnSucursal2_Click);
+            this.lblSucursal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSucursal.AutoSize = true;
+            this.lblSucursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSucursal.Location = new System.Drawing.Point(483, 211);
+            this.lblSucursal.Name = "lblSucursal";
+            this.lblSucursal.Size = new System.Drawing.Size(208, 20);
+            this.lblSucursal.TabIndex = 47;
+            this.lblSucursal.TabStop = true;
+            this.lblSucursal.Text = "Visite nuestras sucursales";
             // 
-            // btnSucursal3
+            // btnTiktook
             // 
-            this.btnSucursal3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSucursal3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(215)))), ((int)(((byte)(242)))));
-            this.btnSucursal3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSucursal3.FlatAppearance.BorderSize = 0;
-            this.btnSucursal3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Turquoise;
-            this.btnSucursal3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(215)))), ((int)(((byte)(242)))));
-            this.btnSucursal3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSucursal3.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursal3.Location = new System.Drawing.Point(739, 162);
-            this.btnSucursal3.Name = "btnSucursal3";
-            this.btnSucursal3.Size = new System.Drawing.Size(227, 72);
-            this.btnSucursal3.TabIndex = 18;
-            this.btnSucursal3.Text = "Sucursal 3";
-            this.btnSucursal3.UseVisualStyleBackColor = false;
-            this.btnSucursal3.Click += new System.EventHandler(this.btnSucursal3_Click);
+            this.btnTiktook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTiktook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTiktook.Image = ((System.Drawing.Image)(resources.GetObject("btnTiktook.Image")));
+            this.btnTiktook.Location = new System.Drawing.Point(930, 605);
+            this.btnTiktook.Name = "btnTiktook";
+            this.btnTiktook.Size = new System.Drawing.Size(55, 47);
+            this.btnTiktook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnTiktook.TabIndex = 45;
+            this.btnTiktook.TabStop = false;
             // 
-            // btnSucursal1
+            // btnInstagram
             // 
-            this.btnSucursal1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSucursal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
-            this.btnSucursal1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSucursal1.FlatAppearance.BorderSize = 0;
-            this.btnSucursal1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
-            this.btnSucursal1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
-            this.btnSucursal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSucursal1.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursal1.Location = new System.Drawing.Point(739, 84);
-            this.btnSucursal1.Name = "btnSucursal1";
-            this.btnSucursal1.Size = new System.Drawing.Size(227, 72);
-            this.btnSucursal1.TabIndex = 19;
-            this.btnSucursal1.Text = "Sucursal 1";
-            this.btnSucursal1.UseVisualStyleBackColor = false;
-            this.btnSucursal1.Click += new System.EventHandler(this.btnSucursal1_Click);
+            this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInstagram.Image = ((System.Drawing.Image)(resources.GetObject("btnInstagram.Image")));
+            this.btnInstagram.Location = new System.Drawing.Point(816, 605);
+            this.btnInstagram.Name = "btnInstagram";
+            this.btnInstagram.Size = new System.Drawing.Size(54, 47);
+            this.btnInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnInstagram.TabIndex = 43;
+            this.btnInstagram.TabStop = false;
             // 
-            // lblReserva
+            // btnWhatsap
             // 
-            this.lblReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblReserva.AutoSize = true;
-            this.lblReserva.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReserva.Location = new System.Drawing.Point(24, 622);
-            this.lblReserva.Name = "lblReserva";
-            this.lblReserva.Size = new System.Drawing.Size(575, 20);
-            this.lblReserva.TabIndex = 20;
-            this.lblReserva.TabStop = true;
-            this.lblReserva.Text = "¿Desea realizar una reservación para que recoja en la sucursal que desee?";
+            this.btnWhatsap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnWhatsap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWhatsap.Image = ((System.Drawing.Image)(resources.GetObject("btnWhatsap.Image")));
+            this.btnWhatsap.Location = new System.Drawing.Point(876, 605);
+            this.btnWhatsap.Name = "btnWhatsap";
+            this.btnWhatsap.Size = new System.Drawing.Size(48, 47);
+            this.btnWhatsap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnWhatsap.TabIndex = 44;
+            this.btnWhatsap.TabStop = false;
+            // 
+            // btnFacebook
+            // 
+            this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacebook.Image = ((System.Drawing.Image)(resources.GetObject("btnFacebook.Image")));
+            this.btnFacebook.Location = new System.Drawing.Point(759, 605);
+            this.btnFacebook.Name = "btnFacebook";
+            this.btnFacebook.Size = new System.Drawing.Size(51, 47);
+            this.btnFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFacebook.TabIndex = 46;
+            this.btnFacebook.TabStop = false;
             // 
             // GBOpinionGeneral
             // 
@@ -217,12 +197,27 @@ namespace DulceTentacion
             this.GBOpinionGeneral.Controls.Add(this.label6);
             this.GBOpinionGeneral.Controls.Add(this.label3);
             this.GBOpinionGeneral.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBOpinionGeneral.Location = new System.Drawing.Point(473, 285);
+            this.GBOpinionGeneral.Location = new System.Drawing.Point(477, 247);
             this.GBOpinionGeneral.Name = "GBOpinionGeneral";
             this.GBOpinionGeneral.Size = new System.Drawing.Size(508, 334);
-            this.GBOpinionGeneral.TabIndex = 29;
+            this.GBOpinionGeneral.TabIndex = 42;
             this.GBOpinionGeneral.TabStop = false;
             this.GBOpinionGeneral.Text = "Escribe una opinión";
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
+            this.btnEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEnviar.FlatAppearance.BorderSize = 0;
+            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
+            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
+            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviar.Location = new System.Drawing.Point(171, 266);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(148, 35);
+            this.btnEnviar.TabIndex = 39;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = false;
             // 
             // RBExcelente
             // 
@@ -298,8 +293,6 @@ namespace DulceTentacion
             this.txtOpinion.Size = new System.Drawing.Size(455, 120);
             this.txtOpinion.TabIndex = 35;
             this.txtOpinion.Text = "Describe tu experiencia (opcional)";
-            this.txtOpinion.Leave += new System.EventHandler(this.txtOpinion_Leave);
-            this.txtOpinion.MouseEnter += new System.EventHandler(this.txtOpinion_MouseEnter);
             // 
             // label6
             // 
@@ -321,93 +314,116 @@ namespace DulceTentacion
             this.label3.TabIndex = 31;
             this.label3.Text = "Califica esta app";
             // 
-            // btnTiktook
+            // lblReserva
             // 
-            this.btnTiktook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTiktook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTiktook.Image = ((System.Drawing.Image)(resources.GetObject("btnTiktook.Image")));
-            this.btnTiktook.Location = new System.Drawing.Point(926, 598);
-            this.btnTiktook.Name = "btnTiktook";
-            this.btnTiktook.Size = new System.Drawing.Size(55, 47);
-            this.btnTiktook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnTiktook.TabIndex = 32;
-            this.btnTiktook.TabStop = false;
+            this.lblReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblReserva.AutoSize = true;
+            this.lblReserva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReserva.Location = new System.Drawing.Point(28, 629);
+            this.lblReserva.Name = "lblReserva";
+            this.lblReserva.Size = new System.Drawing.Size(575, 20);
+            this.lblReserva.TabIndex = 41;
+            this.lblReserva.TabStop = true;
+            this.lblReserva.Text = "¿Desea realizar una reservación para que recoja en la sucursal que desee?";
+            this.lblReserva.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblReserva_LinkClicked);
             // 
-            // btnInstagram
+            // btnSucursal1
             // 
-            this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInstagram.Image = ((System.Drawing.Image)(resources.GetObject("btnInstagram.Image")));
-            this.btnInstagram.Location = new System.Drawing.Point(812, 598);
-            this.btnInstagram.Name = "btnInstagram";
-            this.btnInstagram.Size = new System.Drawing.Size(54, 47);
-            this.btnInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnInstagram.TabIndex = 30;
-            this.btnInstagram.TabStop = false;
+            this.btnSucursal1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSucursal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
+            this.btnSucursal1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSucursal1.FlatAppearance.BorderSize = 0;
+            this.btnSucursal1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
+            this.btnSucursal1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
+            this.btnSucursal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSucursal1.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSucursal1.Location = new System.Drawing.Point(743, 46);
+            this.btnSucursal1.Name = "btnSucursal1";
+            this.btnSucursal1.Size = new System.Drawing.Size(227, 72);
+            this.btnSucursal1.TabIndex = 40;
+            this.btnSucursal1.Text = "Sucursal 1";
+            this.btnSucursal1.UseVisualStyleBackColor = false;
             // 
-            // btnWhatsap
+            // btnSucursal3
             // 
-            this.btnWhatsap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnWhatsap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWhatsap.Image = ((System.Drawing.Image)(resources.GetObject("btnWhatsap.Image")));
-            this.btnWhatsap.Location = new System.Drawing.Point(872, 598);
-            this.btnWhatsap.Name = "btnWhatsap";
-            this.btnWhatsap.Size = new System.Drawing.Size(48, 47);
-            this.btnWhatsap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnWhatsap.TabIndex = 31;
-            this.btnWhatsap.TabStop = false;
+            this.btnSucursal3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSucursal3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(215)))), ((int)(((byte)(242)))));
+            this.btnSucursal3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSucursal3.FlatAppearance.BorderSize = 0;
+            this.btnSucursal3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Turquoise;
+            this.btnSucursal3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(215)))), ((int)(((byte)(242)))));
+            this.btnSucursal3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSucursal3.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSucursal3.Location = new System.Drawing.Point(743, 124);
+            this.btnSucursal3.Name = "btnSucursal3";
+            this.btnSucursal3.Size = new System.Drawing.Size(227, 72);
+            this.btnSucursal3.TabIndex = 39;
+            this.btnSucursal3.Text = "Sucursal 3";
+            this.btnSucursal3.UseVisualStyleBackColor = false;
             // 
-            // btnFacebook
+            // btnSucursal2
             // 
-            this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFacebook.Image = ((System.Drawing.Image)(resources.GetObject("btnFacebook.Image")));
-            this.btnFacebook.Location = new System.Drawing.Point(755, 598);
-            this.btnFacebook.Name = "btnFacebook";
-            this.btnFacebook.Size = new System.Drawing.Size(51, 47);
-            this.btnFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFacebook.TabIndex = 33;
-            this.btnFacebook.TabStop = false;
+            this.btnSucursal2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSucursal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(219)))), ((int)(((byte)(118)))));
+            this.btnSucursal2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSucursal2.FlatAppearance.BorderSize = 0;
+            this.btnSucursal2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.btnSucursal2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(219)))), ((int)(((byte)(118)))));
+            this.btnSucursal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSucursal2.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSucursal2.Location = new System.Drawing.Point(501, 124);
+            this.btnSucursal2.Name = "btnSucursal2";
+            this.btnSucursal2.Size = new System.Drawing.Size(227, 72);
+            this.btnSucursal2.TabIndex = 38;
+            this.btnSucursal2.Text = "Sucursal 2";
+            this.btnSucursal2.UseVisualStyleBackColor = false;
             // 
-            // lblSucursal
+            // btnPrincipal
             // 
-            this.lblSucursal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSucursal.AutoSize = true;
-            this.lblSucursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSucursal.Location = new System.Drawing.Point(479, 249);
-            this.lblSucursal.Name = "lblSucursal";
-            this.lblSucursal.Size = new System.Drawing.Size(208, 20);
-            this.lblSucursal.TabIndex = 34;
-            this.lblSucursal.TabStop = true;
-            this.lblSucursal.Text = "Visite nuestras sucursales";
+            this.btnPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(83)))));
+            this.btnPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrincipal.FlatAppearance.BorderSize = 0;
+            this.btnPrincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(83)))));
+            this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrincipal.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.Location = new System.Drawing.Point(501, 46);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(227, 72);
+            this.btnPrincipal.TabIndex = 37;
+            this.btnPrincipal.Text = "Principal";
+            this.btnPrincipal.UseVisualStyleBackColor = false;
             // 
-            // CBModo
+            // MapUbi
             // 
-            this.CBModo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBModo.FormattingEnabled = true;
-            this.CBModo.Items.AddRange(new object[] {
-            "Mapa Normal",
-            "Mapa Satélite"});
-            this.CBModo.Location = new System.Drawing.Point(28, 59);
-            this.CBModo.Name = "CBModo";
-            this.CBModo.Size = new System.Drawing.Size(221, 24);
-            this.CBModo.TabIndex = 35;
-            this.CBModo.SelectedIndexChanged += new System.EventHandler(this.CBModo_SelectedIndexChanged);
-            // 
-            // btnEnviar
-            // 
-            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
-            this.btnEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEnviar.FlatAppearance.BorderSize = 0;
-            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
-            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
-            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnviar.Location = new System.Drawing.Point(171, 266);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(148, 35);
-            this.btnEnviar.TabIndex = 39;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.MapUbi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MapUbi.Bearing = 0F;
+            this.MapUbi.CanDragMap = true;
+            this.MapUbi.EmptyTileColor = System.Drawing.Color.Navy;
+            this.MapUbi.GrayScaleMode = false;
+            this.MapUbi.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.MapUbi.LevelsKeepInMemmory = 5;
+            this.MapUbi.Location = new System.Drawing.Point(32, 46);
+            this.MapUbi.MarkersEnabled = true;
+            this.MapUbi.MaxZoom = 2;
+            this.MapUbi.MinZoom = 2;
+            this.MapUbi.MouseWheelZoomEnabled = true;
+            this.MapUbi.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.MapUbi.Name = "MapUbi";
+            this.MapUbi.NegativeMode = false;
+            this.MapUbi.PolygonsEnabled = true;
+            this.MapUbi.RetryLoadTile = 0;
+            this.MapUbi.RoutesEnabled = true;
+            this.MapUbi.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.MapUbi.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.MapUbi.ShowTileGridLines = false;
+            this.MapUbi.Size = new System.Drawing.Size(424, 564);
+            this.MapUbi.TabIndex = 36;
+            this.MapUbi.Zoom = 0D;
             // 
             // Ubicacion
             // 
@@ -415,33 +431,22 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1013, 674);
-            this.Controls.Add(this.CBModo);
-            this.Controls.Add(this.lblSucursal);
-            this.Controls.Add(this.btnTiktook);
-            this.Controls.Add(this.btnInstagram);
-            this.Controls.Add(this.btnWhatsap);
-            this.Controls.Add(this.btnFacebook);
-            this.Controls.Add(this.GBOpinionGeneral);
-            this.Controls.Add(this.lblReserva);
-            this.Controls.Add(this.btnSucursal1);
-            this.Controls.Add(this.btnSucursal3);
-            this.Controls.Add(this.btnSucursal2);
-            this.Controls.Add(this.btnPrincipal);
-            this.Controls.Add(this.MapUbi);
             this.Controls.Add(this.BarraHorizontal);
+            this.Controls.Add(this.ContUbicacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ubicacion";
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
             this.BarraHorizontal.ResumeLayout(false);
-            this.GBOpinionGeneral.ResumeLayout(false);
-            this.GBOpinionGeneral.PerformLayout();
+            this.ContUbicacion.ResumeLayout(false);
+            this.ContUbicacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTiktook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnInstagram)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnWhatsap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).EndInit();
+            this.GBOpinionGeneral.ResumeLayout(false);
+            this.GBOpinionGeneral.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -449,27 +454,28 @@ namespace DulceTentacion
 
         private System.Windows.Forms.FlowLayoutPanel BarraHorizontal;
         private System.Windows.Forms.Button btnRegresar;
-        private GMap.NET.WindowsForms.GMapControl MapUbi;
-        private System.Windows.Forms.Button btnPrincipal;
-        private System.Windows.Forms.Button btnSucursal2;
-        private System.Windows.Forms.Button btnSucursal3;
-        private System.Windows.Forms.Button btnSucursal1;
-        private System.Windows.Forms.LinkLabel lblReserva;
-        private System.Windows.Forms.GroupBox GBOpinionGeneral;
-        private System.Windows.Forms.TextBox txtOpinion;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel ContUbicacion;
+        private System.Windows.Forms.ComboBox CBModo;
+        private System.Windows.Forms.LinkLabel lblSucursal;
         private System.Windows.Forms.PictureBox btnTiktook;
         private System.Windows.Forms.PictureBox btnInstagram;
         private System.Windows.Forms.PictureBox btnWhatsap;
         private System.Windows.Forms.PictureBox btnFacebook;
+        private System.Windows.Forms.GroupBox GBOpinionGeneral;
+        private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.RadioButton RBExcelente;
         private System.Windows.Forms.RadioButton RBBuena;
         private System.Windows.Forms.RadioButton RBRegular;
         private System.Windows.Forms.RadioButton RBMala;
         private System.Windows.Forms.RadioButton RBPesima;
-        private System.Windows.Forms.LinkLabel lblSucursal;
-        private System.Windows.Forms.ComboBox CBModo;
-        private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.TextBox txtOpinion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel lblReserva;
+        private System.Windows.Forms.Button btnSucursal1;
+        private System.Windows.Forms.Button btnSucursal3;
+        private System.Windows.Forms.Button btnSucursal2;
+        private System.Windows.Forms.Button btnPrincipal;
+        private GMap.NET.WindowsForms.GMapControl MapUbi;
     }
 }

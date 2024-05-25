@@ -224,6 +224,26 @@ namespace DulceTentacion
                 txtOpinion.ForeColor = Color.Black;
             }
         }
+        //Configurar la ventana en el panel contenedor
+        private Form activeForm = null;
+        private void abrirConPrincipal(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            ContUbicacion.Controls.Add(childForm);
+            ContUbicacion.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void lblReserva_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            abrirConPrincipal(new Reservaciones());
+        }
     }
    
 }

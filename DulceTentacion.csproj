@@ -130,6 +130,12 @@
     <Compile Include="Registrarse.Designer.cs">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservaciones.Designer.cs">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ubicacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registrarse.resx">
       <DependentUpon>Registrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservaciones.resx">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubicacion.resx">
       <DependentUpon>Ubicacion.cs</DependentUpon>
