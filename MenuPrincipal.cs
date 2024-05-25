@@ -467,5 +467,10 @@ namespace DulceTentacion
                 inicioSesionForm.Show();
             }
         }
+
+        private void btnUbicacion_Click(object sender, EventArgs e)
+        {
+            abrirconprincipal(new Ubicacion());
+        }
     }
 }

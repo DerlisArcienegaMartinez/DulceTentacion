@@ -31,47 +31,39 @@ namespace DulceTentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.PanelMenus = new System.Windows.Forms.Panel();
-            this.btnAcercade = new System.Windows.Forms.Button();
-            this.btnMarketing = new System.Windows.Forms.Button();
             this.SubPanelEmp = new System.Windows.Forms.Panel();
             this.btnGenContratos = new System.Windows.Forms.Button();
             this.btnRegPersonal = new System.Windows.Forms.Button();
-            this.btnEmpleados = new System.Windows.Forms.Button();
-            this.btnInforme = new System.Windows.Forms.Button();
             this.SubPanelReg = new System.Windows.Forms.Panel();
             this.btnAlmcFacturas = new System.Windows.Forms.Button();
             this.btnAlmacInf = new System.Windows.Forms.Button();
-            this.btnTiktook = new System.Windows.Forms.PictureBox();
-            this.btnRegistros = new System.Windows.Forms.Button();
-            this.btnInstagram = new System.Windows.Forms.PictureBox();
-            this.btnWhatsap = new System.Windows.Forms.PictureBox();
             this.SubPanelInv = new System.Windows.Forms.Panel();
             this.btnVisualizarProd = new System.Windows.Forms.Button();
             this.btnIngresarProd = new System.Windows.Forms.Button();
-            this.btnFacebook = new System.Windows.Forms.PictureBox();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnMenuVentas = new System.Windows.Forms.Button();
-            this.btnAtCliente = new System.Windows.Forms.Button();
-            this.btnDesplegable = new System.Windows.Forms.Button();
             this.ContPrincipal = new System.Windows.Forms.Panel();
+            this.btnFecha = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BarraHorizontal = new System.Windows.Forms.Button();
+            this.BarraH = new System.Windows.Forms.Button();
             this.btnDarkMode = new System.Windows.Forms.Button();
             this.btnUbicacion = new System.Windows.Forms.PictureBox();
             this.btnImgUsuario = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnFecha = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.BarraHorizontal = new System.Windows.Forms.Button();
-            this.BarraH = new System.Windows.Forms.Button();
             this.FondoImg = new System.Windows.Forms.PictureBox();
+            this.btnAcercade = new System.Windows.Forms.Button();
+            this.btnMarketing = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnInforme = new System.Windows.Forms.Button();
+            this.btnRegistros = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
+            this.btnMenuVentas = new System.Windows.Forms.Button();
+            this.btnAtCliente = new System.Windows.Forms.Button();
+            this.btnDesplegable = new System.Windows.Forms.Button();
             this.PanelMenus.SuspendLayout();
             this.SubPanelEmp.SuspendLayout();
             this.SubPanelReg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTiktook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInstagram)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnWhatsap)).BeginInit();
             this.SubPanelInv.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).BeginInit();
             this.ContPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnUbicacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImgUsuario)).BeginInit();
@@ -91,12 +83,8 @@ namespace DulceTentacion
             this.PanelMenus.Controls.Add(this.btnEmpleados);
             this.PanelMenus.Controls.Add(this.btnInforme);
             this.PanelMenus.Controls.Add(this.SubPanelReg);
-            this.PanelMenus.Controls.Add(this.btnTiktook);
             this.PanelMenus.Controls.Add(this.btnRegistros);
-            this.PanelMenus.Controls.Add(this.btnInstagram);
-            this.PanelMenus.Controls.Add(this.btnWhatsap);
             this.PanelMenus.Controls.Add(this.SubPanelInv);
-            this.PanelMenus.Controls.Add(this.btnFacebook);
             this.PanelMenus.Controls.Add(this.btnInventario);
             this.PanelMenus.Controls.Add(this.btnMenuVentas);
             this.PanelMenus.Controls.Add(this.btnAtCliente);
@@ -107,40 +95,6 @@ namespace DulceTentacion
             this.PanelMenus.Size = new System.Drawing.Size(313, 674);
             this.PanelMenus.TabIndex = 1;
             this.PanelMenus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelMenus_MouseDown);
-            // 
-            // btnAcercade
-            // 
-            this.btnAcercade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnAcercade.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAcercade.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAcercade.FlatAppearance.BorderSize = 0;
-            this.btnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcercade.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcercade.Image = ((System.Drawing.Image)(resources.GetObject("btnAcercade.Image")));
-            this.btnAcercade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercade.Location = new System.Drawing.Point(0, 603);
-            this.btnAcercade.Name = "btnAcercade";
-            this.btnAcercade.Size = new System.Drawing.Size(313, 45);
-            this.btnAcercade.TabIndex = 45;
-            this.btnAcercade.Text = "Acerca de";
-            this.btnAcercade.UseVisualStyleBackColor = false;
-            // 
-            // btnMarketing
-            // 
-            this.btnMarketing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnMarketing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarketing.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMarketing.FlatAppearance.BorderSize = 0;
-            this.btnMarketing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarketing.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarketing.Image = ((System.Drawing.Image)(resources.GetObject("btnMarketing.Image")));
-            this.btnMarketing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarketing.Location = new System.Drawing.Point(0, 558);
-            this.btnMarketing.Name = "btnMarketing";
-            this.btnMarketing.Size = new System.Drawing.Size(313, 45);
-            this.btnMarketing.TabIndex = 44;
-            this.btnMarketing.Text = "Marketing";
-            this.btnMarketing.UseVisualStyleBackColor = false;
             // 
             // SubPanelEmp
             // 
@@ -189,41 +143,6 @@ namespace DulceTentacion
             this.btnRegPersonal.UseVisualStyleBackColor = false;
             this.btnRegPersonal.Click += new System.EventHandler(this.btnRegPersonal_Click);
             // 
-            // btnEmpleados
-            // 
-            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEmpleados.FlatAppearance.BorderSize = 0;
-            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleados.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
-            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 431);
-            this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(313, 45);
-            this.btnEmpleados.TabIndex = 42;
-            this.btnEmpleados.Text = "Empleados";
-            this.btnEmpleados.UseVisualStyleBackColor = false;
-            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
-            // 
-            // btnInforme
-            // 
-            this.btnInforme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnInforme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInforme.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInforme.FlatAppearance.BorderSize = 0;
-            this.btnInforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInforme.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInforme.Image = ((System.Drawing.Image)(resources.GetObject("btnInforme.Image")));
-            this.btnInforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInforme.Location = new System.Drawing.Point(0, 386);
-            this.btnInforme.Name = "btnInforme";
-            this.btnInforme.Size = new System.Drawing.Size(313, 45);
-            this.btnInforme.TabIndex = 41;
-            this.btnInforme.Text = "Informe";
-            this.btnInforme.UseVisualStyleBackColor = false;
-            // 
             // SubPanelReg
             // 
             this.SubPanelReg.BackColor = System.Drawing.Color.DeepPink;
@@ -270,60 +189,6 @@ namespace DulceTentacion
             this.btnAlmacInf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlmacInf.UseVisualStyleBackColor = false;
             this.btnAlmacInf.Click += new System.EventHandler(this.btnAlmacInf_Click);
-            // 
-            // btnTiktook
-            // 
-            this.btnTiktook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnTiktook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTiktook.Image = ((System.Drawing.Image)(resources.GetObject("btnTiktook.Image")));
-            this.btnTiktook.Location = new System.Drawing.Point(254, 615);
-            this.btnTiktook.Name = "btnTiktook";
-            this.btnTiktook.Size = new System.Drawing.Size(55, 47);
-            this.btnTiktook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnTiktook.TabIndex = 26;
-            this.btnTiktook.TabStop = false;
-            // 
-            // btnRegistros
-            // 
-            this.btnRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnRegistros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRegistros.FlatAppearance.BorderSize = 0;
-            this.btnRegistros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistros.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistros.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistros.Image")));
-            this.btnRegistros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistros.Location = new System.Drawing.Point(0, 259);
-            this.btnRegistros.Name = "btnRegistros";
-            this.btnRegistros.Size = new System.Drawing.Size(313, 45);
-            this.btnRegistros.TabIndex = 39;
-            this.btnRegistros.Text = "Registros";
-            this.btnRegistros.UseVisualStyleBackColor = false;
-            this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
-            // 
-            // btnInstagram
-            // 
-            this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInstagram.Image = ((System.Drawing.Image)(resources.GetObject("btnInstagram.Image")));
-            this.btnInstagram.Location = new System.Drawing.Point(140, 615);
-            this.btnInstagram.Name = "btnInstagram";
-            this.btnInstagram.Size = new System.Drawing.Size(54, 47);
-            this.btnInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnInstagram.TabIndex = 24;
-            this.btnInstagram.TabStop = false;
-            // 
-            // btnWhatsap
-            // 
-            this.btnWhatsap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnWhatsap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWhatsap.Image = ((System.Drawing.Image)(resources.GetObject("btnWhatsap.Image")));
-            this.btnWhatsap.Location = new System.Drawing.Point(200, 615);
-            this.btnWhatsap.Name = "btnWhatsap";
-            this.btnWhatsap.Size = new System.Drawing.Size(48, 47);
-            this.btnWhatsap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnWhatsap.TabIndex = 25;
-            this.btnWhatsap.TabStop = false;
             // 
             // SubPanelInv
             // 
@@ -372,17 +237,254 @@ namespace DulceTentacion
             this.btnIngresarProd.UseVisualStyleBackColor = false;
             this.btnIngresarProd.Click += new System.EventHandler(this.btnIngresarProd_Click);
             // 
-            // btnFacebook
+            // ContPrincipal
             // 
-            this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFacebook.Image = ((System.Drawing.Image)(resources.GetObject("btnFacebook.Image")));
-            this.btnFacebook.Location = new System.Drawing.Point(83, 615);
-            this.btnFacebook.Name = "btnFacebook";
-            this.btnFacebook.Size = new System.Drawing.Size(51, 47);
-            this.btnFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFacebook.TabIndex = 27;
-            this.btnFacebook.TabStop = false;
+            this.ContPrincipal.Controls.Add(this.btnDarkMode);
+            this.ContPrincipal.Controls.Add(this.btnUbicacion);
+            this.ContPrincipal.Controls.Add(this.btnImgUsuario);
+            this.ContPrincipal.Controls.Add(this.pictureBox4);
+            this.ContPrincipal.Controls.Add(this.btnFecha);
+            this.ContPrincipal.Controls.Add(this.label1);
+            this.ContPrincipal.Controls.Add(this.btnCerrarSesion);
+            this.ContPrincipal.Controls.Add(this.BarraHorizontal);
+            this.ContPrincipal.Controls.Add(this.BarraH);
+            this.ContPrincipal.Controls.Add(this.FondoImg);
+            this.ContPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContPrincipal.Location = new System.Drawing.Point(313, 0);
+            this.ContPrincipal.Name = "ContPrincipal";
+            this.ContPrincipal.Size = new System.Drawing.Size(1013, 674);
+            this.ContPrincipal.TabIndex = 29;
+            // 
+            // btnFecha
+            // 
+            this.btnFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFecha.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(182)))));
+            this.btnFecha.Enabled = false;
+            this.btnFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFecha.Location = new System.Drawing.Point(617, 635);
+            this.btnFecha.Name = "btnFecha";
+            this.btnFecha.Size = new System.Drawing.Size(384, 27);
+            this.btnFecha.TabIndex = 33;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(806, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 28);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Dulce Sensación";
+            // 
+            // BarraHorizontal
+            // 
+            this.BarraHorizontal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BarraHorizontal.FlatAppearance.BorderSize = 0;
+            this.BarraHorizontal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BarraHorizontal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BarraHorizontal.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BarraHorizontal.ForeColor = System.Drawing.Color.White;
+            this.BarraHorizontal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
+            this.BarraHorizontal.Name = "BarraHorizontal";
+            this.BarraHorizontal.Size = new System.Drawing.Size(1013, 50);
+            this.BarraHorizontal.TabIndex = 30;
+            this.BarraHorizontal.UseVisualStyleBackColor = false;
+            // 
+            // BarraH
+            // 
+            this.BarraH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BarraH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BarraH.FlatAppearance.BorderSize = 0;
+            this.BarraH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BarraH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BarraH.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BarraH.ForeColor = System.Drawing.Color.White;
+            this.BarraH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BarraH.Location = new System.Drawing.Point(0, 624);
+            this.BarraH.Name = "BarraH";
+            this.BarraH.Size = new System.Drawing.Size(1013, 50);
+            this.BarraH.TabIndex = 31;
+            this.BarraH.UseVisualStyleBackColor = false;
+            // 
+            // btnDarkMode
+            // 
+            this.btnDarkMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDarkMode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDarkMode.FlatAppearance.BorderSize = 0;
+            this.btnDarkMode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnDarkMode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.btnDarkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDarkMode.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDarkMode.Image = global::DulceTentacion.Properties.Resources.modo_Oscuro_removebg_preview__1_;
+            this.btnDarkMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDarkMode.Location = new System.Drawing.Point(3, 630);
+            this.btnDarkMode.Name = "btnDarkMode";
+            this.btnDarkMode.Size = new System.Drawing.Size(220, 39);
+            this.btnDarkMode.TabIndex = 43;
+            this.btnDarkMode.Text = "     Modo Oscuro";
+            this.btnDarkMode.UseVisualStyleBackColor = false;
+            this.btnDarkMode.Click += new System.EventHandler(this.btnDarkMode_Click);
+            // 
+            // btnUbicacion
+            // 
+            this.btnUbicacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUbicacion.Image = global::DulceTentacion.Properties.Resources.ubicacion_removebg_preview1;
+            this.btnUbicacion.Location = new System.Drawing.Point(285, 10);
+            this.btnUbicacion.Name = "btnUbicacion";
+            this.btnUbicacion.Size = new System.Drawing.Size(35, 35);
+            this.btnUbicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnUbicacion.TabIndex = 42;
+            this.btnUbicacion.TabStop = false;
+            this.btnUbicacion.Click += new System.EventHandler(this.btnUbicacion_Click);
+            // 
+            // btnImgUsuario
+            // 
+            this.btnImgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnImgUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImgUsuario.Image = global::DulceTentacion.Properties.Resources.clientehombre_removebg_preview;
+            this.btnImgUsuario.Location = new System.Drawing.Point(3, 6);
+            this.btnImgUsuario.Name = "btnImgUsuario";
+            this.btnImgUsuario.Size = new System.Drawing.Size(55, 39);
+            this.btnImgUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnImgUsuario.TabIndex = 40;
+            this.btnImgUsuario.TabStop = false;
+            this.btnImgUsuario.Click += new System.EventHandler(this.btnImgUsuario_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(743, 5);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(57, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 37;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.Image = global::DulceTentacion.Properties.Resources.ceerraSesionEditable_removebg_preview;
+            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(59, 6);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(220, 39);
+            this.btnCerrarSesion.TabIndex = 28;
+            this.btnCerrarSesion.Text = "            Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // FondoImg
+            // 
+            this.FondoImg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FondoImg.Image = global::DulceTentacion.Properties.Resources.dlce_removebg_preview;
+            this.FondoImg.Location = new System.Drawing.Point(-18, 26);
+            this.FondoImg.Name = "FondoImg";
+            this.FondoImg.Size = new System.Drawing.Size(1054, 636);
+            this.FondoImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.FondoImg.TabIndex = 39;
+            this.FondoImg.TabStop = false;
+            this.FondoImg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FondoImg_MouseDown);
+            // 
+            // btnAcercade
+            // 
+            this.btnAcercade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnAcercade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAcercade.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAcercade.FlatAppearance.BorderSize = 0;
+            this.btnAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcercade.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcercade.Image = ((System.Drawing.Image)(resources.GetObject("btnAcercade.Image")));
+            this.btnAcercade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAcercade.Location = new System.Drawing.Point(0, 603);
+            this.btnAcercade.Name = "btnAcercade";
+            this.btnAcercade.Size = new System.Drawing.Size(313, 45);
+            this.btnAcercade.TabIndex = 45;
+            this.btnAcercade.Text = "Acerca de";
+            this.btnAcercade.UseVisualStyleBackColor = false;
+            // 
+            // btnMarketing
+            // 
+            this.btnMarketing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnMarketing.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarketing.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMarketing.FlatAppearance.BorderSize = 0;
+            this.btnMarketing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarketing.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarketing.Image = ((System.Drawing.Image)(resources.GetObject("btnMarketing.Image")));
+            this.btnMarketing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarketing.Location = new System.Drawing.Point(0, 558);
+            this.btnMarketing.Name = "btnMarketing";
+            this.btnMarketing.Size = new System.Drawing.Size(313, 45);
+            this.btnMarketing.TabIndex = 44;
+            this.btnMarketing.Text = "Marketing";
+            this.btnMarketing.UseVisualStyleBackColor = false;
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
+            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 431);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(313, 45);
+            this.btnEmpleados.TabIndex = 42;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = false;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            // 
+            // btnInforme
+            // 
+            this.btnInforme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnInforme.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInforme.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInforme.FlatAppearance.BorderSize = 0;
+            this.btnInforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInforme.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInforme.Image = ((System.Drawing.Image)(resources.GetObject("btnInforme.Image")));
+            this.btnInforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInforme.Location = new System.Drawing.Point(0, 386);
+            this.btnInforme.Name = "btnInforme";
+            this.btnInforme.Size = new System.Drawing.Size(313, 45);
+            this.btnInforme.TabIndex = 41;
+            this.btnInforme.Text = "Informe";
+            this.btnInforme.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistros
+            // 
+            this.btnRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnRegistros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegistros.FlatAppearance.BorderSize = 0;
+            this.btnRegistros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistros.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistros.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistros.Image")));
+            this.btnRegistros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistros.Location = new System.Drawing.Point(0, 259);
+            this.btnRegistros.Name = "btnRegistros";
+            this.btnRegistros.Size = new System.Drawing.Size(313, 45);
+            this.btnRegistros.TabIndex = 39;
+            this.btnRegistros.Text = "Registros";
+            this.btnRegistros.UseVisualStyleBackColor = false;
+            this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
             // 
             // btnInventario
             // 
@@ -456,167 +558,6 @@ namespace DulceTentacion
             this.btnDesplegable.UseVisualStyleBackColor = false;
             this.btnDesplegable.Click += new System.EventHandler(this.btnDesplegable_Click);
             // 
-            // ContPrincipal
-            // 
-            this.ContPrincipal.Controls.Add(this.btnDarkMode);
-            this.ContPrincipal.Controls.Add(this.btnUbicacion);
-            this.ContPrincipal.Controls.Add(this.btnImgUsuario);
-            this.ContPrincipal.Controls.Add(this.pictureBox4);
-            this.ContPrincipal.Controls.Add(this.btnFecha);
-            this.ContPrincipal.Controls.Add(this.label1);
-            this.ContPrincipal.Controls.Add(this.btnCerrarSesion);
-            this.ContPrincipal.Controls.Add(this.BarraHorizontal);
-            this.ContPrincipal.Controls.Add(this.BarraH);
-            this.ContPrincipal.Controls.Add(this.FondoImg);
-            this.ContPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContPrincipal.Location = new System.Drawing.Point(313, 0);
-            this.ContPrincipal.Name = "ContPrincipal";
-            this.ContPrincipal.Size = new System.Drawing.Size(1013, 674);
-            this.ContPrincipal.TabIndex = 29;
-            // 
-            // btnDarkMode
-            // 
-            this.btnDarkMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnDarkMode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDarkMode.FlatAppearance.BorderSize = 0;
-            this.btnDarkMode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnDarkMode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
-            this.btnDarkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDarkMode.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDarkMode.Image = global::DulceTentacion.Properties.Resources.modo_Oscuro_removebg_preview__1_;
-            this.btnDarkMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDarkMode.Location = new System.Drawing.Point(3, 630);
-            this.btnDarkMode.Name = "btnDarkMode";
-            this.btnDarkMode.Size = new System.Drawing.Size(220, 39);
-            this.btnDarkMode.TabIndex = 43;
-            this.btnDarkMode.Text = "     Modo Oscuro";
-            this.btnDarkMode.UseVisualStyleBackColor = false;
-            this.btnDarkMode.Click += new System.EventHandler(this.btnDarkMode_Click);
-            // 
-            // btnUbicacion
-            // 
-            this.btnUbicacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUbicacion.Image = global::DulceTentacion.Properties.Resources.ubicacion_removebg_preview1;
-            this.btnUbicacion.Location = new System.Drawing.Point(285, 10);
-            this.btnUbicacion.Name = "btnUbicacion";
-            this.btnUbicacion.Size = new System.Drawing.Size(35, 35);
-            this.btnUbicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnUbicacion.TabIndex = 42;
-            this.btnUbicacion.TabStop = false;
-            // 
-            // btnImgUsuario
-            // 
-            this.btnImgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnImgUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImgUsuario.Image = global::DulceTentacion.Properties.Resources.clientehombre_removebg_preview;
-            this.btnImgUsuario.Location = new System.Drawing.Point(3, 6);
-            this.btnImgUsuario.Name = "btnImgUsuario";
-            this.btnImgUsuario.Size = new System.Drawing.Size(55, 39);
-            this.btnImgUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnImgUsuario.TabIndex = 40;
-            this.btnImgUsuario.TabStop = false;
-            this.btnImgUsuario.Click += new System.EventHandler(this.btnImgUsuario_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(743, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(57, 40);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 37;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnFecha
-            // 
-            this.btnFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFecha.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(182)))));
-            this.btnFecha.Enabled = false;
-            this.btnFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFecha.Location = new System.Drawing.Point(617, 635);
-            this.btnFecha.Name = "btnFecha";
-            this.btnFecha.Size = new System.Drawing.Size(384, 27);
-            this.btnFecha.TabIndex = 33;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(806, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 28);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Dulce Sensación";
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Image = global::DulceTentacion.Properties.Resources.ceerraSesionEditable_removebg_preview;
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(59, 6);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(220, 39);
-            this.btnCerrarSesion.TabIndex = 28;
-            this.btnCerrarSesion.Text = "            Cerrar Sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
-            // BarraHorizontal
-            // 
-            this.BarraHorizontal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BarraHorizontal.FlatAppearance.BorderSize = 0;
-            this.BarraHorizontal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BarraHorizontal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BarraHorizontal.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BarraHorizontal.ForeColor = System.Drawing.Color.White;
-            this.BarraHorizontal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
-            this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1013, 50);
-            this.BarraHorizontal.TabIndex = 30;
-            this.BarraHorizontal.UseVisualStyleBackColor = false;
-            // 
-            // BarraH
-            // 
-            this.BarraH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BarraH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BarraH.FlatAppearance.BorderSize = 0;
-            this.BarraH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BarraH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BarraH.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BarraH.ForeColor = System.Drawing.Color.White;
-            this.BarraH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BarraH.Location = new System.Drawing.Point(0, 624);
-            this.BarraH.Name = "BarraH";
-            this.BarraH.Size = new System.Drawing.Size(1013, 50);
-            this.BarraH.TabIndex = 31;
-            this.BarraH.UseVisualStyleBackColor = false;
-            // 
-            // FondoImg
-            // 
-            this.FondoImg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.FondoImg.Image = global::DulceTentacion.Properties.Resources.dlce_removebg_preview;
-            this.FondoImg.Location = new System.Drawing.Point(-18, 26);
-            this.FondoImg.Name = "FondoImg";
-            this.FondoImg.Size = new System.Drawing.Size(1054, 636);
-            this.FondoImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.FondoImg.TabIndex = 39;
-            this.FondoImg.TabStop = false;
-            this.FondoImg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FondoImg_MouseDown);
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -635,11 +576,7 @@ namespace DulceTentacion
             this.PanelMenus.ResumeLayout(false);
             this.SubPanelEmp.ResumeLayout(false);
             this.SubPanelReg.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnTiktook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInstagram)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnWhatsap)).EndInit();
             this.SubPanelInv.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnFacebook)).EndInit();
             this.ContPrincipal.ResumeLayout(false);
             this.ContPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnUbicacion)).EndInit();
@@ -652,11 +589,7 @@ namespace DulceTentacion
 
         #endregion
         private System.Windows.Forms.Panel PanelMenus;
-        private System.Windows.Forms.PictureBox btnFacebook;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.PictureBox btnTiktook;
-        private System.Windows.Forms.PictureBox btnWhatsap;
-        private System.Windows.Forms.PictureBox btnInstagram;
         private System.Windows.Forms.Panel ContPrincipal;
         private System.Windows.Forms.Button btnAcercade;
         private System.Windows.Forms.Button btnMarketing;
