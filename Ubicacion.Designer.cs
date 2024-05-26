@@ -68,6 +68,7 @@ namespace DulceTentacion
             // 
             this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
+            this.BarraHorizontal.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
             this.BarraHorizontal.Size = new System.Drawing.Size(1013, 45);
@@ -107,9 +108,9 @@ namespace DulceTentacion
             this.ContUbicacion.Controls.Add(this.btnPrincipal);
             this.ContUbicacion.Controls.Add(this.MapUbi);
             this.ContUbicacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContUbicacion.Location = new System.Drawing.Point(0, 0);
+            this.ContUbicacion.Location = new System.Drawing.Point(0, 45);
             this.ContUbicacion.Name = "ContUbicacion";
-            this.ContUbicacion.Size = new System.Drawing.Size(1013, 674);
+            this.ContUbicacion.Size = new System.Drawing.Size(1013, 629);
             this.ContUbicacion.TabIndex = 15;
             // 
             // CBModo
@@ -123,6 +124,7 @@ namespace DulceTentacion
             this.CBModo.Name = "CBModo";
             this.CBModo.Size = new System.Drawing.Size(221, 24);
             this.CBModo.TabIndex = 48;
+            this.CBModo.SelectedIndexChanged += new System.EventHandler(this.CBModo_SelectedIndexChanged_1);
             // 
             // lblSucursal
             // 
@@ -141,7 +143,7 @@ namespace DulceTentacion
             this.btnTiktook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTiktook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTiktook.Image = ((System.Drawing.Image)(resources.GetObject("btnTiktook.Image")));
-            this.btnTiktook.Location = new System.Drawing.Point(930, 605);
+            this.btnTiktook.Location = new System.Drawing.Point(930, 560);
             this.btnTiktook.Name = "btnTiktook";
             this.btnTiktook.Size = new System.Drawing.Size(55, 47);
             this.btnTiktook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,7 +155,7 @@ namespace DulceTentacion
             this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInstagram.Image = ((System.Drawing.Image)(resources.GetObject("btnInstagram.Image")));
-            this.btnInstagram.Location = new System.Drawing.Point(816, 605);
+            this.btnInstagram.Location = new System.Drawing.Point(816, 560);
             this.btnInstagram.Name = "btnInstagram";
             this.btnInstagram.Size = new System.Drawing.Size(54, 47);
             this.btnInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,7 +167,7 @@ namespace DulceTentacion
             this.btnWhatsap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnWhatsap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnWhatsap.Image = ((System.Drawing.Image)(resources.GetObject("btnWhatsap.Image")));
-            this.btnWhatsap.Location = new System.Drawing.Point(876, 605);
+            this.btnWhatsap.Location = new System.Drawing.Point(876, 560);
             this.btnWhatsap.Name = "btnWhatsap";
             this.btnWhatsap.Size = new System.Drawing.Size(48, 47);
             this.btnWhatsap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +179,7 @@ namespace DulceTentacion
             this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFacebook.Image = ((System.Drawing.Image)(resources.GetObject("btnFacebook.Image")));
-            this.btnFacebook.Location = new System.Drawing.Point(759, 605);
+            this.btnFacebook.Location = new System.Drawing.Point(759, 560);
             this.btnFacebook.Name = "btnFacebook";
             this.btnFacebook.Size = new System.Drawing.Size(51, 47);
             this.btnFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -293,6 +295,8 @@ namespace DulceTentacion
             this.txtOpinion.Size = new System.Drawing.Size(455, 120);
             this.txtOpinion.TabIndex = 35;
             this.txtOpinion.Text = "Describe tu experiencia (opcional)";
+            this.txtOpinion.Leave += new System.EventHandler(this.txtOpinion_Leave_1);
+            this.txtOpinion.MouseEnter += new System.EventHandler(this.txtOpinion_MouseEnter_1);
             // 
             // label6
             // 
@@ -320,7 +324,7 @@ namespace DulceTentacion
             this.lblReserva.AutoSize = true;
             this.lblReserva.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReserva.Location = new System.Drawing.Point(28, 629);
+            this.lblReserva.Location = new System.Drawing.Point(28, 584);
             this.lblReserva.Name = "lblReserva";
             this.lblReserva.Size = new System.Drawing.Size(575, 20);
             this.lblReserva.TabIndex = 41;
@@ -344,6 +348,7 @@ namespace DulceTentacion
             this.btnSucursal1.TabIndex = 40;
             this.btnSucursal1.Text = "Sucursal 1";
             this.btnSucursal1.UseVisualStyleBackColor = false;
+            this.btnSucursal1.Click += new System.EventHandler(this.btnSucursal1_Click_1);
             // 
             // btnSucursal3
             // 
@@ -361,6 +366,7 @@ namespace DulceTentacion
             this.btnSucursal3.TabIndex = 39;
             this.btnSucursal3.Text = "Sucursal 3";
             this.btnSucursal3.UseVisualStyleBackColor = false;
+            this.btnSucursal3.Click += new System.EventHandler(this.btnSucursal3_Click_1);
             // 
             // btnSucursal2
             // 
@@ -378,6 +384,7 @@ namespace DulceTentacion
             this.btnSucursal2.TabIndex = 38;
             this.btnSucursal2.Text = "Sucursal 2";
             this.btnSucursal2.UseVisualStyleBackColor = false;
+            this.btnSucursal2.Click += new System.EventHandler(this.btnSucursal2_Click_1);
             // 
             // btnPrincipal
             // 
@@ -395,6 +402,7 @@ namespace DulceTentacion
             this.btnPrincipal.TabIndex = 37;
             this.btnPrincipal.Text = "Principal";
             this.btnPrincipal.UseVisualStyleBackColor = false;
+            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click_1);
             // 
             // MapUbi
             // 
@@ -421,7 +429,7 @@ namespace DulceTentacion
             this.MapUbi.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.MapUbi.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MapUbi.ShowTileGridLines = false;
-            this.MapUbi.Size = new System.Drawing.Size(424, 564);
+            this.MapUbi.Size = new System.Drawing.Size(424, 519);
             this.MapUbi.TabIndex = 36;
             this.MapUbi.Zoom = 0D;
             // 
@@ -431,8 +439,8 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1013, 674);
-            this.Controls.Add(this.BarraHorizontal);
             this.Controls.Add(this.ContUbicacion);
+            this.Controls.Add(this.BarraHorizontal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ubicacion";
             this.Text = "Ubicacion";

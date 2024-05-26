@@ -136,6 +136,12 @@
     <Compile Include="Reservaciones.Designer.cs">
       <DependentUpon>Reservaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeleccionFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionFoto.Designer.cs">
+      <DependentUpon>SeleccionFoto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ubicacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reservaciones.resx">
       <DependentUpon>Reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionFoto.resx">
+      <DependentUpon>SeleccionFoto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubicacion.resx">
       <DependentUpon>Ubicacion.cs</DependentUpon>
@@ -517,6 +526,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Viejito %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Viejito2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Viejo} %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Niño 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Mujer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Señor 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Señor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar mujer 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar niña 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Niña.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Señora.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar-Niño.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar-Joven.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar-Joven1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar-Viejita.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

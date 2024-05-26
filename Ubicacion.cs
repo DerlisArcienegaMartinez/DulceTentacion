@@ -19,7 +19,6 @@ namespace DulceTentacion
     {
 
         private Color originalBackColor;
-        private Color originalForeColor;
         private Color originalGBOpForeColor;
         
 
@@ -156,74 +155,9 @@ namespace DulceTentacion
             this.Close();
         }
 
-        private void CBModo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (CBModo.SelectedItem.ToString() == "Mapa Normal")
-            {
-                MapUbi.MapProvider = GMapProviders.GoogleMap;
-            }
-            else if (CBModo.SelectedItem.ToString() == "Mapa Satélite")
-            {
-                MapUbi.MapProvider = GMapProviders.GoogleSatelliteMap;
-            }
 
-            // Actualiza el mapa (si es necesario)
-            MapUbi.Refresh();
-        }
 
-        private void btnPrincipal_Click(object sender, EventArgs e)
-        {
-            double latitudActual = LatInicial;
-            double longitudActual = LnInicial;
-
-            // Actualiza la posición del mapa a las coordenadas deseadas
-            MapUbi.Position = new PointLatLng(LatInicial, LnInicial);
-        }
-
-        private void btnSucursal1_Click(object sender, EventArgs e)
-        {
-            double latitudActual = LatSucursal1;
-            double longitudActual = LnSucursal1;
-
-            // Actualiza la posición del mapa a las coordenadas deseadas
-            MapUbi.Position = new PointLatLng(LatSucursal1, LnSucursal1);
-        }
-
-        private void btnSucursal2_Click(object sender, EventArgs e)
-        {
-            double latitudActual = LatSucursal2;
-            double longitudActual = LnSucursal2;
-
-            // Actualiza la posición del mapa a las coordenadas deseadas
-            MapUbi.Position = new PointLatLng(LatSucursal2, LnSucursal2);
-        }
-
-        private void btnSucursal3_Click(object sender, EventArgs e)
-        {
-            double latitudActual = LatSucursal3;
-            double longitudActual = LnSucursal3;
-
-            // Actualiza la posición del mapa a las coordenadas deseadas
-            MapUbi.Position = new PointLatLng(LatSucursal3, LnSucursal3);
-        }
-
-        private void txtOpinion_MouseEnter(object sender, EventArgs e)
-        {
-            if (txtOpinion.Text == "Describe tu experiencia (opcional)")
-            {
-                txtOpinion.Text = "";
-                txtOpinion.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtOpinion_Leave(object sender, EventArgs e)
-        {
-            if (txtOpinion.Text == "")
-            {
-                txtOpinion.Text = "Describe tu experiencia (opcional)";
-                txtOpinion.ForeColor = Color.Black;
-            }
-        }
+       
         //Configurar la ventana en el panel contenedor
         private Form activeForm = null;
         private void abrirConPrincipal(Form childForm)
@@ -243,6 +177,75 @@ namespace DulceTentacion
         private void lblReserva_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             abrirConPrincipal(new Reservaciones());
+        }
+
+        private void btnSucursal1_Click_1(object sender, EventArgs e)
+        {
+            double latitudActual = LatSucursal1;
+            double longitudActual = LnSucursal1;
+
+            // Actualiza la posición del mapa a las coordenadas deseadas
+            MapUbi.Position = new PointLatLng(LatSucursal1, LnSucursal1);
+        }
+
+        private void btnPrincipal_Click_1(object sender, EventArgs e)
+        {
+            double latitudActual = LatInicial;
+            double longitudActual = LnInicial;
+
+            // Actualiza la posición del mapa a las coordenadas deseadas
+            MapUbi.Position = new PointLatLng(LatInicial, LnInicial);
+        }
+
+        private void btnSucursal2_Click_1(object sender, EventArgs e)
+        {
+            double latitudActual = LatSucursal2;
+            double longitudActual = LnSucursal2;
+
+            // Actualiza la posición del mapa a las coordenadas deseadas
+            MapUbi.Position = new PointLatLng(LatSucursal2, LnSucursal2);
+        }
+
+        private void btnSucursal3_Click_1(object sender, EventArgs e)
+        {
+            double latitudActual = LatSucursal3;
+            double longitudActual = LnSucursal3;
+
+            // Actualiza la posición del mapa a las coordenadas deseadas
+            MapUbi.Position = new PointLatLng(LatSucursal3, LnSucursal3);
+        }
+
+        private void txtOpinion_MouseEnter_1(object sender, EventArgs e)
+        {
+            if (txtOpinion.Text == "Describe tu experiencia (opcional)")
+            {
+                txtOpinion.Text = "";
+                txtOpinion.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtOpinion_Leave_1(object sender, EventArgs e)
+        {
+            if (txtOpinion.Text == "")
+            {
+                txtOpinion.Text = "Describe tu experiencia (opcional)";
+                txtOpinion.ForeColor = Color.Black;
+            }
+        }
+
+        private void CBModo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (CBModo.SelectedItem.ToString() == "Mapa Normal")
+            {
+                MapUbi.MapProvider = GMapProviders.GoogleMap;
+            }
+            else if (CBModo.SelectedItem.ToString() == "Mapa Satélite")
+            {
+                MapUbi.MapProvider = GMapProviders.GoogleSatelliteMap;
+            }
+
+            // Actualiza el mapa (si es necesario)
+            MapUbi.Refresh();
         }
     }
    

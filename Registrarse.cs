@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DulceTentacion
 {
@@ -68,17 +69,17 @@ namespace DulceTentacion
             string cu = txtCU.Text;
             string FechaNacimiento = txtFecNacimiento.Text;
             string Edad = txtEdad.Text;
-            string genero = CBGenero.SelectedItem.ToString();
+            string genero = CBGenero.SelectedItem?.ToString();
             string telefono = txtTelefono.Text;
             string celular = txtCelular.Text;
             string direccionDomicilio = txtDomicilio.Text;
-            string correoElectronico = txtCorreo.Text + CBCorreos.SelectedItem.ToString();
+            string correoElectronico = txtCorreo.Text;
             string nombreUsuario = txtNomUsuario.Text;
             string contraseña = txtContraseña.Text;
 
             if (string.IsNullOrEmpty(nombreUsuario) || string.IsNullOrEmpty(contraseña))
             {
-                MessageBox.Show("Nombre de usuario o contraseña incorrecta");
+                MessageBox.Show("Ingrese sus datos por favor");
                 return;
             }
 
@@ -103,16 +104,17 @@ namespace DulceTentacion
                         return;
                     }
 
-                    string query = "INSERT INTO Usuarios (Nombre, ApellidoPaterno, ApellidoMaterno, CU, FecNacimiento, Edad, Genero, Telefono, Celular, DireccionDomicilio, CorreoElectronico, NombreUsuario, Contraseña) " +
-                                   "VALUES (@Nombre, @ApellidoPaterno, @ApellidoMaterno, @CU, @FechaNacimiento, @Edad, @Genero, @Telefono, @Celular, @DireccionDomicilio, @CorreoElectronico, @NombreUsuario, @Contraseña)";
+                    string query = "INSERT INTO Usuarios (Nombre, ApellidoPaterno, ApellidoMaterno, CU, Genero, FecNacimiento, Edad, Telefono, Celular, DireccionDomicilio, CorreoElectronico, NombreUsuario, Contraseña) " +
+                                   "VALUES (@Nombre, @ApellidoPaterno, @ApellidoMaterno, @CU, @Genero, @FechaNacimiento, @Edad, @Telefono, @Celular, @DireccionDomicilio, @CorreoElectronico, @NombreUsuario, @Contraseña)";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Nombre", nombre);
                     cmd.Parameters.AddWithValue("@ApellidoPaterno", apellidoPaterno);
                     cmd.Parameters.AddWithValue("@ApellidoMaterno", apellidoMaterno);
                     cmd.Parameters.AddWithValue("@CU", cu);
+                    cmd.Parameters.AddWithValue("@Genero", genero);
                     cmd.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento);
                     cmd.Parameters.AddWithValue("@Edad", Edad);
-                    cmd.Parameters.AddWithValue("@Genero", genero);
+                    
                     cmd.Parameters.AddWithValue("@Telefono", telefono);
                     cmd.Parameters.AddWithValue("@Celular", celular);
                     cmd.Parameters.AddWithValue("@DireccionDomicilio", direccionDomicilio);
@@ -162,7 +164,7 @@ namespace DulceTentacion
             txtApPaterno.Text = "";
             txtApMaterno.Text = "";
             txtCU.Text = "";
-            CBGenero.Text = "";
+            
             txtFecNacimiento.Text = "";
             txtEdad.Text = "";
             txtTelefono.Text = "";
@@ -171,8 +173,8 @@ namespace DulceTentacion
             txtDomicilio.Text = "";
             txtNomUsuario.Text = "";
             txtContraseña.Text = "";
-            CBCorreos.Text = "";
-
+            CBGenero.SelectedIndex = -1;
+            ImgPerfil.Image = null;
         }
         private void GBCuenta_Enter(object sender, EventArgs e)
         {
@@ -181,15 +183,21 @@ namespace DulceTentacion
 
         private void Registro_Load(object sender, EventArgs e)
         {
-            CBGenero.Items.Add("Masculino");
-            CBGenero.Items.Add("Femenino");
+            
+        }
 
-            CBCorreos.Items.Add("@gmail.com");
-            CBCorreos.Items.Add("@hotmail.com");
-            CBCorreos.Items.Add("@yahoo.com");
-            CBCorreos.Items.Add("@outlook.com");
-            CBCorreos.Items.Add("@usfx.bo");
-            CBCorreos.Items.Add("@¡cloud.com");
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSelectFoto_Click(object sender, EventArgs e)
+        {
+            // Puedes agregar aquí la lógica adicional para el menú principal si es necesario
+            using (SeleccionFoto foto = new SeleccionFoto())
+                foto.ShowDialog();
+
+
         }
     }
     

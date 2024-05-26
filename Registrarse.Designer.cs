@@ -32,6 +32,7 @@ namespace DulceTentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.btnSelectFoto = new System.Windows.Forms.Button();
             this.GBCuenta = new System.Windows.Forms.GroupBox();
+            this.CBSufijos = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -86,9 +87,11 @@ namespace DulceTentacion
             this.btnSelectFoto.TabIndex = 1;
             this.btnSelectFoto.Text = "Seleccionar Foto";
             this.btnSelectFoto.UseVisualStyleBackColor = true;
+            this.btnSelectFoto.Click += new System.EventHandler(this.btnSelectFoto_Click);
             // 
             // GBCuenta
             // 
+            this.GBCuenta.Controls.Add(this.CBSufijos);
             this.GBCuenta.Controls.Add(this.label23);
             this.GBCuenta.Controls.Add(this.txtEdad);
             this.GBCuenta.Controls.Add(this.label22);
@@ -128,13 +131,32 @@ namespace DulceTentacion
             this.GBCuenta.Controls.Add(this.label2);
             this.GBCuenta.Controls.Add(this.label1);
             this.GBCuenta.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBCuenta.Location = new System.Drawing.Point(24, 25);
+            this.GBCuenta.Location = new System.Drawing.Point(12, 25);
             this.GBCuenta.Name = "GBCuenta";
-            this.GBCuenta.Size = new System.Drawing.Size(566, 432);
+            this.GBCuenta.Size = new System.Drawing.Size(578, 432);
             this.GBCuenta.TabIndex = 2;
             this.GBCuenta.TabStop = false;
             this.GBCuenta.Text = "Crear Cuenta de Usuario";
             this.GBCuenta.Enter += new System.EventHandler(this.GBCuenta_Enter);
+            // 
+            // CBSufijos
+            // 
+            this.CBSufijos.FormattingEnabled = true;
+            this.CBSufijos.Items.AddRange(new object[] {
+            "+54",
+            "+591",
+            "+55",
+            "+56",
+            "+57",
+            "+593",
+            "+595",
+            "+51",
+            "+598",
+            "+58"});
+            this.CBSufijos.Location = new System.Drawing.Point(347, 235);
+            this.CBSufijos.Name = "CBSufijos";
+            this.CBSufijos.Size = new System.Drawing.Size(68, 28);
+            this.CBSufijos.TabIndex = 59;
             // 
             // label23
             // 
@@ -166,6 +188,9 @@ namespace DulceTentacion
             // CBGenero
             // 
             this.CBGenero.FormattingEnabled = true;
+            this.CBGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
             this.CBGenero.Location = new System.Drawing.Point(396, 167);
             this.CBGenero.Name = "CBGenero";
             this.CBGenero.Size = new System.Drawing.Size(142, 28);
@@ -174,6 +199,12 @@ namespace DulceTentacion
             // CBCorreos
             // 
             this.CBCorreos.FormattingEnabled = true;
+            this.CBCorreos.Items.AddRange(new object[] {
+            "@gmail.com",
+            "@hotmail.com",
+            "@outlook.com",
+            "@usfx.bo",
+            "@yahoo.com"});
             this.CBCorreos.Location = new System.Drawing.Point(347, 308);
             this.CBCorreos.Name = "CBCorreos";
             this.CBCorreos.Size = new System.Drawing.Size(142, 28);
@@ -257,7 +288,7 @@ namespace DulceTentacion
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(538, 259);
+            this.label15.Location = new System.Drawing.Point(559, 235);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(15, 18);
             this.label15.TabIndex = 41;
@@ -304,7 +335,7 @@ namespace DulceTentacion
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(396, 235);
+            this.txtCelular.Location = new System.Drawing.Point(419, 235);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(134, 28);
             this.txtCelular.TabIndex = 32;
@@ -335,7 +366,7 @@ namespace DulceTentacion
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(157, 235);
+            this.txtTelefono.Location = new System.Drawing.Point(101, 235);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(143, 28);
             this.txtTelefono.TabIndex = 29;
@@ -351,7 +382,7 @@ namespace DulceTentacion
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(330, 240);
+            this.label6.Location = new System.Drawing.Point(281, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 18);
             this.label6.TabIndex = 18;
@@ -429,7 +460,7 @@ namespace DulceTentacion
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(81, 240);
+            this.label5.Location = new System.Drawing.Point(25, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 18);
             this.label5.TabIndex = 17;
@@ -505,6 +536,7 @@ namespace DulceTentacion
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Registro
             // 
@@ -574,5 +606,6 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox CBSufijos;
     }
 }

@@ -15,7 +15,6 @@ namespace DulceTentacion
     {
         private Color originalBackColor;
       
-        private Color originalContVentasColor;
 
         public Ventas()
         {

@@ -111,7 +111,7 @@ namespace DulceTentacion
             this.Box5.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Box5.Location = new System.Drawing.Point(42, 2013);
             this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(907, 391);
+            this.Box5.Size = new System.Drawing.Size(844, 391);
             this.Box5.TabIndex = 26;
             this.Box5.TabStop = false;
             this.Box5.Text = "* Pasteles ocasionales";
@@ -191,7 +191,7 @@ namespace DulceTentacion
             this.Box4.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Box4.Location = new System.Drawing.Point(42, 1697);
             this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(907, 301);
+            this.Box4.Size = new System.Drawing.Size(844, 301);
             this.Box4.TabIndex = 25;
             this.Box4.TabStop = false;
             this.Box4.Text = "* Pasteles para diferentes acontecimientos";
@@ -289,7 +289,7 @@ namespace DulceTentacion
             this.Box3.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Box3.Location = new System.Drawing.Point(42, 1282);
             this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(907, 391);
+            this.Box3.Size = new System.Drawing.Size(844, 391);
             this.Box3.TabIndex = 24;
             this.Box3.TabStop = false;
             this.Box3.Text = "* Pasteles para cumpleaños";
@@ -367,7 +367,7 @@ namespace DulceTentacion
             this.Box2.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Box2.Location = new System.Drawing.Point(42, 858);
             this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(907, 399);
+            this.Box2.Size = new System.Drawing.Size(844, 399);
             this.Box2.TabIndex = 23;
             this.Box2.TabStop = false;
             this.Box2.Text = "* Pasteles para acontecimientos religiosos";
@@ -459,7 +459,7 @@ namespace DulceTentacion
             this.Box1.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Box1.Location = new System.Drawing.Point(42, 95);
             this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(907, 732);
+            this.Box1.Size = new System.Drawing.Size(844, 732);
             this.Box1.TabIndex = 21;
             this.Box1.TabStop = false;
             this.Box1.Text = "* Pasteles para acontecimientos matrimoniales";
@@ -576,7 +576,7 @@ namespace DulceTentacion
             this.btnRegresar.ForeColor = System.Drawing.Color.Black;
             this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(756, 59);
+            this.btnRegresar.Location = new System.Drawing.Point(693, 59);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(168, 44);
             this.btnRegresar.TabIndex = 27;
