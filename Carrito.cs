@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class SeleccionFoto : Form
+    public partial class Carrito : Form
     {
-
-        Bitmap[] imagenes = { Properties.Resources.Avatar_Niño, Properties.Resources.Avatar_Joven, Properties.Resources.Avatar_Niño_2, Properties.Resources.Avatar_adulto, Properties.Resources.Avatar_Señor_1, Properties.Resources.Avatar_Señor,
-        Properties.Resources.Avatar_Viejo___1_, Properties.Resources.Avatar_Viejito_feliz__1_, Properties.Resources.Avatar_Viejito2,
-        Properties.Resources.Avatar_Niña,Properties.Resources.Avatar_niña_1, Properties.Resources.Avatar_mujer_1, Properties.Resources.Avatar_mujer3, Properties.Resources.Avatar_Mujer, Properties.Resources.Avatar_Señora,
-        Properties.Resources.Avatar_Viejita, Properties.Resources.Avatar_Viejita1, Properties.Resources.Avatar_Viejita_1__1_};
+        Bitmap[] imagenes = { Properties.Resources.Avatar_adulto, Properties.Resources.Avatar_Joven, Properties.Resources.Avatar_mujer3, Properties.Resources.Avatar_mujer_1, Properties.Resources.Avatar_Niño_2 };
         int indiceCentral = 0;
         int indiceIzquierda;
         int indiceDerecha;
 
-        public SeleccionFoto()
+        public Carrito()
         {
             InitializeComponent();
-
             // Configuramos los índices iniciales
             indiceCentral = 0;
             indiceIzquierda = imagenes.Length - 1;
@@ -33,7 +28,6 @@ namespace DulceTentacion
             // Mostramos las imágenes iniciales
             MostrarImagenes();
         }
-
         // Método para mostrar las imágenes
         void MostrarImagenes()
         {
@@ -73,23 +67,14 @@ namespace DulceTentacion
             MostrarImagenes();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnAnterior_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Retroceder();
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             Avanzar();
         }
-
-        private void btnAnterior_Click(object sender, EventArgs e)
-        {
-            Retroceder();
-        }
-
-       
-
-        
     }
 }

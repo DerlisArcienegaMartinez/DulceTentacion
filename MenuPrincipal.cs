@@ -447,7 +447,7 @@ namespace DulceTentacion
 
         private void btnMenuVentas_Click(object sender, EventArgs e)
         {
-            abrirconprincipal(new Ventas());
+            abrirconprincipal(new MenuVentas());
         }
 
 
@@ -471,12 +471,7 @@ namespace DulceTentacion
        
 
 
-        private void btnConfiguracion_Click(object sender, EventArgs e)
-        {
-            //abrirconprincipal(new Configuracion());
-            Configuracion configuracionForm = new Configuracion();
-            abrirconprincipal(configuracionForm);
-        }
+      
 
         private void btnAtCliente_Click(object sender, EventArgs e)
         {

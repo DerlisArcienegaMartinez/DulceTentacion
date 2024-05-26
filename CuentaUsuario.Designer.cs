@@ -31,8 +31,26 @@ namespace DulceTentacion
         {
             this.BarraHorizontall = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DatoPersonal = new System.Windows.Forms.GroupBox();
+            this.lblContraseña = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblFecNacimiento = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblGenero = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.lblCelular = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblApMaterno = new System.Windows.Forms.Label();
+            this.lblApPaterno = new System.Windows.Forms.Label();
+            this.lblCI = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblIdCliente = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lblIdClientesss = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,29 +69,11 @@ namespace DulceTentacion
             this.label9 = new System.Windows.Forms.Label();
             this.btnEditarInfo = new System.Windows.Forms.Button();
             this.btnSaveInfo = new System.Windows.Forms.Button();
-            this.lblIdClientesss = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.lblIdCliente = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCI = new System.Windows.Forms.Label();
-            this.lblApPaterno = new System.Windows.Forms.Label();
-            this.lblApMaterno = new System.Windows.Forms.Label();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblCelular = new System.Windows.Forms.Label();
-            this.lblEdad = new System.Windows.Forms.Label();
-            this.lblGenero = new System.Windows.Forms.Label();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.lblFecNacimiento = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblContraseña = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraHorizontall.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.DatoPersonal.SuspendLayout();
             this.DatoLaboral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraHorizontall
@@ -94,6 +94,7 @@ namespace DulceTentacion
             this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(3, 3);
             this.btnRegresar.Name = "btnRegresar";
@@ -102,16 +103,6 @@ namespace DulceTentacion
             this.btnRegresar.Text = "      Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // DatoPersonal
             // 
@@ -151,6 +142,196 @@ namespace DulceTentacion
             this.DatoPersonal.TabIndex = 18;
             this.DatoPersonal.TabStop = false;
             this.DatoPersonal.Text = "Datos Personales";
+            // 
+            // lblContraseña
+            // 
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(390, 302);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(19, 20);
+            this.lblContraseña.TabIndex = 46;
+            this.lblContraseña.Text = "#";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(109, 302);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(19, 20);
+            this.lblUsuario.TabIndex = 45;
+            this.lblUsuario.Text = "#";
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Location = new System.Drawing.Point(100, 270);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(19, 20);
+            this.lblCorreo.TabIndex = 44;
+            this.lblCorreo.Text = "#";
+            // 
+            // lblFecNacimiento
+            // 
+            this.lblFecNacimiento.AutoSize = true;
+            this.lblFecNacimiento.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecNacimiento.Location = new System.Drawing.Point(188, 198);
+            this.lblFecNacimiento.Name = "lblFecNacimiento";
+            this.lblFecNacimiento.Size = new System.Drawing.Size(19, 20);
+            this.lblFecNacimiento.TabIndex = 43;
+            this.lblFecNacimiento.Text = "#";
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(127, 234);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(19, 20);
+            this.lblDireccion.TabIndex = 42;
+            this.lblDireccion.Text = "#";
+            // 
+            // lblGenero
+            // 
+            this.lblGenero.AutoSize = true;
+            this.lblGenero.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenero.Location = new System.Drawing.Point(411, 270);
+            this.lblGenero.Name = "lblGenero";
+            this.lblGenero.Size = new System.Drawing.Size(19, 20);
+            this.lblGenero.TabIndex = 41;
+            this.lblGenero.Text = "#";
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.Location = new System.Drawing.Point(444, 198);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(19, 20);
+            this.lblEdad.TabIndex = 40;
+            this.lblEdad.Text = "#";
+            // 
+            // lblCelular
+            // 
+            this.lblCelular.AutoSize = true;
+            this.lblCelular.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCelular.Location = new System.Drawing.Point(319, 160);
+            this.lblCelular.Name = "lblCelular";
+            this.lblCelular.Size = new System.Drawing.Size(19, 20);
+            this.lblCelular.TabIndex = 39;
+            this.lblCelular.Text = "#";
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Location = new System.Drawing.Point(109, 160);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(19, 20);
+            this.lblTelefono.TabIndex = 38;
+            this.lblTelefono.Text = "#";
+            // 
+            // lblApMaterno
+            // 
+            this.lblApMaterno.AutoSize = true;
+            this.lblApMaterno.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApMaterno.Location = new System.Drawing.Point(170, 120);
+            this.lblApMaterno.Name = "lblApMaterno";
+            this.lblApMaterno.Size = new System.Drawing.Size(19, 20);
+            this.lblApMaterno.TabIndex = 37;
+            this.lblApMaterno.Text = "#";
+            // 
+            // lblApPaterno
+            // 
+            this.lblApPaterno.AutoSize = true;
+            this.lblApPaterno.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApPaterno.Location = new System.Drawing.Point(166, 90);
+            this.lblApPaterno.Name = "lblApPaterno";
+            this.lblApPaterno.Size = new System.Drawing.Size(19, 20);
+            this.lblApPaterno.TabIndex = 36;
+            this.lblApPaterno.Text = "#";
+            // 
+            // lblCI
+            // 
+            this.lblCI.AutoSize = true;
+            this.lblCI.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCI.Location = new System.Drawing.Point(319, 32);
+            this.lblCI.Name = "lblCI";
+            this.lblCI.Size = new System.Drawing.Size(19, 20);
+            this.lblCI.TabIndex = 35;
+            this.lblCI.Text = "#";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(102, 61);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(19, 20);
+            this.lblNombre.TabIndex = 34;
+            this.lblNombre.Text = "#";
+            // 
+            // lblIdCliente
+            // 
+            this.lblIdCliente.AutoSize = true;
+            this.lblIdCliente.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdCliente.Location = new System.Drawing.Point(123, 32);
+            this.lblIdCliente.Name = "lblIdCliente";
+            this.lblIdCliente.Size = new System.Drawing.Size(19, 20);
+            this.lblIdCliente.TabIndex = 33;
+            this.lblIdCliente.Text = "#";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(24, 270);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(70, 20);
+            this.label21.TabIndex = 32;
+            this.label21.Text = "Correo:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(278, 302);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(106, 20);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "Contraseña:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(24, 302);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(79, 20);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "Usuario:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(15, 198);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(167, 20);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "Fecha Nacimiento:";
+            // 
+            // lblIdClientesss
+            // 
+            this.lblIdClientesss.AutoSize = true;
+            this.lblIdClientesss.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdClientesss.Location = new System.Drawing.Point(15, 32);
+            this.lblIdClientesss.Name = "lblIdClientesss";
+            this.lblIdClientesss.Size = new System.Drawing.Size(102, 20);
+            this.lblIdClientesss.TabIndex = 28;
+            this.lblIdClientesss.Text = "Id Cliente :";
             // 
             // label13
             // 
@@ -345,195 +526,16 @@ namespace DulceTentacion
             this.btnSaveInfo.UseVisualStyleBackColor = true;
             this.btnSaveInfo.Click += new System.EventHandler(this.btnSaveInfo_Click);
             // 
-            // lblIdClientesss
+            // pictureBox1
             // 
-            this.lblIdClientesss.AutoSize = true;
-            this.lblIdClientesss.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdClientesss.Location = new System.Drawing.Point(15, 32);
-            this.lblIdClientesss.Name = "lblIdClientesss";
-            this.lblIdClientesss.Size = new System.Drawing.Size(102, 20);
-            this.lblIdClientesss.TabIndex = 28;
-            this.lblIdClientesss.Text = "Id Cliente :";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(15, 198);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(167, 20);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Fecha Nacimiento:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(24, 302);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 20);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "Usuario:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(278, 302);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(106, 20);
-            this.label20.TabIndex = 27;
-            this.label20.Text = "Contraseña:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(24, 270);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(70, 20);
-            this.label21.TabIndex = 32;
-            this.label21.Text = "Correo:";
-            // 
-            // lblIdCliente
-            // 
-            this.lblIdCliente.AutoSize = true;
-            this.lblIdCliente.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdCliente.Location = new System.Drawing.Point(123, 32);
-            this.lblIdCliente.Name = "lblIdCliente";
-            this.lblIdCliente.Size = new System.Drawing.Size(19, 20);
-            this.lblIdCliente.TabIndex = 33;
-            this.lblIdCliente.Text = "#";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(102, 61);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(19, 20);
-            this.lblNombre.TabIndex = 34;
-            this.lblNombre.Text = "#";
-            // 
-            // lblCI
-            // 
-            this.lblCI.AutoSize = true;
-            this.lblCI.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCI.Location = new System.Drawing.Point(319, 32);
-            this.lblCI.Name = "lblCI";
-            this.lblCI.Size = new System.Drawing.Size(19, 20);
-            this.lblCI.TabIndex = 35;
-            this.lblCI.Text = "#";
-            // 
-            // lblApPaterno
-            // 
-            this.lblApPaterno.AutoSize = true;
-            this.lblApPaterno.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApPaterno.Location = new System.Drawing.Point(166, 90);
-            this.lblApPaterno.Name = "lblApPaterno";
-            this.lblApPaterno.Size = new System.Drawing.Size(19, 20);
-            this.lblApPaterno.TabIndex = 36;
-            this.lblApPaterno.Text = "#";
-            // 
-            // lblApMaterno
-            // 
-            this.lblApMaterno.AutoSize = true;
-            this.lblApMaterno.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApMaterno.Location = new System.Drawing.Point(170, 120);
-            this.lblApMaterno.Name = "lblApMaterno";
-            this.lblApMaterno.Size = new System.Drawing.Size(19, 20);
-            this.lblApMaterno.TabIndex = 37;
-            this.lblApMaterno.Text = "#";
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(109, 160);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(19, 20);
-            this.lblTelefono.TabIndex = 38;
-            this.lblTelefono.Text = "#";
-            // 
-            // lblCelular
-            // 
-            this.lblCelular.AutoSize = true;
-            this.lblCelular.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelular.Location = new System.Drawing.Point(319, 160);
-            this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(19, 20);
-            this.lblCelular.TabIndex = 39;
-            this.lblCelular.Text = "#";
-            // 
-            // lblEdad
-            // 
-            this.lblEdad.AutoSize = true;
-            this.lblEdad.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEdad.Location = new System.Drawing.Point(444, 198);
-            this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(19, 20);
-            this.lblEdad.TabIndex = 40;
-            this.lblEdad.Text = "#";
-            // 
-            // lblGenero
-            // 
-            this.lblGenero.AutoSize = true;
-            this.lblGenero.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero.Location = new System.Drawing.Point(411, 270);
-            this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(19, 20);
-            this.lblGenero.TabIndex = 41;
-            this.lblGenero.Text = "#";
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(127, 234);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(19, 20);
-            this.lblDireccion.TabIndex = 42;
-            this.lblDireccion.Text = "#";
-            // 
-            // lblFecNacimiento
-            // 
-            this.lblFecNacimiento.AutoSize = true;
-            this.lblFecNacimiento.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecNacimiento.Location = new System.Drawing.Point(188, 198);
-            this.lblFecNacimiento.Name = "lblFecNacimiento";
-            this.lblFecNacimiento.Size = new System.Drawing.Size(19, 20);
-            this.lblFecNacimiento.TabIndex = 43;
-            this.lblFecNacimiento.Text = "#";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(100, 270);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(19, 20);
-            this.lblCorreo.TabIndex = 44;
-            this.lblCorreo.Text = "#";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(109, 302);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(19, 20);
-            this.lblUsuario.TabIndex = 45;
-            this.lblUsuario.Text = "#";
-            // 
-            // lblContraseña
-            // 
-            this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(390, 302);
-            this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(19, 20);
-            this.lblContraseña.TabIndex = 46;
-            this.lblContraseña.Text = "#";
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Avatar_Usuario_Cuenta;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 76);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 186);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // CuentaUsuario
             // 
@@ -551,11 +553,11 @@ namespace DulceTentacion
             this.Name = "CuentaUsuario";
             this.Text = "CuentaUsuario";
             this.BarraHorizontall.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.DatoPersonal.ResumeLayout(false);
             this.DatoPersonal.PerformLayout();
             this.DatoLaboral.ResumeLayout(false);
             this.DatoLaboral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

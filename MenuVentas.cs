@@ -8,22 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace DulceTentacion
 {
-    public partial class Ventas : Form
+    public partial class MenuVentas : Form
     {
-        private Color originalBackColor;
-      
 
-        public Ventas()
+        private Color originalBackColor;
+
+        public MenuVentas()
         {
             InitializeComponent();
             ApplyColors(); // Aplicar los colores al abrir el formulario
             MenuPrincipal.DarkModeChanged += ApplyColors;
         }
-
-       
 
         //Configurar la ventana en el panel contenedor
         private Form activeForm = null;
@@ -41,16 +38,6 @@ namespace DulceTentacion
             childForm.Show();
         }
 
-        private void btnPasteles_Click(object sender, EventArgs e)
-        {
-            //abrirConPrincipal(new Pasteles());
-        }
-
-        private void fndPasteles_Click(object sender, EventArgs e)
-        {
-           // abrirConPrincipal(new Pasteles());
-        }
-
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -64,10 +51,11 @@ namespace DulceTentacion
                 this.BackColor = Color.Black;
                 BarraHorizontall.BackColor = Color.DimGray;
                 ContVentas.BackColor = Color.Black;
-                
-                
+                btnCarrito.BackColor = Color.DimGray;
+                btnCarrito.ForeColor = Color.White;
 
-               
+
+
             }
             else
             {
@@ -75,8 +63,9 @@ namespace DulceTentacion
                 this.BackColor = Color.FromArgb(255, 222, 231);
                 BarraHorizontall.BackColor = Color.FromArgb(255, 192, 255);
                 ContVentas.BackColor = Color.FromArgb(255, 222, 231);
+                btnCarrito.BackColor = Color.White;
+                btnCarrito.ForeColor = Color.Black;
 
-               
 
             }
         }
@@ -107,11 +96,21 @@ namespace DulceTentacion
             base.OnLoad(e);
             // Guardar los colores originales cuando se carga el formulario
             originalBackColor = this.BackColor;
-          
 
 
-           // originalContVentasColor = ContVentas.ForeColor; // Guardar el color original del texto de GroupBox
 
+            // originalContVentasColor = ContVentas.ForeColor; // Guardar el color original del texto de GroupBox
+
+        }
+
+        private void fndPasteles_Click(object sender, EventArgs e)
+        {
+            //abrirConPrincipal(new Pasteles());
+        }
+
+        private void btnPasteles_Click(object sender, EventArgs e)
+        {
+            //abrirConPrincipal(new Pasteles());
         }
     }
 }
