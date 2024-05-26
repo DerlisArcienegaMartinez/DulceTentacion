@@ -54,6 +54,7 @@ namespace DulceTentacion
             public Color PanelMenusColor { get; set; }
          
             public Color BarraHorizontalColor { get; set; }
+
             public Color BarraHColor { get; set; }
             public Color ForeColorWhite { get; set; }
             public Color ForeColorBlack { get; set; }
@@ -119,6 +120,7 @@ namespace DulceTentacion
             BarraHorizontal.BackColor = _config.BarraHorizontalColor;
             BarraH.BackColor = _config.BarraHColor;
             ApplyForeColorToControls(this.Controls);
+            ApplyButtonColors();
         }
 
         // Método para aplicar el color de la fuente
@@ -160,9 +162,10 @@ namespace DulceTentacion
             PanelMenus.BackColor = Color.DarkSlateGray;
             BarraHorizontal.BackColor = Color.DimGray; 
             BarraH.BackColor = Color.DimGray;
+            
             ApplyDarkForeColorToControls(this.Controls); // Aplicar color de fuente en modo oscuro
             ApplyButtonColor(); // Aplicar color de botones en modo oscuro
-
+            ApplyDarkButtonColors(); // Aplicar color de botones en modo oscuro
             // Aplicar modo oscuro a los submenús
             ApplySubMenuDarkMode(SubPanelInv);
             ApplySubMenuDarkMode(SubPanelEmp);
@@ -193,6 +196,9 @@ namespace DulceTentacion
         // Método para aplicar el color de los botones en modo oscuro
         private void ApplyButtonColor()
         {
+
+            
+
             if (PanelMenus.BackColor == Color.DarkSlateGray)
             {
                 foreach (Control control in PanelMenus.Controls)
@@ -205,6 +211,21 @@ namespace DulceTentacion
             }
         }
 
+        // Método para aplicar los colores a los botones en los paneles específicos
+        private void ApplyButtonColors()
+        {
+            // Botones en BarraHorizontal
+            btnImgUsuario.BackColor = _config.BarraHorizontalColor;
+            btnUbicacion.BackColor = _config.BarraHorizontalColor;
+            lblUsuario.BackColor = _config.BarraHorizontalColor;
+            lblUbicacion.BackColor = _config.BarraHorizontalColor;
+            lblDulce.BackColor = _config.BarraHorizontalColor;
+            pictureBox4.BackColor = _config.BarraHorizontalColor;
+
+            // Botones en BarraH
+            btnCerrarSesion.BackColor = _config.BarraHColor;
+            btnDarkMode.BackColor = _config.BarraHColor;
+        }
         // Método para revertir los colores de los botones al color predeterminado de PanelMenus
         private void RevertButtonColor()
         {
@@ -215,6 +236,8 @@ namespace DulceTentacion
                     control.BackColor = _config.PanelMenusColor;
                 }
             }
+            // Revertir colores de botones específicos
+            ApplyButtonColors();
         }
 
         // Método para aplicar el modo oscuro a los submenús
@@ -254,6 +277,23 @@ namespace DulceTentacion
                 }
             }
         }
+        // Método para aplicar los colores de los botones en modo oscuro
+        private void ApplyDarkButtonColors()
+        {
+            // Botones en BarraHorizontal
+            btnImgUsuario.BackColor = Color.DimGray;
+            btnUbicacion.BackColor = Color.DimGray;
+            lblUsuario.BackColor = Color.DimGray;
+            lblUbicacion.BackColor = Color.DimGray;
+            lblDulce.BackColor = Color.DimGray;
+            pictureBox4.BackColor = Color.DimGray;
+
+            // Botones en BarraH
+            btnCerrarSesion.BackColor = Color.DimGray;
+            btnDarkMode.BackColor = Color.DimGray;
+        }
+
+
 
         // Método para revertir al modo original
         private void RevertColors()
@@ -303,17 +343,21 @@ namespace DulceTentacion
             if (PanelMenus.Width == 235)
             {
                 PanelMenus.Width = 62;
+
             }
             else
                 PanelMenus.Width = 235;
+         
         }
 
-//configurar el movimiento de la ventana
-        private void PanelMenus_MouseDown(object sender, MouseEventArgs e)
-        {
+       
+
+            //configurar el movimiento de la ventana
+            private void PanelMenus_MouseDown(object sender, MouseEventArgs e)
+            {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+            }
 
        
 
@@ -471,6 +515,11 @@ namespace DulceTentacion
         private void btnUbicacion_Click(object sender, EventArgs e)
         {
             abrirconprincipal(new Ubicacion());
+        }
+
+        private void btnInforme_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

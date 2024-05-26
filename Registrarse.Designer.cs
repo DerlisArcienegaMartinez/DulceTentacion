@@ -519,6 +519,7 @@ namespace DulceTentacion
             // 
             // ImgPerfil
             // 
+            this.ImgPerfil.Image = global::DulceTentacion.Properties.Resources.Avatar_Usuario_Registro;
             this.ImgPerfil.Location = new System.Drawing.Point(596, 25);
             this.ImgPerfil.Name = "ImgPerfil";
             this.ImgPerfil.Size = new System.Drawing.Size(186, 186);

@@ -221,6 +221,60 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emblema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo Inicio Sesion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar Usuario Registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portada Bienvenida Chef.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo portada Bienvenido.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar Sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar sesion menu principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ubicacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo Portada menu principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Modo Oscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar Tabla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar Tablas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar Tabla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar tabla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar tabla.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

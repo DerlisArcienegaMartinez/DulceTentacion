@@ -196,6 +196,7 @@ namespace DulceTentacion
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.Emblema;
             this.pictureBox2.Location = new System.Drawing.Point(21, 28);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(214, 195);
@@ -208,9 +209,10 @@ namespace DulceTentacion
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(224)))));
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.Image = global::DulceTentacion.Properties.Resources.Exit;
             this.btnSalir.Location = new System.Drawing.Point(742, 12);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(38, 36);
+            this.btnSalir.Size = new System.Drawing.Size(38, 38);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 2;
             this.btnSalir.TabStop = false;
@@ -219,6 +221,7 @@ namespace DulceTentacion
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Fondo_Inicio_Sesion;
             this.pictureBox1.Location = new System.Drawing.Point(241, -26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(560, 420);
