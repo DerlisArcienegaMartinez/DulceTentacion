@@ -69,11 +69,11 @@ namespace DulceTentacion
             this.label9 = new System.Windows.Forms.Label();
             this.btnEditarInfo = new System.Windows.Forms.Button();
             this.btnSaveInfo = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ImgFoto = new System.Windows.Forms.PictureBox();
             this.BarraHorizontall.SuspendLayout();
             this.DatoPersonal.SuspendLayout();
             this.DatoLaboral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraHorizontall
@@ -136,7 +136,7 @@ namespace DulceTentacion
             this.DatoPersonal.Controls.Add(this.label2);
             this.DatoPersonal.Controls.Add(this.lblNombress);
             this.DatoPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DatoPersonal.Location = new System.Drawing.Point(325, 72);
+            this.DatoPersonal.Location = new System.Drawing.Point(274, 76);
             this.DatoPersonal.Name = "DatoPersonal";
             this.DatoPersonal.Size = new System.Drawing.Size(580, 338);
             this.DatoPersonal.TabIndex = 18;
@@ -149,9 +149,8 @@ namespace DulceTentacion
             this.lblContraseña.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(390, 302);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(19, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(0, 20);
             this.lblContraseña.TabIndex = 46;
-            this.lblContraseña.Text = "#";
             // 
             // lblUsuario
             // 
@@ -159,9 +158,8 @@ namespace DulceTentacion
             this.lblUsuario.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(109, 302);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(19, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(0, 20);
             this.lblUsuario.TabIndex = 45;
-            this.lblUsuario.Text = "#";
             // 
             // lblCorreo
             // 
@@ -169,9 +167,8 @@ namespace DulceTentacion
             this.lblCorreo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(100, 270);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(19, 20);
+            this.lblCorreo.Size = new System.Drawing.Size(0, 20);
             this.lblCorreo.TabIndex = 44;
-            this.lblCorreo.Text = "#";
             // 
             // lblFecNacimiento
             // 
@@ -179,9 +176,8 @@ namespace DulceTentacion
             this.lblFecNacimiento.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecNacimiento.Location = new System.Drawing.Point(188, 198);
             this.lblFecNacimiento.Name = "lblFecNacimiento";
-            this.lblFecNacimiento.Size = new System.Drawing.Size(19, 20);
+            this.lblFecNacimiento.Size = new System.Drawing.Size(0, 20);
             this.lblFecNacimiento.TabIndex = 43;
-            this.lblFecNacimiento.Text = "#";
             // 
             // lblDireccion
             // 
@@ -189,9 +185,8 @@ namespace DulceTentacion
             this.lblDireccion.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.Location = new System.Drawing.Point(127, 234);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(19, 20);
+            this.lblDireccion.Size = new System.Drawing.Size(0, 20);
             this.lblDireccion.TabIndex = 42;
-            this.lblDireccion.Text = "#";
             // 
             // lblGenero
             // 
@@ -199,9 +194,8 @@ namespace DulceTentacion
             this.lblGenero.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenero.Location = new System.Drawing.Point(411, 270);
             this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(19, 20);
+            this.lblGenero.Size = new System.Drawing.Size(0, 20);
             this.lblGenero.TabIndex = 41;
-            this.lblGenero.Text = "#";
             // 
             // lblEdad
             // 
@@ -209,9 +203,8 @@ namespace DulceTentacion
             this.lblEdad.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEdad.Location = new System.Drawing.Point(444, 198);
             this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(19, 20);
+            this.lblEdad.Size = new System.Drawing.Size(0, 20);
             this.lblEdad.TabIndex = 40;
-            this.lblEdad.Text = "#";
             // 
             // lblCelular
             // 
@@ -219,9 +212,8 @@ namespace DulceTentacion
             this.lblCelular.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCelular.Location = new System.Drawing.Point(319, 160);
             this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(19, 20);
+            this.lblCelular.Size = new System.Drawing.Size(0, 20);
             this.lblCelular.TabIndex = 39;
-            this.lblCelular.Text = "#";
             // 
             // lblTelefono
             // 
@@ -229,9 +221,8 @@ namespace DulceTentacion
             this.lblTelefono.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.Location = new System.Drawing.Point(109, 160);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(19, 20);
+            this.lblTelefono.Size = new System.Drawing.Size(0, 20);
             this.lblTelefono.TabIndex = 38;
-            this.lblTelefono.Text = "#";
             // 
             // lblApMaterno
             // 
@@ -239,9 +230,8 @@ namespace DulceTentacion
             this.lblApMaterno.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApMaterno.Location = new System.Drawing.Point(170, 120);
             this.lblApMaterno.Name = "lblApMaterno";
-            this.lblApMaterno.Size = new System.Drawing.Size(19, 20);
+            this.lblApMaterno.Size = new System.Drawing.Size(0, 20);
             this.lblApMaterno.TabIndex = 37;
-            this.lblApMaterno.Text = "#";
             // 
             // lblApPaterno
             // 
@@ -249,9 +239,8 @@ namespace DulceTentacion
             this.lblApPaterno.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApPaterno.Location = new System.Drawing.Point(166, 90);
             this.lblApPaterno.Name = "lblApPaterno";
-            this.lblApPaterno.Size = new System.Drawing.Size(19, 20);
+            this.lblApPaterno.Size = new System.Drawing.Size(0, 20);
             this.lblApPaterno.TabIndex = 36;
-            this.lblApPaterno.Text = "#";
             // 
             // lblCI
             // 
@@ -259,9 +248,8 @@ namespace DulceTentacion
             this.lblCI.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCI.Location = new System.Drawing.Point(319, 32);
             this.lblCI.Name = "lblCI";
-            this.lblCI.Size = new System.Drawing.Size(19, 20);
+            this.lblCI.Size = new System.Drawing.Size(0, 20);
             this.lblCI.TabIndex = 35;
-            this.lblCI.Text = "#";
             // 
             // lblNombre
             // 
@@ -269,9 +257,8 @@ namespace DulceTentacion
             this.lblNombre.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(102, 61);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(19, 20);
+            this.lblNombre.Size = new System.Drawing.Size(0, 20);
             this.lblNombre.TabIndex = 34;
-            this.lblNombre.Text = "#";
             // 
             // lblIdCliente
             // 
@@ -279,9 +266,8 @@ namespace DulceTentacion
             this.lblIdCliente.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdCliente.Location = new System.Drawing.Point(123, 32);
             this.lblIdCliente.Name = "lblIdCliente";
-            this.lblIdCliente.Size = new System.Drawing.Size(19, 20);
+            this.lblIdCliente.Size = new System.Drawing.Size(0, 20);
             this.lblIdCliente.TabIndex = 33;
-            this.lblIdCliente.Text = "#";
             // 
             // label21
             // 
@@ -435,7 +421,7 @@ namespace DulceTentacion
             this.DatoLaboral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DatoLaboral.Location = new System.Drawing.Point(27, 365);
             this.DatoLaboral.Name = "DatoLaboral";
-            this.DatoLaboral.Size = new System.Drawing.Size(690, 237);
+            this.DatoLaboral.Size = new System.Drawing.Size(250, 237);
             this.DatoLaboral.TabIndex = 19;
             this.DatoLaboral.TabStop = false;
             this.DatoLaboral.Text = "Datos Laborales";
@@ -505,13 +491,12 @@ namespace DulceTentacion
             this.btnEditarInfo.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnEditarInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnEditarInfo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarInfo.Location = new System.Drawing.Point(741, 416);
+            this.btnEditarInfo.Location = new System.Drawing.Point(740, 438);
             this.btnEditarInfo.Name = "btnEditarInfo";
             this.btnEditarInfo.Size = new System.Drawing.Size(203, 42);
             this.btnEditarInfo.TabIndex = 20;
             this.btnEditarInfo.Text = "Editar Informacion";
             this.btnEditarInfo.UseVisualStyleBackColor = true;
-            this.btnEditarInfo.Click += new System.EventHandler(this.btnEditarInfo_Click);
             // 
             // btnSaveInfo
             // 
@@ -524,18 +509,17 @@ namespace DulceTentacion
             this.btnSaveInfo.TabIndex = 21;
             this.btnSaveInfo.Text = "Guardar Informacion";
             this.btnSaveInfo.UseVisualStyleBackColor = true;
-            this.btnSaveInfo.Click += new System.EventHandler(this.btnSaveInfo_Click);
             // 
-            // pictureBox1
+            // ImgFoto
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Avatar_Usuario_Cuenta;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 186);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.ImgFoto.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ImgFoto.Image = global::DulceTentacion.Properties.Resources.Avatar_Usuario_Cuenta;
+            this.ImgFoto.Location = new System.Drawing.Point(27, 76);
+            this.ImgFoto.Name = "ImgFoto";
+            this.ImgFoto.Size = new System.Drawing.Size(186, 186);
+            this.ImgFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgFoto.TabIndex = 15;
+            this.ImgFoto.TabStop = false;
             // 
             // CuentaUsuario
             // 
@@ -547,17 +531,18 @@ namespace DulceTentacion
             this.Controls.Add(this.btnSaveInfo);
             this.Controls.Add(this.btnEditarInfo);
             this.Controls.Add(this.DatoLaboral);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ImgFoto);
             this.Controls.Add(this.BarraHorizontall);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CuentaUsuario";
             this.Text = "CuentaUsuario";
+            this.Load += new System.EventHandler(this.CuentaUsuario_Load);
             this.BarraHorizontall.ResumeLayout(false);
             this.DatoPersonal.ResumeLayout(false);
             this.DatoPersonal.PerformLayout();
             this.DatoLaboral.ResumeLayout(false);
             this.DatoLaboral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -566,7 +551,7 @@ namespace DulceTentacion
 
         private System.Windows.Forms.FlowLayoutPanel BarraHorizontall;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ImgFoto;
         private System.Windows.Forms.GroupBox DatoPersonal;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;

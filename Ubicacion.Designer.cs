@@ -29,11 +29,11 @@ namespace DulceTentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.BarraHorizontal = new System.Windows.Forms.FlowLayoutPanel();
             this.ContUbicacion = new System.Windows.Forms.Panel();
             this.CBModo = new System.Windows.Forms.ComboBox();
             this.lblSucursal = new System.Windows.Forms.LinkLabel();
             this.GBOpinionGeneral = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.RBExcelente = new System.Windows.Forms.RadioButton();
             this.RBBuena = new System.Windows.Forms.RadioButton();
@@ -49,26 +49,17 @@ namespace DulceTentacion
             this.btnSucursal2 = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
             this.MapUbi = new GMap.NET.WindowsForms.GMapControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BarraHorizontal = new System.Windows.Forms.Panel();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.BarraHorizontal.SuspendLayout();
             this.ContUbicacion.SuspendLayout();
             this.GBOpinionGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.BarraHorizontal.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BarraHorizontal
-            // 
-            this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BarraHorizontal.Controls.Add(this.btnRegresar);
-            this.BarraHorizontal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
-            this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1013, 45);
-            this.BarraHorizontal.TabIndex = 14;
             // 
             // ContUbicacion
             // 
+            this.ContUbicacion.Controls.Add(this.BarraHorizontal);
             this.ContUbicacion.Controls.Add(this.CBModo);
             this.ContUbicacion.Controls.Add(this.lblSucursal);
             this.ContUbicacion.Controls.Add(this.GBOpinionGeneral);
@@ -79,9 +70,9 @@ namespace DulceTentacion
             this.ContUbicacion.Controls.Add(this.btnPrincipal);
             this.ContUbicacion.Controls.Add(this.MapUbi);
             this.ContUbicacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContUbicacion.Location = new System.Drawing.Point(0, 45);
+            this.ContUbicacion.Location = new System.Drawing.Point(0, 0);
             this.ContUbicacion.Name = "ContUbicacion";
-            this.ContUbicacion.Size = new System.Drawing.Size(1013, 629);
+            this.ContUbicacion.Size = new System.Drawing.Size(1013, 674);
             this.ContUbicacion.TabIndex = 15;
             // 
             // CBModo
@@ -91,7 +82,7 @@ namespace DulceTentacion
             this.CBModo.Items.AddRange(new object[] {
             "Mapa Normal",
             "Mapa Satélite"});
-            this.CBModo.Location = new System.Drawing.Point(32, 21);
+            this.CBModo.Location = new System.Drawing.Point(12, 62);
             this.CBModo.Name = "CBModo";
             this.CBModo.Size = new System.Drawing.Size(221, 24);
             this.CBModo.TabIndex = 48;
@@ -102,7 +93,7 @@ namespace DulceTentacion
             this.lblSucursal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSucursal.AutoSize = true;
             this.lblSucursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSucursal.Location = new System.Drawing.Point(483, 211);
+            this.lblSucursal.Location = new System.Drawing.Point(483, 226);
             this.lblSucursal.Name = "lblSucursal";
             this.lblSucursal.Size = new System.Drawing.Size(208, 20);
             this.lblSucursal.TabIndex = 47;
@@ -123,12 +114,23 @@ namespace DulceTentacion
             this.GBOpinionGeneral.Controls.Add(this.label6);
             this.GBOpinionGeneral.Controls.Add(this.label3);
             this.GBOpinionGeneral.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBOpinionGeneral.Location = new System.Drawing.Point(477, 247);
+            this.GBOpinionGeneral.Location = new System.Drawing.Point(477, 263);
             this.GBOpinionGeneral.Name = "GBOpinionGeneral";
             this.GBOpinionGeneral.Size = new System.Drawing.Size(508, 334);
             this.GBOpinionGeneral.TabIndex = 42;
             this.GBOpinionGeneral.TabStop = false;
             this.GBOpinionGeneral.Text = "Escribe una opinión";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Icono_Whatsapp;
+            this.pictureBox1.Location = new System.Drawing.Point(448, 283);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // btnEnviar
             // 
@@ -247,13 +249,13 @@ namespace DulceTentacion
             this.lblReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblReserva.AutoSize = true;
             this.lblReserva.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReserva.Location = new System.Drawing.Point(28, 584);
+            this.lblReserva.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReserva.Location = new System.Drawing.Point(464, 619);
             this.lblReserva.Name = "lblReserva";
-            this.lblReserva.Size = new System.Drawing.Size(575, 20);
+            this.lblReserva.Size = new System.Drawing.Size(483, 24);
             this.lblReserva.TabIndex = 41;
             this.lblReserva.TabStop = true;
-            this.lblReserva.Text = "¿Desea realizar una reservación para que recoja en la sucursal que desee?";
+            this.lblReserva.Text = "¿Desea realizar una reservación en la sucursal que desee?";
             this.lblReserva.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblReserva_LinkClicked);
             // 
             // btnSucursal1
@@ -266,7 +268,7 @@ namespace DulceTentacion
             this.btnSucursal1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(103)))), ((int)(((byte)(100)))));
             this.btnSucursal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSucursal1.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursal1.Location = new System.Drawing.Point(743, 46);
+            this.btnSucursal1.Location = new System.Drawing.Point(743, 62);
             this.btnSucursal1.Name = "btnSucursal1";
             this.btnSucursal1.Size = new System.Drawing.Size(227, 72);
             this.btnSucursal1.TabIndex = 40;
@@ -284,7 +286,7 @@ namespace DulceTentacion
             this.btnSucursal3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(215)))), ((int)(((byte)(242)))));
             this.btnSucursal3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSucursal3.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursal3.Location = new System.Drawing.Point(743, 124);
+            this.btnSucursal3.Location = new System.Drawing.Point(743, 140);
             this.btnSucursal3.Name = "btnSucursal3";
             this.btnSucursal3.Size = new System.Drawing.Size(227, 72);
             this.btnSucursal3.TabIndex = 39;
@@ -302,7 +304,7 @@ namespace DulceTentacion
             this.btnSucursal2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(219)))), ((int)(((byte)(118)))));
             this.btnSucursal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSucursal2.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursal2.Location = new System.Drawing.Point(501, 124);
+            this.btnSucursal2.Location = new System.Drawing.Point(501, 140);
             this.btnSucursal2.Name = "btnSucursal2";
             this.btnSucursal2.Size = new System.Drawing.Size(227, 72);
             this.btnSucursal2.TabIndex = 38;
@@ -320,7 +322,7 @@ namespace DulceTentacion
             this.btnPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(83)))));
             this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrincipal.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal.Location = new System.Drawing.Point(501, 46);
+            this.btnPrincipal.Location = new System.Drawing.Point(501, 62);
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.Size = new System.Drawing.Size(227, 72);
             this.btnPrincipal.TabIndex = 37;
@@ -340,7 +342,7 @@ namespace DulceTentacion
             this.MapUbi.GrayScaleMode = false;
             this.MapUbi.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.MapUbi.LevelsKeepInMemmory = 5;
-            this.MapUbi.Location = new System.Drawing.Point(32, 46);
+            this.MapUbi.Location = new System.Drawing.Point(12, 87);
             this.MapUbi.MarkersEnabled = true;
             this.MapUbi.MaxZoom = 2;
             this.MapUbi.MinZoom = 2;
@@ -354,37 +356,33 @@ namespace DulceTentacion
             this.MapUbi.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.MapUbi.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MapUbi.ShowTileGridLines = false;
-            this.MapUbi.Size = new System.Drawing.Size(424, 519);
+            this.MapUbi.Size = new System.Drawing.Size(446, 575);
             this.MapUbi.TabIndex = 36;
             this.MapUbi.Zoom = 0D;
             // 
-            // pictureBox1
+            // BarraHorizontal
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Icono_Whatsapp;
-            this.pictureBox1.Location = new System.Drawing.Point(448, 283);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
+            this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BarraHorizontal.Controls.Add(this.btnRegresar);
+            this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
+            this.BarraHorizontal.Name = "BarraHorizontal";
+            this.BarraHorizontal.Size = new System.Drawing.Size(1013, 46);
+            this.BarraHorizontal.TabIndex = 49;
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(3, 3);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(210, 39);
-            this.btnRegresar.TabIndex = 52;
-            this.btnRegresar.Text = "      Regresar";
+            this.btnRegresar.Size = new System.Drawing.Size(174, 38);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.Text = "          Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // Ubicacion
             // 
@@ -393,25 +391,21 @@ namespace DulceTentacion
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1013, 674);
             this.Controls.Add(this.ContUbicacion);
-            this.Controls.Add(this.BarraHorizontal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ubicacion";
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
-            this.BarraHorizontal.ResumeLayout(false);
             this.ContUbicacion.ResumeLayout(false);
             this.ContUbicacion.PerformLayout();
             this.GBOpinionGeneral.ResumeLayout(false);
             this.GBOpinionGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.BarraHorizontal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel BarraHorizontal;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel ContUbicacion;
         private System.Windows.Forms.ComboBox CBModo;
         private System.Windows.Forms.LinkLabel lblSucursal;
@@ -433,5 +427,7 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnPrincipal;
         private GMap.NET.WindowsForms.GMapControl MapUbi;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel BarraHorizontal;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

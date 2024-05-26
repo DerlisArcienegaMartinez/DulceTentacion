@@ -519,11 +519,11 @@ namespace DulceTentacion
             // 
             // ImgPerfil
             // 
-            this.ImgPerfil.Image = global::DulceTentacion.Properties.Resources.Avatar_Usuario_Registro;
+            this.ImgPerfil.BackColor = System.Drawing.Color.LightGray;
             this.ImgPerfil.Location = new System.Drawing.Point(596, 25);
             this.ImgPerfil.Name = "ImgPerfil";
             this.ImgPerfil.Size = new System.Drawing.Size(186, 186);
-            this.ImgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImgPerfil.TabIndex = 0;
             this.ImgPerfil.TabStop = false;
             // 
@@ -549,9 +549,10 @@ namespace DulceTentacion
             this.Controls.Add(this.GBCuenta);
             this.Controls.Add(this.btnSelectFoto);
             this.Controls.Add(this.ImgPerfil);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Registrarse";
             this.Load += new System.EventHandler(this.Registro_Load);
             this.GBCuenta.ResumeLayout(false);

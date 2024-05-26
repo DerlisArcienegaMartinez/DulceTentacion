@@ -67,15 +67,21 @@ namespace DulceTentacion
             string apellidoPaterno = txtApPaterno.Text;
             string apellidoMaterno = txtApMaterno.Text;
             string cu = txtCU.Text;
-            string FechaNacimiento = txtFecNacimiento.Text;
-            string Edad = txtEdad.Text;
+            string fechaNacimiento = txtFecNacimiento.Text;
+            string edad = txtEdad.Text;
             string genero = CBGenero.SelectedItem?.ToString();
             string telefono = txtTelefono.Text;
             string celular = txtCelular.Text;
+            string sufijo = CBSufijos.SelectedItem?.ToString();
             string direccionDomicilio = txtDomicilio.Text;
             string correoElectronico = txtCorreo.Text;
             string nombreUsuario = txtNomUsuario.Text;
             string contraseña = txtContraseña.Text;
+            //string perfilImagen = Path.GetFileName(ImgPerfil.ImageLocation); // Obtener el nombre de la imagen
+            string perfilImagen = (ImgPerfil.Image != null) ? ImgPerfil.Tag.ToString() : null;
+
+
+
 
             if (string.IsNullOrEmpty(nombreUsuario) || string.IsNullOrEmpty(contraseña))
             {
@@ -104,25 +110,31 @@ namespace DulceTentacion
                         return;
                     }
 
-                    string query = "INSERT INTO Usuarios (Nombre, ApellidoPaterno, ApellidoMaterno, CU, Genero, FecNacimiento, Edad, Telefono, Celular, DireccionDomicilio, CorreoElectronico, NombreUsuario, Contraseña) " +
-                                   "VALUES (@Nombre, @ApellidoPaterno, @ApellidoMaterno, @CU, @Genero, @FechaNacimiento, @Edad, @Telefono, @Celular, @DireccionDomicilio, @CorreoElectronico, @NombreUsuario, @Contraseña)";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Nombre", nombre);
-                    cmd.Parameters.AddWithValue("@ApellidoPaterno", apellidoPaterno);
-                    cmd.Parameters.AddWithValue("@ApellidoMaterno", apellidoMaterno);
-                    cmd.Parameters.AddWithValue("@CU", cu);
-                    cmd.Parameters.AddWithValue("@Genero", genero);
-                    cmd.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento);
-                    cmd.Parameters.AddWithValue("@Edad", Edad);
-                    
-                    cmd.Parameters.AddWithValue("@Telefono", telefono);
-                    cmd.Parameters.AddWithValue("@Celular", celular);
-                    cmd.Parameters.AddWithValue("@DireccionDomicilio", direccionDomicilio);
-                    cmd.Parameters.AddWithValue("@CorreoElectronico", correoElectronico);
-                    cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
-                    cmd.Parameters.AddWithValue("@Contraseña", contraseña);
 
-                    cmd.ExecuteNonQuery();
+                    // Instrucción INSERT
+                    string insertQuery = @"INSERT INTO Usuarios 
+                        (Nombre, ApellidoPaterno, ApellidoMaterno, CU, Genero, FecNacimiento, Edad, Telefono, Sufijos, Celular, DireccionDomicilio, CorreoElectronico, NombreUsuario, Contraseña, Perfil) 
+                        VALUES 
+                        (@Nombre, @ApellidoPaterno, @ApellidoMaterno, @CU, @Genero, @FecNacimiento, @Edad, @Telefono, @Sufijo, @Celular, @DireccionDomicilio, @CorreoElectronico, @NombreUsuario, @Contraseña, @Perfil)";
+
+                    SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
+                    insertCmd.Parameters.AddWithValue("@Nombre", nombre);
+                    insertCmd.Parameters.AddWithValue("@ApellidoPaterno", apellidoPaterno);
+                    insertCmd.Parameters.AddWithValue("@ApellidoMaterno", apellidoMaterno);
+                    insertCmd.Parameters.AddWithValue("@CU", cu);
+                    insertCmd.Parameters.AddWithValue("@Genero", genero);
+                    insertCmd.Parameters.AddWithValue("@FecNacimiento", fechaNacimiento);
+                    insertCmd.Parameters.AddWithValue("@Edad", Convert.ToInt32(edad));
+                    insertCmd.Parameters.AddWithValue("@Telefono", telefono);
+                    insertCmd.Parameters.AddWithValue("@Sufijo", sufijo);
+                    insertCmd.Parameters.AddWithValue("@Celular", celular);
+                    insertCmd.Parameters.AddWithValue("@DireccionDomicilio", direccionDomicilio);
+                    insertCmd.Parameters.AddWithValue("@CorreoElectronico", correoElectronico);
+                    insertCmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
+                    insertCmd.Parameters.AddWithValue("@Contraseña", contraseña);
+                    insertCmd.Parameters.AddWithValue("@Perfil", perfilImagen);
+
+                    insertCmd.ExecuteNonQuery();
 
 
 
@@ -154,6 +166,8 @@ namespace DulceTentacion
                     MessageBox.Show("Error al registrar usuario: " + ex.Message);
                 }
             }
+
+           
         }
 
 
@@ -168,6 +182,7 @@ namespace DulceTentacion
             txtFecNacimiento.Text = "";
             txtEdad.Text = "";
             txtTelefono.Text = "";
+            CBSufijos.SelectedIndex = -1;
             txtCelular.Text = "";
             txtCorreo.Text = "";
             txtDomicilio.Text = "";
@@ -175,6 +190,7 @@ namespace DulceTentacion
             txtContraseña.Text = "";
             CBGenero.SelectedIndex = -1;
             ImgPerfil.Image = null;
+            ImgPerfil.Tag = null; // Limpiar el tag
         }
         private void GBCuenta_Enter(object sender, EventArgs e)
         {
@@ -193,9 +209,20 @@ namespace DulceTentacion
 
         private void btnSelectFoto_Click(object sender, EventArgs e)
         {
-            // Puedes agregar aquí la lógica adicional para el menú principal si es necesario
+            // Mostrar la ventana de selección de foto
             using (SeleccionFoto foto = new SeleccionFoto())
+            {
                 foto.ShowDialog();
+
+                // Verificar si el usuario seleccionó una imagen y la asignó al PictureBox
+                if (foto.ImagenSeleccionada != null)
+                {
+                    // Asignar la imagen seleccionada al PictureBox ImgPerfil
+                    ImgPerfil.Image = foto.ImagenSeleccionada;
+                    ImgPerfil.Tag = foto.ImagenSeleccionadaNombre; // Asignar el nombre de la imagen
+
+                }
+            }
 
 
         }

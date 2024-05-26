@@ -67,7 +67,7 @@ namespace DulceTentacion
             {
                 // Aplicar colores originales
                 this.BackColor = Color.FromArgb(255, 222, 231);
-                BarraHorizontal.BackColor = Color.FromArgb(255, 192, 255);
+                BarraHorizontal.BackColor = Color.FromArgb(255, 128, 255);
                 btnPrincipal.BackColor = Color.FromArgb(247, 247, 83);
                 btnSucursal1.BackColor = Color.FromArgb(240, 103, 100);
                 btnSucursal2.BackColor = Color.FromArgb(141, 219, 118);
@@ -243,6 +243,11 @@ namespace DulceTentacion
 
             // Actualiza el mapa (si es necesario)
             MapUbi.Refresh();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
    

@@ -7,15 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.IO;
 namespace DulceTentacion
-{ 
-
-   
-
+{
     public partial class CuentaUsuario : Form
     {
-        
 
         private Color originalBackColor;
         private Color originalForeColor;
@@ -31,22 +28,12 @@ namespace DulceTentacion
         }
 
 
-
-
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnEditarInfo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSaveInfo_Click(object sender, EventArgs e)
-        {
-
-        }
+   
 
         // Método para aplicar colores oscuros si el modo oscuro está activo
         private void ApplyDarkModeIfNeeded()
@@ -107,5 +94,12 @@ namespace DulceTentacion
             originalGroupBox1ForeColor = DatoLaboral.ForeColor; // Guardar el color original del texto de GroupBox
 
         }
+
+        private void CuentaUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

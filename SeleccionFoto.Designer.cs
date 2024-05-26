@@ -58,6 +58,7 @@ namespace DulceTentacion
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -131,10 +132,10 @@ namespace DulceTentacion
             this.pictureBoxCentral.BackColor = System.Drawing.Color.GhostWhite;
             this.pictureBoxCentral.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxCentral.Image = global::DulceTentacion.Properties.Resources.Avatar_Joven;
-            this.pictureBoxCentral.Location = new System.Drawing.Point(191, 73);
+            this.pictureBoxCentral.Location = new System.Drawing.Point(195, 84);
             this.pictureBoxCentral.Name = "pictureBoxCentral";
-            this.pictureBoxCentral.Size = new System.Drawing.Size(190, 190);
-            this.pictureBoxCentral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCentral.Size = new System.Drawing.Size(195, 176);
+            this.pictureBoxCentral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCentral.TabIndex = 15;
             this.pictureBoxCentral.TabStop = false;
             // 
