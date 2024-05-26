@@ -252,7 +252,6 @@ namespace DulceTentacion
             // fndPasteles
             // 
             this.fndPasteles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fndPasteles.Image = global::DulceTentacion.Properties.Resources.portadapastel_Photoroom;
             this.fndPasteles.Location = new System.Drawing.Point(61, 145);
             this.fndPasteles.Name = "fndPasteles";
             this.fndPasteles.Size = new System.Drawing.Size(700, 260);
@@ -263,7 +262,6 @@ namespace DulceTentacion
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::DulceTentacion.Properties.Resources.png_transparent_cafe_menu_dish_english_restaurant_menu_microphone_english_text_removebg_preview;
             this.pictureBox11.Location = new System.Drawing.Point(40, 56);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(152, 87);
@@ -274,7 +272,6 @@ namespace DulceTentacion
             // fndExtras
             // 
             this.fndExtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fndExtras.Image = global::DulceTentacion.Properties.Resources.PortadaPai;
             this.fndExtras.Location = new System.Drawing.Point(61, 420);
             this.fndExtras.Name = "fndExtras";
             this.fndExtras.Size = new System.Drawing.Size(469, 260);
@@ -303,7 +300,6 @@ namespace DulceTentacion
             this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Image = global::DulceTentacion.Properties.Resources.regresar3_removebg_preview;
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCerrarSesion.Location = new System.Drawing.Point(12, 8);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
@@ -330,7 +326,6 @@ namespace DulceTentacion
             this.btnImgUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnImgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnImgUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImgUsuario.Image = global::DulceTentacion.Properties.Resources.clientehombre_removebg_preview;
             this.btnImgUsuario.Location = new System.Drawing.Point(1262, 8);
             this.btnImgUsuario.Name = "btnImgUsuario";
             this.btnImgUsuario.Size = new System.Drawing.Size(55, 39);
@@ -342,7 +337,6 @@ namespace DulceTentacion
             // 
             this.Carrito.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Carrito.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Carrito.Image = global::DulceTentacion.Properties.Resources.ventas_removebg_preview__1_;
             this.Carrito.Location = new System.Drawing.Point(361, 8);
             this.Carrito.Name = "Carrito";
             this.Carrito.Size = new System.Drawing.Size(70, 39);
@@ -353,7 +347,6 @@ namespace DulceTentacion
             // fndCafes
             // 
             this.fndCafes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fndCafes.Image = global::DulceTentacion.Properties.Resources.cafe;
             this.fndCafes.Location = new System.Drawing.Point(536, 420);
             this.fndCafes.Name = "fndCafes";
             this.fndCafes.Size = new System.Drawing.Size(593, 260);
@@ -364,7 +357,6 @@ namespace DulceTentacion
             // fndPorciones
             // 
             this.fndPorciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fndPorciones.Image = global::DulceTentacion.Properties.Resources.PortadaPorcion;
             this.fndPorciones.Location = new System.Drawing.Point(767, 145);
             this.fndPorciones.Name = "fndPorciones";
             this.fndPorciones.Size = new System.Drawing.Size(649, 260);
@@ -376,7 +368,6 @@ namespace DulceTentacion
             // 
             this.fndPersonalizar.BackColor = System.Drawing.Color.SteelBlue;
             this.fndPersonalizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fndPersonalizar.Image = global::DulceTentacion.Properties.Resources.CreadorPaste;
             this.fndPersonalizar.Location = new System.Drawing.Point(61, 698);
             this.fndPersonalizar.Name = "fndPersonalizar";
             this.fndPersonalizar.Size = new System.Drawing.Size(700, 260);
@@ -388,7 +379,6 @@ namespace DulceTentacion
             // 
             this.fndOfertas.BackColor = System.Drawing.Color.White;
             this.fndOfertas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fndOfertas.Image = global::DulceTentacion.Properties.Resources.ofertasdescuentos;
             this.fndOfertas.Location = new System.Drawing.Point(767, 698);
             this.fndOfertas.Name = "fndOfertas";
             this.fndOfertas.Size = new System.Drawing.Size(700, 260);
@@ -400,7 +390,6 @@ namespace DulceTentacion
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.PortadaPai;
             this.pictureBox3.Location = new System.Drawing.Point(2071, -286);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(590, 237);
@@ -412,7 +401,6 @@ namespace DulceTentacion
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = global::DulceTentacion.Properties.Resources.ventas_removebg_preview__1___1_;
             this.pictureBox5.Location = new System.Drawing.Point(3230, -411);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(54, 43);
@@ -429,7 +417,6 @@ namespace DulceTentacion
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.regresar3_removebg_preview;
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(8, -407);
             this.btnRegresar.Name = "btnRegresar";
@@ -443,7 +430,6 @@ namespace DulceTentacion
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::DulceTentacion.Properties.Resources.clientehombre_removebg_preview;
             this.pictureBox4.Location = new System.Drawing.Point(3335, -411);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(55, 47);

@@ -106,7 +106,7 @@ namespace DulceTentacion
             this.btnAcercade.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcercade.Image = ((System.Drawing.Image)(resources.GetObject("btnAcercade.Image")));
             this.btnAcercade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercade.Location = new System.Drawing.Point(0, 558);
+            this.btnAcercade.Location = new System.Drawing.Point(0, 603);
             this.btnAcercade.Name = "btnAcercade";
             this.btnAcercade.Size = new System.Drawing.Size(313, 45);
             this.btnAcercade.TabIndex = 45;
@@ -123,7 +123,7 @@ namespace DulceTentacion
             this.btnMarketing.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMarketing.Image = ((System.Drawing.Image)(resources.GetObject("btnMarketing.Image")));
             this.btnMarketing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarketing.Location = new System.Drawing.Point(0, 513);
+            this.btnMarketing.Location = new System.Drawing.Point(0, 558);
             this.btnMarketing.Name = "btnMarketing";
             this.btnMarketing.Size = new System.Drawing.Size(313, 45);
             this.btnMarketing.TabIndex = 44;
@@ -136,7 +136,7 @@ namespace DulceTentacion
             this.SubPanelEmp.Controls.Add(this.btnGenContratos);
             this.SubPanelEmp.Controls.Add(this.btnRegPersonal);
             this.SubPanelEmp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubPanelEmp.Location = new System.Drawing.Point(0, 431);
+            this.SubPanelEmp.Location = new System.Drawing.Point(0, 476);
             this.SubPanelEmp.Name = "SubPanelEmp";
             this.SubPanelEmp.Size = new System.Drawing.Size(313, 82);
             this.SubPanelEmp.TabIndex = 43;
@@ -187,7 +187,7 @@ namespace DulceTentacion
             this.btnEmpleados.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 386);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 431);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(313, 45);
             this.btnEmpleados.TabIndex = 42;
@@ -205,7 +205,7 @@ namespace DulceTentacion
             this.btnInforme.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInforme.Image = ((System.Drawing.Image)(resources.GetObject("btnInforme.Image")));
             this.btnInforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInforme.Location = new System.Drawing.Point(0, 341);
+            this.btnInforme.Location = new System.Drawing.Point(0, 386);
             this.btnInforme.Name = "btnInforme";
             this.btnInforme.Size = new System.Drawing.Size(313, 45);
             this.btnInforme.TabIndex = 41;
@@ -218,7 +218,7 @@ namespace DulceTentacion
             this.SubPanelReg.Controls.Add(this.btnAlmcFacturas);
             this.SubPanelReg.Controls.Add(this.btnAlmacInf);
             this.SubPanelReg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubPanelReg.Location = new System.Drawing.Point(0, 259);
+            this.SubPanelReg.Location = new System.Drawing.Point(0, 304);
             this.SubPanelReg.Name = "SubPanelReg";
             this.SubPanelReg.Size = new System.Drawing.Size(313, 82);
             this.SubPanelReg.TabIndex = 40;
@@ -269,7 +269,7 @@ namespace DulceTentacion
             this.btnRegistros.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistros.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistros.Image")));
             this.btnRegistros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistros.Location = new System.Drawing.Point(0, 214);
+            this.btnRegistros.Location = new System.Drawing.Point(0, 259);
             this.btnRegistros.Name = "btnRegistros";
             this.btnRegistros.Size = new System.Drawing.Size(313, 45);
             this.btnRegistros.TabIndex = 39;
@@ -283,7 +283,7 @@ namespace DulceTentacion
             this.SubPanelInv.Controls.Add(this.btnVisualizarProd);
             this.SubPanelInv.Controls.Add(this.btnIngresarProd);
             this.SubPanelInv.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubPanelInv.Location = new System.Drawing.Point(0, 135);
+            this.SubPanelInv.Location = new System.Drawing.Point(0, 180);
             this.SubPanelInv.Name = "SubPanelInv";
             this.SubPanelInv.Size = new System.Drawing.Size(313, 79);
             this.SubPanelInv.TabIndex = 38;
@@ -334,7 +334,7 @@ namespace DulceTentacion
             this.btnInventario.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnInventario.Image")));
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 90);
+            this.btnInventario.Location = new System.Drawing.Point(0, 135);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(313, 45);
             this.btnInventario.TabIndex = 37;
@@ -346,6 +346,7 @@ namespace DulceTentacion
             // 
             this.btnMenuVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
             this.btnMenuVentas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenuVentas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuVentas.FlatAppearance.BorderSize = 0;
             this.btnMenuVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuVentas.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -422,7 +423,6 @@ namespace DulceTentacion
             this.btnDarkMode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnDarkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDarkMode.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDarkMode.Image = global::DulceTentacion.Properties.Resources.modo_Oscuro_removebg_preview__1_;
             this.btnDarkMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDarkMode.Location = new System.Drawing.Point(3, 630);
             this.btnDarkMode.Name = "btnDarkMode";
@@ -435,7 +435,6 @@ namespace DulceTentacion
             // btnUbicacion
             // 
             this.btnUbicacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUbicacion.Image = global::DulceTentacion.Properties.Resources.ubicacion_removebg_preview1;
             this.btnUbicacion.Location = new System.Drawing.Point(285, 10);
             this.btnUbicacion.Name = "btnUbicacion";
             this.btnUbicacion.Size = new System.Drawing.Size(35, 35);
@@ -448,7 +447,6 @@ namespace DulceTentacion
             // 
             this.btnImgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnImgUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImgUsuario.Image = global::DulceTentacion.Properties.Resources.clientehombre_removebg_preview;
             this.btnImgUsuario.Location = new System.Drawing.Point(3, 6);
             this.btnImgUsuario.Name = "btnImgUsuario";
             this.btnImgUsuario.Size = new System.Drawing.Size(55, 39);
@@ -499,7 +497,6 @@ namespace DulceTentacion
             this.btnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Image = global::DulceTentacion.Properties.Resources.ceerraSesionEditable_removebg_preview;
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCerrarSesion.Location = new System.Drawing.Point(59, 6);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
@@ -548,7 +545,6 @@ namespace DulceTentacion
             this.FondoImg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FondoImg.Image = global::DulceTentacion.Properties.Resources.dlce_removebg_preview;
             this.FondoImg.Location = new System.Drawing.Point(-18, 26);
             this.FondoImg.Name = "FondoImg";
             this.FondoImg.Size = new System.Drawing.Size(1054, 636);

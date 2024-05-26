@@ -16,7 +16,7 @@ namespace DulceTentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registro());
+            Application.Run(new InicioSesion());
         }
     }
 }

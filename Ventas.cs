@@ -43,12 +43,12 @@ namespace DulceTentacion
 
         private void btnPasteles_Click(object sender, EventArgs e)
         {
-            abrirConPrincipal(new Pasteles());
+            //abrirConPrincipal(new Pasteles());
         }
 
         private void fndPasteles_Click(object sender, EventArgs e)
         {
-            abrirConPrincipal(new Pasteles());
+           // abrirConPrincipal(new Pasteles());
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

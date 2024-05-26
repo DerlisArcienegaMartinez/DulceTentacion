@@ -146,11 +146,7 @@ namespace DulceTentacion
 
    
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+       
         private void btnRegistro_Click(object sender, EventArgs e)
         {
             //// Verificar si los campos están llenos

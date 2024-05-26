@@ -196,7 +196,6 @@ namespace DulceTentacion
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview;
             this.pictureBox2.Location = new System.Drawing.Point(21, 28);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(214, 195);
@@ -209,7 +208,6 @@ namespace DulceTentacion
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(224)))));
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalir.Image = global::DulceTentacion.Properties.Resources.salir;
             this.btnSalir.Location = new System.Drawing.Point(742, 12);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(38, 36);
@@ -221,7 +219,6 @@ namespace DulceTentacion
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.pp;
             this.pictureBox1.Location = new System.Drawing.Point(241, -26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(560, 420);

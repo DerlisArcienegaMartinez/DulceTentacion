@@ -131,7 +131,6 @@ namespace DulceTentacion
             this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.regresar3_removebg_preview;
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(3, 3);
             this.btnRegresar.Name = "btnRegresar";
@@ -161,7 +160,6 @@ namespace DulceTentacion
             this.btnModClaro.FlatAppearance.BorderSize = 0;
             this.btnModClaro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnModClaro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModClaro.Image = global::DulceTentacion.Properties.Resources.modoClaro_removebg_preview;
             this.btnModClaro.Location = new System.Drawing.Point(175, 78);
             this.btnModClaro.Name = "btnModClaro";
             this.btnModClaro.Size = new System.Drawing.Size(50, 50);
@@ -176,7 +174,6 @@ namespace DulceTentacion
             this.btnModOscuro.FlatAppearance.BorderSize = 0;
             this.btnModOscuro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnModOscuro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModOscuro.Image = global::DulceTentacion.Properties.Resources.modo_Oscuro_removebg_preview;
             this.btnModOscuro.Location = new System.Drawing.Point(439, 78);
             this.btnModOscuro.Name = "btnModOscuro";
             this.btnModOscuro.Size = new System.Drawing.Size(50, 50);
@@ -199,7 +196,6 @@ namespace DulceTentacion
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.configu_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(517, -51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(423, 391);

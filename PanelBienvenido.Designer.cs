@@ -71,7 +71,6 @@ namespace DulceTentacion
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_44_00_removebg_preview;
             this.pictureBox2.Location = new System.Drawing.Point(-12, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(153, 104);
@@ -126,7 +125,6 @@ namespace DulceTentacion
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(220)))));
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.WhatsApp_Image_2024_05_14_at_14_411;
             this.pictureBox1.Location = new System.Drawing.Point(0, 94);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(303, 443);
@@ -136,7 +134,6 @@ namespace DulceTentacion
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.fff;
             this.pictureBox3.Location = new System.Drawing.Point(-155, -35);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1162, 682);

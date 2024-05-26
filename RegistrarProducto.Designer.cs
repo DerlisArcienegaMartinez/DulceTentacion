@@ -63,13 +63,12 @@ namespace DulceTentacion
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardarTabla = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.GBRegistro.SuspendLayout();
             this.GBDescripcion.SuspendLayout();
             this.GBAccion.SuspendLayout();
             this.pnlHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+          
             this.SuspendLayout();
             // 
             // label1
@@ -404,7 +403,6 @@ namespace DulceTentacion
             this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.regresar3_removebg_preview;
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(3, 3);
             this.btnRegresar.Name = "btnRegresar";
@@ -412,12 +410,10 @@ namespace DulceTentacion
             this.btnRegresar.TabIndex = 52;
             this.btnRegresar.Text = "      Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpiar.Image = global::DulceTentacion.Properties.Resources.clean_removebg_preview;
             this.btnLimpiar.Location = new System.Drawing.Point(29, 150);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(79, 67);
@@ -428,7 +424,6 @@ namespace DulceTentacion
             // btnEliminar
             // 
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.Image = global::DulceTentacion.Properties.Resources.basurero_removebg_preview__1_;
             this.btnEliminar.Location = new System.Drawing.Point(142, 150);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(79, 67);
@@ -439,7 +434,6 @@ namespace DulceTentacion
             // btnGuardarTabla
             // 
             this.btnGuardarTabla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarTabla.Image = global::DulceTentacion.Properties.Resources.save_removebg_preview__1___1_;
             this.btnGuardarTabla.Location = new System.Drawing.Point(142, 52);
             this.btnGuardarTabla.Name = "btnGuardarTabla";
             this.btnGuardarTabla.Size = new System.Drawing.Size(79, 67);
@@ -450,7 +444,6 @@ namespace DulceTentacion
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Image = global::DulceTentacion.Properties.Resources.cancelar_removebg_preview;
             this.btnCancelar.Location = new System.Drawing.Point(29, 52);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(79, 67);
@@ -458,17 +451,8 @@ namespace DulceTentacion
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(641, 363);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(384, 292);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 38;
-            this.pictureBox4.TabStop = false;
-            // 
+            
+            
             // RegistrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -479,7 +463,7 @@ namespace DulceTentacion
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.btnAlmacenTabla);
-            this.Controls.Add(this.pictureBox4);
+         
             this.Controls.Add(this.pnlHorizontal);
             this.Controls.Add(this.GBAccion);
             this.Controls.Add(this.GBRegistro);
@@ -495,7 +479,6 @@ namespace DulceTentacion
             this.GBAccion.PerformLayout();
             this.pnlHorizontal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -535,6 +518,6 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnRegistro;
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Button btnAlmacenTabla;
-        private System.Windows.Forms.PictureBox pictureBox4;
+      
     }
 }
