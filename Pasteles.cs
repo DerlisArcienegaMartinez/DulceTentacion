@@ -17,7 +17,9 @@ namespace DulceTentacion
             InitializeComponent();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
+       
+
+        private void btnRegresar_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

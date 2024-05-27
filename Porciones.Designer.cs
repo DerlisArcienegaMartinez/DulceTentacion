@@ -31,6 +31,7 @@ namespace DulceTentacion
         {
             this.label1 = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@ namespace DulceTentacion
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -111,11 +111,21 @@ namespace DulceTentacion
             this.BarraHorizontal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BarraHorizontal.Controls.Add(this.btnRegresar);
+            this.BarraHorizontal.Controls.Add(this.btnBack);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
             this.BarraHorizontal.Size = new System.Drawing.Size(1010, 46);
             this.BarraHorizontal.TabIndex = 101;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 7);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(169, 36);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Atras";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label43
             // 
@@ -453,22 +463,6 @@ namespace DulceTentacion
             this.pictureBox1.TabIndex = 102;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(12, 4);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(173, 39);
-            this.btnRegresar.TabIndex = 0;
-            this.btnRegresar.Text = "          Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -558,7 +552,7 @@ namespace DulceTentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1497);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(992, 59);
+            this.panel1.Size = new System.Drawing.Size(1013, 59);
             this.panel1.TabIndex = 150;
             // 
             // Porciones
@@ -567,7 +561,7 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
-            this.ClientSize = new System.Drawing.Size(1013, 674);
+            this.ClientSize = new System.Drawing.Size(1034, 674);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.pictureBox17);
@@ -643,7 +637,6 @@ namespace DulceTentacion
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel BarraHorizontal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label43;
@@ -686,5 +679,6 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

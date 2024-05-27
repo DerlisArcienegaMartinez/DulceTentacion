@@ -32,16 +32,13 @@ namespace DulceTentacion
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            ContVentas.Controls.Add(childForm);
-            ContVentas.Tag = childForm;
+            contVentas.Controls.Add(childForm);
+            contVentas.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
 
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+     
 
         // Método para aplicar colores oscuros si el modo oscuro está activo
         private void ApplyDarkModeIfNeeded()
@@ -49,8 +46,8 @@ namespace DulceTentacion
             if (MenuPrincipal.DarkModeActive)
             {
                 this.BackColor = Color.Black;
-                BarraHorizontall.BackColor = Color.DimGray;
-                ContVentas.BackColor = Color.Black;
+                BarraHorizontal.BackColor = Color.DimGray;
+                //.BackColor = Color.Black;
                 btnCarrito.BackColor = Color.DimGray;
                 btnCarrito.ForeColor = Color.White;
 
@@ -61,8 +58,8 @@ namespace DulceTentacion
             {
                 // Aplicar colores originales
                 this.BackColor = Color.FromArgb(255, 222, 231);
-                BarraHorizontall.BackColor = Color.FromArgb(255, 192, 255);
-                ContVentas.BackColor = Color.FromArgb(255, 222, 231);
+                BarraHorizontal.BackColor = Color.FromArgb(255, 192, 255);
+                contVentas.BackColor = Color.FromArgb(255, 222, 231);
                 btnCarrito.BackColor = Color.White;
                 btnCarrito.ForeColor = Color.Black;
 
@@ -103,6 +100,12 @@ namespace DulceTentacion
 
         }
 
+
+
+
+
+
+
         private void fndPasteles_Click(object sender, EventArgs e)
         {
             abrirConPrincipal(new Pasteles());
@@ -123,6 +126,9 @@ namespace DulceTentacion
             abrirConPrincipal(new Porciones());
         }
 
-       
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
