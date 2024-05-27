@@ -49,6 +49,7 @@ namespace DulceTentacion
             this.btnRegresar.TabIndex = 2;
             this.btnRegresar.Text = "       Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // BarraHorizontal
             // 
