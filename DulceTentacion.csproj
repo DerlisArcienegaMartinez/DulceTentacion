@@ -665,6 +665,78 @@
   <ItemGroup>
     <None Include="Resources\porcion brownie1.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta bautizo 80bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta coraazon vainilla durazno manjar 70bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta cumple 100bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta cumpleaños 100bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta cumpleaños 120bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta infantil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta infantili.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta infantill.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta para boda 12 capas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta per120bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta person.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta personalizada 100bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta personalizada 120 bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta personalizada 150bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta15años.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortaaniversario.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortaAnimalito.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortapersonalizada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortainfantil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortasanvalenti.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortaMatrimonio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torts3capas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortaminitorta 30bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono crear torta.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
