@@ -31,13 +31,13 @@ namespace DulceTentacion
         {
             this.contVentas = new System.Windows.Forms.Panel();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCarrito = new System.Windows.Forms.Button();
             this.btnPorciones = new System.Windows.Forms.Label();
             this.btnBebidas = new System.Windows.Forms.Label();
             this.btnExtras = new System.Windows.Forms.Label();
             this.btnPasteles = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCarrito = new System.Windows.Forms.Button();
             this.fndOfertas = new System.Windows.Forms.PictureBox();
             this.fndCrearPastel = new System.Windows.Forms.PictureBox();
             this.fndBebidas = new System.Windows.Forms.PictureBox();
@@ -87,47 +87,6 @@ namespace DulceTentacion
             this.BarraHorizontal.Size = new System.Drawing.Size(1013, 46);
             this.BarraHorizontal.TabIndex = 129;
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(22, 3);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(198, 40);
-            this.btnRegresar.TabIndex = 0;
-            this.btnRegresar.Text = "    Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Menu_Ventas;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 128;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCarrito
-            // 
-            this.btnCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
-            this.btnCarrito.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCarrito.FlatAppearance.BorderSize = 0;
-            this.btnCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrito.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCarrito.Image = global::DulceTentacion.Properties.Resources.Carrito_Compras;
-            this.btnCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCarrito.Location = new System.Drawing.Point(298, 66);
-            this.btnCarrito.Name = "btnCarrito";
-            this.btnCarrito.Size = new System.Drawing.Size(171, 56);
-            this.btnCarrito.TabIndex = 127;
-            this.btnCarrito.Text = "      Carrito";
-            this.btnCarrito.UseVisualStyleBackColor = false;
-            // 
             // btnPorciones
             // 
             this.btnPorciones.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -171,6 +130,7 @@ namespace DulceTentacion
             this.btnExtras.Size = new System.Drawing.Size(236, 58);
             this.btnExtras.TabIndex = 124;
             this.btnExtras.Text = "Extras";
+            this.btnExtras.Click += new System.EventHandler(this.btnExtras_Click);
             // 
             // btnPasteles
             // 
@@ -186,6 +146,47 @@ namespace DulceTentacion
             this.btnPasteles.TabIndex = 123;
             this.btnPasteles.Text = "Pasteles";
             this.btnPasteles.Click += new System.EventHandler(this.btnPasteles_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(22, 3);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(198, 40);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.Text = "    Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Menu_Ventas;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(260, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 128;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCarrito
+            // 
+            this.btnCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
+            this.btnCarrito.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCarrito.FlatAppearance.BorderSize = 0;
+            this.btnCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarrito.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrito.Image = global::DulceTentacion.Properties.Resources.Carrito_Compras;
+            this.btnCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCarrito.Location = new System.Drawing.Point(298, 66);
+            this.btnCarrito.Name = "btnCarrito";
+            this.btnCarrito.Size = new System.Drawing.Size(171, 56);
+            this.btnCarrito.TabIndex = 127;
+            this.btnCarrito.Text = "      Carrito";
+            this.btnCarrito.UseVisualStyleBackColor = false;
             // 
             // fndOfertas
             // 
@@ -248,6 +249,7 @@ namespace DulceTentacion
             this.fndExtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fndExtras.TabIndex = 118;
             this.fndExtras.TabStop = false;
+            this.fndExtras.Click += new System.EventHandler(this.fndExtras_Click);
             // 
             // fndPasteles
             // 

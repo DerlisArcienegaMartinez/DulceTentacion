@@ -140,5 +140,15 @@ namespace DulceTentacion
         {
             abrirConPrincipal(new Bebidas());
         }
+
+        private void fndExtras_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Extras());
+        }
+
+        private void btnExtras_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Extras());
+        }
     }
 }
