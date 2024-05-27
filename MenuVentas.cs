@@ -150,5 +150,15 @@ namespace DulceTentacion
         {
             abrirConPrincipal(new Extras());
         }
+
+        private void fndCrearPastel_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new PastelPersonalizado());
+        }
+
+        private void fndOfertas_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Ofertas());
+        }
     }
 }

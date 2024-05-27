@@ -199,6 +199,7 @@ namespace DulceTentacion
             this.fndOfertas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fndOfertas.TabIndex = 122;
             this.fndOfertas.TabStop = false;
+            this.fndOfertas.Click += new System.EventHandler(this.fndOfertas_Click);
             // 
             // fndCrearPastel
             // 
@@ -211,6 +212,7 @@ namespace DulceTentacion
             this.fndCrearPastel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fndCrearPastel.TabIndex = 121;
             this.fndCrearPastel.TabStop = false;
+            this.fndCrearPastel.Click += new System.EventHandler(this.fndCrearPastel_Click);
             // 
             // fndBebidas
             // 
