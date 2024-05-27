@@ -44,6 +44,7 @@ namespace DulceTentacion
             this.fndPorciones = new System.Windows.Forms.PictureBox();
             this.fndExtras = new System.Windows.Forms.PictureBox();
             this.fndPasteles = new System.Windows.Forms.PictureBox();
+            this.btnCrearPastel = new System.Windows.Forms.Button();
             this.contVentas.SuspendLayout();
             this.BarraHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +58,7 @@ namespace DulceTentacion
             // 
             // contVentas
             // 
+            this.contVentas.Controls.Add(this.btnCrearPastel);
             this.contVentas.Controls.Add(this.BarraHorizontal);
             this.contVentas.Controls.Add(this.pictureBox1);
             this.contVentas.Controls.Add(this.btnCarrito);
@@ -174,16 +176,16 @@ namespace DulceTentacion
             // 
             // btnCarrito
             // 
-            this.btnCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
+            this.btnCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCarrito.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrito.FlatAppearance.BorderSize = 0;
             this.btnCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrito.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrito.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrito.Image = global::DulceTentacion.Properties.Resources.Carrito_Compras;
             this.btnCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCarrito.Location = new System.Drawing.Point(298, 66);
+            this.btnCarrito.Location = new System.Drawing.Point(299, 56);
             this.btnCarrito.Name = "btnCarrito";
-            this.btnCarrito.Size = new System.Drawing.Size(171, 56);
+            this.btnCarrito.Size = new System.Drawing.Size(189, 70);
             this.btnCarrito.TabIndex = 127;
             this.btnCarrito.Text = "      Carrito";
             this.btnCarrito.UseVisualStyleBackColor = false;
@@ -266,6 +268,22 @@ namespace DulceTentacion
             this.fndPasteles.TabStop = false;
             this.fndPasteles.Click += new System.EventHandler(this.fndPasteles_Click);
             // 
+            // btnCrearPastel
+            // 
+            this.btnCrearPastel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnCrearPastel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCrearPastel.FlatAppearance.BorderSize = 0;
+            this.btnCrearPastel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearPastel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearPastel.Image = global::DulceTentacion.Properties.Resources.icono_crear_torta;
+            this.btnCrearPastel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrearPastel.Location = new System.Drawing.Point(508, 56);
+            this.btnCrearPastel.Name = "btnCrearPastel";
+            this.btnCrearPastel.Size = new System.Drawing.Size(231, 71);
+            this.btnCrearPastel.TabIndex = 164;
+            this.btnCrearPastel.Text = "        Crea tu propio pastel";
+            this.btnCrearPastel.UseVisualStyleBackColor = false;
+            // 
             // MenuVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -306,5 +324,6 @@ namespace DulceTentacion
         private System.Windows.Forms.PictureBox fndPasteles;
         private System.Windows.Forms.Panel BarraHorizontal;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnCrearPastel;
     }
 }
