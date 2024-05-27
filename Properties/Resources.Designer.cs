@@ -413,6 +413,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ebabyshower_35bs {
+            get {
+                object obj = ResourceManager.GetObject("Ebabyshower 35bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Editar_tabla {
             get {
                 object obj = ResourceManager.GetObject("Editar tabla", resourceCulture);
@@ -423,9 +433,69 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EKit_Pastelitos {
+            get {
+                object obj = ResourceManager.GetObject("EKit Pastelitos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Emblema {
             get {
                 object obj = ResourceManager.GetObject("Emblema", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMiniTorta {
+            get {
+                object obj = ResourceManager.GetObject("EMiniTorta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMinitorta_30_bs {
+            get {
+                object obj = ResourceManager.GetObject("EMinitorta 30 bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMiniTorta25bs {
+            get {
+                object obj = ResourceManager.GetObject("EMiniTorta25bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EPastelitoFrutilla {
+            get {
+                object obj = ResourceManager.GetObject("EPastelitoFrutilla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Epastelitos_7bs {
+            get {
+                object obj = ResourceManager.GetObject("Epastelitos 7bs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -636,6 +706,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Porcion_Brownie_triple_8bs {
             get {
                 object obj = ResourceManager.GetObject("Porcion Brownie triple 8bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_brownie1 {
+            get {
+                object obj = ResourceManager.GetObject("porcion brownie1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

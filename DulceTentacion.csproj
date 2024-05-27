@@ -623,6 +623,30 @@
   <ItemGroup>
     <None Include="Resources\VasoEnsaladaFruta.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMiniTorta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ebabyshower 35bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMinitorta 30 bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EKit Pastelitos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Epastelitos 7bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMiniTorta25bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EPastelitoFrutilla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porcion brownie1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
