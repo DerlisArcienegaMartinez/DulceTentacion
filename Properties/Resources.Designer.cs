@@ -503,6 +503,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap porcion_brownie {
+            get {
+                object obj = ResourceManager.GetObject("porcion brownie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Porcion_Brownie_triple_8bs {
             get {
                 object obj = ResourceManager.GetObject("Porcion Brownie triple 8bs", resourceCulture);

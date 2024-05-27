@@ -47,6 +47,7 @@ namespace DulceTentacion
             this.lblDulce = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.Button();
             this.BarraH = new System.Windows.Forms.Button();
+            this.btnDarkMode = new System.Windows.Forms.Button();
             this.btnUbicacion = new System.Windows.Forms.PictureBox();
             this.btnImgUsuario = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -61,7 +62,6 @@ namespace DulceTentacion
             this.btnMenuVentas = new System.Windows.Forms.Button();
             this.btnAtCliente = new System.Windows.Forms.Button();
             this.btnDesplegable = new System.Windows.Forms.Button();
-            this.btnDarkMode = new System.Windows.Forms.Button();
             this.PanelMenus.SuspendLayout();
             this.SubPanelEmp.SuspendLayout();
             this.SubPanelReg.SuspendLayout();
@@ -340,6 +340,26 @@ namespace DulceTentacion
             this.BarraH.TabIndex = 31;
             this.BarraH.UseVisualStyleBackColor = false;
             // 
+            // btnDarkMode
+            // 
+            this.btnDarkMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDarkMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDarkMode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDarkMode.FlatAppearance.BorderSize = 0;
+            this.btnDarkMode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnDarkMode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.btnDarkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDarkMode.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDarkMode.Image = global::DulceTentacion.Properties.Resources.Icono_Modo_Oscuro;
+            this.btnDarkMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDarkMode.Location = new System.Drawing.Point(195, 630);
+            this.btnDarkMode.Name = "btnDarkMode";
+            this.btnDarkMode.Size = new System.Drawing.Size(220, 39);
+            this.btnDarkMode.TabIndex = 43;
+            this.btnDarkMode.Text = "     Modo Oscuro";
+            this.btnDarkMode.UseVisualStyleBackColor = false;
+            this.btnDarkMode.Click += new System.EventHandler(this.btnDarkMode_Click);
+            // 
             // btnUbicacion
             // 
             this.btnUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -574,26 +594,6 @@ namespace DulceTentacion
             this.btnDesplegable.UseVisualStyleBackColor = false;
             this.btnDesplegable.Click += new System.EventHandler(this.btnDesplegable_Click);
             // 
-            // btnDarkMode
-            // 
-            this.btnDarkMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnDarkMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDarkMode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDarkMode.FlatAppearance.BorderSize = 0;
-            this.btnDarkMode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnDarkMode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
-            this.btnDarkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDarkMode.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDarkMode.Image = global::DulceTentacion.Properties.Resources.Icono_Modo_Oscuro;
-            this.btnDarkMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDarkMode.Location = new System.Drawing.Point(195, 630);
-            this.btnDarkMode.Name = "btnDarkMode";
-            this.btnDarkMode.Size = new System.Drawing.Size(220, 39);
-            this.btnDarkMode.TabIndex = 43;
-            this.btnDarkMode.Text = "     Modo Oscuro";
-            this.btnDarkMode.UseVisualStyleBackColor = false;
-            this.btnDarkMode.Click += new System.EventHandler(this.btnDarkMode_Click);
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -603,11 +603,10 @@ namespace DulceTentacion
             this.ClientSize = new System.Drawing.Size(1326, 674);
             this.Controls.Add(this.ContPrincipal);
             this.Controls.Add(this.PanelMenus);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "  Pasteleria";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.PanelMenus.ResumeLayout(false);
             this.SubPanelEmp.ResumeLayout(false);

@@ -31,11 +31,9 @@ namespace DulceTentacion
         {
             this.ContUbicacion = new System.Windows.Forms.Panel();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.CBModo = new System.Windows.Forms.ComboBox();
             this.lblSucursal = new System.Windows.Forms.LinkLabel();
             this.GBOpinionGeneral = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.RBExcelente = new System.Windows.Forms.RadioButton();
             this.RBBuena = new System.Windows.Forms.RadioButton();
@@ -51,6 +49,8 @@ namespace DulceTentacion
             this.btnSucursal2 = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
             this.MapUbi = new GMap.NET.WindowsForms.GMapControl();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContUbicacion.SuspendLayout();
             this.BarraHorizontal.SuspendLayout();
             this.GBOpinionGeneral.SuspendLayout();
@@ -77,28 +77,14 @@ namespace DulceTentacion
             // 
             // BarraHorizontal
             // 
+            this.BarraHorizontal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
             this.BarraHorizontal.Size = new System.Drawing.Size(1013, 46);
             this.BarraHorizontal.TabIndex = 49;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(174, 38);
-            this.btnRegresar.TabIndex = 0;
-            this.btnRegresar.Text = "          Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // CBModo
             // 
@@ -107,7 +93,7 @@ namespace DulceTentacion
             this.CBModo.Items.AddRange(new object[] {
             "Mapa Normal",
             "Mapa Satélite"});
-            this.CBModo.Location = new System.Drawing.Point(12, 62);
+            this.CBModo.Location = new System.Drawing.Point(12, 57);
             this.CBModo.Name = "CBModo";
             this.CBModo.Size = new System.Drawing.Size(221, 24);
             this.CBModo.TabIndex = 48;
@@ -145,17 +131,6 @@ namespace DulceTentacion
             this.GBOpinionGeneral.TabIndex = 42;
             this.GBOpinionGeneral.TabStop = false;
             this.GBOpinionGeneral.Text = "Escribe una opinión";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Icono_Whatsapp;
-            this.pictureBox1.Location = new System.Drawing.Point(448, 283);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
             // 
             // btnEnviar
             // 
@@ -271,11 +246,11 @@ namespace DulceTentacion
             // 
             // lblReserva
             // 
-            this.lblReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblReserva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblReserva.AutoSize = true;
             this.lblReserva.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReserva.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReserva.Location = new System.Drawing.Point(464, 619);
+            this.lblReserva.Location = new System.Drawing.Point(483, 624);
             this.lblReserva.Name = "lblReserva";
             this.lblReserva.Size = new System.Drawing.Size(483, 24);
             this.lblReserva.TabIndex = 41;
@@ -384,6 +359,33 @@ namespace DulceTentacion
             this.MapUbi.Size = new System.Drawing.Size(446, 575);
             this.MapUbi.TabIndex = 36;
             this.MapUbi.Zoom = 0D;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(174, 38);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.Text = "          Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.Icono_Whatsapp;
+            this.pictureBox1.Location = new System.Drawing.Point(448, 283);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // Ubicacion
             // 

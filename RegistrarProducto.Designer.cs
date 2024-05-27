@@ -109,9 +109,10 @@ namespace DulceTentacion
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Location = new System.Drawing.Point(113, 63);
+            this.txtNombre.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(109, 59);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(342, 15);
+            this.txtNombre.Size = new System.Drawing.Size(342, 20);
             this.txtNombre.TabIndex = 4;
             // 
             // txtUxMasa
@@ -119,9 +120,10 @@ namespace DulceTentacion
             this.txtUxMasa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtUxMasa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUxMasa.Location = new System.Drawing.Point(175, 94);
+            this.txtUxMasa.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUxMasa.Location = new System.Drawing.Point(175, 90);
             this.txtUxMasa.Name = "txtUxMasa";
-            this.txtUxMasa.Size = new System.Drawing.Size(68, 15);
+            this.txtUxMasa.Size = new System.Drawing.Size(68, 20);
             this.txtUxMasa.TabIndex = 5;
             // 
             // txtPrecio
@@ -129,9 +131,10 @@ namespace DulceTentacion
             this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPrecio.Location = new System.Drawing.Point(113, 161);
+            this.txtPrecio.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(113, 156);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(68, 15);
+            this.txtPrecio.Size = new System.Drawing.Size(68, 20);
             this.txtPrecio.TabIndex = 6;
             // 
             // GBRegistro
@@ -206,9 +209,10 @@ namespace DulceTentacion
             this.txtUxLitro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtUxLitro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUxLitro.Location = new System.Drawing.Point(175, 123);
+            this.txtUxLitro.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUxLitro.Location = new System.Drawing.Point(175, 121);
             this.txtUxLitro.Name = "txtUxLitro";
-            this.txtUxLitro.Size = new System.Drawing.Size(68, 15);
+            this.txtUxLitro.Size = new System.Drawing.Size(68, 20);
             this.txtUxLitro.TabIndex = 12;
             // 
             // label10
@@ -227,9 +231,10 @@ namespace DulceTentacion
             this.txtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtCantidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCantidad.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(481, 92);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(68, 15);
+            this.txtCantidad.Size = new System.Drawing.Size(68, 20);
             this.txtCantidad.TabIndex = 10;
             // 
             // label9
@@ -237,7 +242,7 @@ namespace DulceTentacion
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(320, 90);
+            this.label9.Location = new System.Drawing.Point(320, 95);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(155, 17);
             this.label9.TabIndex = 9;
@@ -248,9 +253,10 @@ namespace DulceTentacion
             this.txtCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCodigo.Location = new System.Drawing.Point(113, 32);
+            this.txtCodigo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(109, 27);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(183, 15);
+            this.txtCodigo.Size = new System.Drawing.Size(183, 20);
             this.txtCodigo.TabIndex = 8;
             // 
             // label8
@@ -281,6 +287,7 @@ namespace DulceTentacion
             this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescripcion.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(24, 36);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";

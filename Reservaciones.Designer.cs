@@ -81,6 +81,7 @@ namespace DulceTentacion
             // 
             // btnCesta
             // 
+            this.btnCesta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCesta.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCesta.Location = new System.Drawing.Point(360, 326);
             this.btnCesta.Name = "btnCesta";
@@ -91,6 +92,8 @@ namespace DulceTentacion
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dtpEntrega);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.textBox14);
@@ -122,32 +125,39 @@ namespace DulceTentacion
             // 
             // dtpEntrega
             // 
-            this.dtpEntrega.Location = new System.Drawing.Point(616, 121);
+            this.dtpEntrega.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpEntrega.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEntrega.Location = new System.Drawing.Point(612, 114);
             this.dtpEntrega.Name = "dtpEntrega";
-            this.dtpEntrega.Size = new System.Drawing.Size(358, 29);
+            this.dtpEntrega.Size = new System.Drawing.Size(358, 27);
             this.dtpEntrega.TabIndex = 71;
             // 
             // comboBox2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "am.",
             "pm."});
-            this.comboBox2.Location = new System.Drawing.Point(682, 71);
+            this.comboBox2.Location = new System.Drawing.Point(696, 66);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(63, 28);
+            this.comboBox2.Size = new System.Drawing.Size(63, 27);
             this.comboBox2.TabIndex = 70;
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(100, 104);
+            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox14.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(111, 100);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(290, 29);
+            this.textBox14.Size = new System.Drawing.Size(290, 27);
             this.textBox14.TabIndex = 69;
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(401, 28);
@@ -168,7 +178,7 @@ namespace DulceTentacion
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "+54",
@@ -183,53 +193,65 @@ namespace DulceTentacion
             "+58"});
             this.comboBox1.Location = new System.Drawing.Point(93, 142);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(69, 28);
+            this.comboBox1.Size = new System.Drawing.Size(69, 27);
             this.comboBox1.TabIndex = 67;
             // 
             // textBox13
             // 
+            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.Location = new System.Drawing.Point(168, 143);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(136, 29);
+            this.textBox13.Size = new System.Drawing.Size(136, 27);
             this.textBox13.TabIndex = 66;
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(100, 69);
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox12.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(111, 65);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(235, 29);
+            this.textBox12.Size = new System.Drawing.Size(235, 27);
             this.textBox12.TabIndex = 65;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(54, 32);
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(58, 30);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(148, 29);
+            this.textBox8.Size = new System.Drawing.Size(148, 27);
             this.textBox8.TabIndex = 64;
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(577, 21);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(352, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(352, 27);
             this.dateTimePicker1.TabIndex = 63;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(186, 194);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(31, 20);
+            this.label24.Size = new System.Drawing.Size(33, 19);
             this.label24.TabIndex = 62;
             this.label24.Text = "Bs.";
             // 
             // textBox11
             // 
+            this.textBox11.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(111, 183);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(69, 29);
+            this.textBox11.Size = new System.Drawing.Size(69, 27);
             this.textBox11.TabIndex = 61;
             // 
             // label23
@@ -244,9 +266,10 @@ namespace DulceTentacion
             // 
             // label22
             // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(445, 128);
+            this.label22.Location = new System.Drawing.Point(439, 121);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(155, 20);
             this.label22.TabIndex = 58;
@@ -254,13 +277,16 @@ namespace DulceTentacion
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(616, 70);
+            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(630, 65);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(60, 29);
+            this.textBox9.Size = new System.Drawing.Size(60, 27);
             this.textBox9.TabIndex = 57;
             // 
             // label21
             // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(460, 70);
@@ -271,6 +297,7 @@ namespace DulceTentacion
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(445, 172);
@@ -281,7 +308,8 @@ namespace DulceTentacion
             // 
             // CBSucursales
             // 
-            this.CBSucursales.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBSucursales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CBSucursales.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBSucursales.FormattingEnabled = true;
             this.CBSucursales.Items.AddRange(new object[] {
             "Principal",
@@ -290,7 +318,7 @@ namespace DulceTentacion
             "Sucursal 3"});
             this.CBSucursales.Location = new System.Drawing.Point(545, 169);
             this.CBSucursales.Name = "CBSucursales";
-            this.CBSucursales.Size = new System.Drawing.Size(279, 28);
+            this.CBSucursales.Size = new System.Drawing.Size(279, 27);
             this.CBSucursales.TabIndex = 55;
             // 
             // label4
@@ -325,6 +353,7 @@ namespace DulceTentacion
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.comboBox5);
             this.groupBox2.Controls.Add(this.textBox7);
@@ -347,17 +376,19 @@ namespace DulceTentacion
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(250, 43);
+            this.label5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(263, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 20);
+            this.label5.Size = new System.Drawing.Size(80, 19);
             this.label5.TabIndex = 71;
             this.label5.Text = "unidades.";
             // 
             // comboBox5
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "6 pulgadas (15cm)",
@@ -367,13 +398,15 @@ namespace DulceTentacion
             "14 pulgadas (35cm)",
             "16 pulgadas (40cm)",
             "18 pulgadas (45cm)"});
-            this.comboBox5.Location = new System.Drawing.Point(183, 81);
+            this.comboBox5.Location = new System.Drawing.Point(195, 81);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(244, 28);
+            this.comboBox5.Size = new System.Drawing.Size(244, 27);
             this.comboBox5.TabIndex = 73;
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(14, 238);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -393,7 +426,9 @@ namespace DulceTentacion
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(183, 164);
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(195, 161);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(382, 29);
@@ -411,7 +446,9 @@ namespace DulceTentacion
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(183, 120);
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(195, 120);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(382, 29);
@@ -439,9 +476,11 @@ namespace DulceTentacion
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 39);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(195, 39);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(62, 29);
+            this.textBox1.Size = new System.Drawing.Size(62, 27);
             this.textBox1.TabIndex = 58;
             // 
             // label14
@@ -456,7 +495,9 @@ namespace DulceTentacion
             // 
             // comboBox4
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Redonda",
@@ -465,14 +506,16 @@ namespace DulceTentacion
             "Por Capas",
             "Eventos Grandes",
             "Especial"});
-            this.comboBox4.Location = new System.Drawing.Point(138, 285);
+            this.comboBox4.Location = new System.Drawing.Point(158, 285);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(244, 28);
+            this.comboBox4.Size = new System.Drawing.Size(244, 27);
             this.comboBox4.TabIndex = 72;
             // 
             // comboBox3
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Clásico",
@@ -489,9 +532,9 @@ namespace DulceTentacion
             "Navidad",
             "Baby Shower",
             "Bautizos/Comuniones"});
-            this.comboBox3.Location = new System.Drawing.Point(109, 316);
+            this.comboBox3.Location = new System.Drawing.Point(114, 319);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(244, 28);
+            this.comboBox3.Size = new System.Drawing.Size(244, 27);
             this.comboBox3.TabIndex = 71;
             // 
             // label19
@@ -516,6 +559,8 @@ namespace DulceTentacion
             // 
             // BarraHorizontal
             // 
+            this.BarraHorizontal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
@@ -540,21 +585,23 @@ namespace DulceTentacion
             // 
             // PBFotos
             // 
+            this.PBFotos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PBFotos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PBFotos.Location = new System.Drawing.Point(66, 365);
+            this.PBFotos.Location = new System.Drawing.Point(60, 367);
             this.PBFotos.Name = "PBFotos";
-            this.PBFotos.Size = new System.Drawing.Size(250, 250);
+            this.PBFotos.Size = new System.Drawing.Size(298, 289);
             this.PBFotos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBFotos.TabIndex = 74;
             this.PBFotos.TabStop = false;
             // 
             // btnAnterior
             // 
+            this.btnAnterior.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnterior.Image = global::DulceTentacion.Properties.Resources.icono_anterior;
-            this.btnAnterior.Location = new System.Drawing.Point(11, 452);
+            this.btnAnterior.Location = new System.Drawing.Point(5, 484);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(49, 67);
             this.btnAnterior.TabIndex = 76;
@@ -562,12 +609,12 @@ namespace DulceTentacion
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Image = global::DulceTentacion.Properties.Resources.icono_siguiente;
-            this.btnSiguiente.Location = new System.Drawing.Point(322, 452);
+            this.btnSiguiente.Location = new System.Drawing.Point(362, 484);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(49, 67);
             this.btnSiguiente.TabIndex = 75;
