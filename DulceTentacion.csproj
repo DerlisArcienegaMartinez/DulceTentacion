@@ -110,6 +110,12 @@
     <Compile Include="PanelBienvenido.Designer.cs">
       <DependentUpon>PanelBienvenido.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pasteles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pasteles.Designer.cs">
+      <DependentUpon>Pasteles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PanelBienvenido.resx">
       <DependentUpon>PanelBienvenido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pasteles.resx">
+      <DependentUpon>Pasteles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -367,6 +376,108 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icono siguiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta simpple 150bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta maracuya 80 bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta duraznno manja 70bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta simple 30 bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta 3 leches 60bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta chocolate capas nutella 100bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta de frutilla 80bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta dia de la madre 60bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta dia de la madre 70bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta dia de la madre90bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta dia del padre80bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta papa 25bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta de chocolate simple60bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta de cumpleaño 60bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta frutos rojos 80 bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta helada oreo 90bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta maracuya 160bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta mil capas 160bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta masa humeda con crema de leche 80bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta oreo 25bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta para mama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta rectagular 50 bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta rosa negra80bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta rectangular 40 bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta rosa negra120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta selva negra 100bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta simple 70bss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta simple70bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta simple 60 bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta Tresleches 70 bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortaSimple60bs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tres leches 70 bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trota tres leches 50bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trres leches 75bs.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
