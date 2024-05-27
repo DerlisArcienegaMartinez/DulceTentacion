@@ -72,6 +72,7 @@ namespace DulceTentacion
             // 
             // btnAllProd
             // 
+            this.btnAllProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAllProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnAllProd.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllProd.Location = new System.Drawing.Point(12, 51);
@@ -83,6 +84,7 @@ namespace DulceTentacion
             // 
             // btnProdAgo
             // 
+            this.btnProdAgo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProdAgo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnProdAgo.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdAgo.Location = new System.Drawing.Point(210, 51);
@@ -94,6 +96,7 @@ namespace DulceTentacion
             // 
             // btnEditProd
             // 
+            this.btnEditProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnEditProd.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditProd.Location = new System.Drawing.Point(612, 51);
@@ -105,6 +108,7 @@ namespace DulceTentacion
             // 
             // btnDelProd
             // 
+            this.btnDelProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnDelProd.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelProd.Location = new System.Drawing.Point(804, 51);
@@ -116,6 +120,7 @@ namespace DulceTentacion
             // 
             // btnAddProd
             // 
+            this.btnAddProd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnAddProd.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProd.Location = new System.Drawing.Point(408, 51);

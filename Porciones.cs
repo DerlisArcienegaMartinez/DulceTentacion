@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class Pasteles : Form
+    public partial class Porciones : Form
     {
-        public Pasteles()
+        public Porciones()
         {
             InitializeComponent();
         }

@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="porcion torta helada oreo 10bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion torta helada oreo 10bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="borrar tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\borrar tabla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,20 +133,32 @@
   <data name="Avatar Viejito2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Viejito2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="torta para mama" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\torta para mama.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="torta duraznno manja 70bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta duraznno manja 70bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta rosa negra120" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta rosa negra120.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fondo portada Bienvenido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo portada Bienvenido.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Avatar Niña" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Niña.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Avatar Mujer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar Mujer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="torta mil capas 160bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta mil capas 160bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porcion chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion chocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porcion torta chocolate 15bsws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion torta chocolate 15bsws.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="torta dia de la madre 60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\torta dia de la madre 60bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta de frutilla 80bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta de frutilla 80bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +172,17 @@
   <data name="Avatar Viejo} (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Viejo} (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="porcion pie limon10bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion pie limon10bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Portada Bienvenida Chef" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Portada Bienvenida Chef.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono Whatsapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono Whatsapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porcion limon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion limon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta 3 leches 60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta 3 leches 60bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +190,11 @@
   <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tortaSimple60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tortaSimple60bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="queque de limon 20bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\queque de limon 20bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="torta de chocolate simple60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\torta de chocolate simple60bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="portada ofertas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\portada ofertas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +208,20 @@
   <data name="torta dia del padre80bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta dia del padre80bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="porcion bruselina de fresa 12bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion bruselina de fresa 12bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Menu Ventas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu Ventas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Editar tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Editar tabla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porcion chocobrownie 12bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion chocobrownie 12bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trres leches 75bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trres leches 75bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Portada Extras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Portada Extras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +229,17 @@
   <data name="Avatar Señor 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Señor 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Avatar Usuario Registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar Usuario Registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="avatar mujer 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avatar mujer 4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Avatar niña 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar niña 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Porcion maracuya 9bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porcion maracuya 9bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo crear pastel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo crear pastel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,8 +256,8 @@
   <data name="torta rectangular 40 bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta rectangular 40 bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Editar tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Editar tabla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="porcion tres leches 9bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion tres leches 9bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Avatar mujer 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar mujer 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,14 +271,14 @@
   <data name="Fondo Portada menu principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo Portada menu principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="porcion torta chocolate 15bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion torta chocolate 15bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Avatar Señor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Señor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fondo Inicio Sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo Inicio Sesion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cerrar sesion menu principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrar sesion menu principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="porcion chocoflan 10bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion chocoflan 10bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Avatar-Viejita" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar-Viejita.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,14 +286,11 @@
   <data name="Avatar Usuario Cuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Usuario Cuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono siguiente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono siguiente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fondo cafe (bebidas)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo cafe (bebidas).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="torta dia de la madre 60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\torta dia de la madre 60bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="porcion torta maracuya 10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion torta maracuya 10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta simple 60 bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta simple 60 bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -264,6 +303,9 @@
   </data>
   <data name="Avatar Niño 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Niño 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porcion brazo gitano 10bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion brazo gitano 10bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta maracuya 80 bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta maracuya 80 bs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,6 +325,9 @@
   <data name="Avatar Señora" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Señora.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="procion 20bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\procion 20bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cerrar Sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cerrar Sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -301,17 +346,23 @@
   <data name="torta oreo 25bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta oreo 25bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Avatar Mujer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar Mujer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono siguiente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono siguiente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cancelar Tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancelar Tabla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Avatar-Viejita_1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar-Viejita_1 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="porcion oreo12bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion oreo12bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo Inicio Sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo Inicio Sesion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tres leches 70 bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tres leches 70 bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porcion lila" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion lila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Emblema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Emblema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +370,17 @@
   <data name="Portada Porciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Portada Porciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="porcion chocoflan10bss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion chocoflan10bss.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="torta helada oreo 90bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\torta helada oreo 90bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Avatar-Niño" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar-Niño.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Porcion Brownie triple 8bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porcion Brownie triple 8bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta chocolate capas nutella 100bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta chocolate capas nutella 100bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,17 +391,20 @@
   <data name="torta frutos rojos 80 bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta frutos rojos 80 bs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fondo portada Bienvenido" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo portada Bienvenido.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cerrar sesion menu principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar sesion menu principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="torta helada oreo 90bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\torta helada oreo 90bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="porcion selva negra 20bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porcion selva negra 20bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Avatar Viejito feliz (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Viejito feliz (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="torta de chocolate simple60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\torta de chocolate simple60bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Avatar-Viejita_1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar-Viejita_1 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tortaSimple60bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tortaSimple60bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="torta Tresleches 70 bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta Tresleches 70 bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,8 +415,8 @@
   <data name="torta simple70bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta simple70bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Avatar Usuario Registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar Usuario Registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="torta para mama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\torta para mama.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ubicacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ubicacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -364,7 +427,7 @@
   <data name="torta simple 70bss" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\torta simple 70bss.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trres leches 75bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trres leches 75bs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Porcion torta chocolate 10bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porcion torta chocolate 10bs.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

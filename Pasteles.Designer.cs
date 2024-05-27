@@ -61,6 +61,10 @@ namespace DulceTentacion
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BarraHorizontal = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
@@ -93,10 +97,7 @@ namespace DulceTentacion
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.BarraHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
@@ -129,648 +130,359 @@ namespace DulceTentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 1979);
+            this.label2.Location = new System.Drawing.Point(60, 2023);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 25);
+            this.label2.Size = new System.Drawing.Size(149, 25);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Nombre Pastel";
+            this.label2.Text = "Torta de vainilla";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(314, 1979);
+            this.label3.Location = new System.Drawing.Point(298, 2023);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
+            this.label3.Size = new System.Drawing.Size(176, 25);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Nombre Pastel";
+            this.label3.Text = "Torta de maracuya";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(561, 1979);
+            this.label4.Location = new System.Drawing.Point(496, 2023);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 25);
+            this.label4.Size = new System.Drawing.Size(262, 25);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Nombre Pastel";
+            this.label4.Text = "Torta de durazno con manjar";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(814, 1979);
+            this.label5.Location = new System.Drawing.Point(800, 2023);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 25);
+            this.label5.Size = new System.Drawing.Size(145, 25);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Nombre Pastel";
+            this.label5.Text = "Torta decorada";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(814, 2230);
+            this.label10.Location = new System.Drawing.Point(779, 2288);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 25);
+            this.label10.Size = new System.Drawing.Size(196, 25);
             this.label10.TabIndex = 25;
-            this.label10.Text = "Nombre Pastel";
+            this.label10.Text = "Torta dia de la madre";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(561, 2230);
+            this.label11.Location = new System.Drawing.Point(561, 2288);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(140, 25);
             this.label11.TabIndex = 24;
-            this.label11.Text = "Nombre Pastel";
+            this.label11.Text = "Torta de frutilla";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(314, 2230);
+            this.label12.Location = new System.Drawing.Point(298, 2288);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(140, 25);
+            this.label12.Size = new System.Drawing.Size(174, 25);
             this.label12.TabIndex = 23;
-            this.label12.Text = "Nombre Pastel";
+            this.label12.Text = "Torta de chocolate";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(60, 2230);
+            this.label13.Location = new System.Drawing.Point(7, 2288);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(140, 25);
+            this.label13.Size = new System.Drawing.Size(258, 25);
             this.label13.TabIndex = 22;
-            this.label13.Text = "Nombre Pastel";
+            this.label13.Text = "Torta de Chocolate y vainilla";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(814, 1439);
+            this.label18.Location = new System.Drawing.Point(789, 1473);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(140, 25);
+            this.label18.Size = new System.Drawing.Size(175, 25);
             this.label18.TabIndex = 41;
-            this.label18.Text = "Nombre Pastel";
+            this.label18.Text = "Torta dia del padre";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(561, 1439);
+            this.label19.Location = new System.Drawing.Point(537, 1473);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(140, 25);
+            this.label19.Size = new System.Drawing.Size(175, 25);
             this.label19.TabIndex = 40;
-            this.label19.Text = "Nombre Pastel";
+            this.label19.Text = "Torta dia del padre";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(314, 1439);
+            this.label20.Location = new System.Drawing.Point(279, 1473);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(140, 25);
+            this.label20.Size = new System.Drawing.Size(196, 25);
             this.label20.TabIndex = 39;
-            this.label20.Text = "Nombre Pastel";
+            this.label20.Text = "Torta dia de la madre";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(60, 1439);
+            this.label21.Location = new System.Drawing.Point(22, 1473);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(140, 25);
+            this.label21.Size = new System.Drawing.Size(229, 25);
             this.label21.TabIndex = 38;
-            this.label21.Text = "Nombre Pastel";
+            this.label21.Text = "Torta con crema de fresa";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(814, 1728);
+            this.label22.Location = new System.Drawing.Point(814, 1740);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(140, 25);
+            this.label22.Size = new System.Drawing.Size(122, 25);
             this.label22.TabIndex = 49;
-            this.label22.Text = "Nombre Pastel";
+            this.label22.Text = "Torta helada";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(561, 1728);
+            this.label23.Location = new System.Drawing.Point(540, 1740);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(140, 25);
+            this.label23.Size = new System.Drawing.Size(185, 25);
             this.label23.TabIndex = 48;
-            this.label23.Text = "Nombre Pastel";
+            this.label23.Text = "Torta de frutos rojos";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(314, 1728);
+            this.label24.Location = new System.Drawing.Point(314, 1740);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(140, 25);
+            this.label24.Size = new System.Drawing.Size(145, 25);
             this.label24.TabIndex = 47;
-            this.label24.Text = "Nombre Pastel";
+            this.label24.Text = "Torta decorada";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(60, 1728);
+            this.label25.Location = new System.Drawing.Point(60, 1740);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(140, 25);
+            this.label25.Size = new System.Drawing.Size(133, 50);
             this.label25.TabIndex = 46;
-            this.label25.Text = "Nombre Pastel";
+            this.label25.Text = "Torta de fresa\r\ncon chocolate";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(814, 640);
+            this.label26.Location = new System.Drawing.Point(747, 640);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(140, 25);
+            this.label26.Size = new System.Drawing.Size(255, 25);
             this.label26.TabIndex = 57;
-            this.label26.Text = "Nombre Pastel";
+            this.label26.Text = "Torta de chocolate con oreo";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(561, 640);
+            this.label27.Location = new System.Drawing.Point(527, 640);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(140, 25);
+            this.label27.Size = new System.Drawing.Size(214, 50);
             this.label27.TabIndex = 56;
-            this.label27.Text = "Nombre Pastel";
+            this.label27.Text = "Torta de masa humeda\r\n   con crema de leche";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(314, 640);
+            this.label28.Location = new System.Drawing.Point(304, 640);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(140, 25);
+            this.label28.Size = new System.Drawing.Size(161, 25);
             this.label28.TabIndex = 55;
-            this.label28.Text = "Nombre Pastel";
+            this.label28.Text = "Torta de durazno";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(60, 640);
+            this.label29.Location = new System.Drawing.Point(51, 640);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(140, 25);
+            this.label29.Size = new System.Drawing.Size(176, 25);
             this.label29.TabIndex = 54;
-            this.label29.Text = "Nombre Pastel";
+            this.label29.Text = "Torta de maracuya";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(814, 908);
+            this.label30.Location = new System.Drawing.Point(754, 924);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(140, 25);
+            this.label30.Size = new System.Drawing.Size(232, 25);
             this.label30.TabIndex = 65;
-            this.label30.Text = "Nombre Pastel";
+            this.label30.Text = "Brazo gitano chocolatado";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(561, 908);
+            this.label31.Location = new System.Drawing.Point(552, 924);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(140, 25);
+            this.label31.Size = new System.Drawing.Size(156, 25);
             this.label31.TabIndex = 64;
-            this.label31.Text = "Nombre Pastel";
+            this.label31.Text = "Torta rosa negra";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(314, 908);
+            this.label32.Location = new System.Drawing.Point(314, 924);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(140, 25);
+            this.label32.Size = new System.Drawing.Size(121, 25);
             this.label32.TabIndex = 63;
-            this.label32.Text = "Nombre Pastel";
+            this.label32.Text = "Brazo gitano";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(60, 908);
+            this.label33.Location = new System.Drawing.Point(60, 924);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(140, 25);
+            this.label33.Size = new System.Drawing.Size(149, 25);
             this.label33.TabIndex = 62;
-            this.label33.Text = "Nombre Pastel";
+            this.label33.Text = "Torta de vainilla";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(814, 1175);
+            this.label34.Location = new System.Drawing.Point(807, 1188);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(140, 25);
+            this.label34.Size = new System.Drawing.Size(138, 25);
             this.label34.TabIndex = 73;
-            this.label34.Text = "Nombre Pastel";
+            this.label34.Text = "Torta de frutas";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
+            this.label35.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(561, 1175);
+            this.label35.Location = new System.Drawing.Point(545, 1186);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(140, 25);
+            this.label35.Size = new System.Drawing.Size(167, 50);
             this.label35.TabIndex = 72;
-            this.label35.Text = "Nombre Pastel";
+            this.label35.Text = "Torta con relleno\r\nde crema de coco";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
+            this.label36.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(314, 1175);
+            this.label36.Location = new System.Drawing.Point(293, 1186);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(140, 25);
+            this.label36.Size = new System.Drawing.Size(164, 25);
             this.label36.TabIndex = 71;
-            this.label36.Text = "Nombre Pastel";
+            this.label36.Text = "Torta selva negra";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
+            this.label37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(60, 1175);
+            this.label37.Location = new System.Drawing.Point(60, 1186);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(140, 25);
+            this.label37.Size = new System.Drawing.Size(156, 25);
             this.label37.TabIndex = 70;
-            this.label37.Text = "Nombre Pastel";
+            this.label37.Text = "Torta rosa negra";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
+            this.label42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(814, 380);
+            this.label42.Location = new System.Drawing.Point(785, 380);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(140, 25);
+            this.label42.Size = new System.Drawing.Size(184, 25);
             this.label42.TabIndex = 89;
-            this.label42.Text = "Nombre Pastel";
+            this.label42.Text = "Torta de tres leches";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
+            this.label43.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(561, 380);
+            this.label43.Location = new System.Drawing.Point(541, 380);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(140, 25);
+            this.label43.Size = new System.Drawing.Size(184, 25);
             this.label43.TabIndex = 88;
-            this.label43.Text = "Nombre Pastel";
+            this.label43.Text = "Torta de tres leches";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
+            this.label44.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(314, 380);
+            this.label44.Location = new System.Drawing.Point(259, 380);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(140, 25);
+            this.label44.Size = new System.Drawing.Size(245, 25);
             this.label44.TabIndex = 87;
-            this.label44.Text = "Nombre Pastel";
+            this.label44.Text = "Torta con crema de vainilla";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
+            this.label45.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(60, 380);
+            this.label45.Location = new System.Drawing.Point(44, 380);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(140, 25);
+            this.label45.Size = new System.Drawing.Size(184, 25);
             this.label45.TabIndex = 86;
-            this.label45.Text = "Nombre Pastel";
-            // 
-            // pictureBox41
-            // 
-            this.pictureBox41.Image = global::DulceTentacion.Properties.Resources.tres_leches_70_bs;
-            this.pictureBox41.Location = new System.Drawing.Point(521, 157);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox41.TabIndex = 85;
-            this.pictureBox41.TabStop = false;
-            // 
-            // pictureBox42
-            // 
-            this.pictureBox42.Image = global::DulceTentacion.Properties.Resources.trota_tres_leches_50bs;
-            this.pictureBox42.Location = new System.Drawing.Point(766, 157);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox42.TabIndex = 84;
-            this.pictureBox42.TabStop = false;
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
-            this.pictureBox43.Location = new System.Drawing.Point(27, 157);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox43.TabIndex = 83;
-            this.pictureBox43.TabStop = false;
-            // 
-            // pictureBox44
-            // 
-            this.pictureBox44.Image = global::DulceTentacion.Properties.Resources.tortaSimple60bs;
-            this.pictureBox44.Location = new System.Drawing.Point(273, 157);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox44.TabIndex = 82;
-            this.pictureBox44.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Image = global::DulceTentacion.Properties.Resources.torta_simple_70bss;
-            this.pictureBox33.Location = new System.Drawing.Point(521, 952);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox33.TabIndex = 69;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Image = global::DulceTentacion.Properties.Resources.torta_simple70bs;
-            this.pictureBox34.Location = new System.Drawing.Point(766, 952);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox34.TabIndex = 68;
-            this.pictureBox34.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Image = global::DulceTentacion.Properties.Resources.torta_rosa_negra120;
-            this.pictureBox35.Location = new System.Drawing.Point(27, 952);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox35.TabIndex = 67;
-            this.pictureBox35.TabStop = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Image = global::DulceTentacion.Properties.Resources.torta_selva_negra_100bs;
-            this.pictureBox36.Location = new System.Drawing.Point(273, 952);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox36.TabIndex = 66;
-            this.pictureBox36.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::DulceTentacion.Properties.Resources.torta_rosa_negra80bs;
-            this.pictureBox29.Location = new System.Drawing.Point(521, 685);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 61;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::DulceTentacion.Properties.Resources.torta_rectangular_40_bs;
-            this.pictureBox30.Location = new System.Drawing.Point(766, 685);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 60;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::DulceTentacion.Properties.Resources.torta_para_mama;
-            this.pictureBox31.Location = new System.Drawing.Point(27, 685);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 59;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = global::DulceTentacion.Properties.Resources.torta_rectagular_50_bs;
-            this.pictureBox32.Location = new System.Drawing.Point(273, 685);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox32.TabIndex = 58;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::DulceTentacion.Properties.Resources.torta_masa_humeda_con_crema_de_leche_80bs;
-            this.pictureBox25.Location = new System.Drawing.Point(521, 417);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 53;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::DulceTentacion.Properties.Resources.torta_oreo_25bs;
-            this.pictureBox26.Location = new System.Drawing.Point(766, 417);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 52;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::DulceTentacion.Properties.Resources.torta_maracuya_160bs;
-            this.pictureBox27.Location = new System.Drawing.Point(27, 417);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 51;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::DulceTentacion.Properties.Resources.torta_mil_capas_160bs;
-            this.pictureBox28.Location = new System.Drawing.Point(273, 417);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 50;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::DulceTentacion.Properties.Resources.torta_frutos_rojos_80_bs;
-            this.pictureBox21.Location = new System.Drawing.Point(521, 1505);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 45;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::DulceTentacion.Properties.Resources.torta_helada_oreo_90bs;
-            this.pictureBox22.Location = new System.Drawing.Point(766, 1505);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 44;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::DulceTentacion.Properties.Resources.torta_de_chocolate_simple60bs;
-            this.pictureBox23.Location = new System.Drawing.Point(27, 1505);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 43;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::DulceTentacion.Properties.Resources.torta_de_cumpleaño_60bs;
-            this.pictureBox24.Location = new System.Drawing.Point(273, 1505);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 42;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::DulceTentacion.Properties.Resources.torta_dia_del_padre80bs;
-            this.pictureBox17.Location = new System.Drawing.Point(521, 1216);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 37;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::DulceTentacion.Properties.Resources.torta_papa_25bs;
-            this.pictureBox18.Location = new System.Drawing.Point(766, 1216);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 36;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::DulceTentacion.Properties.Resources.torta_dia_de_la_madre_70bs;
-            this.pictureBox19.Location = new System.Drawing.Point(27, 1216);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 35;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::DulceTentacion.Properties.Resources.torta_dia_de_la_madre90bs;
-            this.pictureBox20.Location = new System.Drawing.Point(273, 1216);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 34;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::DulceTentacion.Properties.Resources.torta_de_frutilla_80bs;
-            this.pictureBox9.Location = new System.Drawing.Point(521, 2007);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 21;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::DulceTentacion.Properties.Resources.torta_dia_de_la_madre_60bs;
-            this.pictureBox10.Location = new System.Drawing.Point(766, 2007);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 20;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::DulceTentacion.Properties.Resources.torta_3_leches_60bs;
-            this.pictureBox11.Location = new System.Drawing.Point(27, 2007);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 19;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::DulceTentacion.Properties.Resources.torta_chocolate_capas_nutella_100bs;
-            this.pictureBox12.Location = new System.Drawing.Point(273, 2007);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 18;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DulceTentacion.Properties.Resources.torta_duraznno_manja_70bs;
-            this.pictureBox4.Location = new System.Drawing.Point(521, 1756);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.torta_simple_30_bs;
-            this.pictureBox3.Location = new System.Drawing.Point(766, 1756);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.torta_simpple_150bs;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 1756);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.torta_maracuya_80_bs;
-            this.pictureBox1.Location = new System.Drawing.Point(273, 1756);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.label45.Text = "Torta de tres leches";
             // 
             // label1
             // 
@@ -782,36 +494,392 @@ namespace DulceTentacion
             this.label1.TabIndex = 99;
             this.label1.Text = "PASTELES";
             // 
-            // panel1
+            // BarraHorizontal
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1013, 46);
-            this.panel1.TabIndex = 98;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "          Regresar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BarraHorizontal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BarraHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BarraHorizontal.Controls.Add(this.btnRegresar);
+            this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
+            this.BarraHorizontal.Name = "BarraHorizontal";
+            this.BarraHorizontal.Size = new System.Drawing.Size(1013, 46);
+            this.BarraHorizontal.TabIndex = 98;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 2255);
+            this.panel2.Location = new System.Drawing.Point(0, 2313);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1013, 59);
+            this.panel2.Size = new System.Drawing.Size(1002, 59);
             this.panel2.TabIndex = 100;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(12, 4);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(173, 39);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.Text = "          Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox41.Image = global::DulceTentacion.Properties.Resources.tres_leches_70_bs;
+            this.pictureBox41.Location = new System.Drawing.Point(521, 157);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox41.TabIndex = 85;
+            this.pictureBox41.TabStop = false;
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox42.Image = global::DulceTentacion.Properties.Resources.trota_tres_leches_50bs;
+            this.pictureBox42.Location = new System.Drawing.Point(766, 157);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox42.TabIndex = 84;
+            this.pictureBox42.TabStop = false;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox43.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
+            this.pictureBox43.Location = new System.Drawing.Point(27, 157);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox43.TabIndex = 83;
+            this.pictureBox43.TabStop = false;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox44.Image = global::DulceTentacion.Properties.Resources.tortaSimple60bs;
+            this.pictureBox44.Location = new System.Drawing.Point(273, 157);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox44.TabIndex = 82;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox33.Image = global::DulceTentacion.Properties.Resources.torta_simple_70bss;
+            this.pictureBox33.Location = new System.Drawing.Point(521, 963);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox33.TabIndex = 69;
+            this.pictureBox33.TabStop = false;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox34.Image = global::DulceTentacion.Properties.Resources.torta_simple70bs;
+            this.pictureBox34.Location = new System.Drawing.Point(766, 963);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox34.TabIndex = 68;
+            this.pictureBox34.TabStop = false;
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox35.Image = global::DulceTentacion.Properties.Resources.torta_rosa_negra120;
+            this.pictureBox35.Location = new System.Drawing.Point(27, 963);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.TabIndex = 67;
+            this.pictureBox35.TabStop = false;
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox36.Image = global::DulceTentacion.Properties.Resources.torta_selva_negra_100bs;
+            this.pictureBox36.Location = new System.Drawing.Point(273, 963);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox36.TabIndex = 66;
+            this.pictureBox36.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox29.Image = global::DulceTentacion.Properties.Resources.torta_rosa_negra80bs;
+            this.pictureBox29.Location = new System.Drawing.Point(521, 701);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox29.TabIndex = 61;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox30.Image = global::DulceTentacion.Properties.Resources.torta_rectangular_40_bs;
+            this.pictureBox30.Location = new System.Drawing.Point(766, 701);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 60;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox31.Image = global::DulceTentacion.Properties.Resources.torta_para_mama;
+            this.pictureBox31.Location = new System.Drawing.Point(27, 701);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 59;
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox32.Image = global::DulceTentacion.Properties.Resources.torta_rectagular_50_bs;
+            this.pictureBox32.Location = new System.Drawing.Point(273, 701);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox32.TabIndex = 58;
+            this.pictureBox32.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox25.Image = global::DulceTentacion.Properties.Resources.torta_masa_humeda_con_crema_de_leche_80bs;
+            this.pictureBox25.Location = new System.Drawing.Point(521, 417);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 53;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox26.Image = global::DulceTentacion.Properties.Resources.torta_oreo_25bs;
+            this.pictureBox26.Location = new System.Drawing.Point(766, 417);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 52;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox27.Image = global::DulceTentacion.Properties.Resources.torta_maracuya_160bs;
+            this.pictureBox27.Location = new System.Drawing.Point(27, 417);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox27.TabIndex = 51;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox28.Image = global::DulceTentacion.Properties.Resources.torta_mil_capas_160bs;
+            this.pictureBox28.Location = new System.Drawing.Point(273, 417);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox28.TabIndex = 50;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox21.Image = global::DulceTentacion.Properties.Resources.torta_frutos_rojos_80_bs;
+            this.pictureBox21.Location = new System.Drawing.Point(521, 1517);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 45;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox22.Image = global::DulceTentacion.Properties.Resources.torta_helada_oreo_90bs;
+            this.pictureBox22.Location = new System.Drawing.Point(766, 1517);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 44;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox23.Image = global::DulceTentacion.Properties.Resources.torta_de_chocolate_simple60bs;
+            this.pictureBox23.Location = new System.Drawing.Point(27, 1517);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 43;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox24.Image = global::DulceTentacion.Properties.Resources.torta_de_cumpleaño_60bs;
+            this.pictureBox24.Location = new System.Drawing.Point(273, 1517);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 42;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox17.Image = global::DulceTentacion.Properties.Resources.torta_dia_del_padre80bs;
+            this.pictureBox17.Location = new System.Drawing.Point(521, 1250);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 37;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox18.Image = global::DulceTentacion.Properties.Resources.torta_papa_25bs;
+            this.pictureBox18.Location = new System.Drawing.Point(766, 1250);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 36;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox19.Image = global::DulceTentacion.Properties.Resources.torta_dia_de_la_madre_70bs;
+            this.pictureBox19.Location = new System.Drawing.Point(27, 1250);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 35;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox20.Image = global::DulceTentacion.Properties.Resources.torta_dia_de_la_madre90bs;
+            this.pictureBox20.Location = new System.Drawing.Point(273, 1250);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 34;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = global::DulceTentacion.Properties.Resources.torta_de_frutilla_80bs;
+            this.pictureBox9.Location = new System.Drawing.Point(521, 2065);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 21;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::DulceTentacion.Properties.Resources.torta_dia_de_la_madre_60bs;
+            this.pictureBox10.Location = new System.Drawing.Point(766, 2065);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 20;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Image = global::DulceTentacion.Properties.Resources.torta_3_leches_60bs;
+            this.pictureBox11.Location = new System.Drawing.Point(27, 2065);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 19;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Image = global::DulceTentacion.Properties.Resources.torta_chocolate_capas_nutella_100bs;
+            this.pictureBox12.Location = new System.Drawing.Point(273, 2065);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 18;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::DulceTentacion.Properties.Resources.torta_duraznno_manja_70bs;
+            this.pictureBox4.Location = new System.Drawing.Point(521, 1800);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.torta_simple_30_bs;
+            this.pictureBox3.Location = new System.Drawing.Point(766, 1800);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.torta_simpple_150bs;
+            this.pictureBox2.Location = new System.Drawing.Point(27, 1800);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.torta_maracuya_80_bs;
+            this.pictureBox1.Location = new System.Drawing.Point(273, 1800);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Pasteles
             // 
@@ -819,10 +887,10 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(1012, 674);
+            this.ClientSize = new System.Drawing.Size(1013, 674);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.BarraHorizontal);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label44);
@@ -890,6 +958,7 @@ namespace DulceTentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pasteles";
             this.Text = "Pasteles";
+            this.BarraHorizontal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
@@ -922,7 +991,6 @@ namespace DulceTentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -994,8 +1062,8 @@ namespace DulceTentacion
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.PictureBox pictureBox44;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel BarraHorizontal;
+        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel panel2;
     }
 }

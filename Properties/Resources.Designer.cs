@@ -493,6 +493,196 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap porcion_brazo_gitano_10bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion brazo gitano 10bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Porcion_Brownie_triple_8bs {
+            get {
+                object obj = ResourceManager.GetObject("Porcion Brownie triple 8bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_bruselina_de_fresa_12bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion bruselina de fresa 12bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_chocobrownie_12bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion chocobrownie 12bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_chocoflan_10bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion chocoflan 10bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_chocoflan10bss {
+            get {
+                object obj = ResourceManager.GetObject("porcion chocoflan10bss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_chocolate {
+            get {
+                object obj = ResourceManager.GetObject("porcion chocolate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_lila {
+            get {
+                object obj = ResourceManager.GetObject("porcion lila", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_limon {
+            get {
+                object obj = ResourceManager.GetObject("porcion limon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Porcion_maracuya_9bs {
+            get {
+                object obj = ResourceManager.GetObject("Porcion maracuya 9bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_oreo12bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion oreo12bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_pie_limon10bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion pie limon10bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_selva_negra_20bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion selva negra 20bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Porcion_torta_chocolate_10bs {
+            get {
+                object obj = ResourceManager.GetObject("Porcion torta chocolate 10bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_torta_chocolate_15bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion torta chocolate 15bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_torta_chocolate_15bsws {
+            get {
+                object obj = ResourceManager.GetObject("porcion torta chocolate 15bsws", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_torta_helada_oreo_10bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion torta helada oreo 10bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_torta_maracuya_10 {
+            get {
+                object obj = ResourceManager.GetObject("porcion torta maracuya 10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap porcion_tres_leches_9bs {
+            get {
+                object obj = ResourceManager.GetObject("porcion tres leches 9bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Portada_Bienvenida_Chef {
             get {
                 object obj = ResourceManager.GetObject("Portada Bienvenida Chef", resourceCulture);
@@ -536,6 +726,26 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Portada_Porciones {
             get {
                 object obj = ResourceManager.GetObject("Portada Porciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap procion_20bs {
+            get {
+                object obj = ResourceManager.GetObject("procion 20bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap queque_de_limon_20bs {
+            get {
+                object obj = ResourceManager.GetObject("queque de limon 20bs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

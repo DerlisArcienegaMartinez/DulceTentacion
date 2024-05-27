@@ -105,12 +105,24 @@ namespace DulceTentacion
 
         private void fndPasteles_Click(object sender, EventArgs e)
         {
-            //abrirConPrincipal(new Pasteles());
+            abrirConPrincipal(new Pasteles());
         }
 
         private void btnPasteles_Click(object sender, EventArgs e)
         {
-            //abrirConPrincipal(new Pasteles());
+            abrirConPrincipal(new Pasteles());
         }
+
+        private void fndPorciones_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Porciones());
+        }
+
+        private void btnPorciones_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Porciones());
+        }
+
+       
     }
 }

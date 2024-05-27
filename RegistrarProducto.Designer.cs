@@ -53,15 +53,15 @@ namespace DulceTentacion
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlHorizontal = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnRegistro = new System.Windows.Forms.Button();
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.btnAlmacenTabla = new System.Windows.Forms.Button();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardarTabla = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.pnlHorizontal = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnRegistro = new System.Windows.Forms.Button();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.btnAlmacenTabla = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GBRegistro.SuspendLayout();
             this.GBDescripcion.SuspendLayout();
@@ -298,6 +298,7 @@ namespace DulceTentacion
             this.GBAccion.Controls.Add(this.btnEliminar);
             this.GBAccion.Controls.Add(this.btnGuardarTabla);
             this.GBAccion.Controls.Add(this.btnCancelar);
+            this.GBAccion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GBAccion.Location = new System.Drawing.Point(703, 93);
             this.GBAccion.Name = "GBAccion";
             this.GBAccion.Size = new System.Drawing.Size(255, 244);
@@ -345,6 +346,54 @@ namespace DulceTentacion
             this.label4.TabIndex = 11;
             this.label4.Text = "Cancelar";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.Image = global::DulceTentacion.Properties.Resources.Editar_tabla;
+            this.btnLimpiar.Location = new System.Drawing.Point(31, 150);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(68, 68);
+            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.Image = global::DulceTentacion.Properties.Resources.borrar_tabla;
+            this.btnEliminar.Location = new System.Drawing.Point(142, 150);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(68, 68);
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnGuardarTabla
+            // 
+            this.btnGuardarTabla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarTabla.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarTabla.Image = global::DulceTentacion.Properties.Resources.Guardar_Tabla;
+            this.btnGuardarTabla.Location = new System.Drawing.Point(142, 50);
+            this.btnGuardarTabla.Name = "btnGuardarTabla";
+            this.btnGuardarTabla.Size = new System.Drawing.Size(68, 68);
+            this.btnGuardarTabla.TabIndex = 1;
+            this.btnGuardarTabla.UseVisualStyleBackColor = true;
+            this.btnGuardarTabla.Click += new System.EventHandler(this.btnGuardarTabla_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.Image = global::DulceTentacion.Properties.Resources.Cancelar_Tablas;
+            this.btnCancelar.Location = new System.Drawing.Point(31, 50);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(68, 68);
+            this.btnCancelar.TabIndex = 0;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // pnlHorizontal
             // 
             this.pnlHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -355,9 +404,27 @@ namespace DulceTentacion
             this.pnlHorizontal.Size = new System.Drawing.Size(987, 45);
             this.pnlHorizontal.TabIndex = 12;
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(210, 39);
+            this.btnRegresar.TabIndex = 52;
+            this.btnRegresar.Text = "      Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            // 
             // btnRegistro
             // 
             this.btnRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnRegistro.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro.Location = new System.Drawing.Point(685, 363);
@@ -385,6 +452,7 @@ namespace DulceTentacion
             // btnAlmacenTabla
             // 
             this.btnAlmacenTabla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlmacenTabla.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAlmacenTabla.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.btnAlmacenTabla.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlmacenTabla.Location = new System.Drawing.Point(775, 605);
@@ -394,67 +462,6 @@ namespace DulceTentacion
             this.btnAlmacenTabla.Text = "Almacenar Tabla";
             this.btnAlmacenTabla.UseVisualStyleBackColor = true;
             this.btnAlmacenTabla.Click += new System.EventHandler(this.btnAlmacenTabla_Click);
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(18)))), ((int)(((byte)(143)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(210, 39);
-            this.btnRegresar.TabIndex = 52;
-            this.btnRegresar.Text = "      Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpiar.Image = global::DulceTentacion.Properties.Resources.Editar_tabla;
-            this.btnLimpiar.Location = new System.Drawing.Point(31, 150);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(68, 68);
-            this.btnLimpiar.TabIndex = 3;
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.Image = global::DulceTentacion.Properties.Resources.borrar_tabla;
-            this.btnEliminar.Location = new System.Drawing.Point(142, 150);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(68, 68);
-            this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnGuardarTabla
-            // 
-            this.btnGuardarTabla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarTabla.Image = global::DulceTentacion.Properties.Resources.Guardar_Tabla;
-            this.btnGuardarTabla.Location = new System.Drawing.Point(142, 50);
-            this.btnGuardarTabla.Name = "btnGuardarTabla";
-            this.btnGuardarTabla.Size = new System.Drawing.Size(68, 68);
-            this.btnGuardarTabla.TabIndex = 1;
-            this.btnGuardarTabla.UseVisualStyleBackColor = true;
-            this.btnGuardarTabla.Click += new System.EventHandler(this.btnGuardarTabla_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Image = global::DulceTentacion.Properties.Resources.Cancelar_Tablas;
-            this.btnCancelar.Location = new System.Drawing.Point(31, 50);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(68, 68);
-            this.btnCancelar.TabIndex = 0;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox1
             // 
