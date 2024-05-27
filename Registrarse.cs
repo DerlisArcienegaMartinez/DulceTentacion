@@ -154,7 +154,7 @@ namespace DulceTentacion
                     using (InicioSesion inicio = new InicioSesion())
                     {
                         this.Hide();
-                        inicio.ShowDialog();
+                        //inicio.ShowDialog();
                     }
 
                     // Limpiar los campos después de registrar el producto

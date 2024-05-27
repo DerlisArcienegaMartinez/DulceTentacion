@@ -130,5 +130,15 @@ namespace DulceTentacion
         {
             this.Close();
         }
+
+        private void fndBebidas_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Bebidas());
+        }
+
+        private void btnBebidas_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Bebidas());
+        }
     }
 }

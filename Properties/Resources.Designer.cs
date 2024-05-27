@@ -63,6 +63,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AguaBotella1 {
+            get {
+                object obj = ResourceManager.GetObject("AguaBotella1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Avatar_adulto {
             get {
                 object obj = ResourceManager.GetObject("Avatar adulto", resourceCulture);
@@ -293,6 +303,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cafe {
+            get {
+                object obj = ResourceManager.GetObject("Cafe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cancelar_Tabla {
             get {
                 object obj = ResourceManager.GetObject("Cancelar Tabla", resourceCulture);
@@ -343,6 +363,56 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CocaCola_2bs {
+            get {
+                object obj = ResourceManager.GetObject("CocaCola 2bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CocaCola_2bs1 {
+            get {
+                object obj = ResourceManager.GetObject("CocaCola 2bs1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CocaCola_Vaso_3bs {
+            get {
+                object obj = ResourceManager.GetObject("CocaCola-Vaso-3bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CocaCola5bs {
+            get {
+                object obj = ResourceManager.GetObject("CocaCola5bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CocaColaLata {
+            get {
+                object obj = ResourceManager.GetObject("CocaColaLata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Editar_tabla {
             get {
                 object obj = ResourceManager.GetObject("Editar tabla", resourceCulture);
@@ -366,6 +436,46 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Exit {
             get {
                 object obj = ResourceManager.GetObject("Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fanta_5bs {
+            get {
+                object obj = ResourceManager.GetObject("Fanta 5bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fanta2bs {
+            get {
+                object obj = ResourceManager.GetObject("Fanta2bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FantaLata {
+            get {
+                object obj = ResourceManager.GetObject("FantaLata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FantaVaso3bs {
+            get {
+                object obj = ResourceManager.GetObject("FantaVaso3bs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +586,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Icono_Whatsapp {
             get {
                 object obj = ResourceManager.GetObject("Icono Whatsapp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Malteadas {
+            get {
+                object obj = ResourceManager.GetObject("Malteadas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -756,6 +876,46 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap queque_de_limon_20bs {
             get {
                 object obj = ResourceManager.GetObject("queque de limon 20bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SpriteBotella2bs {
+            get {
+                object obj = ResourceManager.GetObject("SpriteBotella2bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SpriteBotella5bs {
+            get {
+                object obj = ResourceManager.GetObject("SpriteBotella5bs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SpriteLata {
+            get {
+                object obj = ResourceManager.GetObject("SpriteLata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SpriteVaso3bs {
+            get {
+                object obj = ResourceManager.GetObject("SpriteVaso3bs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1106,6 +1266,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Ubicacion {
             get {
                 object obj = ResourceManager.GetObject("Ubicacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VasoEnsaladaFruta {
+            get {
+                object obj = ResourceManager.GetObject("VasoEnsaladaFruta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

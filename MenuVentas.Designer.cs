@@ -30,14 +30,14 @@ namespace DulceTentacion
         private void InitializeComponent()
         {
             this.contVentas = new System.Windows.Forms.Panel();
-            this.btnPorciones = new System.Windows.Forms.Label();
-            this.btnBebidas = new System.Windows.Forms.Label();
-            this.btnExtras = new System.Windows.Forms.Label();
-            this.btnPasteles = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCarrito = new System.Windows.Forms.Button();
+            this.btnPorciones = new System.Windows.Forms.Label();
+            this.btnBebidas = new System.Windows.Forms.Label();
+            this.btnExtras = new System.Windows.Forms.Label();
+            this.btnPasteles = new System.Windows.Forms.Label();
             this.fndOfertas = new System.Windows.Forms.PictureBox();
             this.fndCrearPastel = new System.Windows.Forms.PictureBox();
             this.fndBebidas = new System.Windows.Forms.PictureBox();
@@ -75,64 +75,6 @@ namespace DulceTentacion
             this.contVentas.Name = "contVentas";
             this.contVentas.Size = new System.Drawing.Size(1013, 674);
             this.contVentas.TabIndex = 103;
-            // 
-            // btnPorciones
-            // 
-            this.btnPorciones.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPorciones.AutoSize = true;
-            this.btnPorciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(84)))));
-            this.btnPorciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPorciones.Font = new System.Drawing.Font("Castellar", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPorciones.ForeColor = System.Drawing.Color.White;
-            this.btnPorciones.Location = new System.Drawing.Point(706, 168);
-            this.btnPorciones.Name = "btnPorciones";
-            this.btnPorciones.Size = new System.Drawing.Size(237, 41);
-            this.btnPorciones.TabIndex = 126;
-            this.btnPorciones.Text = "Porciones";
-            this.btnPorciones.Click += new System.EventHandler(this.btnPorciones_Click);
-            // 
-            // btnBebidas
-            // 
-            this.btnBebidas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBebidas.AutoSize = true;
-            this.btnBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(90)))), ((int)(((byte)(54)))));
-            this.btnBebidas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBebidas.Font = new System.Drawing.Font("Castellar", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBebidas.ForeColor = System.Drawing.Color.White;
-            this.btnBebidas.Location = new System.Drawing.Point(747, 333);
-            this.btnBebidas.Name = "btnBebidas";
-            this.btnBebidas.Size = new System.Drawing.Size(196, 46);
-            this.btnBebidas.TabIndex = 125;
-            this.btnBebidas.Text = "Bebidas";
-            // 
-            // btnExtras
-            // 
-            this.btnExtras.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExtras.AutoSize = true;
-            this.btnExtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.btnExtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExtras.Font = new System.Drawing.Font("Castellar", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExtras.ForeColor = System.Drawing.Color.Black;
-            this.btnExtras.Location = new System.Drawing.Point(222, 345);
-            this.btnExtras.Name = "btnExtras";
-            this.btnExtras.Size = new System.Drawing.Size(236, 58);
-            this.btnExtras.TabIndex = 124;
-            this.btnExtras.Text = "Extras";
-            // 
-            // btnPasteles
-            // 
-            this.btnPasteles.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPasteles.AutoSize = true;
-            this.btnPasteles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(17)))));
-            this.btnPasteles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPasteles.Font = new System.Drawing.Font("Castellar", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPasteles.ForeColor = System.Drawing.Color.White;
-            this.btnPasteles.Location = new System.Drawing.Point(245, 186);
-            this.btnPasteles.Name = "btnPasteles";
-            this.btnPasteles.Size = new System.Drawing.Size(224, 48);
-            this.btnPasteles.TabIndex = 123;
-            this.btnPasteles.Text = "Pasteles";
-            this.btnPasteles.Click += new System.EventHandler(this.btnPasteles_Click);
             // 
             // BarraHorizontal
             // 
@@ -186,6 +128,65 @@ namespace DulceTentacion
             this.btnCarrito.Text = "      Carrito";
             this.btnCarrito.UseVisualStyleBackColor = false;
             // 
+            // btnPorciones
+            // 
+            this.btnPorciones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPorciones.AutoSize = true;
+            this.btnPorciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(86)))), ((int)(((byte)(84)))));
+            this.btnPorciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPorciones.Font = new System.Drawing.Font("Castellar", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPorciones.ForeColor = System.Drawing.Color.White;
+            this.btnPorciones.Location = new System.Drawing.Point(706, 168);
+            this.btnPorciones.Name = "btnPorciones";
+            this.btnPorciones.Size = new System.Drawing.Size(233, 40);
+            this.btnPorciones.TabIndex = 126;
+            this.btnPorciones.Text = "Porciones";
+            this.btnPorciones.Click += new System.EventHandler(this.btnPorciones_Click);
+            // 
+            // btnBebidas
+            // 
+            this.btnBebidas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBebidas.AutoSize = true;
+            this.btnBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(90)))), ((int)(((byte)(54)))));
+            this.btnBebidas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBebidas.Font = new System.Drawing.Font("Castellar", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBebidas.ForeColor = System.Drawing.Color.White;
+            this.btnBebidas.Location = new System.Drawing.Point(747, 333);
+            this.btnBebidas.Name = "btnBebidas";
+            this.btnBebidas.Size = new System.Drawing.Size(196, 46);
+            this.btnBebidas.TabIndex = 125;
+            this.btnBebidas.Text = "Bebidas";
+            this.btnBebidas.Click += new System.EventHandler(this.btnBebidas_Click);
+            // 
+            // btnExtras
+            // 
+            this.btnExtras.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExtras.AutoSize = true;
+            this.btnExtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.btnExtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExtras.Font = new System.Drawing.Font("Castellar", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExtras.ForeColor = System.Drawing.Color.Black;
+            this.btnExtras.Location = new System.Drawing.Point(222, 345);
+            this.btnExtras.Name = "btnExtras";
+            this.btnExtras.Size = new System.Drawing.Size(236, 58);
+            this.btnExtras.TabIndex = 124;
+            this.btnExtras.Text = "Extras";
+            // 
+            // btnPasteles
+            // 
+            this.btnPasteles.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPasteles.AutoSize = true;
+            this.btnPasteles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(17)))));
+            this.btnPasteles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPasteles.Font = new System.Drawing.Font("Castellar", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPasteles.ForeColor = System.Drawing.Color.White;
+            this.btnPasteles.Location = new System.Drawing.Point(245, 186);
+            this.btnPasteles.Name = "btnPasteles";
+            this.btnPasteles.Size = new System.Drawing.Size(224, 48);
+            this.btnPasteles.TabIndex = 123;
+            this.btnPasteles.Text = "Pasteles";
+            this.btnPasteles.Click += new System.EventHandler(this.btnPasteles_Click);
+            // 
             // fndOfertas
             // 
             this.fndOfertas.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -221,6 +222,7 @@ namespace DulceTentacion
             this.fndBebidas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fndBebidas.TabIndex = 120;
             this.fndBebidas.TabStop = false;
+            this.fndBebidas.Click += new System.EventHandler(this.fndBebidas_Click);
             // 
             // fndPorciones
             // 

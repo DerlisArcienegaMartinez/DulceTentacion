@@ -74,6 +74,12 @@
     <Compile Include="AtencionCliente.Designer.cs">
       <DependentUpon>AtencionCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bebidas.Designer.cs">
+      <DependentUpon>Bebidas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carrito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </Compile>
     <EmbeddedResource Include="AtencionCliente.resx">
       <DependentUpon>AtencionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bebidas.resx">
+      <DependentUpon>Bebidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carrito.resx">
       <DependentUpon>Carrito.cs</DependentUpon>
@@ -553,6 +562,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\porcion brownie.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocaCola-Vaso-3bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FantaVaso3bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocaColaLata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FantaLata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocaCola 2bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fanta2bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteBotella2bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteVaso3bs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteLata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocaCola 2bs1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocaCola5bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fanta 5bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteBotella5bs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AguaBotella1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Malteadas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VasoEnsaladaFruta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

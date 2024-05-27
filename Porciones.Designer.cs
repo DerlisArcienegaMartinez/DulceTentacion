@@ -590,7 +590,7 @@ namespace DulceTentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
-            this.ClientSize = new System.Drawing.Size(1013, 674);
+            this.ClientSize = new System.Drawing.Size(1013, 863);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.panel1);
