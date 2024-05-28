@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class RegistrarPersonal : Form
+    public partial class Pastel1 : Form
     {
-        public RegistrarPersonal()
+        public Pastel1()
         {
             InitializeComponent();
         }
@@ -22,9 +22,14 @@ namespace DulceTentacion
             this.Close();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void bntReservar_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void btnCarrito_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

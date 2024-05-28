@@ -41,8 +41,11 @@ namespace DulceTentacion
         {
             InitializeComponent();
 
+
             LoadConfig(); // Cargar la configuración al iniciar la aplicación
             ApplyColors();//Aplicar los colores
+          
+            
             CustomizeDesign();
 
         }
@@ -154,6 +157,8 @@ namespace DulceTentacion
 
             return Color.FromArgb(r, g, b );
         }
+
+
 
         // Método para aplicar el modo oscuro
         private void ApplyDarkMode()
@@ -330,6 +335,18 @@ namespace DulceTentacion
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
         //mover la ventana actual
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -436,7 +453,7 @@ namespace DulceTentacion
 
         private void btnRegPersonal_Click(object sender, EventArgs e)
         {
-            //abrirconprincipal(new RegistrarPersonal());
+            abrirconprincipal(new RegistrarPersonal());
             hideSubMenu();
         }
 

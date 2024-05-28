@@ -673,6 +673,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IconoMas {
+            get {
+                object obj = ResourceManager.GetObject("IconoMas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Malteadas {
             get {
                 object obj = ResourceManager.GetObject("Malteadas", resourceCulture);
@@ -906,6 +916,16 @@ namespace DulceTentacion.Properties {
         internal static System.Drawing.Bitmap Portada_Bienvenida_Chef {
             get {
                 object obj = ResourceManager.GetObject("Portada Bienvenida Chef", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Portada_Empleados {
+            get {
+                object obj = ResourceManager.GetObject("Portada Empleados", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

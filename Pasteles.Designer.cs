@@ -53,7 +53,7 @@ namespace DulceTentacion
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
+            this.lblPastel0 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
             this.btnRegresar = new System.Windows.Forms.Button();
@@ -70,8 +70,8 @@ namespace DulceTentacion
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pbPastel0 = new System.Windows.Forms.PictureBox();
+            this.pbPastel1 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
@@ -102,8 +102,8 @@ namespace DulceTentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPastel0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPastel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
@@ -391,16 +391,16 @@ namespace DulceTentacion
             this.label44.TabIndex = 87;
             this.label44.Text = "Torta con crema de vainilla";
             // 
-            // label45
+            // lblPastel0
             // 
-            this.label45.AutoSize = true;
-            this.label45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(35, 376);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(184, 25);
-            this.label45.TabIndex = 86;
-            this.label45.Text = "Torta de tres leches";
+            this.lblPastel0.AutoSize = true;
+            this.lblPastel0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPastel0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPastel0.Location = new System.Drawing.Point(35, 376);
+            this.lblPastel0.Name = "lblPastel0";
+            this.lblPastel0.Size = new System.Drawing.Size(184, 25);
+            this.lblPastel0.TabIndex = 86;
+            this.lblPastel0.Text = "Torta de tres leches";
             // 
             // label1
             // 
@@ -420,7 +420,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1428, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1232, 46);
             this.BarraHorizontal.TabIndex = 98;
             // 
             // btnRegresar
@@ -579,27 +579,28 @@ namespace DulceTentacion
             this.pictureBox42.TabIndex = 84;
             this.pictureBox42.TabStop = false;
             // 
-            // pictureBox43
+            // pbPastel0
             // 
-            this.pictureBox43.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox43.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
-            this.pictureBox43.Location = new System.Drawing.Point(18, 153);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox43.TabIndex = 83;
-            this.pictureBox43.TabStop = false;
+            this.pbPastel0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbPastel0.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
+            this.pbPastel0.Location = new System.Drawing.Point(18, 153);
+            this.pbPastel0.Name = "pbPastel0";
+            this.pbPastel0.Size = new System.Drawing.Size(220, 220);
+            this.pbPastel0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPastel0.TabIndex = 83;
+            this.pbPastel0.TabStop = false;
+            this.pbPastel0.Click += new System.EventHandler(this.pbPastel0_Click);
             // 
-            // pictureBox44
+            // pbPastel1
             // 
-            this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox44.Image = global::DulceTentacion.Properties.Resources.tortaSimple60bs;
-            this.pictureBox44.Location = new System.Drawing.Point(255, 153);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(220, 220);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox44.TabIndex = 82;
-            this.pictureBox44.TabStop = false;
+            this.pbPastel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbPastel1.Image = global::DulceTentacion.Properties.Resources.tortaSimple60bs;
+            this.pbPastel1.Location = new System.Drawing.Point(255, 153);
+            this.pbPastel1.Name = "pbPastel1";
+            this.pbPastel1.Size = new System.Drawing.Size(220, 220);
+            this.pbPastel1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPastel1.TabIndex = 82;
+            this.pbPastel1.TabStop = false;
             // 
             // pictureBox33
             // 
@@ -872,11 +873,11 @@ namespace DulceTentacion
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.label45);
+            this.Controls.Add(this.lblPastel0);
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox42);
-            this.Controls.Add(this.pictureBox43);
-            this.Controls.Add(this.pictureBox44);
+            this.Controls.Add(this.pbPastel0);
+            this.Controls.Add(this.pbPastel1);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label36);
@@ -930,8 +931,8 @@ namespace DulceTentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPastel0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPastel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
@@ -1004,11 +1005,11 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label lblPastel0;
         private System.Windows.Forms.PictureBox pictureBox41;
         private System.Windows.Forms.PictureBox pictureBox42;
-        private System.Windows.Forms.PictureBox pictureBox43;
-        private System.Windows.Forms.PictureBox pictureBox44;
+        private System.Windows.Forms.PictureBox pbPastel0;
+        private System.Windows.Forms.PictureBox pbPastel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel BarraHorizontal;
         private System.Windows.Forms.Panel panel2;

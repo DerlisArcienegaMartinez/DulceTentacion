@@ -68,6 +68,9 @@ namespace DulceTentacion
                 btnEnviar.BackColor = Color.DimGray;
                 btnMesas.BackColor = Color.DimGray;
                 btnCrearPastel.BackColor = Color.DimGray;
+                pnlAtender.BackColor = Color.Black;
+                pnlPersonalizar.BackColor = Color.Black;
+                pnlProdSelect.BackColor = Color.Black;
 
                 btnPasteles.ForeColor = Color.White;
                 btnTPersonal.ForeColor = Color.White;
@@ -78,22 +81,12 @@ namespace DulceTentacion
                 btnMesas.ForeColor = Color.White;
                 btnCrearPastel.ForeColor = Color.White;
                 pnlPersonalizar.ForeColor = Color.White;
+                PR1.BackColor = Color.LightCyan;
+                PR2.BackColor = Color.LightCyan;
+                PR3.BackColor = Color.LightCyan;
+                PR4.BackColor = Color.LightCyan;
             }
-            else
-            {
-                // Aplicar colores originales
-                this.BackColor = Color.FromArgb(255, 222, 231);
-                BarraHorizontal.BackColor = Color.FromArgb(255, 192, 255);
-                btnPasteles.BackColor = Color.FromArgb(192, 255, 255);
-                btnTPersonal.BackColor = Color.FromArgb(192, 255, 255); 
-                btnBebidas.BackColor = Color.FromArgb(192, 255, 255); 
-                btnPorciones.BackColor = Color.FromArgb(192, 255, 255) ;
-                btnCancelar.BackColor = Color.Red;
-                btnEnviar.BackColor = Color.Blue;
-                btnMesas.BackColor = Color.FromArgb(192, 255, 255); 
-                btnCrearPastel.BackColor = Color.FromArgb(192, 255, 255);
-                pnlPersonalizar.ForeColor = Color.Black;
-            }
+            
         }
 
         // Método para aplicar los colores al abrir el formulario

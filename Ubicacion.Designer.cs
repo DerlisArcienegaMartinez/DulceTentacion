@@ -114,6 +114,7 @@ namespace DulceTentacion
             // GBOpinionGeneral
             // 
             this.GBOpinionGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GBOpinionGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.GBOpinionGeneral.Controls.Add(this.pictureBox1);
             this.GBOpinionGeneral.Controls.Add(this.btnEnviar);
             this.GBOpinionGeneral.Controls.Add(this.RBExcelente);

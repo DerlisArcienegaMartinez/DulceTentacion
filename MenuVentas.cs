@@ -162,5 +162,15 @@ namespace DulceTentacion
         {
             abrirConPrincipal(new Ofertas());
         }
+
+        private void btnCrearPastel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCarrito_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Carrito());
+        }
     }
 }

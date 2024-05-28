@@ -45,5 +45,11 @@ namespace DulceTentacion
         {
             this.Close();
         }
+
+        private void pbPastel0_Click(object sender, EventArgs e)
+        {
+            using (Pastel1 pastel1 = new Pastel1())
+                pastel1.ShowDialog();
+        }
     }
 }

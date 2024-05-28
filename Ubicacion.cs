@@ -54,7 +54,7 @@ namespace DulceTentacion
                 btnSucursal2.BackColor = Color.DimGray;
                 btnSucursal3.BackColor = Color.DimGray;
                 btnEnviar.BackColor = Color.DimGray;
-
+                GBOpinionGeneral.BackColor = Color.Black;
 
                 btnPrincipal.ForeColor = Color.White; // Configurar color de texto del botón en modo oscuro
                 btnSucursal1.ForeColor = Color.White; // Configurar color de texto del botón en modo oscuro
@@ -63,24 +63,7 @@ namespace DulceTentacion
                 btnEnviar.ForeColor = Color.White;
                 GBOpinionGeneral.ForeColor = Color.White;
             }
-            else
-            {
-                // Aplicar colores originales
-                this.BackColor = Color.FromArgb(255, 222, 231);
-                BarraHorizontal.BackColor = Color.FromArgb(255, 128, 255);
-                btnPrincipal.BackColor = Color.FromArgb(247, 247, 83);
-                btnSucursal1.BackColor = Color.FromArgb(240, 103, 100);
-                btnSucursal2.BackColor = Color.FromArgb(141, 219, 118);
-                btnSucursal3.BackColor = Color.FromArgb(166, 215, 242);
-                btnEnviar.BackColor = Color.FromArgb(240, 103, 100);
-
-                btnPrincipal.ForeColor = Color.Black; // Revertir color de texto del botón
-                btnSucursal1.ForeColor = Color.Black; // Revertir color de texto del botón
-                btnSucursal2.ForeColor = Color.Black; // Restaurar el color original del texto de GroupBox
-                btnSucursal3.ForeColor = Color.Black;
-                btnEnviar.ForeColor = Color.Black;
-                GBOpinionGeneral.ForeColor = Color.Black;
-            }
+           
         }
 
         // Método para aplicar los colores al abrir el formulario

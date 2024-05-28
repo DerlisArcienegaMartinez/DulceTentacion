@@ -72,8 +72,8 @@ namespace DulceTentacion
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.ImgPerfil = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.ImgPerfil = new System.Windows.Forms.PictureBox();
             this.GBCuenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPerfil)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,7 @@ namespace DulceTentacion
             // 
             // GBCuenta
             // 
+            this.GBCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.GBCuenta.Controls.Add(this.CBSufijos);
             this.GBCuenta.Controls.Add(this.label23);
             this.GBCuenta.Controls.Add(this.txtEdad);
@@ -517,16 +518,6 @@ namespace DulceTentacion
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // ImgPerfil
-            // 
-            this.ImgPerfil.BackColor = System.Drawing.Color.LightGray;
-            this.ImgPerfil.Location = new System.Drawing.Point(596, 25);
-            this.ImgPerfil.Name = "ImgPerfil";
-            this.ImgPerfil.Size = new System.Drawing.Size(186, 186);
-            this.ImgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ImgPerfil.TabIndex = 0;
-            this.ImgPerfil.TabStop = false;
-            // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Imprint MT Shadow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -537,6 +528,16 @@ namespace DulceTentacion
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // ImgPerfil
+            // 
+            this.ImgPerfil.BackColor = System.Drawing.Color.LightGray;
+            this.ImgPerfil.Location = new System.Drawing.Point(596, 25);
+            this.ImgPerfil.Name = "ImgPerfil";
+            this.ImgPerfil.Size = new System.Drawing.Size(186, 186);
+            this.ImgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImgPerfil.TabIndex = 0;
+            this.ImgPerfil.TabStop = false;
             // 
             // Registro
             // 

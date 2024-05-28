@@ -12,69 +12,49 @@ namespace DulceTentacion
 {
     public partial class Carrito : Form
     {
-        Bitmap[] imagenes = { Properties.Resources.Avatar_adulto, Properties.Resources.Avatar_Joven, Properties.Resources.Avatar_mujer3, Properties.Resources.Avatar_mujer_1, Properties.Resources.Avatar_Niño_2 };
-        int indiceCentral = 0;
-        int indiceIzquierda;
-        int indiceDerecha;
-
+        
         public Carrito()
         {
             InitializeComponent();
-            // Configuramos los índices iniciales
-            indiceCentral = 0;
-            indiceIzquierda = imagenes.Length - 1;
-            indiceDerecha = 1;
-
-            // Mostramos las imágenes iniciales
-            MostrarImagenes();
-        }
-        // Método para mostrar las imágenes
-        void MostrarImagenes()
-        {
-            pictureBoxIzquierda.Image = imagenes[indiceIzquierda];
-            pictureBoxCentral.Image = imagenes[indiceCentral];
-            pictureBoxDerecha.Image = imagenes[indiceDerecha];
-
+            ApplyColors(); // Aplicar los colores al abrir el formulario
+            MenuPrincipal.DarkModeChanged += ApplyColors;
         }
 
-        // Método para avanzar en el carrusel
-        void Avanzar()
+        private void ApplyDarkModeIfNeeded()
         {
-            indiceIzquierda = indiceCentral;
-            indiceCentral = indiceDerecha;
-            indiceDerecha++;
+            if (MenuPrincipal.DarkModeActive)
+            {
+                this.BackColor = Color.Black;
+                BarraHorizontal.BackColor = Color.DimGray;
+                pnlDPersonal.BackColor = Color.Black;
+                pnlDRecojo.BackColor = Color.Black;
+                pnlFPago.BackColor = Color.Black;
+                btnCancelar.BackColor = Color.DimGray;
+                btnMas.BackColor = Color.DimGray;
+                btnEnviar.BackColor = Color.DimGray;
+                btnQR.BackColor = Color.DimGray;
+                btnEfectivo.BackColor = Color.DimGray;
+                btnTarjeta.BackColor = Color.DimGray;
+                pnlCesta.BackColor = Color.Black;
 
-            // Si llegamos al final del arreglo, volvemos al principio
-            if (indiceDerecha >= imagenes.Length)
-                indiceDerecha = 0;
-
-            MostrarImagenes();
+            }
         }
 
-        // Método para retroceder en el carrusel
-        void Retroceder()
+        // Método para aplicar los colores al abrir el formulario
+        private void ApplyColors()
         {
-            indiceDerecha = indiceCentral;
-            indiceCentral = indiceIzquierda;
-
-            // Restar 1 al índiceIzquierda y ajustar si se sale del límite inferior
-            indiceIzquierda--;
-
-            // Si el índiceIzquierda se vuelve negativo, ajustarlo al índice más alto
-            if (indiceIzquierda < 0)
-                indiceIzquierda = imagenes.Length - 1;
-
-            MostrarImagenes();
+            // Llamar al método para aplicar el modo oscuro si es necesario
+            ApplyDarkModeIfNeeded();
         }
 
-        private void btnAnterior_Click(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Retroceder();
+            this.Close();
         }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Avanzar();
+            this.Close();
         }
     }
 }
