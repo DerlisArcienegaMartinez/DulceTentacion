@@ -14,26 +14,17 @@ namespace DulceTentacion
     public partial class CuentaUsuario : Form
     {
 
-        private Color originalBackColor;
-        private Color originalForeColor;
-        private Color originalGroupBoxForeColor;
-        private Color originalGroupBox1ForeColor;
-
         public CuentaUsuario()
         {
             InitializeComponent();
             ApplyColors(); // Aplicar los colores al abrir el formulario
-            MenuPrincipal.DarkModeChanged += ApplyColors;
-            
+            MenuPrincipal.DarkModeChanged += ApplyColors;  
         }
-
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-   
 
         // Método para aplicar colores oscuros si el modo oscuro está activo
         private void ApplyDarkModeIfNeeded()
@@ -70,36 +61,10 @@ namespace DulceTentacion
             ApplyDarkModeIfNeeded();
         }
 
-        // Método para actualizar el estado del modo oscuro desde MenuPrincipal
-        public void UpdateDarkModeState(bool isDarkMode)
-        {
-            MenuPrincipal.DarkModeActive = isDarkMode;
-            ApplyColors();
-        }
-
-        protected override void OnFormClosed(FormClosedEventArgs e)
-        {
-            // Desuscribirse del evento cuando el formulario se cierre
-            MenuPrincipal.DarkModeChanged -= ApplyColors;
-            base.OnFormClosed(e);
-        }
-
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-            // Guardar los colores originales cuando se carga el formulario
-            originalBackColor = this.BackColor;
-            originalForeColor = btnEditarInfo.ForeColor; 
-            originalGroupBoxForeColor = DatoPersonal.ForeColor; // Guardar el color original del texto de GroupBox
-            originalGroupBox1ForeColor = DatoLaboral.ForeColor; // Guardar el color original del texto de GroupBox
-
-        }
-
         private void CuentaUsuario_Load(object sender, EventArgs e)
         {
 
         }
 
-      
     }
 }

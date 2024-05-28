@@ -117,7 +117,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnBack);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1186, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1532, 46);
             this.BarraHorizontal.TabIndex = 101;
             // 
             // btnBack
@@ -377,6 +377,7 @@ namespace DulceTentacion
             // 
             // pictureBox21
             // 
+            this.pictureBox21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox21.Image = global::DulceTentacion.Properties.Resources.porcion_brownie;
             this.pictureBox21.Location = new System.Drawing.Point(966, 180);
             this.pictureBox21.Name = "pictureBox21";
@@ -387,6 +388,7 @@ namespace DulceTentacion
             // 
             // pictureBox17
             // 
+            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox17.Image = global::DulceTentacion.Properties.Resources.Porcion_torta_chocolate_10bs;
             this.pictureBox17.Location = new System.Drawing.Point(966, 452);
             this.pictureBox17.Name = "pictureBox17";
@@ -397,6 +399,7 @@ namespace DulceTentacion
             // 
             // pictureBox18
             // 
+            this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox18.Image = global::DulceTentacion.Properties.Resources.porcion_torta_chocolate_15bsws;
             this.pictureBox18.Location = new System.Drawing.Point(966, 725);
             this.pictureBox18.Name = "pictureBox18";
@@ -407,6 +410,7 @@ namespace DulceTentacion
             // 
             // pictureBox19
             // 
+            this.pictureBox19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox19.Image = global::DulceTentacion.Properties.Resources.porcion_torta_chocolate_15bs;
             this.pictureBox19.Location = new System.Drawing.Point(966, 990);
             this.pictureBox19.Name = "pictureBox19";
@@ -417,6 +421,7 @@ namespace DulceTentacion
             // 
             // pictureBox20
             // 
+            this.pictureBox20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox20.Image = global::DulceTentacion.Properties.Resources.porcion_torta_maracuya_10;
             this.pictureBox20.Location = new System.Drawing.Point(21, 1253);
             this.pictureBox20.Name = "pictureBox20";
@@ -427,6 +432,7 @@ namespace DulceTentacion
             // 
             // pictureBox13
             // 
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = global::DulceTentacion.Properties.Resources.porcion_tres_leches_9bs;
             this.pictureBox13.Location = new System.Drawing.Point(727, 990);
             this.pictureBox13.Name = "pictureBox13";
@@ -437,6 +443,7 @@ namespace DulceTentacion
             // 
             // pictureBox14
             // 
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Image = global::DulceTentacion.Properties.Resources.queque_de_limon_20bs;
             this.pictureBox14.Location = new System.Drawing.Point(491, 990);
             this.pictureBox14.Name = "pictureBox14";
@@ -447,6 +454,7 @@ namespace DulceTentacion
             // 
             // pictureBox15
             // 
+            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox15.Image = global::DulceTentacion.Properties.Resources.porcion_torta_helada_oreo_10bs;
             this.pictureBox15.Location = new System.Drawing.Point(256, 990);
             this.pictureBox15.Name = "pictureBox15";
@@ -457,6 +465,7 @@ namespace DulceTentacion
             // 
             // pictureBox16
             // 
+            this.pictureBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox16.Image = global::DulceTentacion.Properties.Resources.procion_20bs;
             this.pictureBox16.Location = new System.Drawing.Point(21, 990);
             this.pictureBox16.Name = "pictureBox16";
@@ -467,6 +476,7 @@ namespace DulceTentacion
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = global::DulceTentacion.Properties.Resources.porcion_selva_negra_20bs;
             this.pictureBox9.Location = new System.Drawing.Point(727, 725);
             this.pictureBox9.Name = "pictureBox9";
@@ -477,6 +487,7 @@ namespace DulceTentacion
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = global::DulceTentacion.Properties.Resources.porcion_pie_limon10bs;
             this.pictureBox10.Location = new System.Drawing.Point(491, 725);
             this.pictureBox10.Name = "pictureBox10";
@@ -487,6 +498,7 @@ namespace DulceTentacion
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Image = global::DulceTentacion.Properties.Resources.porcion_oreo12bs;
             this.pictureBox11.Location = new System.Drawing.Point(256, 725);
             this.pictureBox11.Name = "pictureBox11";
@@ -497,6 +509,7 @@ namespace DulceTentacion
             // 
             // pictureBox12
             // 
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = global::DulceTentacion.Properties.Resources.porcion_limon;
             this.pictureBox12.Location = new System.Drawing.Point(21, 725);
             this.pictureBox12.Name = "pictureBox12";
@@ -507,6 +520,7 @@ namespace DulceTentacion
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::DulceTentacion.Properties.Resources.porcion_lila;
             this.pictureBox5.Location = new System.Drawing.Point(727, 452);
             this.pictureBox5.Name = "pictureBox5";
@@ -517,6 +531,7 @@ namespace DulceTentacion
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::DulceTentacion.Properties.Resources.porcion_chocolate;
             this.pictureBox6.Location = new System.Drawing.Point(491, 452);
             this.pictureBox6.Name = "pictureBox6";
@@ -527,6 +542,7 @@ namespace DulceTentacion
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::DulceTentacion.Properties.Resources.Porcion_Brownie_triple_8bs;
             this.pictureBox7.Location = new System.Drawing.Point(256, 452);
             this.pictureBox7.Name = "pictureBox7";
@@ -537,6 +553,7 @@ namespace DulceTentacion
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::DulceTentacion.Properties.Resources.porcion_chocoflan10bss;
             this.pictureBox8.Location = new System.Drawing.Point(21, 452);
             this.pictureBox8.Name = "pictureBox8";
@@ -547,6 +564,7 @@ namespace DulceTentacion
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::DulceTentacion.Properties.Resources.porcion_brazo_gitano_10bs;
             this.pictureBox4.Location = new System.Drawing.Point(727, 180);
             this.pictureBox4.Name = "pictureBox4";
@@ -557,6 +575,7 @@ namespace DulceTentacion
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::DulceTentacion.Properties.Resources.porcion_chocobrownie_12bs;
             this.pictureBox3.Location = new System.Drawing.Point(491, 180);
             this.pictureBox3.Name = "pictureBox3";
@@ -567,6 +586,7 @@ namespace DulceTentacion
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.Porcion_maracuya_9bs;
             this.pictureBox2.Location = new System.Drawing.Point(256, 180);
             this.pictureBox2.Name = "pictureBox2";
@@ -577,6 +597,7 @@ namespace DulceTentacion
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.porcion_bruselina_de_fresa_12bs;
             this.pictureBox1.Location = new System.Drawing.Point(21, 180);
             this.pictureBox1.Name = "pictureBox1";

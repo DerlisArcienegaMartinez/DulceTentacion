@@ -103,11 +103,12 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(992, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(971, 46);
             this.BarraHorizontal.TabIndex = 0;
             // 
             // btnRegresar
             // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,7 +270,7 @@ namespace DulceTentacion
             this.label14.AutoSize = true;
             this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label14.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(713, 2336);
+            this.label14.Location = new System.Drawing.Point(703, 2604);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(173, 22);
             this.label14.TabIndex = 131;
@@ -281,7 +282,7 @@ namespace DulceTentacion
             this.label15.AutoSize = true;
             this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label15.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(512, 2336);
+            this.label15.Location = new System.Drawing.Point(502, 2604);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(96, 22);
             this.label15.TabIndex = 129;
@@ -293,7 +294,7 @@ namespace DulceTentacion
             this.label16.AutoSize = true;
             this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label16.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(292, 2336);
+            this.label16.Location = new System.Drawing.Point(282, 2604);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(51, 22);
             this.label16.TabIndex = 127;
@@ -315,7 +316,7 @@ namespace DulceTentacion
             this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = global::DulceTentacion.Properties.Resources.VasoEnsaladaFruta;
-            this.pictureBox13.Location = new System.Drawing.Point(700, 2045);
+            this.pictureBox13.Location = new System.Drawing.Point(690, 2313);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(220, 220);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -327,7 +328,7 @@ namespace DulceTentacion
             this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Image = global::DulceTentacion.Properties.Resources.Malteadas;
-            this.pictureBox14.Location = new System.Drawing.Point(457, 2045);
+            this.pictureBox14.Location = new System.Drawing.Point(447, 2313);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(220, 220);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -339,7 +340,7 @@ namespace DulceTentacion
             this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox15.Image = global::DulceTentacion.Properties.Resources.Cafe;
-            this.pictureBox15.Location = new System.Drawing.Point(215, 2045);
+            this.pictureBox15.Location = new System.Drawing.Point(205, 2313);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(220, 220);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -351,7 +352,7 @@ namespace DulceTentacion
             this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox16.Image = global::DulceTentacion.Properties.Resources.AguaBotella1;
-            this.pictureBox16.Location = new System.Drawing.Point(-30, 2045);
+            this.pictureBox16.Location = new System.Drawing.Point(-40, 2313);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(220, 220);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -624,7 +625,7 @@ namespace DulceTentacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BarraHorizontal);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Bebidas";
             this.Text = "Bebidas";

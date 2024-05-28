@@ -30,6 +30,7 @@ namespace DulceTentacion
         private void InitializeComponent()
         {
             this.BarraHorizontal = new System.Windows.Forms.Panel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -79,7 +80,6 @@ namespace DulceTentacion
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.BarraHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -114,8 +114,24 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1207, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1595, 46);
             this.BarraHorizontal.TabIndex = 1;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(12, 2);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(194, 41);
+            this.btnRegresar.TabIndex = 2;
+            this.btnRegresar.Text = "       Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label9
             // 
@@ -680,23 +696,6 @@ namespace DulceTentacion
             this.pictureBox1.TabIndex = 103;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(12, 2);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(194, 41);
-            this.btnRegresar.TabIndex = 2;
-            this.btnRegresar.Text = "       Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // PastelPersonalizado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -754,7 +753,7 @@ namespace DulceTentacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BarraHorizontal);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PastelPersonalizado";
             this.Text = "PastelPersonalizado";

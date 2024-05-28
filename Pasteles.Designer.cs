@@ -56,6 +56,7 @@ namespace DulceTentacion
             this.label45 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -67,7 +68,6 @@ namespace DulceTentacion
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
@@ -420,8 +420,24 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1232, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1428, 46);
             this.BarraHorizontal.TabIndex = 98;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(18, 3);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(195, 40);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.Text = "      Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click_1);
             // 
             // panel2
             // 
@@ -540,22 +556,6 @@ namespace DulceTentacion
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 101;
             this.pictureBox10.TabStop = false;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Imprint MT Shadow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(18, 3);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(195, 40);
-            this.btnRegresar.TabIndex = 0;
-            this.btnRegresar.Text = "      Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click_1);
             // 
             // pictureBox41
             // 

@@ -15,7 +15,27 @@ namespace DulceTentacion
         public Bebidas()
         {
             InitializeComponent();
+            ApplyColors();
+            MenuPrincipal.DarkModeChanged += ApplyColors;
         }
+
+        // Método para aplicar colores oscuros si el modo oscuro está activo
+        private void ApplyDarkModeIfNeeded()
+        {
+            if (MenuPrincipal.DarkModeActive)
+            {
+                this.BackColor = Color.Black;
+                BarraHorizontal.BackColor = Color.DimGray;
+            }
+        }
+
+        // Método para aplicar los colores al abrir el formulario
+        private void ApplyColors()
+        {
+            // Llamar al método para aplicar el modo oscuro si es necesario
+            ApplyDarkModeIfNeeded();
+        }
+
 
         private void Bebidas_Load(object sender, EventArgs e)
         {

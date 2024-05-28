@@ -15,8 +15,29 @@ namespace DulceTentacion
         public PastelPersonalizado()
         {
             InitializeComponent();
+            ApplyColors();
+            MenuPrincipal.DarkModeChanged += ApplyColors;
         }
 
+        // Método para aplicar colores oscuros si el modo oscuro está activo
+        private void ApplyDarkModeIfNeeded()
+        {
+            if (MenuPrincipal.DarkModeActive)
+            {
+                this.BackColor = Color.Black;
+                BarraHorizontal.BackColor = Color.DimGray;
+                btnCrearPastel.BackColor = Color.DimGray;
+
+                btnCrearPastel.ForeColor = Color.White;
+            }
+        }
+
+        // Método para aplicar los colores al abrir el formulario
+        private void ApplyColors()
+        {
+            // Llamar al método para aplicar el modo oscuro si es necesario
+            ApplyDarkModeIfNeeded();
+        }
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();

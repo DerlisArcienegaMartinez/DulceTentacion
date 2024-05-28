@@ -15,16 +15,12 @@ namespace DulceTentacion
     {
         // Cadena de conexión a tu base de datos
         private string connectionString = "Data Source=DESKTOP-0NULSP6;Initial Catalog=CompraProductos;Integrated Security=True";
-        private Color originalBackColor;
-        private Color originalForeColor;
-        private Color originalGBRegistroForeColor;
-        private Color originalGBDescripcionForeColor;
-        private Color originalGBAccionForeColor;
-        private Color originaldgvProductosForeColor;
+       
 
         public RegistrarProducto()
         {
             InitializeComponent();
+           
             ApplyColors(); // Aplicar los colores al abrir el formulario
             MenuPrincipal.DarkModeChanged += ApplyColors;
 
@@ -79,34 +75,6 @@ namespace DulceTentacion
             ApplyDarkModeIfNeeded();
         }
 
-        // Método para actualizar el estado del modo oscuro desde MenuPrincipal
-        public void UpdateDarkModeState(bool isDarkMode)
-        {
-            MenuPrincipal.DarkModeActive = isDarkMode;
-            ApplyColors();
-        }
-
-        protected override void OnFormClosed(FormClosedEventArgs e)
-        {
-            // Desuscribirse del evento cuando el formulario se cierre
-            MenuPrincipal.DarkModeChanged -= ApplyColors;
-            base.OnFormClosed(e);
-        }
-
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-            // Guardar los colores originales cuando se carga el formulario
-            originalBackColor = this.BackColor;
-            originalForeColor = btnRegistro.ForeColor;
-            originalForeColor = btnAlmacenTabla.ForeColor;
-            originalGBAccionForeColor = GBAccion.ForeColor; // Guardar el color original del texto de GroupBox
-            originalGBDescripcionForeColor = GBDescripcion.ForeColor; // Guardar el color original del texto de GroupBox
-            originalGBRegistroForeColor = GBRegistro.ForeColor;
-            originaldgvProductosForeColor = dgvProductos.ForeColor;
-        }
-    
-
     private void CargarDatos()
         {
             // Crear una conexión a la base de datos
@@ -141,11 +109,6 @@ namespace DulceTentacion
             // Llamar al método para mostrar la tabla de productos cuando se carga el formulario
             MostrarTablaProductos();
         }
-
-       
-
-   
-
        
         private void btnRegistro_Click(object sender, EventArgs e)
         {
@@ -205,8 +168,6 @@ namespace DulceTentacion
                 return;
             }
 
-           
-
             // Insertar el producto en la base de datos
             string query = "INSERT INTO Productos (Codigo, Nombre, UxMasa, UxLitro, Cantidad, Precio, Descripcion) " +
                            "VALUES (@Codigo, @Nombre, @UxMasa, @UxLitro, @Cantidad, @Precio, @Descripcion)";
@@ -248,7 +209,6 @@ namespace DulceTentacion
             {
                 MessageBox.Show("Error al registrar el producto: " + ex.Message);
             }
-
             
         }
 
@@ -267,12 +227,6 @@ namespace DulceTentacion
 
                     // Asigna el DataTable como origen de datos del DataGridView
                     dgvProductos.DataSource = dataTable;
-
-
-
-
-               
-
 
                 }
                 catch (Exception ex)
@@ -317,7 +271,6 @@ namespace DulceTentacion
                 // Agregar el sufijo 'u' al valor ingresado en la columna Cantidad
                 dgvProductos.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = dgvProductos.Rows[e.RowIndex].Cells[e.ColumnIndex].Value + " u.";
             }
-
             
         }
 
@@ -369,7 +322,6 @@ namespace DulceTentacion
             }
         }
 
-
         private void MostrarTablaProductos()
         {
             try
@@ -386,12 +338,6 @@ namespace DulceTentacion
                         // Asignar los datos al DataGridView
                         dgvProductos.DataSource = dataTable;
 
-
-
-                     
-
-
-
                     }
                 }
             }
@@ -400,7 +346,6 @@ namespace DulceTentacion
                 MessageBox.Show("Error al mostrar la tabla de productos: " + ex.Message);
             }
         }
-
         private void btnGuardarTabla_Click(object sender, EventArgs e)
         {
             try

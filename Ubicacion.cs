@@ -173,7 +173,7 @@ namespace DulceTentacion
 
         private void lblReserva_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            abrirConPrincipal(new Reservaciones());
+            abrirConPrincipal(new AtencionCliente());
         }
 
         private void btnSucursal1_Click_1(object sender, EventArgs e)

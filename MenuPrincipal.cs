@@ -436,7 +436,7 @@ namespace DulceTentacion
 
         private void btnRegPersonal_Click(object sender, EventArgs e)
         {
-            abrirconprincipal(new RegistrarPersonal());
+            //abrirconprincipal(new RegistrarPersonal());
             hideSubMenu();
         }
 
