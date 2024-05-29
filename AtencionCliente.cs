@@ -126,5 +126,10 @@ namespace DulceTentacion
         {
             abrirConPrincipal(new Bebidas());
         }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Carrito());
+        }
     }
 }

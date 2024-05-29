@@ -56,5 +56,29 @@ namespace DulceTentacion
         {
             this.Close();
         }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se enviaron correctamente su pedido, se le mandara un mensaje cuando este listo para su entrega ");
+            this.Close();
+        }
+
+        private void btnEfectivo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cancele en caja por favor");
+
+        }
+
+        private void btnQR_Click(object sender, EventArgs e)
+        {
+            using (QR qr = new QR())
+                qr.ShowDialog();
+        }
+
+        private void btnTarjeta_Click(object sender, EventArgs e)
+        {
+            using (Tarjeta tarjeta = new Tarjeta())
+                tarjeta.ShowDialog();
+        }
     }
 }

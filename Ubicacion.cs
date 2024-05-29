@@ -80,22 +80,6 @@ namespace DulceTentacion
             ApplyColors();
         }
 
-        protected override void OnFormClosed(FormClosedEventArgs e)
-        {
-            // Desuscribirse del evento cuando el formulario se cierre
-            MenuPrincipal.DarkModeChanged -= ApplyColors;
-            base.OnFormClosed(e);
-        }
-
-        protected override void OnLoad(EventArgs e)
-        {
-            base.OnLoad(e);
-            // Guardar los colores originales cuando se carga el formulario
-            originalBackColor = this.BackColor;
-          
-            originalGBOpForeColor = GBOpinionGeneral.ForeColor; // Guardar el color original del texto de GroupBox
-            
-        }
     
 
     private void Ubicacion_Load(object sender, EventArgs e)

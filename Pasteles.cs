@@ -41,15 +41,53 @@ namespace DulceTentacion
             ApplyDarkModeIfNeeded();
         }
 
-        private void btnRegresar_Click_1(object sender, EventArgs e)
+
+        //Configurar la ventana en el panel contenedor
+        private Form activeForm = null;
+        private void abrirConPrincipal(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+
+            // Deshabilitar AutoScroll del contenedor antes de agregar el nuevo formulario
+            pnlPastelesMenu.AutoScroll = false;
+
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlPastelesMenu.Controls.Add(childForm);
+            pnlPastelesMenu.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+            // Suscribirse al evento FormClosed del formulario hijo
+            childForm.FormClosed += ChildForm_FormClosed;
+        }
+
+        private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Volver a habilitar el AutoScroll del contenedor después de cerrar el formulario hijo
+            pnlPastelesMenu.AutoScroll = true;
+        }
+
+
+
+
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void pbPastel0_Click(object sender, EventArgs e)
         {
-            using (Pastel1 pastel1 = new Pastel1())
-                pastel1.ShowDialog();
+            abrirConPrincipal(new Pastel1());
+        }
+
+        private void lblPastel0_Click(object sender, EventArgs e)
+        {
+            abrirConPrincipal(new Pastel1());
         }
     }
 }

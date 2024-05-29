@@ -46,7 +46,6 @@ namespace DulceTentacion
             this.label1 = new System.Windows.Forms.Label();
             this.txtCostoTotal = new System.Windows.Forms.TextBox();
             this.BarraHorizontal = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.pnlDPersonal = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.CBSufijos = new System.Windows.Forms.ComboBox();
@@ -77,15 +76,28 @@ namespace DulceTentacion
             this.btnQR = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
             this.btnMas = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.pbPastel0 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlCesta.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.pnl3.SuspendLayout();
+            this.pnl2.SuspendLayout();
+            this.pnl1.SuspendLayout();
             this.BarraHorizontal.SuspendLayout();
             this.pnlDPersonal.SuspendLayout();
             this.pnlDRecojo.SuspendLayout();
             this.pnlFPago.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPastel0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +114,7 @@ namespace DulceTentacion
             this.btnEnviar.TabIndex = 3;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // btnCancelar
             // 
@@ -136,7 +149,7 @@ namespace DulceTentacion
             this.pnlCesta.Controls.Add(this.txtCostoTotal);
             this.pnlCesta.Location = new System.Drawing.Point(617, 79);
             this.pnlCesta.Name = "pnlCesta";
-            this.pnlCesta.Size = new System.Drawing.Size(382, 583);
+            this.pnlCesta.Size = new System.Drawing.Size(372, 583);
             this.pnlCesta.TabIndex = 51;
             // 
             // pnl9
@@ -145,7 +158,7 @@ namespace DulceTentacion
             this.pnl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl9.Location = new System.Drawing.Point(0, 464);
             this.pnl9.Name = "pnl9";
-            this.pnl9.Size = new System.Drawing.Size(382, 58);
+            this.pnl9.Size = new System.Drawing.Size(372, 58);
             this.pnl9.TabIndex = 9;
             // 
             // panel11
@@ -155,7 +168,7 @@ namespace DulceTentacion
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 406);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(382, 58);
+            this.panel11.Size = new System.Drawing.Size(372, 58);
             this.panel11.TabIndex = 8;
             // 
             // pnl8
@@ -164,7 +177,7 @@ namespace DulceTentacion
             this.pnl8.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl8.Location = new System.Drawing.Point(0, 0);
             this.pnl8.Name = "pnl8";
-            this.pnl8.Size = new System.Drawing.Size(382, 60);
+            this.pnl8.Size = new System.Drawing.Size(372, 60);
             this.pnl8.TabIndex = 7;
             // 
             // pnl7
@@ -173,7 +186,7 @@ namespace DulceTentacion
             this.pnl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl7.Location = new System.Drawing.Point(0, 348);
             this.pnl7.Name = "pnl7";
-            this.pnl7.Size = new System.Drawing.Size(382, 58);
+            this.pnl7.Size = new System.Drawing.Size(372, 58);
             this.pnl7.TabIndex = 7;
             // 
             // pnl6
@@ -182,7 +195,7 @@ namespace DulceTentacion
             this.pnl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl6.Location = new System.Drawing.Point(0, 290);
             this.pnl6.Name = "pnl6";
-            this.pnl6.Size = new System.Drawing.Size(382, 58);
+            this.pnl6.Size = new System.Drawing.Size(372, 58);
             this.pnl6.TabIndex = 6;
             // 
             // pnl5
@@ -191,7 +204,7 @@ namespace DulceTentacion
             this.pnl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl5.Location = new System.Drawing.Point(0, 232);
             this.pnl5.Name = "pnl5";
-            this.pnl5.Size = new System.Drawing.Size(382, 58);
+            this.pnl5.Size = new System.Drawing.Size(372, 58);
             this.pnl5.TabIndex = 5;
             // 
             // pnl4
@@ -200,34 +213,39 @@ namespace DulceTentacion
             this.pnl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl4.Location = new System.Drawing.Point(0, 174);
             this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(382, 58);
+            this.pnl4.Size = new System.Drawing.Size(372, 58);
             this.pnl4.TabIndex = 4;
             // 
             // pnl3
             // 
             this.pnl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnl3.Controls.Add(this.numericUpDown3);
             this.pnl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl3.Location = new System.Drawing.Point(0, 116);
             this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(382, 58);
+            this.pnl3.Size = new System.Drawing.Size(372, 58);
             this.pnl3.TabIndex = 4;
             // 
             // pnl2
             // 
             this.pnl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnl2.Controls.Add(this.numericUpDown2);
             this.pnl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl2.Location = new System.Drawing.Point(0, 58);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(382, 58);
+            this.pnl2.Size = new System.Drawing.Size(372, 58);
             this.pnl2.TabIndex = 4;
             // 
             // pnl1
             // 
             this.pnl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnl1.Controls.Add(this.label16);
+            this.pnl1.Controls.Add(this.pbPastel0);
+            this.pnl1.Controls.Add(this.numericUpDown1);
             this.pnl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl1.Location = new System.Drawing.Point(0, 0);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(382, 58);
+            this.pnl1.Size = new System.Drawing.Size(372, 58);
             this.pnl1.TabIndex = 3;
             // 
             // label2
@@ -235,7 +253,7 @@ namespace DulceTentacion
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(328, 549);
+            this.label2.Location = new System.Drawing.Point(318, 549);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 25);
             this.label2.TabIndex = 2;
@@ -246,7 +264,7 @@ namespace DulceTentacion
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 549);
+            this.label1.Location = new System.Drawing.Point(72, 549);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 1;
@@ -255,10 +273,12 @@ namespace DulceTentacion
             // txtCostoTotal
             // 
             this.txtCostoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCostoTotal.Location = new System.Drawing.Point(207, 552);
+            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoTotal.Location = new System.Drawing.Point(206, 544);
             this.txtCostoTotal.Name = "txtCostoTotal";
-            this.txtCostoTotal.Size = new System.Drawing.Size(106, 22);
+            this.txtCostoTotal.Size = new System.Drawing.Size(106, 30);
             this.txtCostoTotal.TabIndex = 0;
+            this.txtCostoTotal.Text = "140";
             // 
             // BarraHorizontal
             // 
@@ -268,24 +288,8 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1013, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1016, 46);
             this.BarraHorizontal.TabIndex = 52;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(194, 41);
-            this.btnRegresar.TabIndex = 53;
-            this.btnRegresar.Text = "       Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // pnlDPersonal
             // 
@@ -561,6 +565,7 @@ namespace DulceTentacion
             this.btnEfectivo.TabIndex = 74;
             this.btnEfectivo.Text = "Efectivo";
             this.btnEfectivo.UseVisualStyleBackColor = false;
+            this.btnEfectivo.Click += new System.EventHandler(this.btnEfectivo_Click);
             // 
             // btnTarjeta
             // 
@@ -573,6 +578,7 @@ namespace DulceTentacion
             this.btnTarjeta.TabIndex = 73;
             this.btnTarjeta.Text = "Tarjeta";
             this.btnTarjeta.UseVisualStyleBackColor = false;
+            this.btnTarjeta.Click += new System.EventHandler(this.btnTarjeta_Click);
             // 
             // btnQR
             // 
@@ -585,6 +591,7 @@ namespace DulceTentacion
             this.btnQR.TabIndex = 56;
             this.btnQR.Text = "QR";
             this.btnQR.UseVisualStyleBackColor = false;
+            this.btnQR.Click += new System.EventHandler(this.btnQR_Click);
             // 
             // label14
             // 
@@ -606,6 +613,48 @@ namespace DulceTentacion
             this.label15.TabIndex = 71;
             this.label15.Text = "Carrito de compras";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(307, 14);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(51, 38);
+            this.numericUpDown1.TabIndex = 71;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown2.Location = new System.Drawing.Point(307, 7);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(51, 38);
+            this.numericUpDown2.TabIndex = 72;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown3.Location = new System.Drawing.Point(307, 12);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(51, 38);
+            this.numericUpDown3.TabIndex = 73;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(72, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(159, 20);
+            this.label16.TabIndex = 210;
+            this.label16.Text = "Torta de tres leches";
+            // 
             // btnMas
             // 
             this.btnMas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -613,11 +662,38 @@ namespace DulceTentacion
             this.btnMas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMas.Image = global::DulceTentacion.Properties.Resources.IconoMas;
-            this.btnMas.Location = new System.Drawing.Point(919, 48);
+            this.btnMas.Location = new System.Drawing.Point(856, 48);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(80, 30);
             this.btnMas.TabIndex = 75;
             this.btnMas.UseVisualStyleBackColor = false;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = global::DulceTentacion.Properties.Resources.boton_atras;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(194, 41);
+            this.btnRegresar.TabIndex = 53;
+            this.btnRegresar.Text = "       Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // pbPastel0
+            // 
+            this.pbPastel0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbPastel0.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
+            this.pbPastel0.Location = new System.Drawing.Point(3, 0);
+            this.pbPastel0.Name = "pbPastel0";
+            this.pbPastel0.Size = new System.Drawing.Size(64, 58);
+            this.pbPastel0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPastel0.TabIndex = 209;
+            this.pbPastel0.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -644,6 +720,7 @@ namespace DulceTentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1013, 674);
             this.Controls.Add(this.btnMas);
@@ -663,6 +740,10 @@ namespace DulceTentacion
             this.pnlCesta.ResumeLayout(false);
             this.pnlCesta.PerformLayout();
             this.panel11.ResumeLayout(false);
+            this.pnl3.ResumeLayout(false);
+            this.pnl2.ResumeLayout(false);
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
             this.BarraHorizontal.ResumeLayout(false);
             this.pnlDPersonal.ResumeLayout(false);
             this.pnlDPersonal.PerformLayout();
@@ -670,6 +751,10 @@ namespace DulceTentacion
             this.pnlDRecojo.PerformLayout();
             this.pnlFPago.ResumeLayout(false);
             this.pnlFPago.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPastel0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -729,5 +814,10 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnMas;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pbPastel0;
     }
 }

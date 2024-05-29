@@ -84,7 +84,6 @@ namespace DulceTentacion
             this.btnCrearPastel = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.contAtCliente.SuspendLayout();
             this.pnlPersonalizar.SuspendLayout();
             this.pnlProdSelect.SuspendLayout();
@@ -101,7 +100,6 @@ namespace DulceTentacion
             // 
             this.contAtCliente.AutoScroll = true;
             this.contAtCliente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.contAtCliente.Controls.Add(this.panel1);
             this.contAtCliente.Controls.Add(this.label10);
             this.contAtCliente.Controls.Add(this.pnlPersonalizar);
             this.contAtCliente.Controls.Add(this.pnlProdSelect);
@@ -387,6 +385,7 @@ namespace DulceTentacion
             this.btnEnviar.TabIndex = 176;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // pnlAtender
             // 
@@ -665,6 +664,7 @@ namespace DulceTentacion
             // PR1
             // 
             this.PR1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PR1.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
             this.PR1.Location = new System.Drawing.Point(17, 18);
             this.PR1.Name = "PR1";
             this.PR1.Size = new System.Drawing.Size(180, 180);
@@ -734,14 +734,6 @@ namespace DulceTentacion
             this.btnAtras.Text = "       Regresar";
             this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 837);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 37);
-            this.panel1.TabIndex = 184;
             // 
             // AtencionCliente
             // 
@@ -827,6 +819,5 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtNPorcion;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel1;
     }
 }
