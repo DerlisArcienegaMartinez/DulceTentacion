@@ -31,6 +31,7 @@ namespace DulceTentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AtencionCliente));
             this.contAtCliente = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.pnlPersonalizar = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.CBTamañoTorta = new System.Windows.Forms.ComboBox();
@@ -44,13 +45,18 @@ namespace DulceTentacion
             this.txtNPorcion = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.pnlProdSelect = new System.Windows.Forms.Panel();
+            this.PR4 = new System.Windows.Forms.PictureBox();
+            this.PR1 = new System.Windows.Forms.PictureBox();
+            this.PR2 = new System.Windows.Forms.PictureBox();
+            this.PR3 = new System.Windows.Forms.PictureBox();
             this.btnMesas = new System.Windows.Forms.Button();
             this.btnBebidas = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.btnPorciones = new System.Windows.Forms.Button();
             this.btnTPersonal = new System.Windows.Forms.Button();
             this.btnPasteles = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.btnCrearPastel = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.pnlAtender = new System.Windows.Forms.Panel();
@@ -77,23 +83,17 @@ namespace DulceTentacion
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.Panel();
-            this.PR4 = new System.Windows.Forms.PictureBox();
-            this.PR1 = new System.Windows.Forms.PictureBox();
-            this.PR2 = new System.Windows.Forms.PictureBox();
-            this.PR3 = new System.Windows.Forms.PictureBox();
-            this.btnCrearPastel = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnAtras = new System.Windows.Forms.Button();
             this.contAtCliente.SuspendLayout();
             this.pnlPersonalizar.SuspendLayout();
             this.pnlProdSelect.SuspendLayout();
-            this.pnlAtender.SuspendLayout();
-            this.BarraHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PR4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PR1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PR2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PR3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pnlAtender.SuspendLayout();
+            this.BarraHorizontal.SuspendLayout();
             this.SuspendLayout();
             // 
             // contAtCliente
@@ -120,6 +120,16 @@ namespace DulceTentacion
             this.contAtCliente.Name = "contAtCliente";
             this.contAtCliente.Size = new System.Drawing.Size(1013, 674);
             this.contAtCliente.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Handwriting", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(79, 53);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(371, 78);
+            this.label10.TabIndex = 178;
+            this.label10.Text = "RESERVAR";
             // 
             // pnlPersonalizar
             // 
@@ -268,6 +278,46 @@ namespace DulceTentacion
             this.pnlProdSelect.Size = new System.Drawing.Size(427, 418);
             this.pnlProdSelect.TabIndex = 180;
             // 
+            // PR4
+            // 
+            this.PR4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PR4.Location = new System.Drawing.Point(17, 216);
+            this.PR4.Name = "PR4";
+            this.PR4.Size = new System.Drawing.Size(180, 180);
+            this.PR4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PR4.TabIndex = 3;
+            this.PR4.TabStop = false;
+            // 
+            // PR1
+            // 
+            this.PR1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PR1.Location = new System.Drawing.Point(17, 18);
+            this.PR1.Name = "PR1";
+            this.PR1.Size = new System.Drawing.Size(180, 180);
+            this.PR1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PR1.TabIndex = 2;
+            this.PR1.TabStop = false;
+            // 
+            // PR2
+            // 
+            this.PR2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PR2.Location = new System.Drawing.Point(229, 18);
+            this.PR2.Name = "PR2";
+            this.PR2.Size = new System.Drawing.Size(180, 180);
+            this.PR2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PR2.TabIndex = 1;
+            this.PR2.TabStop = false;
+            // 
+            // PR3
+            // 
+            this.PR3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PR3.Location = new System.Drawing.Point(229, 216);
+            this.PR3.Name = "PR3";
+            this.PR3.Size = new System.Drawing.Size(180, 180);
+            this.PR3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PR3.TabIndex = 0;
+            this.PR3.TabStop = false;
+            // 
             // btnMesas
             // 
             this.btnMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -348,15 +398,31 @@ namespace DulceTentacion
             this.btnPasteles.UseVisualStyleBackColor = false;
             this.btnPasteles.Click += new System.EventHandler(this.btnPasteles_Click);
             // 
-            // label10
+            // btnCrearPastel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lucida Handwriting", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(79, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(371, 78);
-            this.label10.TabIndex = 178;
-            this.label10.Text = "RESERVAR";
+            this.btnCrearPastel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCrearPastel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCrearPastel.FlatAppearance.BorderSize = 0;
+            this.btnCrearPastel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearPastel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearPastel.Image = global::DulceTentacion.Properties.Resources.icono_crear_torta;
+            this.btnCrearPastel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrearPastel.Location = new System.Drawing.Point(507, 55);
+            this.btnCrearPastel.Name = "btnCrearPastel";
+            this.btnCrearPastel.Size = new System.Drawing.Size(231, 71);
+            this.btnCrearPastel.TabIndex = 181;
+            this.btnCrearPastel.Text = "        Crea tu propio pastel";
+            this.btnCrearPastel.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(7, 55);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 56);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 179;
+            this.pictureBox5.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -648,75 +714,8 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnAtras);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1598, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1788, 46);
             this.BarraHorizontal.TabIndex = 169;
-            // 
-            // PR4
-            // 
-            this.PR4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PR4.Location = new System.Drawing.Point(17, 216);
-            this.PR4.Name = "PR4";
-            this.PR4.Size = new System.Drawing.Size(180, 180);
-            this.PR4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PR4.TabIndex = 3;
-            this.PR4.TabStop = false;
-            // 
-            // PR1
-            // 
-            this.PR1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PR1.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
-            this.PR1.Location = new System.Drawing.Point(17, 18);
-            this.PR1.Name = "PR1";
-            this.PR1.Size = new System.Drawing.Size(180, 180);
-            this.PR1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PR1.TabIndex = 2;
-            this.PR1.TabStop = false;
-            // 
-            // PR2
-            // 
-            this.PR2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PR2.Location = new System.Drawing.Point(229, 18);
-            this.PR2.Name = "PR2";
-            this.PR2.Size = new System.Drawing.Size(180, 180);
-            this.PR2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PR2.TabIndex = 1;
-            this.PR2.TabStop = false;
-            // 
-            // PR3
-            // 
-            this.PR3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PR3.Location = new System.Drawing.Point(229, 216);
-            this.PR3.Name = "PR3";
-            this.PR3.Size = new System.Drawing.Size(180, 180);
-            this.PR3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PR3.TabIndex = 0;
-            this.PR3.TabStop = false;
-            // 
-            // btnCrearPastel
-            // 
-            this.btnCrearPastel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnCrearPastel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCrearPastel.FlatAppearance.BorderSize = 0;
-            this.btnCrearPastel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearPastel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearPastel.Image = global::DulceTentacion.Properties.Resources.icono_crear_torta;
-            this.btnCrearPastel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearPastel.Location = new System.Drawing.Point(507, 55);
-            this.btnCrearPastel.Name = "btnCrearPastel";
-            this.btnCrearPastel.Size = new System.Drawing.Size(231, 71);
-            this.btnCrearPastel.TabIndex = 181;
-            this.btnCrearPastel.Text = "        Crea tu propio pastel";
-            this.btnCrearPastel.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(7, 55);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 56);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 179;
-            this.pictureBox5.TabStop = false;
             // 
             // btnAtras
             // 
@@ -751,14 +750,14 @@ namespace DulceTentacion
             this.pnlPersonalizar.ResumeLayout(false);
             this.pnlPersonalizar.PerformLayout();
             this.pnlProdSelect.ResumeLayout(false);
-            this.pnlAtender.ResumeLayout(false);
-            this.pnlAtender.PerformLayout();
-            this.BarraHorizontal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PR4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PR1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PR2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PR3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pnlAtender.ResumeLayout(false);
+            this.pnlAtender.PerformLayout();
+            this.BarraHorizontal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

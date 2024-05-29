@@ -15,6 +15,25 @@ namespace DulceTentacion
         public QR()
         {
             InitializeComponent();
+            ApplyColors(); // Aplicar los colores al abrir el formulario
+            MenuPrincipal.DarkModeChanged += ApplyColors;
+        }
+
+        private void ApplyDarkModeIfNeeded()
+        {
+            if (MenuPrincipal.DarkModeActive)
+            {
+                this.BackColor = Color.DarkSlateGray;
+                btnRegresar.BackColor = Color.DimGray;
+            }
+
+        }
+
+        // Método para aplicar los colores al abrir el formulario
+        private void ApplyColors()
+        {
+            // Llamar al método para aplicar el modo oscuro si es necesario
+            ApplyDarkModeIfNeeded();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)

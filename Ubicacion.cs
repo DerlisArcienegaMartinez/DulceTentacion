@@ -18,8 +18,7 @@ namespace DulceTentacion
     public partial class Ubicacion : Form
     {
 
-        private Color originalBackColor;
-        private Color originalGBOpForeColor;
+        
         
 
 
@@ -73,12 +72,7 @@ namespace DulceTentacion
             ApplyDarkModeIfNeeded();
         }
 
-        // Método para actualizar el estado del modo oscuro desde MenuPrincipal
-        public void UpdateDarkModeState(bool isDarkMode)
-        {
-            MenuPrincipal.DarkModeActive = isDarkMode;
-            ApplyColors();
-        }
+     
 
     
 

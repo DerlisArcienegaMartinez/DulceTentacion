@@ -31,15 +31,15 @@ namespace DulceTentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pastel1));
             this.pnlPastel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblPastel0 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.bntReservar = new System.Windows.Forms.Button();
+            this.btnReservar = new System.Windows.Forms.Button();
             this.btnCarrito = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPastel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +54,7 @@ namespace DulceTentacion
             this.pnlPastel1.Controls.Add(this.radioButton3);
             this.pnlPastel1.Controls.Add(this.radioButton2);
             this.pnlPastel1.Controls.Add(this.radioButton1);
-            this.pnlPastel1.Controls.Add(this.bntReservar);
+            this.pnlPastel1.Controls.Add(this.btnReservar);
             this.pnlPastel1.Controls.Add(this.btnCarrito);
             this.pnlPastel1.Controls.Add(this.label1);
             this.pnlPastel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -63,12 +63,22 @@ namespace DulceTentacion
             this.pnlPastel1.Size = new System.Drawing.Size(1013, 674);
             this.pnlPastel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
+            this.pictureBox1.Location = new System.Drawing.Point(756, 134);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 244);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 88;
+            this.pictureBox1.TabStop = false;
+            // 
             // lblPastel0
             // 
             this.lblPastel0.AutoSize = true;
             this.lblPastel0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblPastel0.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPastel0.Location = new System.Drawing.Point(37, 62);
+            this.lblPastel0.Location = new System.Drawing.Point(36, 50);
             this.lblPastel0.Name = "lblPastel0";
             this.lblPastel0.Size = new System.Drawing.Size(902, 69);
             this.lblPastel0.TabIndex = 96;
@@ -123,24 +133,24 @@ namespace DulceTentacion
             this.radioButton1.Text = "de chocolate";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // bntReservar
+            // btnReservar
             // 
-            this.bntReservar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.bntReservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntReservar.Location = new System.Drawing.Point(279, 524);
-            this.bntReservar.Name = "bntReservar";
-            this.bntReservar.Size = new System.Drawing.Size(233, 55);
-            this.bntReservar.TabIndex = 91;
-            this.bntReservar.Text = "Reservar";
-            this.bntReservar.UseVisualStyleBackColor = false;
-            this.bntReservar.Click += new System.EventHandler(this.bntReservar_Click);
+            this.btnReservar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnReservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservar.Location = new System.Drawing.Point(279, 524);
+            this.btnReservar.Name = "btnReservar";
+            this.btnReservar.Size = new System.Drawing.Size(233, 55);
+            this.btnReservar.TabIndex = 91;
+            this.btnReservar.Text = "Reservar";
+            this.btnReservar.UseVisualStyleBackColor = false;
+            this.btnReservar.Click += new System.EventHandler(this.bntReservar_Click);
             // 
             // btnCarrito
             // 
             this.btnCarrito.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrito.ForeColor = System.Drawing.Color.White;
-            this.btnCarrito.Location = new System.Drawing.Point(518, 572);
+            this.btnCarrito.Location = new System.Drawing.Point(518, 524);
             this.btnCarrito.Name = "btnCarrito";
             this.btnCarrito.Size = new System.Drawing.Size(233, 55);
             this.btnCarrito.TabIndex = 90;
@@ -156,16 +166,6 @@ namespace DulceTentacion
             this.label1.Size = new System.Drawing.Size(830, 255);
             this.label1.TabIndex = 89;
             this.label1.Text = resources.GetString("label1.Text");
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DulceTentacion.Properties.Resources.torta_Tresleches_70_bs;
-            this.pictureBox1.Location = new System.Drawing.Point(756, 134);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(245, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 88;
-            this.pictureBox1.TabStop = false;
             // 
             // Pastel1
             // 
@@ -193,7 +193,7 @@ namespace DulceTentacion
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button bntReservar;
+        private System.Windows.Forms.Button btnReservar;
         private System.Windows.Forms.Button btnCarrito;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

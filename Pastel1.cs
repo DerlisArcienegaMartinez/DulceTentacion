@@ -15,8 +15,30 @@ namespace DulceTentacion
         public Pastel1()
         {
             InitializeComponent();
+            ApplyColors(); // Aplicar los colores al abrir el formulario
+            MenuPrincipal.DarkModeChanged += ApplyColors;
         }
 
+        private void ApplyDarkModeIfNeeded()
+        {
+            if (MenuPrincipal.DarkModeActive)
+            {
+                this.BackColor = Color.Black;
+                btnCarrito.BackColor = Color.DimGray;
+                btnRegresar.BackColor = Color.DimGray;
+                pnlPastel1.BackColor = Color.Black;
+                btnReservar.BackColor = Color.DimGray;
+
+            }
+
+        }
+
+        // Método para aplicar los colores al abrir el formulario
+        private void ApplyColors()
+        {
+            // Llamar al método para aplicar el modo oscuro si es necesario
+            ApplyDarkModeIfNeeded();
+        }
 
         //Configurar la ventana en el panel contenedor
         private Form activeForm = null;
