@@ -99,7 +99,7 @@ namespace DulceTentacion
                     Bienvenido.ShowDialog();
 
                     // Puedes agregar aquí la lógica adicional para el menú principal si es necesario
-                    using (MenuPrincipal menuPrincipal = new MenuPrincipal(/*Bienvenido.NombreCompletoUsuario*/))
+                    using (MenuPrincipal menuPrincipal = new MenuPrincipal(Bienvenido.NombreCompletoUsuario))
                         menuPrincipal.ShowDialog();
                 }
             }
@@ -129,7 +129,7 @@ namespace DulceTentacion
                                 this.Hide();
                                 Bienvenido.ShowDialog();
 
-                                using (MenuPrincipal menuPrincipal = new MenuPrincipal(/*Bienvenido.NombreCompletoUsuario*/))
+                                using (MenuPrincipal menuPrincipal = new MenuPrincipal(Bienvenido.NombreCompletoUsuario))
                                     menuPrincipal.ShowDialog();
                             }
                         }

@@ -19,7 +19,7 @@ namespace DulceTentacion
         {
             InitializeComponent();
             lblUsuario.Text = nombreCompletoUsuario;
-            //NombreCompletoUsuario = nombreCompletoUsuario;
+            NombreCompletoUsuario = nombreCompletoUsuario;
         }
 
 
@@ -53,7 +53,7 @@ namespace DulceTentacion
                 this.Close();
 
                 // Mostrar MenuPrincipal después de cerrar PanelBienvenido
-                using (MenuPrincipal menuPrincipal = new MenuPrincipal(/*NombreCompletoUsuario*/))
+                using (MenuPrincipal menuPrincipal = new MenuPrincipal(NombreCompletoUsuario))
                     menuPrincipal.ShowDialog();
             }
         }
@@ -63,6 +63,9 @@ namespace DulceTentacion
 
         }
 
-       
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,12 +37,12 @@ namespace DulceTentacion
             }
         }
 
-        public MenuPrincipal(/*string nombreCompletoUsuario*/)
+        public MenuPrincipal(string nombreCompletoUsuario)
         {
             InitializeComponent();
             
 
-           // lblUsuario.Text = nombreCompletoUsuario;
+           lblUsuario.Text = nombreCompletoUsuario;
            
             LoadConfig(); // Cargar la configuración al iniciar la aplicación
             ApplyColors();//Aplicar los colores
