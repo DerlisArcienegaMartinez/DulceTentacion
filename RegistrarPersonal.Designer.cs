@@ -306,7 +306,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1625, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1823, 46);
             this.BarraHorizontal.TabIndex = 53;
             // 
             // btnRegresar

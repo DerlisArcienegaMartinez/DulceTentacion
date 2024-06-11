@@ -32,8 +32,8 @@ namespace DulceTentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lnkContraseña = new System.Windows.Forms.LinkLabel();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@ namespace DulceTentacion
             this.label4 = new System.Windows.Forms.Label();
             this.btnMtContra = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -74,6 +73,17 @@ namespace DulceTentacion
             this.label2.Text = "    DULCE\r\nSENSACIÓN";
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.Emblema;
+            this.pictureBox2.Location = new System.Drawing.Point(21, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(214, 195);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -85,20 +95,6 @@ namespace DulceTentacion
             this.label1.TabIndex = 3;
             this.label1.Text = "INICIO";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
-            // 
-            // lnkContraseña
-            // 
-            this.lnkContraseña.AutoSize = true;
-            this.lnkContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.lnkContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkContraseña.LinkColor = System.Drawing.Color.HotPink;
-            this.lnkContraseña.Location = new System.Drawing.Point(270, 304);
-            this.lnkContraseña.Name = "lnkContraseña";
-            this.lnkContraseña.Size = new System.Drawing.Size(254, 20);
-            this.lnkContraseña.TabIndex = 4;
-            this.lnkContraseña.TabStop = true;
-            this.lnkContraseña.Text = "¿Ha olvidado su contraseña?";
             // 
             // txtUsuario
             // 
@@ -137,9 +133,9 @@ namespace DulceTentacion
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Rockwell", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.ForeColor = System.Drawing.Color.White;
-            this.btnAcceder.Location = new System.Drawing.Point(285, 226);
+            this.btnAcceder.Location = new System.Drawing.Point(283, 226);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(288, 40);
+            this.btnAcceder.Size = new System.Drawing.Size(288, 55);
             this.btnAcceder.TabIndex = 3;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
@@ -186,24 +182,13 @@ namespace DulceTentacion
             this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.HotPink;
-            this.linkLabel1.Location = new System.Drawing.Point(580, 304);
+            this.linkLabel1.Location = new System.Drawing.Point(583, 304);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(182, 20);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Desea registrarse?";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.Emblema;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(214, 195);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
             // 
             // btnSalir
             // 
@@ -244,7 +229,6 @@ namespace DulceTentacion
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.lnkContraseña);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -269,7 +253,6 @@ namespace DulceTentacion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnSalir;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel lnkContraseña;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsuario;

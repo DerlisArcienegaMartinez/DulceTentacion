@@ -18,8 +18,8 @@ namespace DulceTentacion
     {
 
         private Config _config;
-       
-        
+      
+
         public static event Action DarkModeChanged;
 
         // Propiedad estática para verificar si el modo oscuro está activo
@@ -37,15 +37,17 @@ namespace DulceTentacion
             }
         }
 
-        public MenuPrincipal()
+        public MenuPrincipal(/*string nombreCompletoUsuario*/)
         {
             InitializeComponent();
+            
 
-
+           // lblUsuario.Text = nombreCompletoUsuario;
+           
             LoadConfig(); // Cargar la configuración al iniciar la aplicación
             ApplyColors();//Aplicar los colores
-          
-            
+
+           
             CustomizeDesign();
 
         }
@@ -220,7 +222,6 @@ namespace DulceTentacion
         private void ApplyButtonColors()
         {
             // Botones en BarraHorizontal
-            btnImgUsuario.BackColor = _config.BarraHorizontalColor;
             btnUbicacion.BackColor = _config.BarraHorizontalColor;
             lblUsuario.BackColor = _config.BarraHorizontalColor;
             lblUbicacion.BackColor = _config.BarraHorizontalColor;
@@ -286,7 +287,6 @@ namespace DulceTentacion
         private void ApplyDarkButtonColors()
         {
             // Botones en BarraHorizontal
-            btnImgUsuario.BackColor = Color.DimGray;
             btnUbicacion.BackColor = Color.DimGray;
             lblUsuario.BackColor = Color.DimGray;
             lblUbicacion.BackColor = Color.DimGray;
@@ -331,19 +331,6 @@ namespace DulceTentacion
             }
             SaveConfig(); // Guardar la configuración actualizada
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -500,12 +487,6 @@ namespace DulceTentacion
 
         }
 
-        private void btnImgUsuario_Click(object sender, EventArgs e)
-        {
-
-            abrirconprincipal(new CuentaUsuario());
-          
-        }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {

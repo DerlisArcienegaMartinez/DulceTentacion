@@ -17,11 +17,7 @@ namespace DulceTentacion
 
         
 
-        //public class Usuario
-        //{
-        //    public string NombreUsuario { get; set; }
-        //    public string Contraseña { get; set; }
-        //}
+      
 
         private int intentosFallidos = 0;
         private Timer timer;
@@ -88,10 +84,12 @@ namespace DulceTentacion
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
-            usuario.NombreUsuario = txtUsuario.Text;
-            usuario.Contraseña = txtContraseña.Text;
-
+            Usuario usuario = new Usuario
+            {
+                NombreUsuario = txtUsuario.Text,
+                Contraseña = txtContraseña.Text
+            };
+        
             if (usuario.NombreUsuario == "administrador" && usuario.Contraseña == "1234")
             {
                 // Si las credenciales son del administrador, mostrar el PanelBienvenido con el nombre "Administrador"
@@ -101,7 +99,7 @@ namespace DulceTentacion
                     Bienvenido.ShowDialog();
 
                     // Puedes agregar aquí la lógica adicional para el menú principal si es necesario
-                    using (MenuPrincipal menuPrincipal = new MenuPrincipal())
+                    using (MenuPrincipal menuPrincipal = new MenuPrincipal(/*Bienvenido.NombreCompletoUsuario*/))
                         menuPrincipal.ShowDialog();
                 }
             }
@@ -124,16 +122,14 @@ namespace DulceTentacion
                         {
 
                             // Después de validar las credenciales del usuario y antes de mostrar el formulario PanelBienvenido
-                            string nombreCompletoUsuario = ObtenerNombreCompletoUsuario(); // Aquí debes obtener el nombre completo del usuario, por ejemplo, desde la base de datos
+                            string nombreCompleto = ObtenerNombreCompletoUsuario(); // Aquí debes obtener el nombre completo del usuario, por ejemplo, desde la base de datos
 
-
-
-                            using (PanelBienvenido Bienvenido = new PanelBienvenido(nombreCompletoUsuario))
+                            using (PanelBienvenido Bienvenido = new PanelBienvenido(nombreCompleto))
                             {
                                 this.Hide();
                                 Bienvenido.ShowDialog();
 
-                                using (MenuPrincipal menuPrincipal = new MenuPrincipal())
+                                using (MenuPrincipal menuPrincipal = new MenuPrincipal(/*Bienvenido.NombreCompletoUsuario*/))
                                     menuPrincipal.ShowDialog();
                             }
                         }

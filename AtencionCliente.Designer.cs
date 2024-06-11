@@ -60,7 +60,6 @@ namespace DulceTentacion
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.pnlAtender = new System.Windows.Forms.Panel();
-            this.CBSufijo = new System.Windows.Forms.ComboBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.CBSucursal = new System.Windows.Forms.ComboBox();
@@ -71,14 +70,12 @@ namespace DulceTentacion
             this.label4 = new System.Windows.Forms.Label();
             this.CBHorario = new System.Windows.Forms.ComboBox();
             this.CBReserva = new System.Windows.Forms.ComboBox();
-            this.CBMesa = new System.Windows.Forms.ComboBox();
             this.txtHora = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCI = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -329,7 +326,7 @@ namespace DulceTentacion
             this.btnMesas.Name = "btnMesas";
             this.btnMesas.Size = new System.Drawing.Size(51, 299);
             this.btnMesas.TabIndex = 170;
-            this.btnMesas.Text = "V\r\nE\r\nR\r\n\r\nM\r\nE\r\nS\r\nA\r\nS";
+            this.btnMesas.Text = "H\r\nA\r\nG\r\nA\r\n\r\nS\r\nU\r\n\r\nR\r\nE\r\nS\r\nE\r\nR\r\nV\r\nA";
             this.btnMesas.UseVisualStyleBackColor = false;
             // 
             // btnBebidas
@@ -456,7 +453,6 @@ namespace DulceTentacion
             // pnlAtender
             // 
             this.pnlAtender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlAtender.Controls.Add(this.CBSufijo);
             this.pnlAtender.Controls.Add(this.txtCelular);
             this.pnlAtender.Controls.Add(this.label12);
             this.pnlAtender.Controls.Add(this.CBSucursal);
@@ -467,14 +463,12 @@ namespace DulceTentacion
             this.pnlAtender.Controls.Add(this.label4);
             this.pnlAtender.Controls.Add(this.CBHorario);
             this.pnlAtender.Controls.Add(this.CBReserva);
-            this.pnlAtender.Controls.Add(this.CBMesa);
             this.pnlAtender.Controls.Add(this.txtHora);
             this.pnlAtender.Controls.Add(this.label8);
             this.pnlAtender.Controls.Add(this.txtApellido);
             this.pnlAtender.Controls.Add(this.txtNombre);
             this.pnlAtender.Controls.Add(this.txtCI);
             this.pnlAtender.Controls.Add(this.label9);
-            this.pnlAtender.Controls.Add(this.label5);
             this.pnlAtender.Controls.Add(this.label3);
             this.pnlAtender.Controls.Add(this.label2);
             this.pnlAtender.Controls.Add(this.label1);
@@ -483,34 +477,14 @@ namespace DulceTentacion
             this.pnlAtender.Size = new System.Drawing.Size(644, 300);
             this.pnlAtender.TabIndex = 171;
             // 
-            // CBSufijo
-            // 
-            this.CBSufijo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBSufijo.FormattingEnabled = true;
-            this.CBSufijo.Items.AddRange(new object[] {
-            "+54",
-            "+591",
-            "+55",
-            "+56",
-            "+57",
-            "+593",
-            "+595",
-            "+51",
-            "+598",
-            "+58"});
-            this.CBSufijo.Location = new System.Drawing.Point(392, 16);
-            this.CBSufijo.Name = "CBSufijo";
-            this.CBSufijo.Size = new System.Drawing.Size(69, 27);
-            this.CBSufijo.TabIndex = 70;
-            // 
             // txtCelular
             // 
             this.txtCelular.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCelular.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCelular.Location = new System.Drawing.Point(467, 17);
+            this.txtCelular.Location = new System.Drawing.Point(384, 17);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(126, 27);
+            this.txtCelular.Size = new System.Drawing.Size(185, 27);
             this.txtCelular.TabIndex = 69;
             // 
             // label12
@@ -531,7 +505,7 @@ namespace DulceTentacion
             "Sucursal 1",
             "Sucursal 2",
             "Sucursal 3"});
-            this.CBSucursal.Location = new System.Drawing.Point(364, 173);
+            this.CBSucursal.Location = new System.Drawing.Point(371, 159);
             this.CBSucursal.Name = "CBSucursal";
             this.CBSucursal.Size = new System.Drawing.Size(246, 24);
             this.CBSucursal.TabIndex = 37;
@@ -557,7 +531,7 @@ namespace DulceTentacion
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(282, 175);
+            this.label7.Location = new System.Drawing.Point(289, 161);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 20);
             this.label7.TabIndex = 36;
@@ -601,22 +575,6 @@ namespace DulceTentacion
             this.CBReserva.Name = "CBReserva";
             this.CBReserva.Size = new System.Drawing.Size(93, 24);
             this.CBReserva.TabIndex = 30;
-            // 
-            // CBMesa
-            // 
-            this.CBMesa.FormattingEnabled = true;
-            this.CBMesa.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.CBMesa.Location = new System.Drawing.Point(403, 134);
-            this.CBMesa.Name = "CBMesa";
-            this.CBMesa.Size = new System.Drawing.Size(93, 24);
-            this.CBMesa.TabIndex = 29;
             // 
             // txtHora
             // 
@@ -666,16 +624,6 @@ namespace DulceTentacion
             this.label9.TabIndex = 8;
             this.label9.Text = "Reservar mesa:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(325, 138);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "N° mesa";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -714,7 +662,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnAtras);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1788, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1978, 46);
             this.BarraHorizontal.TabIndex = 169;
             // 
             // btnAtras
@@ -782,7 +730,6 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Panel pnlAtender;
-        private System.Windows.Forms.ComboBox CBSufijo;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox CBSucursal;
@@ -793,14 +740,12 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox CBHorario;
         private System.Windows.Forms.ComboBox CBReserva;
-        private System.Windows.Forms.ComboBox CBMesa;
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCI;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

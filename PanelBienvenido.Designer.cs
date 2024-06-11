@@ -33,12 +33,12 @@ namespace DulceTentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelBienvenido));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.BarraProgreso = new System.Windows.Forms.ProgressBar();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -68,6 +68,16 @@ namespace DulceTentacion
             this.label1.Size = new System.Drawing.Size(368, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "DULCE SENSACIÓN";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.Emblema;
+            this.pictureBox2.Location = new System.Drawing.Point(-12, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(153, 104);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -112,16 +122,6 @@ namespace DulceTentacion
             this.BarraProgreso.Name = "BarraProgreso";
             this.BarraProgreso.Size = new System.Drawing.Size(442, 32);
             this.BarraProgreso.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DulceTentacion.Properties.Resources.Emblema;
-            this.pictureBox2.Location = new System.Drawing.Point(-12, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(153, 104);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 

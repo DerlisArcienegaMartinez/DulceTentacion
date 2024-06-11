@@ -13,13 +13,16 @@ namespace DulceTentacion
 {
     public partial class PanelBienvenido : Form
     {
+        public string NombreCompletoUsuario { get; private set; }
+
         public PanelBienvenido(string nombreCompletoUsuario)
         {
             InitializeComponent();
             lblUsuario.Text = nombreCompletoUsuario;
+            //NombreCompletoUsuario = nombreCompletoUsuario;
         }
 
-       
+
 
         private void PanelBienvenido_Load(object sender, EventArgs e)
         {
@@ -48,6 +51,10 @@ namespace DulceTentacion
             {
                 timer2.Stop();
                 this.Close();
+
+                // Mostrar MenuPrincipal después de cerrar PanelBienvenido
+                using (MenuPrincipal menuPrincipal = new MenuPrincipal(/*NombreCompletoUsuario*/))
+                    menuPrincipal.ShowDialog();
             }
         }
 
@@ -55,5 +62,7 @@ namespace DulceTentacion
         {
 
         }
+
+       
     }
 }

@@ -137,7 +137,7 @@ namespace DulceTentacion
             this.pnlCesta.Controls.Add(this.txtCostoTotal);
             this.pnlCesta.Location = new System.Drawing.Point(617, 79);
             this.pnlCesta.Name = "pnlCesta";
-            this.pnlCesta.Size = new System.Drawing.Size(373, 583);
+            this.pnlCesta.Size = new System.Drawing.Size(331, 583);
             this.pnlCesta.TabIndex = 51;
             // 
             // pnl9
@@ -146,7 +146,7 @@ namespace DulceTentacion
             this.pnl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl9.Location = new System.Drawing.Point(0, 464);
             this.pnl9.Name = "pnl9";
-            this.pnl9.Size = new System.Drawing.Size(373, 58);
+            this.pnl9.Size = new System.Drawing.Size(331, 58);
             this.pnl9.TabIndex = 9;
             // 
             // panel11
@@ -156,7 +156,7 @@ namespace DulceTentacion
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 406);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(373, 58);
+            this.panel11.Size = new System.Drawing.Size(331, 58);
             this.panel11.TabIndex = 8;
             // 
             // pnl8
@@ -165,7 +165,7 @@ namespace DulceTentacion
             this.pnl8.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl8.Location = new System.Drawing.Point(0, 0);
             this.pnl8.Name = "pnl8";
-            this.pnl8.Size = new System.Drawing.Size(373, 60);
+            this.pnl8.Size = new System.Drawing.Size(331, 60);
             this.pnl8.TabIndex = 7;
             // 
             // pnl7
@@ -174,7 +174,7 @@ namespace DulceTentacion
             this.pnl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl7.Location = new System.Drawing.Point(0, 348);
             this.pnl7.Name = "pnl7";
-            this.pnl7.Size = new System.Drawing.Size(373, 58);
+            this.pnl7.Size = new System.Drawing.Size(331, 58);
             this.pnl7.TabIndex = 7;
             // 
             // pnl6
@@ -183,7 +183,7 @@ namespace DulceTentacion
             this.pnl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl6.Location = new System.Drawing.Point(0, 290);
             this.pnl6.Name = "pnl6";
-            this.pnl6.Size = new System.Drawing.Size(373, 58);
+            this.pnl6.Size = new System.Drawing.Size(331, 58);
             this.pnl6.TabIndex = 6;
             // 
             // pnl5
@@ -192,7 +192,7 @@ namespace DulceTentacion
             this.pnl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl5.Location = new System.Drawing.Point(0, 232);
             this.pnl5.Name = "pnl5";
-            this.pnl5.Size = new System.Drawing.Size(373, 58);
+            this.pnl5.Size = new System.Drawing.Size(331, 58);
             this.pnl5.TabIndex = 5;
             // 
             // pnl4
@@ -201,7 +201,7 @@ namespace DulceTentacion
             this.pnl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl4.Location = new System.Drawing.Point(0, 174);
             this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(373, 58);
+            this.pnl4.Size = new System.Drawing.Size(331, 58);
             this.pnl4.TabIndex = 4;
             // 
             // pnl3
@@ -210,7 +210,7 @@ namespace DulceTentacion
             this.pnl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl3.Location = new System.Drawing.Point(0, 116);
             this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(373, 58);
+            this.pnl3.Size = new System.Drawing.Size(331, 58);
             this.pnl3.TabIndex = 4;
             // 
             // pnl2
@@ -219,7 +219,7 @@ namespace DulceTentacion
             this.pnl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl2.Location = new System.Drawing.Point(0, 58);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(373, 58);
+            this.pnl2.Size = new System.Drawing.Size(331, 58);
             this.pnl2.TabIndex = 4;
             // 
             // pnl1
@@ -228,7 +228,7 @@ namespace DulceTentacion
             this.pnl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl1.Location = new System.Drawing.Point(0, 0);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(373, 58);
+            this.pnl1.Size = new System.Drawing.Size(331, 58);
             this.pnl1.TabIndex = 3;
             // 
             // label2
@@ -236,7 +236,7 @@ namespace DulceTentacion
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(319, 549);
+            this.label2.Location = new System.Drawing.Point(277, 549);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 25);
             this.label2.TabIndex = 2;
@@ -247,7 +247,7 @@ namespace DulceTentacion
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 549);
+            this.label1.Location = new System.Drawing.Point(31, 549);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 1;
@@ -257,7 +257,7 @@ namespace DulceTentacion
             // 
             this.txtCostoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoTotal.Location = new System.Drawing.Point(207, 544);
+            this.txtCostoTotal.Location = new System.Drawing.Point(165, 544);
             this.txtCostoTotal.Name = "txtCostoTotal";
             this.txtCostoTotal.Size = new System.Drawing.Size(106, 30);
             this.txtCostoTotal.TabIndex = 0;
@@ -270,7 +270,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1015, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(973, 46);
             this.BarraHorizontal.TabIndex = 52;
             // 
             // btnRegresar
@@ -618,7 +618,7 @@ namespace DulceTentacion
             this.btnMas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMas.Image = global::DulceTentacion.Properties.Resources.IconoMas;
-            this.btnMas.Location = new System.Drawing.Point(910, 48);
+            this.btnMas.Location = new System.Drawing.Point(868, 48);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(80, 30);
             this.btnMas.TabIndex = 75;

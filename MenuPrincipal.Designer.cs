@@ -50,11 +50,11 @@ namespace DulceTentacion
             this.btnAtCliente = new System.Windows.Forms.Button();
             this.btnDesplegable = new System.Windows.Forms.Button();
             this.ContPrincipal = new System.Windows.Forms.Panel();
+            this.PictureBoxImagen = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblUbicacion = new System.Windows.Forms.Label();
             this.btnDarkMode = new System.Windows.Forms.Button();
             this.btnUbicacion = new System.Windows.Forms.PictureBox();
-            this.btnImgUsuario = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnFecha = new System.Windows.Forms.DateTimePicker();
             this.lblDulce = new System.Windows.Forms.Label();
@@ -67,8 +67,8 @@ namespace DulceTentacion
             this.SubPanelReg.SuspendLayout();
             this.SubPanelInv.SuspendLayout();
             this.ContPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUbicacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnImgUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FondoImg)).BeginInit();
             this.SuspendLayout();
@@ -156,7 +156,7 @@ namespace DulceTentacion
             this.btnGenContratos.Name = "btnGenContratos";
             this.btnGenContratos.Size = new System.Drawing.Size(292, 42);
             this.btnGenContratos.TabIndex = 41;
-            this.btnGenContratos.Text = "Generar Contratos";
+            this.btnGenContratos.Text = "Ver Empleados";
             this.btnGenContratos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenContratos.UseVisualStyleBackColor = false;
             this.btnGenContratos.Click += new System.EventHandler(this.btnGenContratos_Click);
@@ -239,7 +239,7 @@ namespace DulceTentacion
             this.btnAlmcFacturas.Name = "btnAlmcFacturas";
             this.btnAlmcFacturas.Size = new System.Drawing.Size(292, 42);
             this.btnAlmcFacturas.TabIndex = 41;
-            this.btnAlmcFacturas.Text = "Almacenar Facturas";
+            this.btnAlmcFacturas.Text = "Gestiones";
             this.btnAlmcFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlmcFacturas.UseVisualStyleBackColor = false;
             this.btnAlmcFacturas.Click += new System.EventHandler(this.btnAlmcFacturas_Click);
@@ -401,11 +401,11 @@ namespace DulceTentacion
             // 
             // ContPrincipal
             // 
+            this.ContPrincipal.Controls.Add(this.PictureBoxImagen);
             this.ContPrincipal.Controls.Add(this.lblUsuario);
             this.ContPrincipal.Controls.Add(this.lblUbicacion);
             this.ContPrincipal.Controls.Add(this.btnDarkMode);
             this.ContPrincipal.Controls.Add(this.btnUbicacion);
-            this.ContPrincipal.Controls.Add(this.btnImgUsuario);
             this.ContPrincipal.Controls.Add(this.pictureBox4);
             this.ContPrincipal.Controls.Add(this.btnFecha);
             this.ContPrincipal.Controls.Add(this.lblDulce);
@@ -418,6 +418,16 @@ namespace DulceTentacion
             this.ContPrincipal.Name = "ContPrincipal";
             this.ContPrincipal.Size = new System.Drawing.Size(1013, 674);
             this.ContPrincipal.TabIndex = 29;
+            // 
+            // PictureBoxImagen
+            // 
+            this.PictureBoxImagen.Image = global::DulceTentacion.Properties.Resources.Icono_Usuario;
+            this.PictureBoxImagen.Location = new System.Drawing.Point(6, 7);
+            this.PictureBoxImagen.Name = "PictureBoxImagen";
+            this.PictureBoxImagen.Size = new System.Drawing.Size(55, 39);
+            this.PictureBoxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxImagen.TabIndex = 46;
+            this.PictureBoxImagen.TabStop = false;
             // 
             // lblUsuario
             // 
@@ -475,20 +485,6 @@ namespace DulceTentacion
             this.btnUbicacion.TabIndex = 42;
             this.btnUbicacion.TabStop = false;
             this.btnUbicacion.Click += new System.EventHandler(this.btnUbicacion_Click);
-            // 
-            // btnImgUsuario
-            // 
-            this.btnImgUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnImgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnImgUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImgUsuario.Image = global::DulceTentacion.Properties.Resources.Icono_Usuario;
-            this.btnImgUsuario.Location = new System.Drawing.Point(6, 6);
-            this.btnImgUsuario.Name = "btnImgUsuario";
-            this.btnImgUsuario.Size = new System.Drawing.Size(55, 39);
-            this.btnImgUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnImgUsuario.TabIndex = 40;
-            this.btnImgUsuario.TabStop = false;
-            this.btnImgUsuario.Click += new System.EventHandler(this.btnImgUsuario_Click);
             // 
             // pictureBox4
             // 
@@ -612,8 +608,8 @@ namespace DulceTentacion
             this.SubPanelInv.ResumeLayout(false);
             this.ContPrincipal.ResumeLayout(false);
             this.ContPrincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUbicacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnImgUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FondoImg)).EndInit();
             this.ResumeLayout(false);
@@ -647,11 +643,11 @@ namespace DulceTentacion
         private System.Windows.Forms.DateTimePicker btnFecha;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox FondoImg;
-        private System.Windows.Forms.PictureBox btnImgUsuario;
         private System.Windows.Forms.PictureBox btnUbicacion;
         private System.Windows.Forms.Button BarraHorizontal;
         private System.Windows.Forms.Label lblUbicacion;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Button btnDarkMode;
+        private System.Windows.Forms.PictureBox PictureBoxImagen;
     }
 }
