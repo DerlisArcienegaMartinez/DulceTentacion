@@ -30,7 +30,6 @@ namespace DulceTentacion
         private void InitializeComponent()
         {
             this.pnlPastelesMenu = new System.Windows.Forms.Panel();
-            this.btnCrearPastel = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -131,7 +130,6 @@ namespace DulceTentacion
             // pnlPastelesMenu
             // 
             this.pnlPastelesMenu.AutoScroll = true;
-            this.pnlPastelesMenu.Controls.Add(this.btnCrearPastel);
             this.pnlPastelesMenu.Controls.Add(this.label4);
             this.pnlPastelesMenu.Controls.Add(this.pictureBox4);
             this.pnlPastelesMenu.Controls.Add(this.label13);
@@ -199,22 +197,6 @@ namespace DulceTentacion
             this.pnlPastelesMenu.Name = "pnlPastelesMenu";
             this.pnlPastelesMenu.Size = new System.Drawing.Size(1013, 674);
             this.pnlPastelesMenu.TabIndex = 0;
-            // 
-            // btnCrearPastel
-            // 
-            this.btnCrearPastel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnCrearPastel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCrearPastel.FlatAppearance.BorderSize = 0;
-            this.btnCrearPastel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearPastel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearPastel.Image = global::DulceTentacion.Properties.Resources.icono_crear_torta;
-            this.btnCrearPastel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearPastel.Location = new System.Drawing.Point(493, 64);
-            this.btnCrearPastel.Name = "btnCrearPastel";
-            this.btnCrearPastel.Size = new System.Drawing.Size(231, 71);
-            this.btnCrearPastel.TabIndex = 228;
-            this.btnCrearPastel.Text = "        Crea tu propio pastel";
-            this.btnCrearPastel.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -344,7 +326,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1628, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1826, 46);
             this.BarraHorizontal.TabIndex = 215;
             // 
             // btnRegresar
@@ -966,7 +948,6 @@ namespace DulceTentacion
         #endregion
 
         private System.Windows.Forms.Panel pnlPastelesMenu;
-        private System.Windows.Forms.Button btnCrearPastel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label13;

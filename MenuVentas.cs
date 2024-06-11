@@ -49,10 +49,8 @@ namespace DulceTentacion
                 BarraHorizontal.BackColor = Color.DimGray;
                 //.BackColor = Color.Black;
                 btnCarrito.BackColor = Color.DimGray;
-                btnCrearPastel.BackColor = Color.DimGray;
 
                 btnCarrito.ForeColor = Color.White;
-                btnCrearPastel.ForeColor = Color.White;
 
 
             }

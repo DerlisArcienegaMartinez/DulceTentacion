@@ -87,11 +87,11 @@
     <Compile Include="Carrito.Designer.cs">
       <DependentUpon>Carrito.cs</DependentUpon>
     </Compile>
-    <Compile Include="CuentaUsuario.cs">
+    <Compile Include="AlmacenInforme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuentaUsuario.Designer.cs">
-      <DependentUpon>CuentaUsuario.cs</DependentUpon>
+    <Compile Include="AlmacenInforme.Designer.cs">
+      <DependentUpon>AlmacenInforme.cs</DependentUpon>
     </Compile>
     <Compile Include="Extras.cs">
       <SubType>Form</SubType>
@@ -104,12 +104,6 @@
     </Compile>
     <Compile Include="InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Marketing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Marketing.Designer.cs">
-      <DependentUpon>Marketing.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -202,11 +196,11 @@
     <Compile Include="SeleccionFoto.Designer.cs">
       <DependentUpon>SeleccionFoto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tarjeta.cs">
+    <Compile Include="Acercade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tarjeta.Designer.cs">
-      <DependentUpon>Tarjeta.cs</DependentUpon>
+    <Compile Include="Acercade.Designer.cs">
+      <DependentUpon>Acercade.cs</DependentUpon>
     </Compile>
     <Compile Include="Ubicacion.cs">
       <SubType>Form</SubType>
@@ -215,11 +209,11 @@
       <DependentUpon>Ubicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
-    <Compile Include="VisualizarProducto.cs">
+    <Compile Include="Informe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisualizarProducto.Designer.cs">
-      <DependentUpon>VisualizarProducto.cs</DependentUpon>
+    <Compile Include="Informe.Designer.cs">
+      <DependentUpon>Informe.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AtencionCliente.resx">
       <DependentUpon>AtencionCliente.cs</DependentUpon>
@@ -230,17 +224,14 @@
     <EmbeddedResource Include="Carrito.resx">
       <DependentUpon>Carrito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CuentaUsuario.resx">
-      <DependentUpon>CuentaUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="AlmacenInforme.resx">
+      <DependentUpon>AlmacenInforme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Extras.resx">
       <DependentUpon>Extras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Marketing.resx">
-      <DependentUpon>Marketing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
@@ -289,14 +280,14 @@
     <EmbeddedResource Include="SeleccionFoto.resx">
       <DependentUpon>SeleccionFoto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tarjeta.resx">
-      <DependentUpon>Tarjeta.cs</DependentUpon>
+    <EmbeddedResource Include="Acercade.resx">
+      <DependentUpon>Acercade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubicacion.resx">
       <DependentUpon>Ubicacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VisualizarProducto.resx">
-      <DependentUpon>VisualizarProducto.cs</DependentUpon>
+    <EmbeddedResource Include="Informe.resx">
+      <DependentUpon>Informe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -782,6 +773,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\QR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acerca.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -426,6 +426,7 @@ namespace DulceTentacion
 
         private void btnAlmacInf_Click(object sender, EventArgs e)
         {
+            abrirconprincipal(new AlmacenInforme());
             hideSubMenu();
         }
 
@@ -508,7 +509,12 @@ namespace DulceTentacion
 
         private void btnInforme_Click(object sender, EventArgs e)
         {
+            abrirconprincipal(new Informe());
+        }
 
+        private void btnAcercade_Click(object sender, EventArgs e)
+        {
+            abrirconprincipal(new Acercade());
         }
     }
 }

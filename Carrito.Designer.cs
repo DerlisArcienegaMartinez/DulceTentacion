@@ -60,7 +60,6 @@ namespace DulceTentacion
             this.label12 = new System.Windows.Forms.Label();
             this.pnlFPago = new System.Windows.Forms.Panel();
             this.btnEfectivo = new System.Windows.Forms.Button();
-            this.btnTarjeta = new System.Windows.Forms.Button();
             this.btnQR = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -115,7 +114,7 @@ namespace DulceTentacion
             this.pnlCesta.Controls.Add(this.label16);
             this.pnlCesta.Location = new System.Drawing.Point(617, 79);
             this.pnlCesta.Name = "pnlCesta";
-            this.pnlCesta.Size = new System.Drawing.Size(372, 534);
+            this.pnlCesta.Size = new System.Drawing.Size(351, 534);
             this.pnlCesta.TabIndex = 51;
             // 
             // label16
@@ -137,7 +136,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1015, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(994, 46);
             this.BarraHorizontal.TabIndex = 52;
             // 
             // btnRegresar
@@ -391,7 +390,6 @@ namespace DulceTentacion
             // 
             this.pnlFPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.pnlFPago.Controls.Add(this.btnEfectivo);
-            this.pnlFPago.Controls.Add(this.btnTarjeta);
             this.pnlFPago.Controls.Add(this.btnQR);
             this.pnlFPago.Controls.Add(this.label14);
             this.pnlFPago.Location = new System.Drawing.Point(12, 459);
@@ -404,7 +402,7 @@ namespace DulceTentacion
             this.btnEfectivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnEfectivo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEfectivo.Location = new System.Drawing.Point(393, 40);
+            this.btnEfectivo.Location = new System.Drawing.Point(308, 40);
             this.btnEfectivo.Name = "btnEfectivo";
             this.btnEfectivo.Size = new System.Drawing.Size(184, 51);
             this.btnEfectivo.TabIndex = 74;
@@ -412,25 +410,12 @@ namespace DulceTentacion
             this.btnEfectivo.UseVisualStyleBackColor = false;
             this.btnEfectivo.Click += new System.EventHandler(this.btnEfectivo_Click);
             // 
-            // btnTarjeta
-            // 
-            this.btnTarjeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnTarjeta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTarjeta.Location = new System.Drawing.Point(204, 40);
-            this.btnTarjeta.Name = "btnTarjeta";
-            this.btnTarjeta.Size = new System.Drawing.Size(184, 51);
-            this.btnTarjeta.TabIndex = 73;
-            this.btnTarjeta.Text = "Tarjeta";
-            this.btnTarjeta.UseVisualStyleBackColor = false;
-            this.btnTarjeta.Click += new System.EventHandler(this.btnTarjeta_Click);
-            // 
             // btnQR
             // 
             this.btnQR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnQR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnQR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQR.Location = new System.Drawing.Point(15, 40);
+            this.btnQR.Location = new System.Drawing.Point(72, 40);
             this.btnQR.Name = "btnQR";
             this.btnQR.Size = new System.Drawing.Size(184, 51);
             this.btnQR.TabIndex = 56;
@@ -465,7 +450,7 @@ namespace DulceTentacion
             this.btnMas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMas.Image = global::DulceTentacion.Properties.Resources.IconoMas;
-            this.btnMas.Location = new System.Drawing.Point(909, 51);
+            this.btnMas.Location = new System.Drawing.Point(888, 51);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(80, 30);
             this.btnMas.TabIndex = 75;
@@ -497,7 +482,7 @@ namespace DulceTentacion
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(912, 628);
+            this.label2.Location = new System.Drawing.Point(891, 628);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 25);
             this.label2.TabIndex = 78;
@@ -508,7 +493,7 @@ namespace DulceTentacion
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(666, 628);
+            this.label1.Location = new System.Drawing.Point(645, 628);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 77;
@@ -518,7 +503,7 @@ namespace DulceTentacion
             // 
             this.txtCostoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoTotal.Location = new System.Drawing.Point(800, 623);
+            this.txtCostoTotal.Location = new System.Drawing.Point(779, 623);
             this.txtCostoTotal.Name = "txtCostoTotal";
             this.txtCostoTotal.Size = new System.Drawing.Size(106, 30);
             this.txtCostoTotal.TabIndex = 76;
@@ -594,7 +579,6 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel pnlFPago;
-        private System.Windows.Forms.Button btnTarjeta;
         private System.Windows.Forms.Button btnQR;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnEfectivo;

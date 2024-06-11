@@ -7,28 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.IO;
 namespace DulceTentacion
 {
-    public partial class Tarjeta : Form
+    public partial class AlmacenInforme : Form
     {
-        public Tarjeta()
+
+        public AlmacenInforme()
         {
             InitializeComponent();
             ApplyColors(); // Aplicar los colores al abrir el formulario
-            MenuPrincipal.DarkModeChanged += ApplyColors;
+            MenuPrincipal.DarkModeChanged += ApplyColors;  
         }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        // Método para aplicar colores oscuros si el modo oscuro está activo
         private void ApplyDarkModeIfNeeded()
         {
             if (MenuPrincipal.DarkModeActive)
             {
-                this.BackColor = Color.DarkSlateGray;
-                btnRegresar.BackColor = Color.DimGray;
-                btnAceptar.BackColor = Color.DimGray;
+                this.BackColor = Color.Black;
+                BarraHorizontall.BackColor = Color.DimGray;
+                panel1.BackColor = Color.DimGray;
+                button1.BackColor = Color.DimGray;
             }
-
         }
 
         // Método para aplicar los colores al abrir el formulario
@@ -38,9 +45,10 @@ namespace DulceTentacion
             ApplyDarkModeIfNeeded();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
+        private void CuentaUsuario_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
+
     }
 }

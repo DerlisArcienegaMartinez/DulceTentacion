@@ -26,9 +26,7 @@ namespace DulceTentacion
             {
                 this.BackColor = Color.Black;
                 BarraHorizontal.BackColor = Color.DimGray;
-                btnCrearPastel.BackColor = Color.DimGray;
-                
-                btnCrearPastel.ForeColor = Color.White; // Configurar color de texto del botón en modo oscuro
+               
                 
             }
            

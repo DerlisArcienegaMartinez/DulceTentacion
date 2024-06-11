@@ -30,14 +30,13 @@ namespace DulceTentacion
         private void InitializeComponent()
         {
             this.pnlDatos = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtCU = new System.Windows.Forms.TextBox();
-            this.CBGenero = new System.Windows.Forms.ComboBox();
+            this.txtApPaterno = new System.Windows.Forms.TextBox();
+            this.txtApMaterno = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCI = new System.Windows.Forms.TextBox();
+            this.txtGenero = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.CBSufijos = new System.Windows.Forms.ComboBox();
             this.CBCorreos = new System.Windows.Forms.ComboBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -45,7 +44,7 @@ namespace DulceTentacion
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.FlowLayoutPanel();
@@ -66,30 +65,30 @@ namespace DulceTentacion
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CBHorarioo = new System.Windows.Forms.ComboBox();
             this.CBHorario = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtHoraS = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHoraIn = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.txtFin = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtInicio = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtPuesto = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pnlOpcional = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.txtNLicencia = new System.Windows.Forms.TextBox();
+            this.txtLicencia = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNMatricula = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtMovilidad = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlDatos.SuspendLayout();
@@ -102,14 +101,13 @@ namespace DulceTentacion
             // pnlDatos
             // 
             this.pnlDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlDatos.Controls.Add(this.textBox5);
-            this.pnlDatos.Controls.Add(this.textBox4);
-            this.pnlDatos.Controls.Add(this.textBox2);
-            this.pnlDatos.Controls.Add(this.txtCU);
-            this.pnlDatos.Controls.Add(this.CBGenero);
+            this.pnlDatos.Controls.Add(this.txtApPaterno);
+            this.pnlDatos.Controls.Add(this.txtApMaterno);
+            this.pnlDatos.Controls.Add(this.txtNombre);
+            this.pnlDatos.Controls.Add(this.txtCI);
+            this.pnlDatos.Controls.Add(this.txtGenero);
             this.pnlDatos.Controls.Add(this.label10);
             this.pnlDatos.Controls.Add(this.label9);
-            this.pnlDatos.Controls.Add(this.CBSufijos);
             this.pnlDatos.Controls.Add(this.CBCorreos);
             this.pnlDatos.Controls.Add(this.txtCelular);
             this.pnlDatos.Controls.Add(this.txtCorreo);
@@ -117,7 +115,7 @@ namespace DulceTentacion
             this.pnlDatos.Controls.Add(this.label8);
             this.pnlDatos.Controls.Add(this.label6);
             this.pnlDatos.Controls.Add(this.label4);
-            this.pnlDatos.Controls.Add(this.textBox3);
+            this.pnlDatos.Controls.Add(this.txtDireccion);
             this.pnlDatos.Controls.Add(this.label3);
             this.pnlDatos.Controls.Add(this.label2);
             this.pnlDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,44 +126,44 @@ namespace DulceTentacion
             this.pnlDatos.TabStop = false;
             this.pnlDatos.Text = "Registrar Personal";
             // 
-            // textBox5
+            // txtApPaterno
             // 
-            this.textBox5.Location = new System.Drawing.Point(168, 113);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(228, 30);
-            this.textBox5.TabIndex = 70;
+            this.txtApPaterno.Location = new System.Drawing.Point(168, 113);
+            this.txtApPaterno.Name = "txtApPaterno";
+            this.txtApPaterno.Size = new System.Drawing.Size(228, 30);
+            this.txtApPaterno.TabIndex = 70;
             // 
-            // textBox4
+            // txtApMaterno
             // 
-            this.textBox4.Location = new System.Drawing.Point(583, 111);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(236, 30);
-            this.textBox4.TabIndex = 69;
+            this.txtApMaterno.Location = new System.Drawing.Point(583, 111);
+            this.txtApMaterno.Name = "txtApMaterno";
+            this.txtApMaterno.Size = new System.Drawing.Size(236, 30);
+            this.txtApMaterno.TabIndex = 69;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 30);
-            this.textBox2.TabIndex = 68;
+            this.txtNombre.Location = new System.Drawing.Point(103, 77);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(249, 30);
+            this.txtNombre.TabIndex = 68;
             // 
-            // txtCU
+            // txtCI
             // 
-            this.txtCU.Location = new System.Drawing.Point(102, 41);
-            this.txtCU.Name = "txtCU";
-            this.txtCU.Size = new System.Drawing.Size(138, 30);
-            this.txtCU.TabIndex = 67;
+            this.txtCI.Location = new System.Drawing.Point(102, 41);
+            this.txtCI.Name = "txtCI";
+            this.txtCI.Size = new System.Drawing.Size(138, 30);
+            this.txtCI.TabIndex = 67;
             // 
-            // CBGenero
+            // txtGenero
             // 
-            this.CBGenero.FormattingEnabled = true;
-            this.CBGenero.Items.AddRange(new object[] {
+            this.txtGenero.FormattingEnabled = true;
+            this.txtGenero.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.CBGenero.Location = new System.Drawing.Point(502, 65);
-            this.CBGenero.Name = "CBGenero";
-            this.CBGenero.Size = new System.Drawing.Size(142, 33);
-            this.CBGenero.TabIndex = 113;
+            this.txtGenero.Location = new System.Drawing.Point(502, 65);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.Size = new System.Drawing.Size(142, 33);
+            this.txtGenero.TabIndex = 113;
             // 
             // label10
             // 
@@ -187,25 +185,6 @@ namespace DulceTentacion
             this.label9.TabIndex = 112;
             this.label9.Text = "Género:";
             // 
-            // CBSufijos
-            // 
-            this.CBSufijos.FormattingEnabled = true;
-            this.CBSufijos.Items.AddRange(new object[] {
-            "+54",
-            "+591",
-            "+55",
-            "+56",
-            "+57",
-            "+593",
-            "+595",
-            "+51",
-            "+598",
-            "+58"});
-            this.CBSufijos.Location = new System.Drawing.Point(362, 23);
-            this.CBSufijos.Name = "CBSufijos";
-            this.CBSufijos.Size = new System.Drawing.Size(68, 33);
-            this.CBSufijos.TabIndex = 65;
-            // 
             // CBCorreos
             // 
             this.CBCorreos.FormattingEnabled = true;
@@ -222,9 +201,9 @@ namespace DulceTentacion
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(434, 23);
+            this.txtCelular.Location = new System.Drawing.Point(362, 23);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(134, 30);
+            this.txtCelular.Size = new System.Drawing.Size(201, 30);
             this.txtCelular.TabIndex = 63;
             // 
             // txtCorreo
@@ -272,13 +251,13 @@ namespace DulceTentacion
             this.label4.TabIndex = 8;
             this.label4.Text = "Apellido paterno:";
             // 
-            // textBox3
+            // txtDireccion
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(124, 150);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(320, 23);
-            this.textBox3.TabIndex = 6;
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccion.Location = new System.Drawing.Point(124, 150);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(320, 23);
+            this.txtDireccion.TabIndex = 6;
             // 
             // label3
             // 
@@ -306,7 +285,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1823, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(2021, 46);
             this.BarraHorizontal.TabIndex = 53;
             // 
             // btnRegresar
@@ -425,6 +404,7 @@ namespace DulceTentacion
             this.btnRegistrar.TabIndex = 108;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnCancelar
             // 
@@ -447,19 +427,19 @@ namespace DulceTentacion
             this.pnlContrato.Controls.Add(this.label19);
             this.pnlContrato.Controls.Add(this.label18);
             this.pnlContrato.Controls.Add(this.label16);
-            this.pnlContrato.Controls.Add(this.textBox7);
+            this.pnlContrato.Controls.Add(this.txtSalario);
             this.pnlContrato.Controls.Add(this.label15);
-            this.pnlContrato.Controls.Add(this.comboBox2);
+            this.pnlContrato.Controls.Add(this.CBHorarioo);
             this.pnlContrato.Controls.Add(this.CBHorario);
-            this.pnlContrato.Controls.Add(this.textBox6);
+            this.pnlContrato.Controls.Add(this.txtHoraS);
             this.pnlContrato.Controls.Add(this.label14);
-            this.pnlContrato.Controls.Add(this.textBox1);
+            this.pnlContrato.Controls.Add(this.txtHoraIn);
             this.pnlContrato.Controls.Add(this.label13);
-            this.pnlContrato.Controls.Add(this.dateTimePicker2);
+            this.pnlContrato.Controls.Add(this.txtFin);
             this.pnlContrato.Controls.Add(this.label1);
-            this.pnlContrato.Controls.Add(this.dateTimePicker1);
+            this.pnlContrato.Controls.Add(this.txtInicio);
             this.pnlContrato.Controls.Add(this.label12);
-            this.pnlContrato.Controls.Add(this.comboBox1);
+            this.pnlContrato.Controls.Add(this.txtPuesto);
             this.pnlContrato.Controls.Add(this.label11);
             this.pnlContrato.Location = new System.Drawing.Point(15, 891);
             this.pnlContrato.Name = "pnlContrato";
@@ -510,12 +490,12 @@ namespace DulceTentacion
             this.label16.TabIndex = 128;
             this.label16.Text = "Bs.";
             // 
-            // textBox7
+            // txtSalario
             // 
-            this.textBox7.Location = new System.Drawing.Point(101, 127);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(49, 22);
-            this.textBox7.TabIndex = 127;
+            this.txtSalario.Location = new System.Drawing.Point(101, 127);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(49, 22);
+            this.txtSalario.TabIndex = 127;
             // 
             // label15
             // 
@@ -527,16 +507,16 @@ namespace DulceTentacion
             this.label15.TabIndex = 126;
             this.label15.Text = "Salario:";
             // 
-            // comboBox2
+            // CBHorarioo
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CBHorarioo.FormattingEnabled = true;
+            this.CBHorarioo.Items.AddRange(new object[] {
             "AM.",
             "PM."});
-            this.comboBox2.Location = new System.Drawing.Point(211, 84);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(66, 24);
-            this.comboBox2.TabIndex = 125;
+            this.CBHorarioo.Location = new System.Drawing.Point(211, 84);
+            this.CBHorarioo.Name = "CBHorarioo";
+            this.CBHorarioo.Size = new System.Drawing.Size(66, 24);
+            this.CBHorarioo.TabIndex = 125;
             // 
             // CBHorario
             // 
@@ -549,12 +529,12 @@ namespace DulceTentacion
             this.CBHorario.Size = new System.Drawing.Size(66, 24);
             this.CBHorario.TabIndex = 124;
             // 
-            // textBox6
+            // txtHoraS
             // 
-            this.textBox6.Location = new System.Drawing.Point(156, 84);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(49, 22);
-            this.textBox6.TabIndex = 123;
+            this.txtHoraS.Location = new System.Drawing.Point(156, 84);
+            this.txtHoraS.Name = "txtHoraS";
+            this.txtHoraS.Size = new System.Drawing.Size(49, 22);
+            this.txtHoraS.TabIndex = 123;
             // 
             // label14
             // 
@@ -566,12 +546,12 @@ namespace DulceTentacion
             this.label14.TabIndex = 122;
             this.label14.Text = "Hora de salida:";
             // 
-            // textBox1
+            // txtHoraIn
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(49, 22);
-            this.textBox1.TabIndex = 121;
+            this.txtHoraIn.Location = new System.Drawing.Point(167, 56);
+            this.txtHoraIn.Name = "txtHoraIn";
+            this.txtHoraIn.Size = new System.Drawing.Size(49, 22);
+            this.txtHoraIn.TabIndex = 121;
             // 
             // label13
             // 
@@ -583,14 +563,14 @@ namespace DulceTentacion
             this.label13.TabIndex = 120;
             this.label13.Text = "Hora de entrada:";
             // 
-            // dateTimePicker2
+            // txtFin
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(354, 109);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(380, 28);
-            this.dateTimePicker2.TabIndex = 119;
+            this.txtFin.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFin.Location = new System.Drawing.Point(354, 109);
+            this.txtFin.Name = "txtFin";
+            this.txtFin.Size = new System.Drawing.Size(380, 28);
+            this.txtFin.TabIndex = 119;
             // 
             // label1
             // 
@@ -602,14 +582,14 @@ namespace DulceTentacion
             this.label1.TabIndex = 118;
             this.label1.Text = "Fin de contrato";
             // 
-            // dateTimePicker1
+            // txtInicio
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(354, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(380, 28);
-            this.dateTimePicker1.TabIndex = 117;
+            this.txtInicio.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInicio.Location = new System.Drawing.Point(354, 40);
+            this.txtInicio.Name = "txtInicio";
+            this.txtInicio.Size = new System.Drawing.Size(380, 28);
+            this.txtInicio.TabIndex = 117;
             // 
             // label12
             // 
@@ -621,19 +601,19 @@ namespace DulceTentacion
             this.label12.TabIndex = 116;
             this.label12.Text = "Inicio de contrato";
             // 
-            // comboBox1
+            // txtPuesto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.txtPuesto.FormattingEnabled = true;
+            this.txtPuesto.Items.AddRange(new object[] {
             "Gerente",
             "Chef/Repostero",
             "Mesero",
             "Repartidor",
             "Personal Limpieza"});
-            this.comboBox1.Location = new System.Drawing.Point(108, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 24);
-            this.comboBox1.TabIndex = 115;
+            this.txtPuesto.Location = new System.Drawing.Point(108, 16);
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(197, 24);
+            this.txtPuesto.TabIndex = 115;
             // 
             // label11
             // 
@@ -649,14 +629,14 @@ namespace DulceTentacion
             // 
             this.pnlOpcional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.pnlOpcional.Controls.Add(this.label22);
-            this.pnlOpcional.Controls.Add(this.textBox10);
-            this.pnlOpcional.Controls.Add(this.comboBox4);
+            this.pnlOpcional.Controls.Add(this.txtNLicencia);
+            this.pnlOpcional.Controls.Add(this.txtLicencia);
             this.pnlOpcional.Controls.Add(this.label17);
-            this.pnlOpcional.Controls.Add(this.textBox9);
+            this.pnlOpcional.Controls.Add(this.txtNMatricula);
             this.pnlOpcional.Controls.Add(this.label21);
-            this.pnlOpcional.Controls.Add(this.comboBox3);
+            this.pnlOpcional.Controls.Add(this.txtMovilidad);
             this.pnlOpcional.Controls.Add(this.label20);
-            this.pnlOpcional.Controls.Add(this.textBox8);
+            this.pnlOpcional.Controls.Add(this.txtDescripcion);
             this.pnlOpcional.Location = new System.Drawing.Point(782, 891);
             this.pnlOpcional.Name = "pnlOpcional";
             this.pnlOpcional.Size = new System.Drawing.Size(413, 203);
@@ -672,23 +652,23 @@ namespace DulceTentacion
             this.label22.TabIndex = 120;
             this.label22.Text = "Licencia:";
             // 
-            // textBox10
+            // txtNLicencia
             // 
-            this.textBox10.Location = new System.Drawing.Point(142, 53);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(141, 22);
-            this.textBox10.TabIndex = 119;
+            this.txtNLicencia.Location = new System.Drawing.Point(142, 53);
+            this.txtNLicencia.Name = "txtNLicencia";
+            this.txtNLicencia.Size = new System.Drawing.Size(141, 22);
+            this.txtNLicencia.TabIndex = 119;
             // 
-            // comboBox4
+            // txtLicencia
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.txtLicencia.FormattingEnabled = true;
+            this.txtLicencia.Items.AddRange(new object[] {
             "Si",
             "No"});
-            this.comboBox4.Location = new System.Drawing.Point(321, 20);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(76, 24);
-            this.comboBox4.TabIndex = 118;
+            this.txtLicencia.Location = new System.Drawing.Point(321, 20);
+            this.txtLicencia.Name = "txtLicencia";
+            this.txtLicencia.Size = new System.Drawing.Size(76, 24);
+            this.txtLicencia.TabIndex = 118;
             // 
             // label17
             // 
@@ -700,12 +680,12 @@ namespace DulceTentacion
             this.label17.TabIndex = 117;
             this.label17.Text = "N° Licencia:";
             // 
-            // textBox9
+            // txtNMatricula
             // 
-            this.textBox9.Location = new System.Drawing.Point(142, 86);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(141, 22);
-            this.textBox9.TabIndex = 116;
+            this.txtNMatricula.Location = new System.Drawing.Point(142, 86);
+            this.txtNMatricula.Name = "txtNMatricula";
+            this.txtNMatricula.Size = new System.Drawing.Size(141, 22);
+            this.txtNMatricula.TabIndex = 116;
             // 
             // label21
             // 
@@ -717,16 +697,16 @@ namespace DulceTentacion
             this.label21.TabIndex = 115;
             this.label21.Text = "N° Matricula:";
             // 
-            // comboBox3
+            // txtMovilidad
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.txtMovilidad.FormattingEnabled = true;
+            this.txtMovilidad.Items.AddRange(new object[] {
             "Si",
             "No"});
-            this.comboBox3.Location = new System.Drawing.Point(122, 17);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(76, 24);
-            this.comboBox3.TabIndex = 114;
+            this.txtMovilidad.Location = new System.Drawing.Point(122, 17);
+            this.txtMovilidad.Name = "txtMovilidad";
+            this.txtMovilidad.Size = new System.Drawing.Size(76, 24);
+            this.txtMovilidad.TabIndex = 114;
             // 
             // label20
             // 
@@ -738,14 +718,14 @@ namespace DulceTentacion
             this.label20.TabIndex = 70;
             this.label20.Text = "Movilidad:";
             // 
-            // textBox8
+            // txtDescripcion
             // 
-            this.textBox8.Location = new System.Drawing.Point(17, 114);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(380, 79);
-            this.textBox8.TabIndex = 69;
-            this.textBox8.Text = "Describe tu experiencia laboral";
+            this.txtDescripcion.Location = new System.Drawing.Point(17, 114);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(380, 79);
+            this.txtDescripcion.TabIndex = 69;
+            this.txtDescripcion.Text = "Describe tu experiencia laboral";
             // 
             // pictureBox1
             // 
@@ -807,7 +787,7 @@ namespace DulceTentacion
         #endregion
 
         private System.Windows.Forms.GroupBox pnlDatos;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -825,34 +805,33 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.ComboBox CBSufijos;
         private System.Windows.Forms.ComboBox CBCorreos;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txtCU;
+        private System.Windows.Forms.TextBox txtApPaterno;
+        private System.Windows.Forms.TextBox txtApMaterno;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCI;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox CBGenero;
+        private System.Windows.Forms.ComboBox txtGenero;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel pnlContrato;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtHoraS;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHoraIn;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker txtFin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtInicio;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txtPuesto;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CBHorarioo;
         private System.Windows.Forms.ComboBox CBHorario;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtNomUsuario;
@@ -860,14 +839,14 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel pnlOpcional;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox txtNLicencia;
+        private System.Windows.Forms.ComboBox txtLicencia;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNMatricula;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox txtMovilidad;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Panel panel1;
     }
 }

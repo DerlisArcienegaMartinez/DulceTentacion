@@ -34,7 +34,6 @@ namespace DulceTentacion
                 btnEnviar.BackColor = Color.DimGray;
                 btnQR.BackColor = Color.DimGray;
                 btnEfectivo.BackColor = Color.DimGray;
-                btnTarjeta.BackColor = Color.DimGray;
                 pnlCesta.BackColor = Color.DimGray;
 
             }
@@ -77,7 +76,7 @@ namespace DulceTentacion
 
         private void btnTarjeta_Click(object sender, EventArgs e)
         {
-            using (Tarjeta tarjeta = new Tarjeta())
+            using (Acercade tarjeta = new Acercade())
                 tarjeta.ShowDialog();
         }
     }

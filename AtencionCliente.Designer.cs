@@ -55,7 +55,6 @@ namespace DulceTentacion
             this.btnPorciones = new System.Windows.Forms.Button();
             this.btnTPersonal = new System.Windows.Forms.Button();
             this.btnPasteles = new System.Windows.Forms.Button();
-            this.btnCrearPastel = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
@@ -106,7 +105,6 @@ namespace DulceTentacion
             this.contAtCliente.Controls.Add(this.btnPorciones);
             this.contAtCliente.Controls.Add(this.btnTPersonal);
             this.contAtCliente.Controls.Add(this.btnPasteles);
-            this.contAtCliente.Controls.Add(this.btnCrearPastel);
             this.contAtCliente.Controls.Add(this.pictureBox5);
             this.contAtCliente.Controls.Add(this.btnCancelar);
             this.contAtCliente.Controls.Add(this.btnEnviar);
@@ -318,7 +316,7 @@ namespace DulceTentacion
             // btnMesas
             // 
             this.btnMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnMesas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMesas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnMesas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMesas.FlatAppearance.BorderSize = 10;
             this.btnMesas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -394,22 +392,6 @@ namespace DulceTentacion
             this.btnPasteles.Text = "Pasteles";
             this.btnPasteles.UseVisualStyleBackColor = false;
             this.btnPasteles.Click += new System.EventHandler(this.btnPasteles_Click);
-            // 
-            // btnCrearPastel
-            // 
-            this.btnCrearPastel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnCrearPastel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCrearPastel.FlatAppearance.BorderSize = 0;
-            this.btnCrearPastel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearPastel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearPastel.Image = global::DulceTentacion.Properties.Resources.icono_crear_torta;
-            this.btnCrearPastel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearPastel.Location = new System.Drawing.Point(507, 55);
-            this.btnCrearPastel.Name = "btnCrearPastel";
-            this.btnCrearPastel.Size = new System.Drawing.Size(231, 71);
-            this.btnCrearPastel.TabIndex = 181;
-            this.btnCrearPastel.Text = "        Crea tu propio pastel";
-            this.btnCrearPastel.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
             // 
@@ -662,7 +644,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnAtras);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1978, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(2358, 46);
             this.BarraHorizontal.TabIndex = 169;
             // 
             // btnAtras
@@ -723,7 +705,6 @@ namespace DulceTentacion
         private System.Windows.Forms.PictureBox PR1;
         private System.Windows.Forms.PictureBox PR2;
         private System.Windows.Forms.PictureBox PR3;
-        private System.Windows.Forms.Button btnCrearPastel;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label10;

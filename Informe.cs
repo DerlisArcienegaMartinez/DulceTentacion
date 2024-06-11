@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace DulceTentacion
 {
-    public partial class PastelPersonalizado : Form
+    public partial class Informe : Form
     {
-        public PastelPersonalizado()
+
+        public Informe()
         {
             InitializeComponent();
-            ApplyColors();
+            ApplyColors(); // Aplicar los colores al abrir el formulario
             MenuPrincipal.DarkModeChanged += ApplyColors;
+
         }
 
         // Método para aplicar colores oscuros si el modo oscuro está activo
@@ -26,8 +28,11 @@ namespace DulceTentacion
             {
                 this.BackColor = Color.Black;
                 BarraHorizontal.BackColor = Color.DimGray;
-               
+                button1.BackColor = Color.DimGray;
+                textBox1.BackColor = Color.DimGray;
             }
+            
+       
         }
 
         // Método para aplicar los colores al abrir el formulario
@@ -36,9 +41,15 @@ namespace DulceTentacion
             // Llamar al método para aplicar el modo oscuro si es necesario
             ApplyDarkModeIfNeeded();
         }
+
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void VisualizarProducto_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

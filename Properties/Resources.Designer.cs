@@ -63,6 +63,16 @@ namespace DulceTentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Acerca {
+            get {
+                object obj = ResourceManager.GetObject("Acerca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AguaBotella1 {
             get {
                 object obj = ResourceManager.GetObject("AguaBotella1", resourceCulture);

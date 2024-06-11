@@ -117,4 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>En Dulce Sensación nos dedicamos a ofrecerte
+lo mejor de repostería para que cada momento sea una experiencia
+dulce e inolvidable. Desde nuestros exquisitos pasteles hasta nuestros
+deliciosos postres, nos esforzamos por deleitar tu paladar y hacer
+de cada visita una experiencia especial.</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Pasteles personalizados, una variedad de postres, productos frescos 
+y de calidad, atención personalizada.
+
+Nuestro equipo amable y delicado está aqui para ayuadrte a 
+elegir el postre perfecto y hacer que tu experiencia sea excepcional.</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Somos un equipo apasionado por crear dulzuras que llenen de alegría
+y sabor cada ocasión. Con años de experiencia en el arte de la repostería.
+nos enorgullece ofrecerte productos frescos, elaborados con 
+ingredientes de la más alta calidad y con un toque de creatividad
+en cada receta</value>
+  </data>
 </root>

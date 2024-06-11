@@ -56,7 +56,6 @@ namespace DulceTentacion
             this.label10 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCrearPastel = new System.Windows.Forms.Button();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
@@ -114,7 +113,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(1595, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1789, 46);
             this.BarraHorizontal.TabIndex = 1;
             // 
             // btnRegresar
@@ -404,22 +403,6 @@ namespace DulceTentacion
             this.panel1.Size = new System.Drawing.Size(1207, 43);
             this.panel1.TabIndex = 162;
             // 
-            // btnCrearPastel
-            // 
-            this.btnCrearPastel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnCrearPastel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCrearPastel.FlatAppearance.BorderSize = 0;
-            this.btnCrearPastel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearPastel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearPastel.Image = global::DulceTentacion.Properties.Resources.icono_crear_torta;
-            this.btnCrearPastel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearPastel.Location = new System.Drawing.Point(967, 52);
-            this.btnCrearPastel.Name = "btnCrearPastel";
-            this.btnCrearPastel.Size = new System.Drawing.Size(231, 71);
-            this.btnCrearPastel.TabIndex = 163;
-            this.btnCrearPastel.Text = "        Crea tu propio pastel";
-            this.btnCrearPastel.UseVisualStyleBackColor = false;
-            // 
             // pictureBox19
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -703,7 +686,6 @@ namespace DulceTentacion
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(1013, 674);
-            this.Controls.Add(this.btnCrearPastel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox19);
@@ -838,6 +820,5 @@ namespace DulceTentacion
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCrearPastel;
     }
 }

@@ -67,7 +67,6 @@ namespace DulceTentacion
                 btnCancelar.BackColor = Color.DimGray;
                 btnEnviar.BackColor = Color.DimGray;
                 btnMesas.BackColor = Color.DimGray;
-                btnCrearPastel.BackColor = Color.DimGray;
                 pnlAtender.BackColor = Color.Black;
                 pnlPersonalizar.BackColor = Color.Black;
                 pnlProdSelect.BackColor = Color.Black;
@@ -79,7 +78,6 @@ namespace DulceTentacion
                 btnCancelar.ForeColor = Color.  White;
                 btnEnviar.ForeColor = Color.White;
                 btnMesas.ForeColor = Color.White;
-                btnCrearPastel.ForeColor = Color.White;
                 pnlPersonalizar.ForeColor = Color.White;
                 PR1.BackColor = Color.LightCyan;
                 PR2.BackColor = Color.LightCyan;
