@@ -32,24 +32,11 @@ namespace DulceTentacion
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pnlCesta = new System.Windows.Forms.Panel();
-            this.pnl9 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.pnl8 = new System.Windows.Forms.Panel();
-            this.pnl7 = new System.Windows.Forms.Panel();
-            this.pnl6 = new System.Windows.Forms.Panel();
-            this.pnl5 = new System.Windows.Forms.Panel();
-            this.pnl4 = new System.Windows.Forms.Panel();
-            this.pnl3 = new System.Windows.Forms.Panel();
-            this.pnl2 = new System.Windows.Forms.Panel();
-            this.pnl1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCostoTotal = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.BarraHorizontal = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pnlDPersonal = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.CBSufijos = new System.Windows.Forms.ComboBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -80,8 +67,10 @@ namespace DulceTentacion
             this.btnMas = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCostoTotal = new System.Windows.Forms.TextBox();
             this.pnlCesta.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.BarraHorizontal.SuspendLayout();
             this.pnlDPersonal.SuspendLayout();
             this.pnlDRecojo.SuspendLayout();
@@ -123,144 +112,22 @@ namespace DulceTentacion
             this.pnlCesta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlCesta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlCesta.Controls.Add(this.pnl9);
-            this.pnlCesta.Controls.Add(this.panel11);
-            this.pnlCesta.Controls.Add(this.pnl7);
-            this.pnlCesta.Controls.Add(this.pnl6);
-            this.pnlCesta.Controls.Add(this.pnl5);
-            this.pnlCesta.Controls.Add(this.pnl4);
-            this.pnlCesta.Controls.Add(this.pnl3);
-            this.pnlCesta.Controls.Add(this.pnl2);
-            this.pnlCesta.Controls.Add(this.pnl1);
-            this.pnlCesta.Controls.Add(this.label2);
-            this.pnlCesta.Controls.Add(this.label1);
-            this.pnlCesta.Controls.Add(this.txtCostoTotal);
+            this.pnlCesta.Controls.Add(this.label16);
             this.pnlCesta.Location = new System.Drawing.Point(617, 79);
             this.pnlCesta.Name = "pnlCesta";
-            this.pnlCesta.Size = new System.Drawing.Size(331, 583);
+            this.pnlCesta.Size = new System.Drawing.Size(372, 534);
             this.pnlCesta.TabIndex = 51;
             // 
-            // pnl9
+            // label16
             // 
-            this.pnl9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl9.Location = new System.Drawing.Point(0, 464);
-            this.pnl9.Name = "pnl9";
-            this.pnl9.Size = new System.Drawing.Size(331, 58);
-            this.pnl9.TabIndex = 9;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel11.Controls.Add(this.pnl8);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 406);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(331, 58);
-            this.panel11.TabIndex = 8;
-            // 
-            // pnl8
-            // 
-            this.pnl8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl8.Location = new System.Drawing.Point(0, 0);
-            this.pnl8.Name = "pnl8";
-            this.pnl8.Size = new System.Drawing.Size(331, 60);
-            this.pnl8.TabIndex = 7;
-            // 
-            // pnl7
-            // 
-            this.pnl7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl7.Location = new System.Drawing.Point(0, 348);
-            this.pnl7.Name = "pnl7";
-            this.pnl7.Size = new System.Drawing.Size(331, 58);
-            this.pnl7.TabIndex = 7;
-            // 
-            // pnl6
-            // 
-            this.pnl6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl6.Location = new System.Drawing.Point(0, 290);
-            this.pnl6.Name = "pnl6";
-            this.pnl6.Size = new System.Drawing.Size(331, 58);
-            this.pnl6.TabIndex = 6;
-            // 
-            // pnl5
-            // 
-            this.pnl5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl5.Location = new System.Drawing.Point(0, 232);
-            this.pnl5.Name = "pnl5";
-            this.pnl5.Size = new System.Drawing.Size(331, 58);
-            this.pnl5.TabIndex = 5;
-            // 
-            // pnl4
-            // 
-            this.pnl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl4.Location = new System.Drawing.Point(0, 174);
-            this.pnl4.Name = "pnl4";
-            this.pnl4.Size = new System.Drawing.Size(331, 58);
-            this.pnl4.TabIndex = 4;
-            // 
-            // pnl3
-            // 
-            this.pnl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl3.Location = new System.Drawing.Point(0, 116);
-            this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(331, 58);
-            this.pnl3.TabIndex = 4;
-            // 
-            // pnl2
-            // 
-            this.pnl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl2.Location = new System.Drawing.Point(0, 58);
-            this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(331, 58);
-            this.pnl2.TabIndex = 4;
-            // 
-            // pnl1
-            // 
-            this.pnl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl1.Location = new System.Drawing.Point(0, 0);
-            this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(331, 58);
-            this.pnl1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(277, 549);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Bs.";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 549);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Costo Total:";
-            // 
-            // txtCostoTotal
-            // 
-            this.txtCostoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoTotal.Location = new System.Drawing.Point(165, 544);
-            this.txtCostoTotal.Name = "txtCostoTotal";
-            this.txtCostoTotal.Size = new System.Drawing.Size(106, 30);
-            this.txtCostoTotal.TabIndex = 0;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(153, 236);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(182, 25);
+            this.label16.TabIndex = 79;
+            this.label16.Text = "Su cesta esta vacia";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BarraHorizontal
             // 
@@ -270,7 +137,7 @@ namespace DulceTentacion
             this.BarraHorizontal.Controls.Add(this.btnRegresar);
             this.BarraHorizontal.Location = new System.Drawing.Point(0, 0);
             this.BarraHorizontal.Name = "BarraHorizontal";
-            this.BarraHorizontal.Size = new System.Drawing.Size(973, 46);
+            this.BarraHorizontal.Size = new System.Drawing.Size(1015, 46);
             this.BarraHorizontal.TabIndex = 52;
             // 
             // btnRegresar
@@ -293,7 +160,6 @@ namespace DulceTentacion
             // 
             this.pnlDPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.pnlDPersonal.Controls.Add(this.label8);
-            this.pnlDPersonal.Controls.Add(this.CBSufijos);
             this.pnlDPersonal.Controls.Add(this.txtCelular);
             this.pnlDPersonal.Controls.Add(this.txtDomicilio);
             this.pnlDPersonal.Controls.Add(this.label6);
@@ -319,30 +185,11 @@ namespace DulceTentacion
             this.label8.TabIndex = 3;
             this.label8.Text = "Datos Personales";
             // 
-            // CBSufijos
-            // 
-            this.CBSufijos.FormattingEnabled = true;
-            this.CBSufijos.Items.AddRange(new object[] {
-            "+54",
-            "+591",
-            "+55",
-            "+56",
-            "+57",
-            "+593",
-            "+595",
-            "+51",
-            "+598",
-            "+58"});
-            this.CBSufijos.Location = new System.Drawing.Point(315, 47);
-            this.CBSufijos.Name = "CBSufijos";
-            this.CBSufijos.Size = new System.Drawing.Size(68, 24);
-            this.CBSufijos.TabIndex = 70;
-            // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(389, 47);
+            this.txtCelular.Location = new System.Drawing.Point(329, 47);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(134, 22);
+            this.txtCelular.Size = new System.Drawing.Size(146, 22);
             this.txtCelular.TabIndex = 69;
             // 
             // txtDomicilio
@@ -356,7 +203,7 @@ namespace DulceTentacion
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(249, 49);
+            this.label6.Location = new System.Drawing.Point(263, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 18);
             this.label6.TabIndex = 63;
@@ -487,9 +334,9 @@ namespace DulceTentacion
             this.label10.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(22, 109);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 20);
+            this.label10.Size = new System.Drawing.Size(138, 20);
             this.label10.TabIndex = 43;
-            this.label10.Text = "Fecha de recojo:";
+            this.label10.Text = "Fecha de entrega:";
             // 
             // CBHorario
             // 
@@ -526,9 +373,9 @@ namespace DulceTentacion
             this.label11.Font = new System.Drawing.Font("Imprint MT Shadow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(19, 73);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 20);
+            this.label11.Size = new System.Drawing.Size(130, 20);
             this.label11.TabIndex = 39;
-            this.label11.Text = "Hora de recojo:";
+            this.label11.Text = "Hora de entrega:";
             // 
             // label12
             // 
@@ -607,9 +454,9 @@ namespace DulceTentacion
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(611, 51);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(182, 25);
+            this.label15.Size = new System.Drawing.Size(70, 25);
             this.label15.TabIndex = 71;
-            this.label15.Text = "Su cesta esta vacia";
+            this.label15.Text = "Carrito";
             // 
             // btnMas
             // 
@@ -618,7 +465,7 @@ namespace DulceTentacion
             this.btnMas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMas.Image = global::DulceTentacion.Properties.Resources.IconoMas;
-            this.btnMas.Location = new System.Drawing.Point(868, 48);
+            this.btnMas.Location = new System.Drawing.Point(909, 51);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(80, 30);
             this.btnMas.TabIndex = 75;
@@ -645,6 +492,37 @@ namespace DulceTentacion
             this.pictureBox2.TabIndex = 72;
             this.pictureBox2.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(912, 628);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 25);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Bs.";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(666, 628);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Costo Total:";
+            // 
+            // txtCostoTotal
+            // 
+            this.txtCostoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoTotal.Location = new System.Drawing.Point(800, 623);
+            this.txtCostoTotal.Name = "txtCostoTotal";
+            this.txtCostoTotal.Size = new System.Drawing.Size(106, 30);
+            this.txtCostoTotal.TabIndex = 76;
+            // 
             // Carrito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -652,6 +530,9 @@ namespace DulceTentacion
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1013, 674);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCostoTotal);
             this.Controls.Add(this.btnMas);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.pnlFPago);
@@ -668,7 +549,6 @@ namespace DulceTentacion
             this.Text = "Carrito";
             this.pnlCesta.ResumeLayout(false);
             this.pnlCesta.PerformLayout();
-            this.panel11.ResumeLayout(false);
             this.BarraHorizontal.ResumeLayout(false);
             this.pnlDPersonal.ResumeLayout(false);
             this.pnlDPersonal.PerformLayout();
@@ -690,12 +570,8 @@ namespace DulceTentacion
         private System.Windows.Forms.Panel pnlCesta;
         private System.Windows.Forms.FlowLayoutPanel BarraHorizontal;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCostoTotal;
         private System.Windows.Forms.Panel pnlDPersonal;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox CBSufijos;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.Label label6;
@@ -721,19 +597,13 @@ namespace DulceTentacion
         private System.Windows.Forms.Button btnTarjeta;
         private System.Windows.Forms.Button btnQR;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel pnl9;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel pnl8;
-        private System.Windows.Forms.Panel pnl7;
-        private System.Windows.Forms.Panel pnl6;
-        private System.Windows.Forms.Panel pnl5;
-        private System.Windows.Forms.Panel pnl4;
-        private System.Windows.Forms.Panel pnl3;
-        private System.Windows.Forms.Panel pnl2;
-        private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.Button btnEfectivo;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnMas;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCostoTotal;
     }
 }

@@ -37,14 +37,13 @@ namespace DulceTentacion
                 this.BackColor = Color.Black;
                 pnlHorizontal.BackColor = Color.DimGray;
                 btnRegistro.BackColor = Color.DimGray;
-                btnAlmacenTabla.BackColor = Color.DimGray;
-                // GBAccion.BackColor = Color.DimGray;
-                //GBDescripcion.BackColor = Color.DimGray;
-                //GBRegistro.BackColor = Color.DimGray;
+               
+                 GBAccion.BackColor = Color.DimGray;
+                GBDescripcion.BackColor = Color.DimGray;
+                GBRegistro.BackColor = Color.DimGray;
                 //dgvProductos.BackColor = Color.DimGray;
 
                 btnRegistro.ForeColor = Color.White; // Configurar color de texto del botón en modo oscuro
-                btnAlmacenTabla.ForeColor = Color.White; // Configurar color de texto del botón en modo oscuro
                 GBAccion.ForeColor = Color.White; // Cambiar el color del texto de GroupBox en modo oscuro
                 GBDescripcion.ForeColor = Color.White;
                 GBRegistro.ForeColor = Color.White;
@@ -55,12 +54,9 @@ namespace DulceTentacion
                 // Aplicar colores originales
                 this.BackColor = Color.FromArgb(255, 222, 231);
                 pnlHorizontal.BackColor = Color.FromArgb(255, 192, 255);
-                btnRegistro.BackColor = Color.White;
-                btnAlmacenTabla.BackColor = Color.White;
-                //GBAccion.BackColor = Color.White;
+               
 
                 btnRegistro.ForeColor = Color.Black; // Revertir color de texto del botón
-                btnAlmacenTabla.ForeColor = Color.Black; // Revertir color de texto del botón
                 GBAccion.ForeColor = Color.Black; // Restaurar el color original del texto de GroupBox
                 GBDescripcion.ForeColor = Color.Black;
                 GBRegistro.ForeColor = Color.Black;
@@ -478,6 +474,11 @@ namespace DulceTentacion
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void GBAccion_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

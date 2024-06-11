@@ -422,11 +422,7 @@ namespace DulceTentacion
             hideSubMenu();
         }
 
-        private void btnVisualizarProd_Click(object sender, EventArgs e)
-        {
-            abrirconprincipal(new VisualizarProducto());
-            hideSubMenu();
-        }
+       
 
         private void btnAlmacInf_Click(object sender, EventArgs e)
         {

@@ -129,7 +129,7 @@ namespace DulceTentacion
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            abrirConPrincipal(new Carrito());
+            MessageBox.Show("Su reservación fue registrado exitosamente.");
         }
     }
 }

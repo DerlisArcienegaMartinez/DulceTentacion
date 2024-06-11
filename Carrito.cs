@@ -35,7 +35,7 @@ namespace DulceTentacion
                 btnQR.BackColor = Color.DimGray;
                 btnEfectivo.BackColor = Color.DimGray;
                 btnTarjeta.BackColor = Color.DimGray;
-                pnlCesta.BackColor = Color.Black;
+                pnlCesta.BackColor = Color.DimGray;
 
             }
         }
